@@ -6,6 +6,7 @@
 }
 
 body {
+  background-color: ;
   margin: 0; // Ingen kanter i siden af browser
 }
 
@@ -36,9 +37,10 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
-$blå:#0097d7;
+$blue:#0097d7;
 $orange:#ee7125;
-$gul:#fccc28;
+$yellow:#fccc28;
+$white:#f9f7f4;
 
 
 @media screen and (min-width: 768px) {
