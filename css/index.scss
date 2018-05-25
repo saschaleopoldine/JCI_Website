@@ -42,36 +42,68 @@ $bluePrimary: #0097d7;
 $orangePrimary: #f37121;
 $overlay: rgba(93, 144, 183, 0.5);
 
-#flex_alt{
+@mixin flex{
   display: flex;
   display: -webkit-flex;
-  justify-content: space-between;
 }
 
-#left_menu{
+.web{
+  display: none;
+}
+
+#menuMobil{
+  height: 60px;
+  width: 100%;
   background-color: $bluePrimary;
-  height: 100vh;
-  width: 300px;
-  #logo{
-    width: 65%;
-    height: auto;
-    margin: 30px auto 0 auto;
+  padding: 7px;
+  @include flex;
+  justify-content: space-between;
+  img{
+    margin-left: 20px;
+    height: 100%;
+    width: auto;
+  }
+  i{
+    color: white;
+    margin: 5px 20px;
   }
 }
 
-#grid{
-  padding: 70px 50px 50px 0;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-column-gap: 20px;
-  height: 600px;
-  width: 100%;
+footer{
+
 }
 
-#lol{
+#mobilAlt{
+  padding: 0 20px 0 20px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 10px;
+  grid-template-rows: repeat(10, 60px);
+}
+
+#lol2{
   background-color: red;
-  grid-column: 4/span 2;
-  height: 200px;
+  grid-column: 2/span 1;
+  height: 50px;
+}
+
+footer{
+  background-color: $bluePrimary;
+  color: white;
+  height: 150px;
+  padding: 22px 50px;
+  @include flex;
+  justify-content: space-between;
+  p{
+    margin-top: 15px;
+  }
+  #some{
+    @include flex;
+    flex-direction: column;
+    i{
+      margin: 3px 0;
+    }
+  }
 }
 
 // Variabler - med størrelser
@@ -86,6 +118,47 @@ $overlay: rgba(93, 144, 183, 0.5);
 
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+
+  .web{
+    display: inline;
+  }
+
+  .mobil, #mobilAlt, footer{
+    display: none;
+  }
+
+  #flex_alt{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+  }
+
+  #left_menu{
+    background-color: $bluePrimary;
+    height: 100vh;
+    width: 300px;
+    #logo{
+      width: 65%;
+      height: auto;
+      margin: 30px auto 0 auto;
+    }
+  }
+
+  #grid{
+    padding: 70px 50px 50px 0;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-column-gap: 20px;
+    height: 600px;
+    width: 100%;
+  }
+
+  #lol{
+    background-color: red;
+    grid-column: 4/span 2;
+    height: 200px;
+  }
+
 }
 
 @media print {
