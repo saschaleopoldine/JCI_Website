@@ -40,8 +40,36 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
-
 // Variabler - med størrelser
+$blue:#0097d7;
+$orange:#ee7125;
+$yellow:#fccc28;
+$white:#f9f7f4;
+
+@mixin undertitle{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@mixin undertext{
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 15px;
+}
+
+@mixin menutext{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 15px;
+}
+
+@mixin buttoms{
+  height: 30px;
+  background-color: $orange;
+  color: $white;
+  font-size: 18px;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
