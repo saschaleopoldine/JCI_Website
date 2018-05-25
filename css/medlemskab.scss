@@ -48,25 +48,25 @@ $white:#f9f7f4;
 
 @mixin undertitle{
   font-family: 'Libre Baskerville', serif;
-  font-size: 24px;
+  font-size: 24pt;
   font-weight: bold;
 }
 
 @mixin undertext{
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 15px;
+  font-size: 15pt;
 }
 
 @mixin menutext{
   font-family: 'Libre Baskerville', serif;
-  font-size: 15px;
+  font-size: 15pt;
 }
 
 @mixin buttoms{
   height: 30px;
   background-color: $orange;
   color: $white;
-  font-size: 18px;
+  font-size: 18pt;
   font-family: 'Merriweather Sans', sans-serif;
 }
 
