@@ -49,5 +49,15 @@ img {
   background-color: red;
   grid-column: 4/span 2;
   height: 200px; }
+  #lol h2 {
+    font-size: 40pt;
+    font-family: mrs-eaves-xl-serif, serif;
+    font-style: normal;
+    font-weight: 400; }
+  #lol p {
+    font-size: 15pt;
+    font-family: skolar-sans-latin, sans-serif;
+    font-style: normal;
+    font-weight: 100; }
 
 /*# sourceMappingURL=index.css.map */
