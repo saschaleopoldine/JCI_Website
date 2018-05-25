@@ -35,6 +35,15 @@ img {
   grid-row-start: 5;
   margin-top: 15px; }
 
+.world {
+  display: block;
+  width: 160%;
+  height: auto;
+  grid-column: 3/span 2;
+  grid-row-start: 13;
+  margin-top: -30px;
+  margin-left: -30px; }
+
 .web {
   display: none; }
 
