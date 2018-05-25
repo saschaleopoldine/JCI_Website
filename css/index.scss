@@ -51,7 +51,12 @@ $overlay: rgba(93, 144, 183, 0.5);
 #left_menu{
   background-color: $bluePrimary;
   height: 100vh;
-  width: 200px;
+  width: 300px;
+  #logo{
+    width: 65%;
+    height: auto;
+    margin: 30px auto 0 auto;
+  }
 }
 
 #grid{
