@@ -12,6 +12,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0; // Ingen ydre margen fra overskrifter
   padding: 0; // Ingen indre margen fra overskrifter
+  font-family: 'Libre Baskerville', serif; //Font til overskrifter
 }
 
 ul, ol {
@@ -27,6 +28,7 @@ li {
 p {
   margin: 0; // Ingen ydre margen fra paragraffer
   padding: 0; // Ingen indre margen fra paragraffer
+  font-family: 'Merriweather Sans', sans-serif; //Font til brødtekst
 }
 
 // Sikrer billeder er responsive
@@ -37,6 +39,8 @@ img {
 }
 
 $bluePrimary: #0097d7;
+$orangePrimary: #f37121;
+$overlay: rgba(93, 144, 183, 0.5);
 
 #flex_alt{
   display: flex;
@@ -55,9 +59,8 @@ $bluePrimary: #0097d7;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-column-gap: 20px;
-  width: 100%;
   height: 600px;
-  position: fixed;
+  width: 100%;
 }
 
 #lol{
