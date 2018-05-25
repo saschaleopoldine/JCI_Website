@@ -6,6 +6,7 @@
 }
 
 body {
+  background-color: #f9f7f4;
   margin: 0; // Ingen kanter i siden af browser
 }
 
@@ -35,6 +36,72 @@ img {
   max-width: 100%; // Bredde må maks fylde 100%
   height: auto; // Højden skal tilpasse sig
 }
+
+@mixin button{
+  background-color: #f37121;
+  color: white;
+  width: auto;
+  padding: 5px 10px;
+  font-size: 18pt;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.meld_dig_ind{
+  @include button;
+  
+}
+
+h1{
+  font-size: 25pt;
+  color: black;
+  text-align: center;
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  font-family: "Mrs Eaves XL Serif OT";
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 3%;
+ 
+}
+
+.Fordele{
+  padding-top: 15%;
+  font-size: 16pt;
+  color: black;
+  text-align: left;
+  margin-left: 3%;
+  font-family: "Mrs Eaves XL Serif OT";
+  font-style: normal;
+  font-weight: bold;
+}
+
+#circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 40px;
+  background: red;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Variabler - med størrelser
 

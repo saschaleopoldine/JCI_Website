@@ -3,6 +3,7 @@
   box-sizing: border-box; }
 
 body {
+  background-color: #f9f7f4;
   margin: 0; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,5 +26,43 @@ img {
   display: block;
   max-width: 100%;
   height: auto; }
+
+.meld_dig_ind {
+  background-color: #f37121;
+  color: white;
+  width: auto;
+  padding: 5px 10px;
+  font-size: 18pt;
+  border: none;
+  cursor: pointer;
+  margin: 10px; }
+
+h1 {
+  font-size: 25pt;
+  color: black;
+  text-align: center;
+  font-family: "Mrs Eaves XL Serif OT";
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 3%; }
+  h1 a {
+    text-decoration: none;
+    color: black; }
+
+.Fordele {
+  padding-top: 15%;
+  font-size: 16pt;
+  color: black;
+  text-align: left;
+  margin-left: 3%;
+  font-family: "Mrs Eaves XL Serif OT";
+  font-style: normal;
+  font-weight: bold; }
+
+#circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 40px;
+  background: red; }
 
 /*# sourceMappingURL=privat_medlem.css.map */
