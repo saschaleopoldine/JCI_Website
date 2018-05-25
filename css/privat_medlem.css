@@ -93,7 +93,7 @@ h1 {
   border: 4px solid #0097d7;
   grid-column: 1/span 6;
   grid-row-start: 4;
-  margin-top: 17%; }
+  margin-top: 25px; }
 
 .fordelikon {
   margin-left: -20px;
@@ -107,7 +107,7 @@ h1 {
   border: 4px solid #0097d7;
   grid-column: 5/span 6;
   grid-row-start: 12;
-  margin-left: -4%; }
+  margin-left: -10px; }
 
 footer {
   background-color: #0097d7;
