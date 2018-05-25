@@ -21,12 +21,16 @@ li {
 p {
   margin: 0;
   padding: 0;
-  font-family: 'Merriweather Sans', sans-serif; }
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 15pt; }
 
 img {
   display: block;
   max-width: 100%;
   height: auto; }
+
+body {
+  background-color: #f9f7f4; }
 
 .web {
   display: none; }
@@ -52,12 +56,30 @@ img {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 10px;
-  grid-template-rows: repeat(10, 60px); }
-
-#lol2 {
-  background-color: red;
-  grid-column: 2/span 1;
-  height: 50px; }
+  grid-template-rows: repeat(100, 50px); }
+  #mobilAlt h1 {
+    font-size: 25pt;
+    grid-column: 1/span 6;
+    grid-row-start: 2;
+    text-align: center; }
+  #mobilAlt h5 {
+    font-size: 18pt;
+    color: #f37121;
+    grid-column: 3/span 2;
+    text-align: center;
+    grid-row-start: 3;
+    margin-top: 35px; }
+  #mobilAlt h3 {
+    font-size: 15pt;
+    grid-column: 2/span 4;
+    grid-row-start: 5;
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif; }
+  #mobilAlt #ca_cirkel_1 {
+    background-image: url("../images/caroline_jci.png");
+    border-radius: 50%;
+    grid-row: 9/span 7;
+    grid-column: 1/span 6; }
 
 footer {
   background-color: #0097d7;
