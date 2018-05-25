@@ -15,6 +15,16 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0; // Ingen indre margen fra overskrifter
   font-family: 'Libre Baskerville', serif;
 }
+h1{
+  font-size: 25pt;
+}
+h2{
+font-size: 20pt;
+}
+h3{
+  font-size: 15pt;
+}
+
 
 ul, ol {
   margin: 0; // Ingen ydre margen fra lister
@@ -69,7 +79,123 @@ $white:#f9f7f4;
   font-size: 18pt;
   font-family: 'Merriweather Sans', sans-serif;
 }
+@mixin flex{
+  display: flex;
+  display: -webkit-flex;
+}
 
+.web{
+  display: none;
+}
+
+#menuMobil{
+  height: 60px;
+  width: 100%;
+  background-color: $blue;
+  padding: 7px;
+  @include flex;
+  justify-content: space-between;
+  img{
+    margin-left: 20px;
+    height: 100%;
+    width: auto;
+  }
+  i{
+    color: white;
+    margin: 5px 20px;
+  }
+}
+
+#mobilAlt{
+  padding: 0 20px 0 20px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 10px;
+  grid-template-rows: repeat(15, 50px);
+}
+
+
+.indledning{
+  text-align: center;
+  grid-column: 1 / span 6;
+  grid-row-start: 2;
+}
+.bold1{
+  grid-column: 2 / span 5;
+  grid-row-start: 5;
+  border-radius: 50%;
+  border: 3px solid $orange;
+  height: 200px;
+  width: 200px;
+  color: $blue;
+  margin-left: 10px;
+}
+.bold1tekst{
+  grid-column: 2 / span 5;
+  grid-row-start: 7;
+  text-align: center;
+  color: $blue;
+  margin-right: 50px;
+  margin-top: -15px;
+}
+.bold1fuldtekst{
+  grid-column: 2 / span 5;
+  grid-row-start: 7;
+  text-align: center;
+  color: $blue;
+  margin-right: 50px;
+  margin-top: -15px;
+  display: none;
+  z-index: 99;
+}
+
+.bold2{
+  grid-column: 2 / span 5;
+  grid-row-start: 10;
+  border-radius: 50%;
+  border: 3px solid $orange;
+  height: 200px;
+  width: 200px;
+  color: $blue;
+  margin-left: 10px;
+}
+.bold2tekst{
+  grid-column: 2 / span 5;
+  grid-row-start: 12;
+  text-align: center;
+  color: $blue;
+  margin-right: 50px;
+  margin-top: -15px;
+}
+
+.bold2fuldtekst{
+  grid-column: 2 / span 5;
+  grid-row-start: 12;
+  text-align: center;
+  color: $blue;
+  margin-right: 50px;
+  margin-top: -15px;
+  display: none;
+}
+
+footer{
+  background-color: $blue;
+  color: white;
+  height: 150px;
+  padding: 22px 50px;
+  @include flex;
+  justify-content: space-between;
+  p{
+    margin-top: 15px;
+  }
+  #some{
+    @include flex;
+    flex-direction: column;
+    i{
+      margin: 3px 0;
+    }
+  }
+}
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
@@ -81,7 +207,42 @@ $white:#f9f7f4;
 
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+  .web{
+    display: inline;
+  }
+
+  .mobil, #mobilAlt, #menuMobil, footer{
+    display: none;
+  }
+
+  #flex_alt{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+  }
+
+  #left_menu{
+    background-color: $blue;
+    height: 100vh;
+    width: 300px;
+    #logo{
+      width: 65%;
+      height: auto;
+      margin: 30px auto 0 auto;
+    }
+  }
+
+  #grid{
+    padding: 70px 50px 50px 0;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-column-gap: 20px;
+    height: 600px;
+    width: 100%;
+  }
+
 }
+
 
 @media print {
   // Alt der gælder for print specifikt

@@ -31,7 +31,7 @@
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/medlemskab.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/4574f88dc3.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Merriweather+Sans" rel="stylesheet">
 
 
@@ -41,35 +41,77 @@
 </head>
 <!-- i <body> har man alt indhold på siden -->
 <body>
------------------------------ HEADER -------------------------------HEADER----------------------------------------------
+<!----------------------------- HEADER -------------------------------HEADER---------------------------------------------->
 <header>
 
-
-
-
-
-
-
+    <div id="menuMobil" class="mobil">
+        <img src="images/logo.png">
+        <i class="fa fas fa-bars fa-2x"></i>
+    </div>
 
 </header>
 
------------------------------ SECTION -------------------------------SECTION--------------------------------------------
+<!----------------------------- SECTION -------------------------------SECTION-------------------------------------------->
 
 <section>
+    <div id="mobilAlt" class="mobil">
+
+        <div class="indledning">
+            <h1>Medlemskab</h1>
+            <h3>sko mollit anim id est laborum. Sed ut perspiciatis
+                <br>unde omnis iste natus error sit  </h3>
+        </div>
 
 
+    <div class="bold1">
+    </div>
+        <div class="bold1tekst">
+            <p>
+                Privatmedlem
+            </p>
+        </div>
+        <div class="bold1fuldtekst">
+            <p>
+                mere tekst her
+            </p>
+        </div>
 
+    <div class="bold2">
+    </div>
+        <div class="bold2tekst">
+            <p>
+                Erhvervsmedlem
+            </p>
+        </div>
+        <div class="bold2fuldtekst">
+            <p>
+                mere tekst her
+            </p>
+        </div>
 
+    </div>
 
 
 
 
 </section>
 
------------------------------- FOOTER -------------------------------FOOTER---------------------------------------------
+<!------------------------------ FOOTER -------------------------------FOOTER--------------------------------------------->
 
 <footer>
+    <p>
+        KONTAKT OS:
+        <br><br>
+        MAIL:
+        <br>
+        kontakt@slagelsejci.dk
+    </p>
 
+    <div id="some">
+        <i class="fa fas fa-facebook-square fa-2x"></i>
+        <i class="fa fab fa-twitter fa-2x"></i>
+        <i class="fa fab fa-linkedin fa-2x"></i>
+    </div>
 
 
 
@@ -80,7 +122,10 @@
 
 <script type="text/javascript">
     $(document).ready(function (e) {
-        // Din kode her
+        $(".bold1tekst").click(function (e) {
+            $(".bold1tekst").css({"display": "none"});
+
+        //
     });
 </script>
 
