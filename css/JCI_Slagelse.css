@@ -3,6 +3,7 @@
   box-sizing: border-box; }
 
 body {
+  background-color: #f9f7f4;
   margin: 0; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,5 +26,103 @@ img {
   display: block;
   max-width: 100%;
   height: auto; }
+
+.web {
+  display: none; }
+
+#menuMobil {
+  height: 60px;
+  width: 100%;
+  background-color: #0097d7;
+  padding: 7px;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between; }
+  #menuMobil img {
+    margin-left: 20px;
+    height: 100%;
+    width: auto; }
+  #menuMobil i {
+    color: white;
+    margin: 5px 20px; }
+
+#mobilAlt {
+  padding: 0 20px 0 20px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 10px;
+  grid-template-rows: repeat(10, 50px); }
+
+h1 {
+  font-family: "Libre Baskerville", Serif;
+  font-size: 25pt;
+  grid-column: 1/span 6;
+  grid-row: 2;
+  text-align: center; }
+
+.cirkel {
+  background-color: #ee7125;
+  border-radius: 50%;
+  width: 165px;
+  height: 165px;
+  grid-column: 1/span 3;
+  grid-row: 3;
+  margin-top: 10%; }
+
+#projekt {
+  color: white;
+  font-family: "Libre Baskerville", Serif;
+  font-size: 20pt;
+  font-weight: bold;
+  text-align: center;
+  grid-column: 1/span 3;
+  grid-row: 4;
+  margin-top: 4%; }
+
+footer {
+  background-color: #0097d7;
+  color: white;
+  height: 150px;
+  padding: 22px 50px;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between; }
+  footer p {
+    margin-top: 15px; }
+  footer #some {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column; }
+    footer #some i {
+      margin: 3px 0; }
+
+@media screen and (min-width: 1200px) {
+  .web {
+    display: inline; }
+
+  .mobil, #mobilAlt, #menuMobil, footer {
+    display: none; }
+
+  #flex_alt {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between; }
+
+  #left_menu {
+    background-color: #0097d7;
+    height: 100vh;
+    width: 300px; }
+    #left_menu #logo {
+      width: 65%;
+      height: auto;
+      margin: 30px auto 0 auto; }
+
+  #grid {
+    padding: 70px 50px 50px 0;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-column-gap: 20px;
+    height: 600px;
+    width: 100%; } }
 
 /*# sourceMappingURL=JCI_Slagelse.css.map */

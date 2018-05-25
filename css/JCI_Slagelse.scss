@@ -6,6 +6,7 @@
 }
 
 body {
+  background-color: #f9f7f4;
   margin: 0; // Ingen kanter i siden af browser
 }
 
@@ -40,6 +41,7 @@ $blue:#0097d7;
 $orange:#ee7125;
 $yellow:#fccc28;
 $white:#f9f7f4;
+$overlay: rgba(93, 144, 183, 0.5);
 
 @mixin undertitle{
   font-family: 'Libre Baskerville', serif;
@@ -72,6 +74,107 @@ $white:#f9f7f4;
   border: 4px solid $orange;
 }
 
+@mixin flex{
+  display: flex;
+  display: -webkit-flex;
+}
+
+//--------------------------------------------------- Header mobil -----------------------------------------------
+.web{
+  display: none;
+}
+
+#menuMobil{
+  height: 60px;
+  width: 100%;
+  background-color: $blue;
+  padding: 7px;
+  @include flex;
+  justify-content: space-between;
+  img{
+    margin-left: 20px;
+    height: 100%;
+    width: auto;
+  }
+  i{
+    color: white;
+    margin: 5px 20px;
+  }
+}
+
+//------------------------------------------------ Indhold mobil --------------------------------------------------
+
+#mobilAlt{
+  padding: 0 20px 0 20px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 10px;
+  grid-template-rows: repeat(10, 50px);
+}
+
+h1{
+  font-family: "Libre Baskerville", Serif;
+  font-size: 25pt;
+  grid-column: 1/span 6;
+  grid-row: 2;
+  text-align: center;
+}
+
+.cirkel{
+  background-color: $orange;
+  border-radius: 50%;
+  width: 165px;
+  height: 165px;
+  grid-column: 1/span 3;
+  grid-row: 3;
+  margin-top: 10%;
+
+}
+
+#projekt{
+  color: white;
+  font-family: "Libre Baskerville", Serif;
+  font-size: 20pt;
+  font-weight: bold;
+  text-align: center;
+  grid-column: 1/span 3;
+  grid-row: 4;
+  margin-top: 4%;
+
+}
+
+
+//--------------------------------------------------- Footer mobil --------------------------------------------------
+footer{
+  background-color: $blue;
+  color: white;
+  height: 150px;
+  padding: 22px 50px;
+  @include flex;
+  justify-content: space-between;
+  p{
+    margin-top: 15px;
+  }
+  #some{
+    @include flex;
+    flex-direction: column;
+    i{
+      margin: 3px 0;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
@@ -84,12 +187,52 @@ $white:#f9f7f4;
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
 
-@mixin board_web{
-  width: 114px;
-  height: 114px;
-  border-radius: 50%;
-  border: 4px solid $orange;
-}
+  //--------------------------------------------------- Header web -----------------------------------------------
+  @mixin board_web{
+    width: 114px;
+    height: 114px;
+    border-radius: 50%;
+    border: 4px solid $orange;
+  }
+
+  .web{
+    display: inline;
+  }
+
+  .mobil, #mobilAlt, #menuMobil, footer{
+    display: none;
+  }
+
+  #flex_alt{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+  }
+
+  #left_menu{
+    background-color: $blue;
+    height: 100vh;
+    width: 300px;
+    #logo{
+      width: 65%;
+      height: auto;
+      margin: 30px auto 0 auto;
+    }
+  }
+
+
+  //------------------------------------------------ Indhold mobil --------------------------------------------------
+
+  #grid{
+    padding: 70px 50px 50px 0;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-column-gap: 20px;
+    height: 600px;
+    width: 100%;
+  }
+
+
 
 
 }
