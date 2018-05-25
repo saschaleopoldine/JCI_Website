@@ -80,7 +80,7 @@ footer {
   .web {
     display: inline; }
 
-  .mobil, #mobilAlt, footer {
+  .mobil, #mobilAlt, #menuMobil, footer {
     display: none; }
 
   #flex_alt {
