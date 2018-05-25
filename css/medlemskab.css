@@ -3,12 +3,13 @@
   box-sizing: border-box; }
 
 body {
-  background-color: aqua;
+  background-color: #f9f7f4;
   margin: 0; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Libre Baskerville', serif; }
 
 ul, ol {
   margin: 0;
@@ -20,7 +21,9 @@ li {
 
 p {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 15pt; }
 
 img {
   display: block;

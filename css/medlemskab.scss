@@ -6,13 +6,14 @@
 }
 
 body {
-  background-color: aqua;
+  background-color: #f9f7f4;
   margin: 0; // Ingen kanter i siden af browser
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0; // Ingen ydre margen fra overskrifter
   padding: 0; // Ingen indre margen fra overskrifter
+  font-family: 'Libre Baskerville', serif;
 }
 
 ul, ol {
@@ -28,6 +29,8 @@ li {
 p {
   margin: 0; // Ingen ydre margen fra paragraffer
   padding: 0; // Ingen indre margen fra paragraffer
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 15pt;
 }
 
 // Sikrer billeder er responsive
@@ -36,6 +39,7 @@ img {
   max-width: 100%; // Bredde må maks fylde 100%
   height: auto; // Højden skal tilpasse sig
 }
+
 
 // Variabler - med størrelser
 
