@@ -25,9 +25,15 @@ p {
   font-size: 15pt; }
 
 img {
+  display: block; }
+
+.dk {
   display: block;
-  max-width: 100%;
-  height: auto; }
+  width: 100%;
+  height: auto;
+  grid-column: 3/span 2;
+  grid-row-start: 5;
+  margin-top: 15px; }
 
 .web {
   display: none; }
@@ -53,12 +59,18 @@ img {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 10px;
-  grid-template-rows: repeat(10, 50px); }
+  grid-template-rows: repeat(100, 50px); }
   #mobilAlt h1 {
     font-family: 'Libre Baskerville', serif;
     font-size: 25pt;
     grid-column: 1/span 6;
     grid-row-start: 2;
+    text-align: center; }
+  #mobilAlt h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20pt;
+    grid-column: 1/span 6;
+    grid-row-start: 10;
     text-align: center; }
   #mobilAlt h3 {
     font-family: "Merriweather Sans";
@@ -73,11 +85,17 @@ img {
   height: 200px;
   border: 3px solid #f37121;
   grid-column: 2/span 5;
-  grid-row-start: 5; }
-  #circle1 img {
-    height: 80%;
-    width: auto;
-    margin: 20px; }
+  grid-row-start: 5;
+  margin-left: 10px; }
+
+#circle2 {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 3px solid #f37121;
+  grid-column: 2/span 5;
+  grid-row-start: 11;
+  margin-left: 10px; }
 
 footer {
   background-color: #0097d7;

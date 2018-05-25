@@ -37,11 +37,18 @@ p {
   font-size: 15pt;
 }
 
+img{
+  display: block;
+}
+
 // Sikrer billeder er responsive
-img {
+.dk {
   display: block; // Billeder er et element (laver linjeskift)
-  max-width: 100%; // Bredde må maks fylde 100%
-  height: auto; // Højden skal tilpasse sig
+  width: 100%;
+  height: auto;
+  grid-column: 3/span 2;
+  grid-row-start: 5;
+  margin-top: 15px;
 }
 
 @mixin flex{
@@ -77,7 +84,7 @@ img {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 10px;
-  grid-template-rows: repeat(10, 50px);
+  grid-template-rows: repeat(100, 50px);
     h1{
       font-family: 'Libre Baskerville', serif;
       font-size: 25pt;
@@ -85,6 +92,13 @@ img {
       grid-row-start: 2;
       text-align: center;
   }
+    h2{
+      font-family: 'Libre Baskerville', serif;
+      font-size: 20pt;
+      grid-column: 1/span 6;
+      grid-row-start: 10;
+      text-align: center;
+    }
     h3{
       font-family: "Merriweather Sans";
       font-size: 15pt;
@@ -101,11 +115,17 @@ img {
   border: 3px solid $orangePrimary;
   grid-column: 2/span 5;
   grid-row-start: 5;
-  img{
-    height: 80%;
-    width: auto;
-    margin: 20px;
-  }
+  margin-left: 10px;
+}
+
+#circle2{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 3px solid $orangePrimary;
+  grid-column: 2/span 5;
+  grid-row-start: 11;
+  margin-left: 10px;
 }
 
 footer{
