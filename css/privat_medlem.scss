@@ -91,8 +91,83 @@ footer{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 10px;
-  grid-template-rows: repeat(10, 60px);
+  grid-template-rows: repeat(20, 50px);
 }
+
+
+
+
+
+
+
+
+.meld_dig_ind{
+  @include button;
+  
+}
+
+h1{
+  font-size: 25pt;
+  color: black;
+  text-align: center;
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  font-family: 'Libre Baskerville', serif;
+  font-style: normal;
+  font-weight: bold;
+  grid-column: 1/span 6;
+  grid-row-start:2;
+
+}
+
+
+.Fordele{
+  font-size: 16pt;
+  color: black;
+  font-family: 'Libre Baskerville', serif;
+  font-style: normal;
+  font-weight: bold;
+  grid-column: 1/span 6;
+  grid-row-start:4;
+}
+
+#circle {
+  width: 163px;
+  height: 163px;
+  border-radius: 80px;
+  background-color: #f9f7f4;
+  border: 4px solid #0097d7;
+  grid-column: 1/span 6;
+  grid-row-start:4;
+  margin-top: 17%;
+}
+
+.fordelikon{
+margin-left: -20px;
+  margin-top: 10px;
+
+}
+
+#circlepriser {
+  width: 97px;
+  height: 97px;
+  border-radius: 60px;
+  background-color: #f9f7f4;
+  border: 4px solid #0097d7;
+  grid-column: 5/span 6;
+  grid-row-start: 12;
+
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -120,57 +195,6 @@ footer{
 
 
 
-.meld_dig_ind{
-  @include button;
-  
-}
-
-h1{
-  font-size: 25pt;
-  color: black;
-  text-align: center;
-    a{
-      text-decoration: none;
-      color: black;
-    }
-  font-family: 'Libre Baskerville', serif;
-  font-style: normal;
-  font-weight: bold;
-  padding-top: 3%;
- 
-}
-
-
-.Fordele{
-  padding-top: 15%;
-  font-size: 16pt;
-  color: black;
-  text-align: left;
-  margin-left: 3%;
-  font-family: 'Libre Baskerville', serif;
-  font-style: normal;
-  font-weight: bold;
-}
-
-#circle {
-  width: 163px;
-  height: 163px;
-  border-radius: 80px;
-  background-color: #f9f7f4;
-  border: 4px solid #0097d7;
-  margin-top: 5%;
-  margin-left: 3%;
-}
-
-.fordelikon{
-margin-left: -20px;
-  margin-top: 10px;
-
-}
-
-
-
-
 
 // Variabler - med størrelser
 
@@ -184,6 +208,43 @@ margin-left: -20px;
 
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+
+  .web{
+    display: inline;
+  }
+
+  .mobil, #mobilAlt, #menuMobil, footer{
+    display: none;
+  }
+
+  #flex_alt{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+  }
+
+  #left_menu{
+    background-color: $bluePrimary;
+    height: 100vh;
+    width: 300px;
+    #logo{
+      width: 65%;
+      height: auto;
+      margin: 30px auto 0 auto;
+    }
+  }
+
+  #grid{
+    padding: 70px 50px 50px 0;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-column-gap: 20px;
+    height: 600px;
+    width: 100%;
+  }
+
+
+
 }
 
 @media print {
