@@ -51,7 +51,7 @@ img {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 10px;
-  grid-template-rows: repeat(10, 50px); }
+  grid-template-rows: repeat(20, 50px); }
 
 h1 {
   font-family: "Libre Baskerville", Serif;
@@ -60,14 +60,14 @@ h1 {
   grid-row: 2;
   text-align: center; }
 
-.cirkel {
+.cirkel_1 {
   background-color: #ee7125;
   border-radius: 50%;
-  width: 165px;
-  height: 165px;
+  width: 145px;
+  height: 145px;
   grid-column: 1/span 3;
   grid-row: 3;
-  margin-top: 10%; }
+  margin-top: 5%; }
 
 #projekt {
   color: white;
@@ -77,7 +77,35 @@ h1 {
   text-align: center;
   grid-column: 1/span 3;
   grid-row: 4;
-  margin-top: 4%; }
+  margin-top: 10%;
+  width: 140px; }
+
+.hr {
+  background-color: #0097d7;
+  height: 3px;
+  width: 80px;
+  rotation: 45grad;
+  grid-column: 3/span 2;
+  grid-row: 5/ span 2; }
+
+.cirkel_2 {
+  background-color: #ee7125;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  grid-column: 5/span 2;
+  grid-row: 5;
+  margin-left: -11%; }
+
+#medlem {
+  color: white;
+  font-family: "Libre Baskerville", Serif;
+  font-size: 12pt;
+  font-weight: bold;
+  text-align: center;
+  grid-column: 5/span 2;
+  grid-row: 6;
+  margin-left: -5%; }
 
 footer {
   background-color: #0097d7;
