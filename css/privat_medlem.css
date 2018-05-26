@@ -51,17 +51,7 @@ img {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 10px;
-  grid-template-rows: repeat(20, 50px); }
-
-.meld_dig_ind {
-  background-color: #f37121;
-  color: white;
-  width: auto;
-  padding: 5px 10px;
-  font-size: 18pt;
-  border: none;
-  cursor: pointer;
-  margin: 10px; }
+  grid-template-rows: repeat(30, 50px); }
 
 h1 {
   font-size: 25pt;
@@ -99,16 +89,6 @@ h1 {
   margin-left: -20px;
   margin-top: 10px; }
 
-#circlepriser {
-  width: 97px;
-  height: 97px;
-  border-radius: 50px;
-  background-color: #f9f7f4;
-  border: 4px solid #0097d7;
-  grid-column: 2/span 5;
-  grid-row-start: 11;
-  margin-left: 65%; }
-
 .priser {
   font-size: 16pt;
   color: black;
@@ -119,6 +99,80 @@ h1 {
   grid-row-start: 10;
   margin-left: 70%;
   margin-top: 10px; }
+
+#circlepriser {
+  width: 97px;
+  height: 97px;
+  border-radius: 50px;
+  background-color: #f9f7f4;
+  border: 4px solid #0097d7;
+  grid-column: 2/span 5;
+  grid-row-start: 11;
+  margin-left: 65%; }
+
+.priserikon {
+  margin-left: -15%;
+  margin-top: -85%; }
+
+.studierabat {
+  font-size: 16pt;
+  color: black;
+  font-family: 'Libre Baskerville', serif;
+  font-style: normal;
+  font-weight: bold;
+  grid-column: 1/span 6;
+  grid-row-start: 14;
+  margin-top: 3%; }
+
+#circlestudierabat {
+  width: 55%;
+  height: 350%;
+  border-radius: 100%;
+  background-color: #f9f7f4;
+  border: 4px solid #0097d7;
+  grid-column: 1/span 6;
+  grid-row-start: 15; }
+
+.studierabatikon {
+  margin-left: 4%;
+  margin-top: -40%; }
+
+.chef {
+  font-size: 16pt;
+  color: black;
+  font-family: 'Libre Baskerville', serif;
+  font-style: normal;
+  font-weight: bold;
+  grid-column: 4/span 3;
+  grid-row-start: 19;
+  margin-top: 15%;
+  margin-left: 25%; }
+
+#circlechef {
+  width: 121px;
+  height: 121px;
+  border-radius: 60px;
+  background-color: #f9f7f4;
+  border: 4px solid #0097d7;
+  grid-column: 2/span 5;
+  grid-row-start: 21;
+  margin-left: 57%; }
+
+.chefikon {
+  margin-left: -30%;
+  margin-top: -45%; }
+
+.meld_dig_ind {
+  background-color: #f37121;
+  color: white;
+  width: 70%;
+  padding: 5px 10px;
+  font-size: 18pt;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  grid-column: 1/span 4;
+  grid-row-start: 24; }
 
 footer {
   background-color: #0097d7;
