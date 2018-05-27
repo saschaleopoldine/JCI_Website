@@ -65,43 +65,48 @@ body {
   #mobilAlt #slagelseTitle {
     font-size: 18pt;
     color: #f37121;
-    grid-column: 3/span 2;
+    grid-column: 1/span 6;
     text-align: center;
-    grid-row-start: 3;
-    margin-top: 35px; }
+    grid-row-start: 4;
+    margin-top: 10%; }
   #mobilAlt #indledning {
     font-size: 15pt;
     grid-column: 2/span 4;
-    grid-row-start: 5;
+    grid-row-start: 6;
+    margin-top: 10%;
     text-align: center;
     font-family: 'Merriweather Sans', sans-serif; }
   #mobilAlt .ca_cirkler {
     border-radius: 50%; }
   #mobilAlt #ca_cirkel_1 {
     background-image: url("../images/caroline_jci.png");
-    grid-row: 9/span 7;
+    grid-row: 10/span 7;
     grid-column: 1/span 6;
-    width: 350px; }
+    height: 280px;
+    width: 280px; }
   #mobilAlt #firstBobleTitle {
     font-size: 20pt;
     color: white;
-    grid-column: 1/span 4;
-    margin-left: 15%;
-    grid-row-start: 12;
-    margin-top: 0; }
+    grid-column: 1/span 6;
+    margin-left: 10%;
+    grid-row-start: 11;
+    margin-top: 3%; }
   #mobilAlt #firstBobleText {
     font-size: 12pt;
     color: white;
     grid-column: 1/span 6;
     margin-left: 10%;
-    grid-row-start: 12;
-    margin-top: 10%; }
+    grid-row-start: 11;
+    margin-top: 13%; }
   #mobilAlt #firstBobleButton {
     height: 30px;
     background-color: #f37121;
     border: none;
-    grid-row: 14/span 1;
-    grid-column: 2/span 4; }
+    grid-row: 13/span 1;
+    grid-column: 1/span 6;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 8%; }
     #mobilAlt #firstBobleButton a {
       text-decoration: none;
       color: white;
@@ -110,29 +115,30 @@ body {
     background-image: url("../images/caroline_aktiviteter.png");
     grid-row: 17/span 5;
     grid-column: 1/span 5;
-    width: 250px; }
+    width: 230px;
+    height: 230px; }
   #mobilAlt #secondBobleTitle {
     font-size: 20pt;
     color: white;
     grid-column: 1/span 3;
-    margin-left: 15%;
-    grid-row-start: 18;
-    margin-top: 0; }
+    margin-left: 18%;
+    grid-row-start: 17;
+    margin-top: 25%; }
   #mobilAlt #secondBobleText {
     font-size: 12pt;
     color: white;
-    grid-column: 1/span 4;
+    grid-column: 1/span 5;
     grid-row-start: 18;
-    margin-top: 15%;
+    margin-top: 5%;
     margin-left: 10%; }
   #mobilAlt #secondBobleButton {
     height: 30px;
     background-color: #f37121;
     border: none;
     grid-row: 20/span 1;
-    margin-top: 10%;
+    margin-top: 0;
     grid-column: 1/span 4;
-    width: 180px;
+    width: 175px;
     margin-left: 15%; }
     #mobilAlt #secondBobleButton a {
       text-decoration: none;
@@ -142,7 +148,8 @@ body {
     background-image: url("../images/caroline_partner.png");
     grid-row: 23/span 5;
     grid-column: 2/span 5;
-    width: 250px; }
+    width: 230px;
+    height: 230px; }
   #mobilAlt #thirdBobleTitle {
     font-size: 20pt;
     color: white;
