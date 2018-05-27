@@ -128,16 +128,18 @@ footer{
   #firstBobleTitle{
     font-size: 20pt;
     color: white;
-    grid-column: 2/span 4;
-    grid-row-start: 11;
-    margin-top: 5%;
+    grid-column: 1/span 4;
+    margin-left: 15%;
+    grid-row-start: 12;
+    margin-top: 0;
   }
   #firstBobleText{
     font-size: 12pt;
     color: white;
-    grid-column: 2/span 4;
+    grid-column: 1/span 6;
+    margin-left: 10%;
     grid-row-start: 12;
-    margin-top: 0;
+    margin-top: 10%;
   }
   #firstBobleButton{
     @include ca_button;
