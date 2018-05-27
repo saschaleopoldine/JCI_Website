@@ -104,7 +104,7 @@ footer{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 10px;
-  grid-template-rows: repeat(60, 50px);
+  grid-template-rows: repeat(70, 50px);
 }
 
 
@@ -137,6 +137,10 @@ h1{
   font-weight: bold;
   grid-column: 1/span 6;
   grid-row-start:4;
+  a{
+    text-decoration: none;
+    color: black;
+  }
 }
 
 #circle {
@@ -153,6 +157,21 @@ h1{
 .fordelikon{
 margin-left: -20px;
   margin-top: 10px;
+
+}
+
+
+
+.line{
+  width: 5px;
+  height: 375%;
+  background-color: #f37121;
+  grid-column: 1/span 6;
+  grid-row-start:7;
+  transform: rotate(-30deg);
+  margin-top: 20%;
+
+
 
 }
 
@@ -177,6 +196,12 @@ margin-left: -20px;
   grid-row-start:10;
   margin-left: 70%;
   margin-top: 10px;
+  a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+
 }
 
 
@@ -220,7 +245,11 @@ margin-left: -20px;
   grid-column: 1/span 6;
   grid-row-start:14;
   margin-top: 3%;
-
+  a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
 }
 
 
@@ -265,6 +294,11 @@ margin-left: -20px;
   grid-row-start:19;
   margin-top: 15%;
   margin-left: 25%;
+  a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
 
 }
 
@@ -357,12 +391,38 @@ h2{
 
 
 
+.studierabatafsnitoverskrift{
+  grid-column: 1/span 6;
+  grid-row-start: 45;
+  margin-left: 2%;
+}
+
+#studierabatafsnit{
+  @include afsnit;
+  grid-column: 1/span 6;
+  grid-row-start: 46;
+  margin-left: 2%;
+}
 
 
 
 
 
+//---------------------------- Få din chef_afsnit_mobil---------------------->
 
+
+.fådinchefafsnitoverskrift{
+  grid-column: 1/span 6;
+  grid-row-start: 54;
+  margin-left: 2%;
+}
+
+#fådinchefafsnit{
+  @include afsnit;
+  grid-column: 1/span 6;
+  grid-row-start: 55;
+  margin-left: 2%;
+}
 
 
 

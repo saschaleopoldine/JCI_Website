@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -51,7 +52,7 @@ img {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 10px;
-  grid-template-rows: repeat(60, 50px); }
+  grid-template-rows: repeat(70, 50px); }
 
 h1 {
   font-size: 25pt;
@@ -74,6 +75,9 @@ h1 {
   font-weight: bold;
   grid-column: 1/span 6;
   grid-row-start: 4; }
+  .Fordele a {
+    text-decoration: none;
+    color: black; }
 
 #circle {
   width: 55%;
@@ -89,6 +93,15 @@ h1 {
   margin-left: -20px;
   margin-top: 10px; }
 
+.line {
+  width: 5px;
+  height: 375%;
+  background-color: #f37121;
+  grid-column: 1/span 6;
+  grid-row-start: 7;
+  transform: rotate(-30deg);
+  margin-top: 20%; }
+
 .priser {
   font-size: 16pt;
   color: black;
@@ -99,6 +112,10 @@ h1 {
   grid-row-start: 10;
   margin-left: 70%;
   margin-top: 10px; }
+  .priser a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer; }
 
 #circlepriser {
   width: 97px;
@@ -123,6 +140,10 @@ h1 {
   grid-column: 1/span 6;
   grid-row-start: 14;
   margin-top: 3%; }
+  .studierabat a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer; }
 
 #circlestudierabat {
   width: 55%;
@@ -147,6 +168,10 @@ h1 {
   grid-row-start: 19;
   margin-top: 15%;
   margin-left: 25%; }
+  .chef a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer; }
 
 #circlechef {
   width: 121px;
@@ -215,6 +240,38 @@ h2 {
   font-weight: lighter;
   grid-column: 1/span 6;
   grid-row-start: 37;
+  margin-left: 2%; }
+
+.studierabatafsnitoverskrift {
+  grid-column: 1/span 6;
+  grid-row-start: 45;
+  margin-left: 2%; }
+
+#studierabatafsnit {
+  font-size: 15pt;
+  color: black;
+  text-align: left;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  grid-column: 1/span 6;
+  grid-row-start: 46;
+  margin-left: 2%; }
+
+.fådinchefafsnitoverskrift {
+  grid-column: 1/span 6;
+  grid-row-start: 54;
+  margin-left: 2%; }
+
+#fådinchefafsnit {
+  font-size: 15pt;
+  color: black;
+  text-align: left;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  grid-column: 1/span 6;
+  grid-row-start: 55;
   margin-left: 2%; }
 
 footer {
