@@ -95,7 +95,7 @@ footer{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 10px;
-  grid-template-rows: repeat(50, 50px);
+  grid-template-rows: repeat(36, 50px);
   #firstTitle{
     font-size: 25pt;
     grid-column: 1/span 6;
@@ -124,6 +124,7 @@ footer{
     background-image: url("../images/caroline_jci.png");
     grid-row: 9/span 7;
     grid-column: 1/span 6;
+    width: 350px;
   }
   #firstBobleTitle{
     font-size: 20pt;
@@ -207,7 +208,36 @@ footer{
     width: 150px;
     margin-left: 30%;
   }
-
+  #ca_cirkel_4{
+    background-image: url("../images/caroline_jci.png");
+    grid-row: 29/span 7;
+    grid-column: 1/span 6;
+    width: 350px;
+  }
+  #fourthBobleTitle{
+    font-size: 20pt;
+    color: white;
+    grid-column: 1/span 4;
+    margin-left: 15%;
+    grid-row-start: 31;
+    margin-top: 8%;
+  }
+  #fourthBobleText{
+    font-size: 12pt;
+    color: white;
+    grid-column: 1/span 6;
+    margin-left: 10%;
+    grid-row-start: 32;
+    margin-top: 0;
+  }
+  #fourthBobleButton{
+    @include ca_button;
+    grid-row: 33/span 1;
+    margin-top: 11%;
+    grid-column: 1/span 6;
+    margin-left: 11%;
+    width: 275px;
+  }
 
 }
 
