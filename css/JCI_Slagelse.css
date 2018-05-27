@@ -51,7 +51,7 @@ img {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 10px;
-  grid-template-rows: repeat(20, 50px); }
+  grid-template-rows: repeat(60, 50px); }
 
 h1 {
   font-family: "Libre Baskerville", Serif;
@@ -72,19 +72,19 @@ h1 {
 #projekt {
   color: white;
   font-family: "Libre Baskerville", Serif;
-  font-size: 20pt;
+  font-size: 18pt;
   font-weight: bold;
   text-align: center;
   grid-column: 1/span 3;
   grid-row: 4;
   margin-top: 10%;
+  margin-left: 3px;
   width: 140px; }
 
 .hr {
   background-color: #0097d7;
   height: 3px;
   width: 80px;
-  rotation: 45grad;
   grid-column: 3/span 2;
   grid-row: 5/ span 2; }
 
@@ -106,6 +106,98 @@ h1 {
   grid-column: 5/span 2;
   grid-row: 6;
   margin-left: -5%; }
+
+.cirkel_3 {
+  background-color: #ee7125;
+  border-radius: 50%;
+  width: 95px;
+  height: 95px;
+  grid-column: 2/span 2;
+  grid-row: 7; }
+
+#partner {
+  color: white;
+  font-family: "Libre Baskerville", Serif;
+  font-size: 12pt;
+  font-weight: bold;
+  text-align: center;
+  grid-column: 2/span 2;
+  grid-row: 8;
+  margin-top: -12px;
+  margin-left: -10px; }
+
+.cirkel_4 {
+  background-color: #ee7125;
+  border-radius: 50%;
+  width: 145px;
+  height: 145px;
+  grid-column: 4/span 3;
+  grid-row: 9; }
+
+#aktivitet {
+  color: white;
+  font-family: "Libre Baskerville", Serif;
+  font-size: 18pt;
+  font-weight: bold;
+  text-align: center;
+  grid-column: 4/span 3;
+  grid-row: 10;
+  margin-right: 15px;
+  margin-top: 6px; }
+
+.cirkel_5 {
+  background-color: #ee7125;
+  border-radius: 50%;
+  width: 115px;
+  height: 115px;
+  grid-column: 1/span 2;
+  grid-row: 11;
+  margin-top: -12px; }
+
+#bestyrrelse {
+  color: white;
+  font-family: "Libre Baskerville", Serif;
+  font-size: 12pt;
+  font-weight: bold;
+  text-align: center;
+  grid-column: 1/span 2;
+  grid-row-end: 13;
+  margin-left: 7px;
+  margin-top: -30px; }
+
+h2 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 20pt;
+  font-weight: bold; }
+
+#projekttext, #medlemstext, #partnertext {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 12pt;
+  width: 240px; }
+
+#projektoverskrift {
+  grid-column: 2/span 2;
+  grid-row: 14; }
+
+#projekttext {
+  grid-column: 2/span 3;
+  grid-row: 15/span 7; }
+
+#medlemsoverskrift {
+  grid-column: 2/span 2;
+  grid-row: 23; }
+
+#medlemstext {
+  grid-column: 2/span 3;
+  grid-row: 24/span 7; }
+
+#partneroverskrift {
+  grid-column: 2/span 2;
+  grid-row: 32; }
+
+#partnertext {
+  grid-column: 2/span 3;
+  grid-row: 33/span 7; }
 
 footer {
   background-color: #0097d7;
