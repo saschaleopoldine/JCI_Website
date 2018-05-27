@@ -49,6 +49,17 @@ $overlay: rgba(93, 144, 183, 0.5);
   display: -webkit-flex;
 }
 
+@mixin ca_button{
+  height: 30px;
+  background-color: $orangePrimary;
+  border: none;
+  a{
+    text-decoration: none;
+    color: white;
+    font-size: 18pt;
+  }
+}
+
 body{
   background-color: $baggrund;
 }
@@ -118,39 +129,76 @@ footer{
     font-size: 20pt;
     color: white;
     grid-column: 2/span 4;
-    grid-row-start: 12;
-    margin-top: 15%;
+    grid-row-start: 11;
+    margin-top: 5%;
   }
   #firstBobleText{
     font-size: 12pt;
     color: white;
     grid-column: 2/span 4;
-    grid-row-start: 13;
-    margin-top: 10%;
+    grid-row-start: 12;
+    margin-top: 0;
+  }
+  #firstBobleButton{
+    @include ca_button;
+    grid-row: 14/span 1;
+    grid-column: 2/span 4;
   }
   #ca_cirkel_2{
     background-image: url("../images/caroline_aktiviteter.png");
-    grid-row: 17/span 4;
-    grid-column-start: 1;
-    grid-column-end: 6;
-    width: 200px;
+    grid-row: 17/span 5;
+    grid-column: 1/span 5;
+    width: 250px;
   }
-  #secondBobelTitle{
+  #secondBobleTitle{
     font-size: 20pt;
     color: white;
-    grid-column: 1/span 3;
-    margin-left: 17%;
+    grid-column: 2/span 3;
     grid-row-start: 17;
     margin-top: 20%;
   }
   #secondBobleText{
     font-size: 12pt;
     color: white;
-    grid-column: 1/span 3;
+    grid-column: 1/span 4;
     grid-row-start: 18;
     margin-top: 10%;
-    margin-left: 17%;
   }
+  #secondBobleButton{
+    @include ca_button;
+    grid-row: 20/span 1;
+    grid-column: 1/span 2;
+  }
+  #ca_cirkel_3{
+    background-image: url("../images/caroline_partner.png");
+    grid-row: 23/span 5;
+    grid-column: 2/span 5;
+    width: 250px;
+  }
+  #thirdBobleTitle{
+    font-size: 20pt;
+    color: white;
+    grid-column: 3/span 3;
+    margin-left: 20%;
+    grid-row-start: 22;
+    margin-top: 20%;
+  }
+  #thirdBobleText{
+    font-size: 12pt;
+    color: white;
+    grid-column: 3/span 4;
+    grid-row-start: 23;
+    margin-top: 10%;
+    margin-left: 15.5%;
+    width: 70%;
+  }
+  #thirdBobleButton{
+    @include ca_button;
+    grid-row: 24/span 1;
+    grid-column: 5/span 2;
+  }
+
+
 }
 
 
