@@ -51,7 +51,7 @@ img {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 10px;
-  grid-template-rows: repeat(30, 50px); }
+  grid-template-rows: repeat(60, 50px); }
 
 h1 {
   font-size: 25pt;
@@ -172,7 +172,50 @@ h1 {
   cursor: pointer;
   margin: 10px;
   grid-column: 1/span 4;
-  grid-row-start: 24; }
+  grid-row-start: 24;
+  margin-top: -2%; }
+
+h2 {
+  font-size: 18pt;
+  color: black;
+  text-align: left;
+  font-family: 'Libre Baskerville', serif;
+  font-style: normal;
+  font-weight: bold;
+  grid-column: 1/span 6;
+  grid-row-start: 27;
+  margin-left: 2%;
+  margin-top: 3%; }
+  h2 a {
+    text-decoration: none;
+    color: black; }
+
+#fordelafsnit {
+  font-size: 15pt;
+  color: black;
+  text-align: left;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  grid-column: 1/span 6;
+  grid-row-start: 28;
+  margin-left: 2%; }
+
+.priserafsnitoverskrift {
+  grid-column: 1/span 6;
+  grid-row-start: 36;
+  margin-left: 2%; }
+
+#priserafsnit {
+  font-size: 15pt;
+  color: black;
+  text-align: left;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  grid-column: 1/span 6;
+  grid-row-start: 37;
+  margin-left: 2%; }
 
 footer {
   background-color: #0097d7;
