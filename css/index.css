@@ -56,7 +56,7 @@ body {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 10px;
-  grid-template-rows: repeat(36, 50px); }
+  grid-template-rows: repeat(35, 50px); }
   #mobilAlt #firstTitle {
     font-size: 25pt;
     grid-column: 1/span 6;
@@ -71,9 +71,9 @@ body {
     margin-top: 10%; }
   #mobilAlt #indledning {
     font-size: 15pt;
-    grid-column: 2/span 4;
+    grid-column: 1/span 6;
     grid-row-start: 6;
-    margin-top: 10%;
+    margin-top: 0;
     text-align: center;
     font-family: 'Merriweather Sans', sans-serif; }
   #mobilAlt .ca_cirkler {
@@ -155,14 +155,13 @@ body {
     color: white;
     grid-column: 2/span 3;
     margin-left: 20%;
-    grid-row-start: 24;
-    margin-top: 20%; }
+    grid-row-start: 24; }
   #mobilAlt #thirdBobleText {
     font-size: 12pt;
     color: white;
     grid-column: 2/span 5;
-    grid-row-start: 25;
-    margin-top: 5%;
+    grid-row-start: 24;
+    margin-top: 13%;
     margin-left: 12%;
     width: 70%; }
   #mobilAlt #thirdBobleButton {
@@ -170,7 +169,7 @@ body {
     background-color: #f37121;
     border: none;
     grid-row: 26/span 1;
-    margin-top: 20%;
+    margin-top: 10%;
     grid-column: 2/span 3;
     width: 150px;
     margin-left: 30%; }
@@ -182,30 +181,32 @@ body {
     background-image: url("../images/caroline_jci.png");
     grid-row: 29/span 7;
     grid-column: 1/span 6;
-    width: 350px; }
+    width: 280px;
+    height: 280px; }
   #mobilAlt #fourthBobleTitle {
     font-size: 20pt;
     color: white;
     grid-column: 1/span 4;
     margin-left: 15%;
-    grid-row-start: 31;
+    grid-row-start: 30;
     margin-top: 8%; }
   #mobilAlt #fourthBobleText {
     font-size: 12pt;
     color: white;
     grid-column: 1/span 6;
     margin-left: 10%;
-    grid-row-start: 32;
+    grid-row-start: 31;
     margin-top: 0; }
   #mobilAlt #fourthBobleButton {
     height: 30px;
     background-color: #f37121;
     border: none;
-    grid-row: 33/span 1;
-    margin-top: 11%;
-    grid-column: 1/span 6;
-    margin-left: 11%;
-    width: 275px; }
+    grid-row: 32/span 1;
+    margin-top: 18%;
+    grid-column: 2/span 4;
+    margin-left: 2%;
+    width: 175px;
+    height: 60px; }
     #mobilAlt #fourthBobleButton a {
       text-decoration: none;
       color: white;
@@ -228,6 +229,80 @@ footer {
     footer #some i {
       margin: 3px 0; }
 
+@media screen and (min-width: 370px) {
+  #mobilAlt {
+    grid-template-rows: repeat(37, 50px); }
+    #mobilAlt #slagelseTitle {
+      margin-top: 0; }
+    #mobilAlt #indledning {
+      grid-column: 2/span 4; }
+    #mobilAlt #ca_cirkel_1 {
+      width: 100%;
+      height: 350px; }
+    #mobilAlt #firstBobleTitle {
+      grid-row-start: 12;
+      margin-top: 10%; }
+    #mobilAlt #firstBobleText {
+      margin-top: 5%;
+      grid-row-start: 13; }
+    #mobilAlt #firstBobleButton {
+      margin-top: 10%;
+      grid-row-start: 14; }
+    #mobilAlt #ca_cirkel_2 {
+      grid-row-start: 18;
+      height: 220px;
+      width: 220px; }
+    #mobilAlt #secondBobleTitle {
+      grid-row-start: 18;
+      margin-left: 13%; }
+    #mobilAlt #secondBobleText {
+      grid-row-start: 19;
+      grid-column: 1/span 4;
+      margin-top: 8%; }
+    #mobilAlt #secondBobleButton {
+      grid-row-start: 21;
+      margin-left: 12%;
+      width: 165px; }
+    #mobilAlt #ca_cirkel_3 {
+      grid-column: 3/span 3;
+      grid-row-start: 24;
+      height: 220px;
+      width: 220px; }
+    #mobilAlt #thirdBobleTitle {
+      grid-column: 3/span 3;
+      margin-left: 21%;
+      margin-top: 22%; }
+    #mobilAlt #thirdBobleText {
+      grid-row-start: 25;
+      grid-column: 3/span 4;
+      margin-left: 15%;
+      margin-top: 8%;
+      width: 80%; }
+    #mobilAlt #thirdBobleButton {
+      grid-row-start: 27;
+      margin-top: 0;
+      grid-column: 3/span 3;
+      margin-left: 20%; }
+    #mobilAlt #ca_cirkel_4 {
+      grid-row-start: 30;
+      width: 100%;
+      height: 350px; }
+    #mobilAlt #fourthBobleTitle {
+      grid-row-start: 31;
+      margin-left: 10%;
+      margin-top: 22%; }
+    #mobilAlt #fourthBobleText {
+      grid-row-start: 32;
+      margin-top: 10%;
+      margin-left: 7%;
+      width: 300px; }
+    #mobilAlt #fourthBobleButton {
+      grid-row-start: 34;
+      grid-column: 1/span 6;
+      width: 275px;
+      height: 30px;
+      margin-left: 9%;
+      margin-top: 10%; } }
 @media screen and (min-width: 1200px) {
   .web {
     display: inline; }
