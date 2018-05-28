@@ -254,13 +254,12 @@ h2 {
   justify-content: space-around; }
 
 .bestyrelsesmedlem {
-  justify-content: center; }
-
-.round {
-  width: 85px;
-  height: 85px;
-  border-radius: 50%;
-  border: 2px solid #ee7125; }
+  text-align: center; }
+  .bestyrelsesmedlem .round {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: 2px solid #ee7125; }
 
 footer {
   background-color: #0097d7;
