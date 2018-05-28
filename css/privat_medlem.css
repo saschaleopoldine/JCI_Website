@@ -404,6 +404,14 @@ footer {
     margin-top: -10%;
     margin-left: 23%; }
 
+  .line {
+    height: 520%;
+    -ms-transform: rotate(115deg);
+    -webkit-transform: rotate(115deg);
+    transform: rotate(115deg);
+    margin-left: 60%;
+    margin-top: -8%; }
+
   .priser {
     grid-column: 2/span 5;
     grid-row-start: 8;
@@ -422,6 +430,17 @@ footer {
     margin-left: -14.5%;
     margin-top: -85%; }
 
+  .line3 {
+    width: 5px;
+    height: 820%;
+    -ms-transform: rotate(55deg);
+    -webkit-transform: rotate(55deg);
+    transform: rotate(55deg);
+    grid-column: 1/span 6;
+    grid-row-start: 9;
+    margin-left: 65%;
+    margin-top: -5%; }
+
   .studierabat {
     grid-column: 1/span 6;
     grid-row-start: 12;
@@ -437,6 +456,14 @@ footer {
   .studierabatikon {
     margin-left: 5%;
     margin-top: -35%; }
+
+  .line2 {
+    height: 595%;
+    -ms-transform: rotate(110deg);
+    -webkit-transform: rotate(110deg);
+    transform: rotate(110deg);
+    margin-left: 60%;
+    margin-top: -3%; }
 
   .chef {
     grid-column: 4/span 3;
@@ -526,11 +553,30 @@ footer {
     margin-top: -30%;
     margin-left: 30%; }
 
+  .line {
+    height: 700%;
+    -ms-transform: rotate(110deg);
+    -webkit-transform: rotate(110deg);
+    transform: rotate(110deg);
+    margin-left: 60%;
+    margin-top: -15%; }
+
   .priser {
     margin-left: 81%; }
 
   #circlepriser {
     margin-left: 72%; }
+
+  .line3 {
+    width: 5px;
+    height: 1020%;
+    -ms-transform: rotate(63deg);
+    -webkit-transform: rotate(63deg);
+    transform: rotate(63deg);
+    grid-column: 1/span 6;
+    grid-row-start: 9;
+    margin-left: 65%;
+    margin-top: -15%; }
 
   .studierabat {
     grid-column: 1/span 6;
@@ -546,6 +592,11 @@ footer {
   .studierabatikon {
     margin-left: 5%;
     margin-top: -35%; }
+
+  .line2 {
+    height: 750%;
+    margin-left: 55%;
+    margin-top: -10%; }
 
   .chef {
     grid-column: 4/span 3;
