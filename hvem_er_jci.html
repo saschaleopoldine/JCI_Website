@@ -66,6 +66,8 @@
 
     <img class="world" src="images/world-icon4.png" height="99" width="200"/>
 
+    <div class="slagelsetekst"><p>ebfærbværiubv<br>urbvvbirbvilbr<br>gjtbnjktbkjtkjjktbnkj<br>rvnirnvotnbotnbol</p></div>
+
     <div class="button1"><h4>Se mere</h4></div>
 
     <div id="circle2">
@@ -74,11 +76,11 @@
 
     <div class="globalt"><h2>JCI Globalt</h2></div>
 
+    <div class="globaltekst"><p>ebfærbværiubv<br>urbvvbirbvilbr<br>gjtbnjktbkjtkjjktbnkj<br>rvnirnvotnbotnbol</p></div>
+
     <div class="button2"><h4>Se mere</h4></div>
 
 </div>
-
-
 
 <footer>
     <p>
@@ -95,6 +97,38 @@
         <i class="fa fab fa-linkedin fa-2x"></i>
     </div>
 </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".dk").click(function(){
+            $(".dk").hide();
+        });
+        $(".dk").click(function(){
+            $(".slagelsetekst").show();
+        });
+        $(".slagelsetekst").click(function(){
+            $(".dk").show();
+        });
+        $(".slagelsetekst").click(function(){
+            $(".slagelsetekst").hide();
+        });
+        $(".world").click(function(){
+            $(".world").hide();
+        });
+        $(".world").click(function(){
+            $(".globaltekst").show();
+        });
+        $(".globaltekst").click(function(){
+            $(".world").show();
+        });
+        $(".globaltekst").click(function(){
+            $(".globaltekst").hide();
+        });
+    });
+
+</script>
 
 
 
@@ -136,10 +170,6 @@
 </div>
 
 
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 
 <script type="text/javascript">

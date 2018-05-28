@@ -22,8 +22,20 @@ p {
   margin: 0;
   padding: 0;
   font-family: "Merriweather Sans", sans-serif;
-  font-size: 12pt;
-  color: white; }
+  font-size: 12pt; }
+
+.slagelsetekst {
+  color: black;
+  grid-column: 3/span 2;
+  grid-row-start: 5;
+  margin-top: 15px;
+  display: none; }
+
+.globaltekst {
+  color: black;
+  grid-column: 3/span 2;
+  grid-row-start: 15;
+  display: none; }
 
 img {
   display: block; }
@@ -41,7 +53,7 @@ img {
   width: 160%;
   height: auto;
   grid-column: 3/span 2;
-  grid-row-start: 14;
+  grid-row-start: 15;
   margin-top: -30px;
   margin-left: -30px; }
 
@@ -69,7 +81,7 @@ img {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 10px;
-  grid-template-rows: repeat(19, 50px); }
+  grid-template-rows: repeat(20, 50px); }
   #mobilAlt h1 {
     font-family: 'Libre Baskerville', serif;
     font-size: 25pt;
@@ -97,7 +109,7 @@ img {
     text-align: center; }
   #mobilAlt .globalt {
     grid-column: 1/span 6;
-    grid-row-start: 16;
+    grid-row-start: 17;
     margin-top: 25px;
     text-align: center; }
   #mobilAlt .button1 {
@@ -112,7 +124,7 @@ img {
     width: 110px;
     height: 30px;
     grid-column: 3/span 2;
-    grid-row-start: 18;
+    grid-row-start: 19;
     margin-left: -2px; }
 
 #circle1 {
@@ -130,7 +142,7 @@ img {
   height: 200px;
   border: 3px solid #f37121;
   grid-column: 2/span 5;
-  grid-row-start: 12;
+  grid-row-start: 13;
   margin-left: 10px; }
 
 footer {
