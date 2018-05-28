@@ -51,7 +51,7 @@ img {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 10px;
-  grid-template-rows: repeat(60, 50px); }
+  grid-template-rows: repeat(54, 50px); }
 
 h1 {
   font-family: "Libre Baskerville", Serif;
@@ -168,36 +168,99 @@ h1 {
 h2 {
   font-family: 'Libre Baskerville', serif;
   font-size: 20pt;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-left: -10px; }
 
-#projekttext, #medlemstext, #partnertext, #aktivitettext {
+#projekttext, #medlemstext, #partnertext, #aktivitettext, #bestyrelsestext {
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 12pt;
-  width: 240px; }
+  width: 250px;
+  margin-left: -10px; }
 
-#projektoverskrift {
-  grid-column: 2/span 2;
-  grid-row: 14; }
+#projektelement {
+  grid-column: 1/span 6;
+  grid-row: 14/span 8;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 50px); }
+  #projektelement #projektoverskrift {
+    grid-column: 2/span 3;
+    grid-row: 1; }
+  #projektelement #projekttext {
+    grid-column: 2/span 3;
+    grid-row: 2/span 7; }
 
-#projekttext {
-  grid-column: 2/span 3;
-  grid-row: 15/span 7; }
+#medlemselement {
+  grid-column: 1/span 6;
+  grid-row: 22/span 8;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 50px); }
+  #medlemselement #medlemsoverskrift {
+    grid-column: 2/span 3;
+    grid-row: 1; }
+  #medlemselement #medlemstext {
+    grid-column: 2/span 3;
+    grid-row: 2/span 7; }
 
-#medlemsoverskrift {
-  grid-column: 2/span 2;
-  grid-row: 23; }
+#partnerelement {
+  grid-column: 1/span 6;
+  grid-row: 31/span 8;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 50px); }
+  #partnerelement #partneroverskrift {
+    grid-column: 2/span 3;
+    grid-row: 1; }
+  #partnerelement #partnertext {
+    grid-column: 2/span 3;
+    grid-row: 2/span 7; }
 
-#medlemstext {
-  grid-column: 2/span 3;
-  grid-row: 24/span 7; }
+#aktivitetelement {
+  grid-column: 1/span 6;
+  grid-row: 40/span 8;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 50px); }
+  #aktivitetelement #aktivitetoverskrift {
+    grid-column: 2/span 3;
+    grid-row: 1; }
+  #aktivitetelement #aktivitettext {
+    grid-column: 2/span 3;
+    grid-row: 2/span 7; }
 
-#partneroverskrift {
-  grid-column: 2/span 2;
-  grid-row: 32; }
+#bestyrelseselement {
+  grid-column: 1/span 6;
+  grid-row: 49/span 8;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 50px); }
+  #bestyrelseselement #bestyrelseoverskrift {
+    grid-column: 2/span 3;
+    grid-row: 1;
+    width: 260px; }
+  #bestyrelseselement #bestyrelsestext {
+    grid-column: 2/span 3;
+    grid-row: 2/span 2; }
+  #bestyrelseselement .fa-angle-down {
+    grid-column: 4/span 1;
+    grid-row: 5;
+    margin-left: -15px;
+    margin-top: -10px; }
 
-#partnertext {
-  grid-column: 2/span 3;
-  grid-row: 33/span 7; }
+.flex {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around; }
+
+.bestyrelsesmedlem {
+  justify-content: center; }
+
+.round {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  border: 2px solid #ee7125; }
 
 footer {
   background-color: #0097d7;

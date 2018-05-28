@@ -104,7 +104,7 @@ $overlay: rgba(93, 144, 183, 0.5);
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 10px;
-  grid-template-rows: repeat(60, 50px);
+  grid-template-rows: repeat(54, 50px);
 }
 
 h1{
@@ -240,60 +240,145 @@ h1{
 
 h2{
   @include undertitle;
+  margin-left: -10px;
 }
 
-#projekttext, #medlemstext, #partnertext, #aktivitettext{
+#projekttext, #medlemstext, #partnertext, #aktivitettext, #bestyrelsestext{
   @include undertext;
-  width: 240px;
-}
-
-
-
-#projektoverskrift{
-  grid-column: 2/span 2;
-  grid-row: 14;
-}
-
-#projekttext{
-  grid-column: 2/span 3;
-  grid-row: 15/span 7;
+  width: 250px;
+  margin-left: -10px;
 }
 
 
 
 
-#medlemsoverskrift{
-  grid-column: 2/span 2;
-  grid-row: 23;
-}
-
-#medlemstext{
-  grid-column: 2/span 3;
-  grid-row: 24/span 7;
-}
-
-
-
-#partneroverskrift{
-  grid-column: 2/span 2;
-  grid-row: 32;
-}
-
-#partnertext{
-  grid-column: 2/span 3;
-  grid-row: 33/span 7;
+#projektelement{
+  grid-column: 1/span 6;
+  grid-row: 14/span 8;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 50px);
+  #projektoverskrift{                 
+    grid-column: 2/span 3;            
+    grid-row: 1;
+  }                                                                       
+  #projekttext{                       
+    grid-column: 2/span 3;            
+    grid-row: 2/span 7;
+  }                                                                       
 }
 
 
 
-#aktivitetoverskrift{
-grid-column: ;
-grid-row: ;
+
+#medlemselement {
+  grid-column: 1/span 6;
+  grid-row: 22/span 8;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 50px);
+  #medlemsoverskrift{            
+    grid-column: 2/span 3;       
+    grid-row: 1;
+  }                              
+                                 
+  #medlemstext{                  
+    grid-column: 2/span 3;       
+    grid-row: 2/span 7;
+  }                                                            
 }
 
-#aktivitettext{
 
+
+
+
+#partnerelement {
+  grid-column: 1/span 6;
+  grid-row: 31/span 8;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 50px);
+  #partneroverskrift {
+    grid-column: 2/span 3;
+    grid-row: 1;
+  }
+  #partnertext {
+    grid-column: 2/span 3;
+    grid-row: 2/span 7;
+  }
 }
+
+
+
+
+
+#aktivitetelement {
+  grid-column: 1/span 6;
+  grid-row: 40/span 8;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 50px);
+  #aktivitetoverskrift {
+    grid-column: 2/span 3;
+    grid-row: 1;
+  }
+  #aktivitettext {
+    grid-column: 2/span 3;
+    grid-row: 2/span 7;
+  }
+}
+
+
+
+
+
+#bestyrelseselement {
+  grid-column: 1/span 6;
+  grid-row: 49/span 8;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 50px);
+  #bestyrelseoverskrift {
+    grid-column: 2/span 3;
+    grid-row: 1;
+    width: 260px;
+  }
+  #bestyrelsestext {
+    grid-column: 2/span 3;
+    grid-row: 2/span 2;
+  }
+  .fa-angle-down {
+    grid-column: 4/span 1;
+    grid-row: 5;
+    margin-left: -15px;
+    margin-top: -10px;
+  }
+}
+
+
+
+
+.flex{
+  @include flex;
+  justify-content: space-around;
+}
+
+
+.bestyrelsesmedlem{
+  justify-content: center;
+}
+
+
+.round{
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  border: 2px solid $orange;
+}
+
+
+
+
 
 
 
