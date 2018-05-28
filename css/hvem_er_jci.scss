@@ -318,6 +318,53 @@ footer{
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
+  #mobilAlt {
+    .slagelse {
+      grid-column: 1/span 2;
+      grid-row-start: 4;
+      margin-left: 70px;
+      margin-top: 50px;
+    }
+    .globalt {
+      grid-column: 5/span 2;
+      grid-row-start: 12;
+      margin-top: 50px;
+      margin-left: -50px;
+    }
+    .button1{
+      background-color: $orangePrimary;
+      width: 110px;
+      height: 30px;
+      grid-column: 3/span 2;
+      grid-row-start: 9;
+      margin-left: 50px;
+      margin-top: 20px;
+    }
+    .button2{
+      background-color: $orangePrimary;
+      width: 110px;
+      height: 30px;
+      grid-column: 1/span 2;
+      grid-row-start: 17;
+      margin-left: 70px;
+    }
+    .slagelsetekst{
+      color: black;
+      grid-column: 3/span 4;
+      grid-row-start: 6;
+      margin-top: 15px;
+      margin-left: 50px;
+      display: none;
+    }
+    .globaltekst{
+      color: black;
+      grid-column: 1/span 2;
+      grid-row-start: 15;
+      margin-top: -30px;
+      margin-left: 50px;
+      display: none;
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -327,7 +374,7 @@ footer{
     display: inline;
   }
 
-  .mobil, #mobilAlt, #menuMobil, footer{
+  .mobil, #menuMobil, footer{
     display: none;
   }
 
@@ -348,17 +395,143 @@ footer{
     }
   }
 
-  #grid{
+  #mobilAlt{
     padding: 70px 50px 50px 0;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(100, 50px);
     grid-column-gap: 20px;
     height: 600px;
     width: 100%;
+    h1{
+      font-family: 'Libre Baskerville', serif;
+      font-size: 25pt;
+      grid-column: 5/span 2;
+      grid-row-start: 1;
+      text-align: center;
+    }
+  }
+
+  p {
+    margin: 0; // Ingen ydre margen fra paragraffer
+    padding: 0; // Ingen indre margen fra paragraffer
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 12pt;
+  }
+
+  .slagelsetekst{
+    color: black;
+    grid-column: 3/span 2;
+    grid-row-start: 5;
+    margin-top: 15px;
+    display: none;
+  }
+
+  .globaltekst{
+    color: black;
+    grid-column: 3/span 2;
+    grid-row-start: 15;
+    margin-top: -30px;
+    margin-left: -30px;
+    display: none;
+  }
+
+  img{
+    display: block;
+  }
+
+  .dk {
+    display: block; // Billeder er et element (laver linjeskift)
+    width: 100%;
+    height: auto;
+    grid-column: 3/span 2;
+    grid-row-start: 5;
+    margin-top: 15px;
+  }
+
+  .world{
+    display: block;
+    width: 160%;
+    height: auto;
+    grid-column: 3/span 2;
+    grid-row-start: 15;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+
+  @mixin flex{
+    display: flex;
+    display: -webkit-flex;
   }
 
 
-}
+    h2{
+      font-family: 'Libre Baskerville', serif;
+      font-size: 20pt;
+    }
+    h3{
+      font-family: "Merriweather Sans";
+      font-size: 15pt;
+      grid-column: 1/span 6;
+      grid-row-start: 3;
+      text-align: center;
+    }
+    h4{
+      font-family: "Merriweather Sans";
+      font-size: 18pt;
+      color: white;
+      text-align: center;
+    }
+    .slagelse{
+      grid-column: 1/span 6;
+      grid-row-start: 9;
+      margin-top: 25px;
+      text-align: center;
+    }
+    .globalt{
+      grid-column: 1/span 6;
+      grid-row-start: 17;
+      margin-top: 25px;
+      text-align: center;
+    }
+    .button1{
+      background-color: $orangePrimary;
+      width: 110px;
+      height: 30px;
+      grid-column: 3/span 2;
+      grid-row-start: 11;
+      margin-left: -2px;
+    }
+    .button2{
+      background-color: $orangePrimary;
+      width: 110px;
+      height: 30px;
+      grid-column: 3/span 2;
+      grid-row-start: 19;
+      margin-left: -2px;
+    }
+  }
+
+  #circle1{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border: 3px solid $orangePrimary;
+    grid-column: 2/span 5;
+    grid-row-start: 5;
+    margin-left: 10px;
+  }
+
+  #circle2{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border: 3px solid $orangePrimary;
+    grid-column: 2/span 5;
+    grid-row-start: 13;
+    margin-left: 10px;
+  }
+
 
 
 @media print {
