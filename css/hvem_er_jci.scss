@@ -386,7 +386,7 @@ footer{
 
   #left_menu{
     background-color: $bluePrimary;
-    height: 150vh;
+    height: 100vh;
     width: 300px;
     #logo{
       width: 65%;
@@ -406,7 +406,7 @@ footer{
     h1{
       font-family: 'Libre Baskerville', serif;
       font-size: 25pt;
-      grid-column: 5/span 3;
+      grid-column: 5/span 2;
       grid-row-start: 1;
       text-align: center;
     }
@@ -441,28 +441,11 @@ footer{
       grid-column: 5/span 2;
       grid-row-start: 11;
     }
-
     .globalt {
-      grid-column: 8/span 2;
+      grid-column: 5/span 2;
       grid-row-start: 12;
       margin-top: 50px;
-      margin-left: -40px;
-    }
-    .button2{
-      background-color: $orangePrimary;
-      width: 110px;
-      height: 30px;
-      grid-column: 2/span 2;
-      grid-row-start: 19;
-      margin-left: 50px;
-    }
-    .globaltekst{
-      color: black;
-      grid-column: 2/span 2;
-      grid-row-start: 15;
-      margin-top: -30px;
-      margin-left: 50px;
-      display: none;
+      margin-left: -50px;
     }
   }
 
@@ -472,6 +455,8 @@ footer{
     font-family: "Merriweather Sans", sans-serif;
     font-size: 12pt;
   }
+
+
 
   .globaltekst{
     color: black;
@@ -492,24 +477,26 @@ footer{
     height: auto;
     grid-column: 3/span 2;
     grid-row-start: 5;
-    margin-top: 65px;
+    margin-top: 55px;
     margin-left: -15px;
   }
 
   .world{
     display: block;
-    width: 55%;
+    width: 60%;
     height: auto;
     grid-column: 7/span 5;
-    grid-row-start: 14;
-    margin-left: 90px;
-    margin-top: 90px;
+    grid-row-start: 13;
+    margin-top: -30px;
+    margin-left: -30px;
   }
 
   @mixin flex{
     display: flex;
     display: -webkit-flex;
   }
+
+
 
     h4{
       font-family: "Merriweather Sans";
@@ -522,6 +509,21 @@ footer{
       grid-row-start: 9;
       margin-top: 25px;
       text-align: center;
+    }
+    .globalt{
+      grid-column: 1/span 6;
+      grid-row-start: 17;
+      margin-top: 25px;
+      text-align: center;
+    }
+
+    .button2{
+      background-color: $orangePrimary;
+      width: 110px;
+      height: 30px;
+      grid-column: 3/span 2;
+      grid-row-start: 19;
+      margin-left: -2px;
     }
   }
 
@@ -541,9 +543,11 @@ footer{
     height: 300px;
     border: 3px solid $orangePrimary;
     grid-column: 7/span 5;
-    grid-row-start: 14;
+    grid-row-start: 13;
     margin-left: 70px;
   }
+
+
 
 @media print {
   // Alt der gælder for print specifikt
