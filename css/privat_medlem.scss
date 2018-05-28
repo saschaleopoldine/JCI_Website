@@ -104,7 +104,7 @@ footer{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 10px;
-  grid-template-rows: repeat(70, 50px);
+  grid-template-rows: repeat(57, 50px);
 }
 
 
@@ -245,13 +245,15 @@ margin-left: -20px;
   font-style: normal;
   font-weight: bold;
   grid-column: 1/span 6;
-  grid-row-start:12;
+  grid-row-start:11;
   margin-top: 3%;
   a{
     text-decoration: none;
     color: black;
     cursor: pointer;
   }
+  margin-left: 10%;
+
 }
 
 
@@ -262,7 +264,7 @@ margin-left: -20px;
   background-color: #f9f7f4;
   border: 4px solid #0097d7;
   grid-column: 1/span 6;
-  grid-row-start:13;
+  grid-row-start:12;
 }
 
 
@@ -293,7 +295,7 @@ margin-left: -20px;
   font-style: normal;
   font-weight: bold;
   grid-column: 4/span 3;
-  grid-row-start:19;
+  grid-row-start:15;
   margin-top: 15%;
   margin-left: 25%;
   a{
@@ -312,7 +314,7 @@ margin-left: -20px;
   background-color: #f9f7f4;
   border: 4px solid #0097d7;
   grid-column: 2/span 5;
-  grid-row-start: 21;
+  grid-row-start: 17;
   margin-left: 57%;
 
 }
@@ -330,7 +332,7 @@ margin-left: -20px;
 .meld_dig_ind{
   @include button;
   grid-column: 1/span 4;
-  grid-row-start: 24;
+  grid-row-start: 19;
   margin-top: -2%;
 
 }
@@ -352,7 +354,7 @@ h2{
   font-style: normal;
   font-weight: bold;
   grid-column: 1/span 6;
-  grid-row-start: 27;
+  grid-row-start: 22;
   margin-left: 2%;
   margin-top: 3%;
 
@@ -361,7 +363,7 @@ h2{
 #fordelafsnit{
   @include afsnit;
   grid-column: 1/span 6;
-  grid-row-start: 28;
+  grid-row-start: 23;
   margin-left: 2%;
 }
 
@@ -378,14 +380,14 @@ h2{
 
 .priserafsnitoverskrift{
   grid-column: 1/span 6;
-  grid-row-start: 36;
+  grid-row-start: 31;
   margin-left: 2%;
 }
 
 #priserafsnit{
   @include afsnit;
   grid-column: 1/span 6;
-  grid-row-start: 37;
+  grid-row-start: 32;
   margin-left: 2%;
 }
 
@@ -395,14 +397,14 @@ h2{
 
 .studierabatafsnitoverskrift{
   grid-column: 1/span 6;
-  grid-row-start: 45;
+  grid-row-start: 40;
   margin-left: 2%;
 }
 
 #studierabatafsnit{
   @include afsnit;
   grid-column: 1/span 6;
-  grid-row-start: 46;
+  grid-row-start: 41;
   margin-left: 2%;
 }
 
@@ -415,21 +417,16 @@ h2{
 
 .fådinchefafsnitoverskrift{
   grid-column: 1/span 6;
-  grid-row-start: 54;
+  grid-row-start: 49;
   margin-left: 2%;
 }
 
 #fådinchefafsnit{
   @include afsnit;
   grid-column: 1/span 6;
-  grid-row-start: 55;
+  grid-row-start: 50;
   margin-left: 2%;
 }
-
-
-
-
-
 
 
 
@@ -463,9 +460,170 @@ footer{
 
 // Variabler - med størrelser
 
+
+@media screen and (min-width: 667px) {
+
+//---------------------------- Circkle Fordel_lille_Ipad---------------------->
+
+  #circle {
+    width: 43%;
+    height: 520%;
+    border-radius: 100%;
+  }
+
+
+  .fordelikon{
+    margin-left: -25px;
+}
+
+
+  .Fordele{
+    grid-column: 1/span 3;
+    grid-row-start:4;
+    margin-top: -10%;
+    margin-left: 23%;
+  }
+
+//---------------------------- Circkle Fordel_lille_Ipad---------------------->
+
+
+
+//---------------------------- Circkle Priser_lille_Ipad---------------------->
+
+
+
+  .priser{
+    grid-column: 2/span 5;
+    grid-row-start:8;
+    margin-left: 76%;
+    margin-top: 10px;
+
+
+  }
+
+
+  #circlepriser {
+    width: 170px;
+    height: 170px;
+    border-radius: 95px;
+    grid-column: 2/span 5;
+    grid-row-start: 9;
+    margin-left: 67.5%;
+  }
+
+
+  .priserikon{
+    margin-left: -14.5%;
+    margin-top: -85%;
+  }
+
+
+//---------------------------- Circkle Priser_lille_Ipad---------------------->
+
+
+
+
+//---------------------------- Circkle Studierabat_lille_Ipad---------------------->
+
+
+
+
+  .studierabat{
+    grid-column: 1/span 6;
+    grid-row-start:12;
+    margin-top: 1%;
+    margin-left: 10%;
+
+  }
+
+
+  #circlestudierabat {
+    width: 40%;
+    height: 500%;
+    border-radius: 90%;
+    grid-row-start:13;
+  }
+
+
+  .studierabatikon{
+    margin-left: 5%;
+    margin-top: -35%;
+  }
+
+
+  //---------------------------- Circkle Studierabat_lille_Ipad---------------------->
+
+
+
+
+
+
+
+
+
+//---------------------------- Få din chef_lille_Ipad-------------------------------->
+
+
+  .chef{
+    grid-column: 4/span 3;
+    grid-row-start:15;
+    margin-top: 10%;
+    margin-left: 50%;
+  }
+
+
+  #circlechef {
+    width: 160px;
+    height: 160px;
+    border-radius: 90px;
+    margin-left: 69.5%;
+  }
+
+
+  .chefikon{
+    margin-left: -30%;
+    margin-top: -45%;
+  }
+
+//---------------------------- Få din chef_lille_Ipad-------------------------------->
+
+
+
+  .meld_dig_ind {
+    background-color: #f37121;
+    color: white;
+    width: 150px;
+    padding: 2px 9px;
+    font-size: 18pt;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+}
+
+
+
+
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
 }
+
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
