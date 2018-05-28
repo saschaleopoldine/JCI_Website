@@ -260,6 +260,8 @@ h2 {
     height: 85px;
     border-radius: 50%;
     border: 2px solid #ee7125; }
+    .bestyrelsesmedlem .round .r_1 {
+      background-image: url("../images/caroline.png"); }
 
 footer {
   background-color: #0097d7;
