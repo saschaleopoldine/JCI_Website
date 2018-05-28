@@ -397,7 +397,8 @@ margin-left: -20px;
   @include button;
   grid-column: 1/span 4;
   grid-row-start: 19;
-  margin-top: -2%;
+  margin-left: 59px;
+  margin-top: 5px;
 
 }
 
@@ -532,7 +533,7 @@ h2{
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(9, 50px);
   .fådinchefafsnitoverskrift{
-    grid-column: 2/span 6;
+    grid-column: 2/span 3;
     grid-row: 8;
     margin-left: -0.5%;
   }
@@ -553,20 +554,6 @@ h2{
 }
 
 //---------------------------- Få din chef_afsnit_mobil---------------------->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -597,7 +584,69 @@ footer{
 
 
 
+@media screen and (min-width: 414px) {
 
+
+
+//---------------------------- Circkle Fordel_Iphone_Plus---------------------->
+
+
+  #circle {
+    width: 50%;
+    height: 350%;
+    border-radius: 100%;
+  }
+
+
+  .line {
+    height: 300%;
+    margin-top: -11%;
+  }
+
+//---------------------------- Circkle Fordel_Iphone_Plus---------------------->
+
+
+
+
+
+
+//---------------------------- Circkle Studierabat_Iphone_Plus---------------------->
+
+
+
+  #circlestudierabat {
+    width: 50%;}
+
+
+//---------------------------- Circkle Studierabat_Iphone_Plus---------------------->
+
+
+
+//---------------------------- Lines_Iphone_Plus---------------------->
+
+
+
+  .line2 {
+    height: 450%;
+    margin-top: -10%;
+  }
+
+
+    .line3 {
+      height: 450%;
+      margin-top: 8px;
+    }
+
+
+.meld_dig_ind{
+  margin-left: 64px;
+  margin-top: 5px;
+}
+
+//---------------------------- Lines_Iphone_Plus---------------------->
+
+
+}
 
 
 
@@ -783,6 +832,7 @@ footer{
     border: none;
     cursor: pointer;
     margin: 10px;
+    margin-left: 25%;
   }
 
 
@@ -987,7 +1037,6 @@ footer{
 
 
 
-
   .studierabat{
     grid-column: 1/span 6;
     grid-row-start:12;
@@ -1046,12 +1095,13 @@ footer{
 
 
   .meld_dig_ind {
-    margin-left: 40px;
+    margin-left: 25%;
     grid-row-start: 20;
   }
 
 
 
+//---------------------------- Fordel_tekstafsnit_stående_Ipad---------------------->
 
 
 
@@ -1069,12 +1119,61 @@ footer{
     }
   }
 
+//----------------------------  Fordel_tekstafsnit_stående_Ipad---------------------->
 
 
 
 
+//----------------------------  Pris_tekstafsnit_stående_Ipad---------------------->
 
 
+  #Pristekst{
+    grid-column: 1/span 6;
+    grid-row: 19/span 8;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 50px);
+    .priserafsnitoverskrift{
+      grid-column: 2/span 6;
+      grid-row: 9;
+      margin-left: -0.5%;
+      margin-top: -1px;
+    }
+  }
+
+
+  //----------------------------  Pris_tekstafsnit_stående_Ipad---------------------->
+
+
+
+  #studierabattekst{
+    grid-column: 1/span 6;
+    grid-row: 24/span 8;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 50px);
+    .studierabatafsnitoverskrift{
+      grid-column: 2/span 6;
+      grid-row: 9;
+      margin-left: -0.5%;
+      margin-top: -1px;
+    }
+  }
+
+
+  #fådincheftekst{
+    grid-column: 1/span 6;
+    grid-row: 29/span 8;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 50px);
+    .fådinchefafsnitoverskrift{
+      grid-column: 2/span 6;
+      grid-row: 9;
+      margin-left: -0.5%;
+      margin-top: -1px;
+    }
+  }
 
 
 }
@@ -1082,6 +1181,7 @@ footer{
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
+  
 }
 
 @media screen and (min-width: 1200px) {

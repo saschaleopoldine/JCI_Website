@@ -234,7 +234,8 @@ h1 {
   margin: 10px;
   grid-column: 1/span 4;
   grid-row-start: 19;
-  margin-top: -2%; }
+  margin-left: 59px;
+  margin-top: 5px; }
 
 #Fordeltekst {
   grid-column: 1/span 6;
@@ -345,7 +346,7 @@ h2 {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(9, 50px); }
   #fådincheftekst .fådinchefafsnitoverskrift {
-    grid-column: 2/span 6;
+    grid-column: 2/span 3;
     grid-row: 8;
     margin-left: -0.5%; }
 
@@ -389,6 +390,30 @@ footer {
     footer #some i {
       margin: 3px 0; }
 
+@media screen and (min-width: 414px) {
+  #circle {
+    width: 50%;
+    height: 350%;
+    border-radius: 100%; }
+
+  .line {
+    height: 300%;
+    margin-top: -11%; }
+
+  #circlestudierabat {
+    width: 50%; }
+
+  .line2 {
+    height: 450%;
+    margin-top: -10%; }
+
+  .line3 {
+    height: 450%;
+    margin-top: 8px; }
+
+  .meld_dig_ind {
+    margin-left: 64px;
+    margin-top: 5px; } }
 @media screen and (min-width: 667px) {
   #circle {
     width: 43%;
@@ -489,7 +514,8 @@ footer {
     font-size: 18pt;
     border: none;
     cursor: pointer;
-    margin: 10px; }
+    margin: 10px;
+    margin-left: 25%; }
 
   #Fordeltekst {
     grid-column: 1/span 6;
@@ -608,7 +634,7 @@ footer {
     margin-left: 74%; }
 
   .meld_dig_ind {
-    margin-left: 40px;
+    margin-left: 25%;
     grid-row-start: 20; }
 
   #Fordeltekst {
@@ -618,6 +644,42 @@ footer {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(9, 50px); }
     #Fordeltekst .fordelafsnitoverskrift {
+      grid-column: 2/span 6;
+      grid-row: 9;
+      margin-left: -0.5%;
+      margin-top: -1px; }
+
+  #Pristekst {
+    grid-column: 1/span 6;
+    grid-row: 19/span 8;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 50px); }
+    #Pristekst .priserafsnitoverskrift {
+      grid-column: 2/span 6;
+      grid-row: 9;
+      margin-left: -0.5%;
+      margin-top: -1px; }
+
+  #studierabattekst {
+    grid-column: 1/span 6;
+    grid-row: 24/span 8;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 50px); }
+    #studierabattekst .studierabatafsnitoverskrift {
+      grid-column: 2/span 6;
+      grid-row: 9;
+      margin-left: -0.5%;
+      margin-top: -1px; }
+
+  #fådincheftekst {
+    grid-column: 1/span 6;
+    grid-row: 29/span 8;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 50px); }
+    #fådincheftekst .fådinchefafsnitoverskrift {
       grid-column: 2/span 6;
       grid-row: 9;
       margin-left: -0.5%;
