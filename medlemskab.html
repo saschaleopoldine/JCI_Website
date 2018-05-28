@@ -76,6 +76,8 @@
             </p>
         </div>
 
+        
+
     <div class="bold2">
     </div>
         <div class="bold2tekst">
@@ -121,12 +123,23 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 <script type="text/javascript">
-    $(document).ready(function (e) {
-        $(".bold1tekst").click(function (e) {
-            $(".bold1tekst").css({"display": "none"});
-
-        //
+    $(document).ready(function(){
+        $(".bold1tekst").click(function(){
+            $(".bold1tekst").hide();
+        });
+        $(".bold1tekst").click(function(){
+            $(".bold1fuldtekst").show();
+        });
+        $(".bold1fuldtekst").click(function(){
+            $(".bold1tekst").show();
+        });
+        $(".bold1fuldtekst").click(function(){
+            $(".bold1fuldtekst").hide();
+        });
     });
+
+
+
 </script>
 
 
