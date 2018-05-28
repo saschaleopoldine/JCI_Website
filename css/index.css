@@ -21,8 +21,7 @@ li {
 p {
   margin: 0;
   padding: 0;
-  font-family: 'Merriweather Sans', sans-serif;
-  font-size: 15pt; }
+  font-family: 'Merriweather Sans', sans-serif; }
 
 img {
   display: block;
@@ -57,6 +56,8 @@ body {
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 10px;
   grid-template-rows: repeat(35, 50px); }
+  #mobilAlt p {
+    font-size: 15pt; }
   #mobilAlt #firstTitle {
     font-size: 25pt;
     grid-column: 1/span 6;
@@ -221,7 +222,7 @@ footer {
   display: -webkit-flex;
   justify-content: space-between; }
   footer p {
-    margin-top: 15px; }
+    margin-top: 12px; }
   footer #some {
     display: flex;
     display: -webkit-flex;
@@ -305,7 +306,81 @@ footer {
       margin-top: 10%; } }
 @media screen and (min-width: 410px) {
   #mobilAlt {
-    grid-template-rows: repeat(40, 50px); }
+    grid-template-rows: repeat(39, 50px); }
+    #mobilAlt #indledning {
+      grid-column: 2/span 4; }
+    #mobilAlt #ca_cirkel_1 {
+      height: 375px; }
+    #mobilAlt #firstBobleTitle {
+      grid-row-start: 13;
+      margin-top: 2%; }
+    #mobilAlt #firstBobleText {
+      margin-top: 10%;
+      grid-row-start: 13; }
+    #mobilAlt #firstBobleButton {
+      margin-top: 2%;
+      grid-row-start: 15;
+      width: 55%;
+      margin-left: 22%; }
+    #mobilAlt #ca_cirkel_2 {
+      grid-row-start: 19;
+      height: 250px;
+      width: 250px; }
+    #mobilAlt #secondBobleTitle {
+      grid-row-start: 20;
+      margin-left: 13%;
+      margin-top: 10%; }
+    #mobilAlt #secondBobleText {
+      grid-row-start: 21;
+      grid-column: 1/span 4;
+      margin-top: 0; }
+    #mobilAlt #secondBobleButton {
+      grid-row-start: 22;
+      margin-left: 15%;
+      margin-top: 7%;
+      width: 165px; }
+    #mobilAlt #ca_cirkel_3 {
+      grid-row-start: 25;
+      height: 250px;
+      width: 250px; }
+    #mobilAlt #thirdBobleTitle {
+      grid-column: 3/span 3;
+      margin-left: 20%;
+      margin-top: 17%;
+      grid-row-start: 26; }
+    #mobilAlt #thirdBobleText {
+      grid-row-start: 27;
+      grid-column: 3/span 4;
+      margin-left: 15%;
+      margin-top: 5%;
+      width: 80%; }
+    #mobilAlt #thirdBobleButton {
+      grid-row-start: 28;
+      margin-top: 15%;
+      grid-column: 3/span 3;
+      margin-left: 27%; }
+    #mobilAlt #ca_cirkel_4 {
+      grid-row-start: 31;
+      height: 375px; }
+    #mobilAlt #fourthBobleTitle {
+      grid-row-start: 33;
+      margin-left: 10%;
+      margin-top: 20%; }
+    #mobilAlt #fourthBobleText {
+      grid-row-start: 34;
+      margin-top: 8%;
+      margin-left: 7%;
+      width: 300px; }
+    #mobilAlt #fourthBobleButton {
+      grid-row-start: 36;
+      grid-column: 1/span 6;
+      width: 275px;
+      height: 30px;
+      margin-left: 13%;
+      margin-top: 5%; } }
+@media screen and (min-width: 660px) {
+  #mobilAlt {
+    grid-template-rows: repeat(39, 50px); }
     #mobilAlt #indledning {
       grid-column: 2/span 4; }
     #mobilAlt #ca_cirkel_1 {
