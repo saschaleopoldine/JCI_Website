@@ -612,7 +612,7 @@ footer{
 
   #mobilAlt{
 
-    grid-template-rows: repeat(80, 50px);
+    grid-template-rows: repeat(45, 50px);
 
     #ca_cirkel_1{
       height: 480px;
@@ -660,11 +660,13 @@ footer{
     #thirdBobleTitle{
       margin-top: 0;
       grid-row-start: 30;
+      margin-left: 22%;
     }
     #thirdBobleText{
       grid-row-start: 30;
-      width: 70%;
+      width: 60%;
       margin-top: 10%;
+      margin-left: 22%;
     }
     #thirdBobleButton{
       grid-row-start: 32;
@@ -673,21 +675,22 @@ footer{
 
     #ca_cirkel_4{
       height: 480px;
+      grid-row-start: 35;
     }
     #fourthBobleTitle{
-      grid-row-start: 39;
+      grid-row-start: 40;
       margin-left: 17%;
       margin-top: 8%;
     }
     #fourthBobleText{
-      grid-row-start: 40;
+      grid-row-start: 41;
       margin-top: 5%;
       margin-left: 17%;
       width: 70%;
     }
     #fourthBobleButton{
       margin-top: 8%;
-      grid-row-start: 41;
+      grid-row-start: 42;
       margin-left: 21%;
     }
 
