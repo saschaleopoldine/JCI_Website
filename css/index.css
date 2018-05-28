@@ -656,5 +656,102 @@ footer {
       grid-column: 2/span 5;
       width: 75%;
       margin-left: 12%; } }
+@media screen and (min-width: 1200px) {
+  #left_menu {
+    height: 195vh; }
+
+  #mobilAlt {
+    grid-template-rows: repeat(32, 50px);
+    height: auto; }
+    #mobilAlt #ca_cirkel_1 {
+      grid-column: 6/span 5;
+      height: 445px;
+      grid-row-start: 1; }
+    #mobilAlt #firstBobleTitle {
+      grid-row-start: 5;
+      margin-top: 17%;
+      grid-column: 6/span 3;
+      width: 100%;
+      margin-left: 17%; }
+    #mobilAlt #firstBobleText {
+      grid-row-start: 6;
+      margin-top: 7%;
+      grid-column: 6/span 5;
+      width: 80%;
+      margin-left: 10%; }
+    #mobilAlt #firstBobleButton {
+      grid-row-start: 8;
+      margin-top: 0;
+      grid-column: 7/span 3;
+      width: 80%;
+      margin-left: 10%; }
+    #mobilAlt #ca_cirkel_2 {
+      grid-column: 2/span 4;
+      width: 100%;
+      height: 350px;
+      grid-row-start: 9; }
+    #mobilAlt #secondBobleTitle {
+      grid-row-start: 12;
+      margin-top: 12%;
+      grid-column: 2/span 2;
+      width: 100%;
+      margin-left: 22%; }
+    #mobilAlt #secondBobleText {
+      grid-row-start: 13;
+      margin-top: 2%;
+      grid-column: 2/span 4;
+      width: 80%;
+      margin-left: 10%; }
+    #mobilAlt #secondBobleButton {
+      grid-row-start: 14;
+      margin-top: 10%;
+      grid-column: 2/span 3;
+      width: 64%;
+      margin-left: 35%; }
+    #mobilAlt #ca_cirkel_3 {
+      grid-column: 6/span 4;
+      width: 100%;
+      height: 350px;
+      grid-row-start: 16; }
+    #mobilAlt #thirdBobleTitle {
+      grid-row-start: 19;
+      margin-top: 10%;
+      grid-column: 6/span 2;
+      width: 100%;
+      margin-left: 32%; }
+    #mobilAlt #thirdBobleText {
+      grid-row-start: 20;
+      margin-top: 1%;
+      grid-column: 6/span 4;
+      width: 80%;
+      margin-left: 15%; }
+    #mobilAlt #thirdBobleButton {
+      grid-row-start: 21;
+      margin-top: 6%;
+      grid-column: 6/span 4;
+      width: 40%;
+      margin-left: 30%; }
+    #mobilAlt #ca_cirkel_4 {
+      grid-column: 2/span 5;
+      height: 445px;
+      grid-row-start: 23; }
+    #mobilAlt #fourthBobleTitle {
+      grid-row-start: 27;
+      margin-top: 17%;
+      grid-column: 2/span 3;
+      width: 100%;
+      margin-left: 17%; }
+    #mobilAlt #fourthBobleText {
+      grid-row-start: 28;
+      margin-top: 7%;
+      grid-column: 2/span 5;
+      width: 80%;
+      margin-left: 10%; }
+    #mobilAlt #fourthBobleButton {
+      grid-row-start: 30;
+      margin-top: 0;
+      grid-column: 2/span 5;
+      width: 60%;
+      margin-left: 20%; } }
 
 /*# sourceMappingURL=index.css.map */
