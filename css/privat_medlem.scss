@@ -172,6 +172,8 @@ h1{
   grid-column: 1/span 6;
   grid-row-start:4;
   margin-top: 48px;
+  z-index: 1;
+
 }
 
 .fordelikon{
@@ -184,12 +186,16 @@ margin-left: -20px;
 
 .line{
   width: 5px;
-  height: 375%;
+  height: 235%;
   background-color: #f37121;
+  -ms-transform: rotate(130deg);
+  -webkit-transform: rotate(130deg);
+  transform: rotate(130deg);
   grid-column: 1/span 6;
-  grid-row-start:7;
-  transform: rotate(-30deg);
-  margin-top: 20%;
+  grid-row-start:8;
+  margin-left: 60%;
+  margin-top: -8%;
+  z-index: -1;
 
 
 
@@ -699,7 +705,7 @@ footer{
 
 
 
-//---------------------------- Fordel_afsnit_Ipad---------------------->
+//---------------------------- Fordel_afsnit_lille_Ipad---------------------->
 
 
 
@@ -717,7 +723,7 @@ footer{
     }
   }
 
-  //---------------------------- Fordel_afsnit_Ipad---------------------->
+  //---------------------------- Fordel_afsnit_lille_Ipad---------------------->
 
 
 
@@ -728,7 +734,7 @@ footer{
 
 
 
-//---------------------------- Priser_afsnit_Ipad---------------------->
+//---------------------------- Priser_afsnit_lille_Ipad---------------------->
 
 
 
@@ -746,13 +752,13 @@ footer{
     }
   }
 
-//---------------------------- Priser_afsnit_Ipad---------------------->
+//---------------------------- Priser_afsnit_lille_Ipad---------------------->
 
 
 
 
 
-  //---------------------------- Studierabat_afsnit_Ipad---------------------->
+  //---------------------------- Studierabat_afsnit_lille_Ipad---------------------->
 
   #studierabattekst{
     grid-column: 1/span 6;
@@ -768,14 +774,14 @@ footer{
     }
   }
 
-//---------------------------- Studierabat_afsnit_Ipad---------------------->
+//---------------------------- Studierabat_afsnit_lille_Ipad---------------------->
 
 
 
 
 
 
-//---------------------------- Få din chef_afsnit_Ipad---------------------->
+//---------------------------- Få din chef_afsnit_lille_Ipad---------------------->
 
 
   #fådincheftekst{
@@ -791,15 +797,7 @@ footer{
       margin-top: -1px;
     }
   }
-
-
-
-
-
-
-
-
-
+//---------------------------- Få din chef_afsnit_lille_Ipad---------------------->
 
 
 }
@@ -809,6 +807,150 @@ footer{
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
+
+
+
+
+//---------------------------- Circle_fordel_stående_Ipad---------------------->
+
+
+  #circle {
+    width: 40%;
+    height: 520%;
+    border-radius: 100%;
+  }
+
+
+  .fordelikon{
+    margin-left: -25px;
+  }
+
+
+  .Fordele{
+    grid-column: 1/span 2;
+    grid-row-start:5;
+    margin-top: -30%;
+    margin-left: 30%;
+  }
+
+//---------------------------- Circle_fordel_stående_Ipad---------------------->
+
+
+
+
+
+
+
+
+//---------------------------- Circle_priser_stående_Ipad---------------------->
+
+
+
+
+  .priser{
+    margin-left: 81%;
+  }
+
+
+  #circlepriser {
+    margin-left: 72%;
+  }
+
+
+//---------------------------- Circle_priser_stående_Ipad---------------------->
+
+
+
+
+
+
+
+//---------------------------- Circle Studierabat_stående_Ipad---------------------->
+
+
+
+
+
+
+  .studierabat{
+    grid-column: 1/span 6;
+    grid-row-start:12;
+    margin-top: 1%;
+    margin-left: 11%;
+
+  }
+
+
+  #circlestudierabat {
+    width: 37%;
+    height: 510%;
+    border-radius: 90%;
+  }
+
+
+  .studierabatikon{
+    margin-left: 5%;
+    margin-top: -35%;
+  }
+
+
+//---------------------------- Circle Studierabat_stående_Ipad---------------------->
+
+
+
+
+
+//---------------------------- Circle chef_stående_Ipad---------------------->
+
+
+
+  .chef{
+    grid-column: 4/span 3;
+    grid-row-start:15;
+    margin-top: 10%;
+    margin-left: 60%;
+  }
+
+  #circlechef {
+    margin-left: 74%;
+  }
+
+//---------------------------- Circle chef_stående_Ipad---------------------->
+
+
+
+  .meld_dig_ind {
+    margin-left: 40px;
+    grid-row-start: 20;
+  }
+
+
+
+
+
+
+#Fordeltekst{
+    grid-column: 1/span 6;
+    grid-row: 14/span 8;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 50px);
+    .fordelafsnitoverskrift{
+      grid-column: 2/span 6;
+      grid-row: 9;
+      margin-left: -0.5%;
+      margin-top: -1px;
+    }
+  }
+
+
+
+
+
+
+
+
+
 }
 
 
