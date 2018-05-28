@@ -132,11 +132,25 @@ h1 {
   border: 4px solid #0097d7;
   grid-column: 2/span 5;
   grid-row-start: 9;
-  margin-left: 65%; }
+  margin-left: 65%;
+  z-index: 1; }
 
 .priserikon {
   margin-left: -15%;
   margin-top: -85%; }
+
+.line2 {
+  width: 5px;
+  height: 330%;
+  background-color: #f37121;
+  -ms-transform: rotate(140deg);
+  -webkit-transform: rotate(140deg);
+  transform: rotate(140deg);
+  grid-column: 1/span 6;
+  grid-row-start: 15;
+  margin-left: 57%;
+  margin-top: -10px;
+  z-index: -1; }
 
 .studierabat {
   font-size: 16pt;
@@ -160,11 +174,25 @@ h1 {
   background-color: #f9f7f4;
   border: 4px solid #0097d7;
   grid-column: 1/span 6;
-  grid-row-start: 12; }
+  grid-row-start: 12;
+  z-index: 1; }
 
 .studierabatikon {
   margin-left: 4%;
   margin-top: -40%; }
+
+.line3 {
+  width: 5px;
+  height: 330%;
+  background-color: #f37121;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  grid-column: 1/span 6;
+  grid-row-start: 9;
+  margin-left: 65%;
+  margin-top: 12%;
+  z-index: -1; }
 
 .chef {
   font-size: 16pt;
