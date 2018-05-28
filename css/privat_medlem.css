@@ -203,15 +203,24 @@ h1 {
   grid-row-start: 19;
   margin-top: -2%; }
 
+#Fordeltekst {
+  grid-column: 1/span 6;
+  grid-row: 14/span 8;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(9, 50px); }
+  #Fordeltekst .fordelafsnitoverskrift {
+    grid-column: 2/span 6;
+    grid-row: 8;
+    margin-left: -0.5%; }
+
 h2 {
-  font-size: 18pt;
+  font-size: 20pt;
   color: black;
   text-align: left;
   font-family: 'Libre Baskerville', serif;
   font-style: normal;
   font-weight: bold;
-  grid-column: 1/span 6;
-  grid-row-start: 22;
   margin-left: 2%;
   margin-top: 3%; }
   h2 a {
@@ -219,63 +228,116 @@ h2 {
     color: black; }
 
 #fordelafsnit {
-  font-size: 15pt;
+  font-size: 12pt;
   color: black;
   text-align: left;
   font-family: 'Merriweather Sans', sans-serif;
   font-style: normal;
   font-weight: lighter;
-  grid-column: 1/span 6;
-  grid-row-start: 23;
-  margin-left: 2%; }
+  grid-column: 2/span 4;
+  grid-row-start: 23; }
 
-.priserafsnitoverskrift {
+#Pristekst {
   grid-column: 1/span 6;
-  grid-row-start: 31;
-  margin-left: 2%; }
+  grid-row: 21/span 8;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(9, 50px); }
+  #Pristekst .priserafsnitoverskrift {
+    grid-column: 2/span 6;
+    grid-row: 9;
+    margin-left: -0.5%; }
+
+h2 {
+  font-size: 20pt;
+  color: black;
+  text-align: left;
+  font-family: 'Libre Baskerville', serif;
+  font-style: normal;
+  font-weight: bold;
+  margin-left: 2%;
+  margin-top: 3%; }
+  h2 a {
+    text-decoration: none;
+    color: black; }
 
 #priserafsnit {
-  font-size: 15pt;
+  font-size: 12pt;
   color: black;
   text-align: left;
   font-family: 'Merriweather Sans', sans-serif;
   font-style: normal;
   font-weight: lighter;
-  grid-column: 1/span 6;
-  grid-row-start: 32;
-  margin-left: 2%; }
+  grid-column: 2/span 4;
+  grid-row-start: 23; }
 
-.studierabatafsnitoverskrift {
+#studierabattekst {
   grid-column: 1/span 6;
-  grid-row-start: 40;
-  margin-left: 2%; }
+  grid-row: 29/span 8;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(9, 50px); }
+  #studierabattekst .studierabatafsnitoverskrift {
+    grid-column: 2/span 6;
+    grid-row: 9;
+    margin-left: -0.5%; }
+
+h2 {
+  font-size: 20pt;
+  color: black;
+  text-align: left;
+  font-family: 'Libre Baskerville', serif;
+  font-style: normal;
+  font-weight: bold;
+  margin-left: 2%;
+  margin-top: 3%; }
+  h2 a {
+    text-decoration: none;
+    color: black; }
 
 #studierabatafsnit {
-  font-size: 15pt;
+  font-size: 12pt;
   color: black;
   text-align: left;
   font-family: 'Merriweather Sans', sans-serif;
   font-style: normal;
   font-weight: lighter;
-  grid-column: 1/span 6;
-  grid-row-start: 41;
-  margin-left: 2%; }
+  grid-column: 2/span 4;
+  grid-row-start: 23; }
 
-.fådinchefafsnitoverskrift {
+#fådincheftekst {
   grid-column: 1/span 6;
-  grid-row-start: 49;
-  margin-left: 2%; }
+  grid-row: 38/span 8;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(9, 50px); }
+  #fådincheftekst .fådinchefafsnitoverskrift {
+    grid-column: 2/span 6;
+    grid-row: 8;
+    margin-left: -0.5%; }
+
+h2 {
+  font-size: 20pt;
+  color: black;
+  text-align: left;
+  font-family: 'Libre Baskerville', serif;
+  font-style: normal;
+  font-weight: bold;
+  margin-left: 2%;
+  margin-top: 3%; }
+  h2 a {
+    text-decoration: none;
+    color: black; }
 
 #fådinchefafsnit {
-  font-size: 15pt;
+  font-size: 12pt;
   color: black;
   text-align: left;
   font-family: 'Merriweather Sans', sans-serif;
   font-style: normal;
   font-weight: lighter;
-  grid-column: 1/span 6;
-  grid-row-start: 50;
-  margin-left: 2%; }
+  grid-column: 2/span 4;
+  grid-row-start: 23; }
 
 footer {
   background-color: #0097d7;
