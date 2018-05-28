@@ -690,7 +690,7 @@ footer{
     background-color: #f37121;
     color: white;
     width: 150px;
-    padding: 2px 9px;
+    padding:1px 9px;
     font-size: 18pt;
     border: none;
     cursor: pointer;
@@ -699,8 +699,98 @@ footer{
 
 
 
+//---------------------------- Fordel_afsnit_Ipad---------------------->
 
 
+
+  #Fordeltekst{
+    grid-column: 1/span 6;
+    grid-row: 13/span 8;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 50px);
+    .fordelafsnitoverskrift{
+      grid-column: 2/span 6;
+      grid-row: 9;
+      margin-left: -0.5%;
+      margin-top: -1px;
+    }
+  }
+
+  //---------------------------- Fordel_afsnit_Ipad---------------------->
+
+
+
+
+
+
+
+
+
+
+//---------------------------- Priser_afsnit_Ipad---------------------->
+
+
+
+  #Pristekst{
+    grid-column: 1/span 6;
+    grid-row: 19/span 8;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 50px);
+    .priserafsnitoverskrift{
+      grid-column: 2/span 6;
+      grid-row: 9;
+      margin-left: -0.5%;
+      margin-top: -1px;
+    }
+  }
+
+//---------------------------- Priser_afsnit_Ipad---------------------->
+
+
+
+
+
+  //---------------------------- Studierabat_afsnit_Ipad---------------------->
+
+  #studierabattekst{
+    grid-column: 1/span 6;
+    grid-row: 25/span 8;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 50px);
+    .studierabatafsnitoverskrift{
+      grid-column: 2/span 6;
+      grid-row: 9;
+      margin-left: -0.5%;
+      margin-top: -1px;
+    }
+  }
+
+//---------------------------- Studierabat_afsnit_Ipad---------------------->
+
+
+
+
+
+
+//---------------------------- Få din chef_afsnit_Ipad---------------------->
+
+
+  #fådincheftekst{
+    grid-column: 1/span 6;
+    grid-row: 31/span 8;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 50px);
+    .fådinchefafsnitoverskrift{
+      grid-column: 2/span 6;
+      grid-row: 9;
+      margin-left: -0.5%;
+      margin-top: -1px;
+    }
+  }
 
 
 

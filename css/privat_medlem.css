@@ -425,11 +425,59 @@ footer {
     background-color: #f37121;
     color: white;
     width: 150px;
-    padding: 2px 9px;
+    padding: 1px 9px;
     font-size: 18pt;
     border: none;
     cursor: pointer;
-    margin: 10px; } }
+    margin: 10px; }
+
+  #Fordeltekst {
+    grid-column: 1/span 6;
+    grid-row: 13/span 8;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 50px); }
+    #Fordeltekst .fordelafsnitoverskrift {
+      grid-column: 2/span 6;
+      grid-row: 9;
+      margin-left: -0.5%;
+      margin-top: -1px; }
+
+  #Pristekst {
+    grid-column: 1/span 6;
+    grid-row: 19/span 8;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 50px); }
+    #Pristekst .priserafsnitoverskrift {
+      grid-column: 2/span 6;
+      grid-row: 9;
+      margin-left: -0.5%;
+      margin-top: -1px; }
+
+  #studierabattekst {
+    grid-column: 1/span 6;
+    grid-row: 25/span 8;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 50px); }
+    #studierabattekst .studierabatafsnitoverskrift {
+      grid-column: 2/span 6;
+      grid-row: 9;
+      margin-left: -0.5%;
+      margin-top: -1px; }
+
+  #fådincheftekst {
+    grid-column: 1/span 6;
+    grid-row: 31/span 8;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 50px); }
+    #fådincheftekst .fådinchefafsnitoverskrift {
+      grid-column: 2/span 6;
+      grid-row: 9;
+      margin-left: -0.5%;
+      margin-top: -1px; } }
 @media screen and (min-width: 1200px) {
   .web {
     display: inline; }
