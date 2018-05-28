@@ -486,7 +486,20 @@ footer {
   #mobilAlt #firstBobleButton {
     grid-row-start: 16; }
   #mobilAlt #ca_cirkel_2 {
-    width: 360px; } }
+    width: 360px;
+    height: 360px;
+    grid-row-start: 19; }
+  #mobilAlt #secondBobleTitle {
+    grid-row-start: 23;
+    margin-top: 0;
+    margin-left: 21%; }
+  #mobilAlt #secondBobleText {
+    grid-row-start: 23;
+    margin-top: 7%;
+    margin-left: 15%; }
+  #mobilAlt #secondBobleButton {
+    grid-row-start: 25;
+    margin-left: 20%; } }
 @media screen and (min-width: 1200px) {
   .web {
     display: inline; }

@@ -631,6 +631,24 @@ footer{
 
     #ca_cirkel_2{
       width: 360px;
+      height: 360px;
+      grid-row-start: 19;
+    }
+
+
+    #secondBobleTitle{
+      grid-row-start: 23;
+      margin-top: 0;
+      margin-left: 21%;
+    }
+    #secondBobleText{
+      grid-row-start: 23;
+      margin-top: 7%;
+      margin-left: 15%;
+    }
+    #secondBobleButton{
+      grid-row-start: 25;
+      margin-left: 20%;
     }
 
 
