@@ -242,7 +242,7 @@ h2{
   @include undertitle;
 }
 
-#projekttext, #medlemstext, #partnertext{
+#projekttext, #medlemstext, #partnertext, #aktivitettext{
   @include undertext;
   width: 240px;
 }
@@ -285,6 +285,15 @@ h2{
 }
 
 
+
+#aktivitetoverskrift{
+grid-column: ;
+grid-row: ;
+}
+
+#aktivitettext{
+
+}
 
 
 
