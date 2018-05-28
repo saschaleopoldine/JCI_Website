@@ -42,56 +42,74 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 <!----------------------------- HEADER -------------------------------HEADER---------------------------------------------->
-<header>
 
     <div id="menuMobil" class="mobil">
         <img src="images/logo.png">
         <i class="fa fas fa-bars fa-2x"></i>
     </div>
 
-</header>
+    <div id="flex_alt" class="web">
+
+        <div id="left_menu">
+            <div class="menutekst">
+                <img src="images/logo.png" id="logo">
+
+                <nav class="web">
+
+                </nav>
+            </div>
+        </div>
+
+        <div id="mobilAlt" class="mobil">
+
+            <div class="indledning">
+                <h1>Medlemskab</h1>
+                <br>
+                <h3>sko mollit anim id est laborum. Sed ut perspiciatis
+                    <br>unde omnis iste natus error sit  </h3>
+            </div>
+
+
+            <div class="bold1"></div>
+
+            <div class="bold1tekst">
+                <h2>
+                    Privatmedlem
+                </h2>
+            </div>
+            <div class="bold1fuldtekst">
+
+                <h2>Fordele som privatmedlem</h2>
+                <br>
+                    <p>amet, consectetur adipisicing elit, <br> sed do eiusmod tempor incididunt ut labore et dolore
+                </p>
+            </div>
+            <div class="CTAbold1">
+                <a href="link"> Se flere fordele</a>
+            </div>
+
+            <div class="bold2"></div>
+            <div class="bold2tekst">
+                Erhvervsmedlem
+            </div>
+            <div class="bold2fuldtekst">
+                <h2>Fordele som privatmedlem</h2>
+                <br>
+                <p>amet, consectetur adipisicing elit, <br> sed do eiusmod tempor incididunt ut labore et dolore
+                </p>
+            </div>
+            <div class="CTAbold2">
+                <a href="link"> Se flere fordele</a>
+            </div>
+        </div>
+
+        </div>
+
 
 <!----------------------------- SECTION -------------------------------SECTION-------------------------------------------->
 
 <section>
-    <div id="mobilAlt" class="mobil">
 
-        <div class="indledning">
-            <h1>Medlemskab</h1>
-            <h3>sko mollit anim id est laborum. Sed ut perspiciatis
-                <br>unde omnis iste natus error sit  </h3>
-        </div>
-
-
-    <div class="bold1">
-    </div>
-        <div class="bold1tekst">
-            <p>
-                Privatmedlem
-            </p>
-        </div>
-        <div class="bold1fuldtekst">
-            <p>
-                mere tekst her
-            </p>
-        </div>
-
-        
-
-    <div class="bold2">
-    </div>
-        <div class="bold2tekst">
-            <p>
-                Erhvervsmedlem
-            </p>
-        </div>
-        <div class="bold2fuldtekst">
-            <p>
-                mere tekst her
-            </p>
-        </div>
-
-    </div>
 
 
 
@@ -115,14 +133,13 @@
         <i class="fa fab fa-linkedin fa-2x"></i>
     </div>
 
-
-
 </footer>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 <script type="text/javascript">
+    //MOBIL//
     $(document).ready(function(){
         $(".bold1tekst").click(function(){
             $(".bold1tekst").hide();
@@ -136,17 +153,25 @@
         $(".bold1fuldtekst").click(function(){
             $(".bold1fuldtekst").hide();
         });
+        $(".bold2tekst").click(function(){
+            $(".bold2tekst").hide();
+        });
+        $(".bold2tekst").click(function(){
+            $(".bold2fuldtekst").show();
+        });
+        $(".bold2fuldtekst").click(function(){
+            $(".bold2tekst").show();
+        });
+        $(".bold2fuldtekst").click(function(){
+            $(".bold2fuldtekst").hide();
+        });
+
+    //IPAD stående og liggende//
+        if()
+
+
     });
 
-
-
 </script>
-
-
-<script>
-
-</script>
-
-
 </body>
 </html>

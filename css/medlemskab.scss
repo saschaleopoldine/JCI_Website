@@ -84,10 +84,6 @@ $white:#f9f7f4;
   display: -webkit-flex;
 }
 
-.web{
-  display: none;
-}
-
 #menuMobil{
   height: 60px;
   width: 100%;
@@ -105,13 +101,16 @@ $white:#f9f7f4;
     margin: 5px 20px;
   }
 }
+#logo{
+  display: none;
+}
 
 #mobilAlt{
   padding: 0 20px 0 20px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 10px;
-  grid-template-rows: repeat(15, 50px);
+  grid-template-rows: repeat(17, 50px);
 }
 
 
@@ -119,16 +118,18 @@ $white:#f9f7f4;
   text-align: center;
   grid-column: 1 / span 6;
   grid-row-start: 2;
+  margin-top: -10px;
 }
 .bold1{
   grid-column: 2 / span 5;
   grid-row-start: 5;
   border-radius: 50%;
   border: 3px solid $orange;
-  height: 200px;
-  width: 200px;
+  height: 240px;
+  width: 240px;
   color: $blue;
-  margin-left: 10px;
+  margin-top: -5px;
+  margin-left: -10px;
 }
 .bold1tekst{
   grid-column: 2 / span 5;
@@ -136,7 +137,6 @@ $white:#f9f7f4;
   text-align: center;
   color: $blue;
   margin-right: 50px;
-  margin-top: -15px;
 }
 .bold1fuldtekst{
   grid-column: 2 / span 5;
@@ -144,38 +144,76 @@ $white:#f9f7f4;
   text-align: center;
   color: $blue;
   margin-right: 50px;
-  margin-top: -15px;
   display: none;
   z-index: 99;
 }
 
-.bold2{
+.CTAbold1{
   grid-column: 2 / span 5;
   grid-row-start: 10;
+  font-size: 18pt;
+  width: 180px;
+  height: 40px;
+  background-color: $orange;
+  text-align: center;
+  padding: 5px;
+  color: white;
+  margin-left: 20px;
+  margin-top: 7px;
+  a{
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.bold2{
+  grid-column: 2 / span 5;
+  grid-row-start: 11;
   border-radius: 50%;
   border: 3px solid $orange;
-  height: 200px;
-  width: 200px;
+  height: 240px;
+  width: 240px;
   color: $blue;
-  margin-left: 10px;
+  margin-top: 20px;
+  margin-left: -10px;
 }
+
 .bold2tekst{
   grid-column: 2 / span 5;
-  grid-row-start: 12;
+  grid-row-start: 13;
   text-align: center;
   color: $blue;
-  margin-right: 50px;
-  margin-top: -15px;
+  margin-right: 52px;
+  margin-top: 20px;
+  font-size: 19pt;
+  font-family: 'Libre Baskerville', serif;
 }
 
 .bold2fuldtekst{
   grid-column: 2 / span 5;
-  grid-row-start: 12;
+  grid-row-start: 13;
   text-align: center;
   color: $blue;
   margin-right: 50px;
   margin-top: -15px;
   display: none;
+}
+.CTAbold2{
+  grid-column: 2 / span 5;
+  grid-row-start: 17;
+  font-size: 18pt;
+  width: 180px;
+  height: 40px;
+  background-color: $orange;
+  text-align: center;
+  padding: 5px;
+  color: white;
+  margin-left: 20px;
+  margin-top: -15px;
+  a{
+    color: white;
+    text-decoration: none;
+  }
 }
 
 footer{
@@ -199,10 +237,94 @@ footer{
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
+  .bold1{
+    grid-column: 1 / span 3;
+    grid-row-start: 5;
+    margin-left: 40px;
+  }
+  .bold1tekst{
+    grid-column: 1 / span 3;
+    grid-row-start: 7;
+    margin-left: 10px;
+  }
+  .bold1fuldtekst{
+    display: inline;
+    grid-column: 3 / span 4;
+    grid-row-start: 5;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+  .CTAbold1 {
+    grid-column: 4 / span 3;
+    grid-row-start: 8;
+
+  }
+  .bold2{
+    grid-column: 4 / span 3;
+    grid-row-start: 11;
+    margin-top: 20px;
+    margin-left: 70px;
+  }
+  .bold2tekst{
+    grid-column: 4 / span 3;
+    grid-row-start: 13;
+    margin-top: 27px;
+    margin-left: 70px;
+  }
+  .bold2fuldtekst {
+    grid-column: 1 / span 4;
+    grid-row-start: 12;
+    margin-top: 20px;
+    display: inline;
+  }
+  .CTAbold2 {
+    grid-column: 2 / span 2;
+    grid-row-start: 15;
+    margin-top: 20px;
+  }
+
 }
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
+
+  .bold1{
+    grid-column: 1 / span 3;
+    grid-row-start: 5;
+    margin-left: 100px;
+  }
+  .bold1tekst{
+    grid-column: 2 / span 2;
+    grid-row-start: 7;
+    margin-left: -155px;
+  }
+  .bold1fuldtekst{
+    grid-column: 3 / span 3;
+    grid-row-start: 5;
+    margin-right: -20px;
+    display: inline;
+  }
+  .CTAbold1{
+    grid-column: 4 / span 3;
+    grid-row-start: 8;
+
+  }
+  .bold2{
+    grid-column: 5 / span 2;
+    grid-row-start: 11;
+    margin-top: 20px;
+    margin-left: -10px;
+  }
+  .bold2tekst{
+    grid-column: 4 / span 3;
+    grid-row-start: 13;
+    margin-top: 27px;
+    margin-right: 10px;
+  }
+  .bold2fuldtekst{
+    display: inline;
+  }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -210,9 +332,23 @@ footer{
   .web{
     display: inline;
   }
-
-  .mobil, #mobilAlt, #menuMobil, footer{
+  #logo{
+    display: inline;
+  }
+  #menuMobil{
     display: none;
+  }
+  footer{
+    display: none;
+  }
+
+  #mobilAlt{
+    padding: 70px 50px 50px 0;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-column-gap: 20px;
+    height: 600px;
+    width: 100%;
   }
 
   #flex_alt{
@@ -225,21 +361,57 @@ footer{
     background-color: $blue;
     height: 100vh;
     width: 300px;
+    .menutekst{
+      position: fixed;
+    }
     #logo{
       width: 65%;
       height: auto;
       margin: 30px auto 0 auto;
     }
   }
-
-  #grid{
-    padding: 70px 50px 50px 0;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-column-gap: 20px;
-    height: 600px;
-    width: 100%;
+  .indledning{
+    grid-column: 3 / span 6;
+    grid-row-start: 1;
   }
+  .bold1tekst{
+    grid-column: 3 / span 3;
+    grid-row-start: 7;
+  }
+  .bold1fuldtekst{
+    grid-column: 5 / span 5;
+    grid-row-start: 4;
+    margin-top: 60px;
+  }
+  .CTAbold1{
+    grid-column: 6 / span 2;
+    grid-row-start: 7;
+    margin-left: 80px;
+    margin-top: 55px;
+  }
+  .bold2{
+    grid-column: 4 / span 3;
+    grid-row-start: 11;
+    margin-left: 280px;
+  }
+  .bold2tekst{
+    grid-column: 6 / span 3;
+    grid-row-start: 13;
+    margin-right: -95px;
+  }
+  .bold2fuldtekst{
+    grid-column: 1 / span 5;
+    grid-row-start: 12;
+    margin-right: -55px;
+  }
+  .CTAbold2{
+    grid-column: 3 / span 2;
+    grid-row-start: 15;
+    margin-left: -20px;
+    margin-top: 10px;
+  }
+
+
 
 }
 
