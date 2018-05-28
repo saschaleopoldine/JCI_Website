@@ -79,34 +79,38 @@
     JCI Slagelse
 </h1>
 
-<div class="cirkel_1"></div>
-<p id="projekt">Projekter</p>
 
-<div class="hr et"></div>
+<div class="cirkel_1"></div>
+<p id="projekt"><a href="#projektelement">Projekter</a></p>
+
+
+<div class="hr_et"></div>
+
 
 <div class="cirkel_2"></div>
-<p id="medlem">Medlemskab</p>
+<p id="medlem"><a href="#medlemselement">Medlemskab</a></p>
 
 
-<div class="hr to"></div>
+<div class="hr_to"></div>
 
 
 <div class="cirkel_3"></div>
-<p id="partner">Partnere</p>
+<p id="partner"><a href="#partnerelement">Partnere</a></p>
 
 
-<div class="hr tre"></div>
+
+<div class="hr_tre"></div>
 
 
 <div class="cirkel_4"></div>
-<p id="aktivitet">Aktiviteter</p>
+<p id="aktivitet"><a href="#aktivitetelement">Aktiviteter</a></p>
 
 
-<div class="hr fire"></div>
+<div class="hr_fire"></div>
 
 
 <div class="cirkel_5"></div>
-<p id="bestyrrelse">Mød <br> bestyrrelsen</p>
+<p id="bestyrrelse"><a href="#bestyrelseselement">Mød <br> bestyrrelsen</a></p>
 
 
 <section id="projektelement">
@@ -131,6 +135,8 @@
         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
         sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
+
+    <div class="knap">Læs mere her</div>
 </section>
 
 <section id="partnerelement">
@@ -173,8 +179,8 @@
 
 <div id="bestyrelsesmedlemmer">
     <div class="flex">
-        <div class="bestyrelsesmedlem one">
-            <div class="round r_1"></div>
+        <div class="bestyrelsesmedlem">
+            <img id="caroline" src="images/caroline.png" height="85" width="85"/>
             <h3>Caroline Sørensen</h3>
             <p class="bestyrelsesmedlemtext">
                 Local president/formand
@@ -188,8 +194,8 @@
         </div>
 
 
-        <div class="bestyrelsesmedlem two">
-            <div class="round r_2"></div>
+        <div class="bestyrelsesmedlem">
+            <img id="lasse" src="images/lasse.png" height="85" width="84"/>
             <h3>Lasse Staurby Andersen</h3>
             <p class="bestyrelsesmedlemtext">
                 Ansvarlig for erhverskontakt
@@ -203,8 +209,8 @@
 
 
     <div class="flex">
-        <div class="bestyrelsesmedlem three">
-            <div class="round r_3"></div>
+        <div class="bestyrelsesmedlem">
+            <img id="mie" src="images/mie.png" height="85" width="85"/>
             <h3>Mie Lyngstrøm</h3>
             <p class="bestyrelsesmedlemtext">
                 Medlemsansvarlig
@@ -216,8 +222,8 @@
         </div>
 
 
-        <div class="bestyrelsesmedlem four">
-            <div class="round r_4"></div>
+        <div class="bestyrelsesmedlem">
+            <img id="kamilla" src="images/kamilla.png" height="84" width="85"/>
             <h3>Kamilla Jongejan</h3>
             <p class="bestyrelsesmedlemtext">
                 Mødeansvarlig
@@ -230,8 +236,8 @@
     </div>
 
 
-    <div class="bestyrelsesmedlem five">
-        <div class="round r_5"></div>
+    <div class="bestyrelsesmedlem">
+        <img id="anna" src="images/anna.png" height="84" width="85"/>
         <h3>Anna Strøbæk</h3>
         <p class="bestyrelsesmedlemtext">
             Projektansvarlig
@@ -312,7 +318,9 @@
 
 <script>
     $(document).ready(function (e) {
-        // Din kode her
+        $(".fa-angle-down").click(function (e) {
+            $("#bestyrelsesmedlemmer").slideToggle(1000);
+        });
     });
 </script>
 

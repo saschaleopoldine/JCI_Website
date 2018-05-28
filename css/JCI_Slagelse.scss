@@ -60,19 +60,33 @@ $overlay: rgba(93, 144, 183, 0.5);
   color: $white;
   font-size: 18pt;
   font-family: 'Merriweather Sans', sans-serif;
+  text-align: center;
 }
 
 @mixin board_mobil{
   width: 85px;
   height: 85px;
   border-radius: 50%;
-  border: 4px solid $orange;
+  border: 3px solid $orange;
 }
 
 @mixin flex{
   display: flex;
   display: -webkit-flex;
 }
+
+@mixin streg{
+  background-color: $blue;
+  height: 3px;
+  width: 95px;
+  z-index: -1;
+}
+
+
+
+
+
+
 
 //--------------------------------------------------- Header mobil -----------------------------------------------
 .web{
@@ -97,6 +111,11 @@ $overlay: rgba(93, 144, 183, 0.5);
   }
 }
 
+
+
+
+
+
 //------------------------------------------------ Indhold mobil --------------------------------------------------
 
 #mobilAlt{
@@ -118,44 +137,57 @@ h1{
 .cirkel_1{
   background-color: $orange;
   border-radius: 50%;
-  width: 145px;
-  height: 145px;
+  width: 155px;
+  height: 155px;
   grid-column: 1/span 3;
-  grid-row: 3;
+  grid-row: 3;             
   margin-top: 5%;
+  z-index: 1;
 }
 
 #projekt{
   color: white;
   font-family: "Libre Baskerville", Serif;
   font-size: 18pt;
-  font-weight: bold;
+  font-weight: 600;
+  letter-spacing: 1.5px;
   text-align: center;
-  grid-column: 1/span 3;
+  grid-column: 1/span 3;   
   grid-row: 4;
-  margin-top: 10%;
-  margin-left: 3px;
-  width: 140px;
+  margin-top: 12%;
+  z-index: 2;  
+  a{
+    grid-column: 1/span 3;
+    grid-row: 4;
+    margin-left: -15px;
+    text-decoration: none;
+    color: white;
+  }
+
 }
 
 
-.hr{
-  background-color: $blue;
-  height: 3px;
-  width: 80px;
+.hr_et{
+  @include streg;
   grid-column: 3/span 2;
-  grid-row: 5/ span 2;
+  grid-row: 5;
+  -ms-transform: rotate(25deg);
+  -webkit-transform: rotate(25deg);
+  transform: rotate(25deg);
+  margin-left: 17px;
+  margin-top: 20px;
 }
 
 
 .cirkel_2{
   background-color: $orange;
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  width: 135px;
+  height: 135px;
   grid-column: 5/span 2;
   grid-row: 5;
-  margin-left: -11%;
+  margin-left: -26px;
+  z-index: 1;
 }
 
 #medlem{
@@ -163,11 +195,31 @@ h1{
   font-family: "Libre Baskerville", Serif;
   font-size: 12pt;
   font-weight: bold;
+  letter-spacing: 1.5px;
   text-align: center;
   grid-column: 5/span 2;
   grid-row: 6;
-  margin-left: -5%;
+  margin-left: -15%;
+  margin-top: 5%;
+  z-index: 2;  
+  a{
+   text-decoration: none;
+   color: white;
+  }
 }
+
+
+.hr_to{
+  @include streg;
+  grid-column: 3/span 2;            
+  grid-row: 7;
+  -ms-transform: rotate(150deg);
+  -webkit-transform: rotate(150deg);
+  transform: rotate(150deg);                              
+  margin-left: 20px;
+  margin-top: 5px;
+}                                   
+
 
 
 .cirkel_3{
@@ -184,19 +236,35 @@ h1{
   font-family: "Libre Baskerville", Serif;
   font-size: 12pt;
   font-weight: bold;
+  letter-spacing: 1px;
   text-align: center;
   grid-column: 2/span 2;
   grid-row: 8;
   margin-top: -12px;
   margin-left: -10px;
+  z-index: 2;  
+  a{
+   text-decoration: none;
+   color: white;
+  }                      
 }
+
+
+ .hr_tre{
+   @include streg;
+   grid-column: 3/span 2;
+   grid-row: 9;
+   -ms-transform: rotate(40deg);
+   -webkit-transform: rotate(40deg);
+   transform: rotate(40deg);
+ }
 
 
 .cirkel_4{
   background-color: $orange;
   border-radius: 50%;
-  width: 145px;
-  height: 145px;
+  width: 155px;
+  height: 155px;
   grid-column: 4/span 3;
   grid-row: 9;
 }
@@ -207,11 +275,29 @@ h1{
   font-family: "Libre Baskerville", Serif;
   font-size: 18pt;
   font-weight: bold;
+  letter-spacing: 1px;
   text-align: center;
   grid-column: 4/span 3;
   grid-row: 10;
-  margin-right: 15px;
-  margin-top: 6px;
+  margin-right: 10px;
+  margin-top: 8px;
+  z-index: 2;  
+  a{
+   text-decoration: none;
+   color: white;
+  }
+}
+
+
+.hr_fire{
+  @include streg;
+  grid-column: 3/span 2;
+  grid-row: 11;
+  -ms-transform: rotate(155deg);
+  -webkit-transform: rotate(155deg);
+  transform: rotate(155deg);
+  margin-left: -10px;
+  margin-top: 5px;
 }
 
 
@@ -236,6 +322,11 @@ h1{
   grid-row-end: 13;
   margin-left: 7px;
   margin-top: -30px;
+  z-index: 2;  
+  a{                     
+   text-decoration: none;
+   color: white;
+  }                      
 }
 
 h2{
@@ -250,7 +341,7 @@ h2{
 }
 
 
-
+//--------------------------------------------------- projekt mobil --------------------------------------------------
 
 #projektelement{
   grid-column: 1/span 6;
@@ -269,32 +360,40 @@ h2{
 }
 
 
+//--------------------------------------------------- medlem mobil --------------------------------------------------
 
 
 #medlemselement {
   grid-column: 1/span 6;
-  grid-row: 22/span 8;
+  grid-row: 23/span 8;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(8, 50px);
+  grid-template-rows: repeat(9, 50px);
   #medlemsoverskrift{            
     grid-column: 2/span 3;       
     grid-row: 1;
-  }                              
-                                 
+  }                                                            
   #medlemstext{                  
     grid-column: 2/span 3;       
     grid-row: 2/span 7;
-  }                                                            
+  }
+  .knap{                  
+    @include buttoms;
+    grid-column: 2/span 3;
+    grid-row: 9;
+    margin-left: -10px;
+  }                       
 }
 
 
 
 
+//--------------------------------------------------- partner mobil --------------------------------------------------
+
 
 #partnerelement {
   grid-column: 1/span 6;
-  grid-row: 31/span 8;
+  grid-row: 33/span 8;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(8, 50px);
@@ -309,12 +408,12 @@ h2{
 }
 
 
-
+//--------------------------------------------------- aktivitet mobil --------------------------------------------------
 
 
 #aktivitetelement {
   grid-column: 1/span 6;
-  grid-row: 40/span 8;
+  grid-row: 42/span 8;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(8, 50px);
@@ -329,12 +428,12 @@ h2{
 }
 
 
-
+//--------------------------------------------------- bestyrrelse mobil --------------------------------------------------
 
 
 #bestyrelseselement {
   grid-column: 1/span 6;
-  grid-row: 49/span 8;
+  grid-row: 51/span 8;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(5, 50px);
@@ -356,24 +455,38 @@ h2{
 }
 
 
-
+#bestyrelsesmedlemmer{
+  display: none;
+  img{
+    display: inline;
+  }
+}
 
 .flex{
   @include flex;
   justify-content: space-around;
 }
 
-.bestyrelsesmedlem {
+.bestyrelsesmedlem{
   text-align: center;
+  font-family: 'Merriweather Sans', sans-serif;
+  #caroline, #lasse, #mie, #kamilla, #anna{
+    @include board_mobil;
+    }
   .round {
     width: 85px;
     height: 85px;
     border-radius: 50%;
     border: 2px solid $orange;
-    .r_1{
-       background-image: url("../images/caroline.png");
-    }                         
-    
+  }
+  h3{
+    font-size: 11pt;
+    margin-top: 5px;
+  }
+  .bestyrelsesmedlemtext{
+    font-size: 9pt;
+    margin-bottom: 25px;
+    margin-top: 3px;
   }
 }
 
@@ -404,9 +517,48 @@ footer{
 
 
 
+@media screen and (min-width: 414px) {
+
+  #projekt{
+    a{
+      margin-left: -25px;
+    }
+  }
+
+  #hr_et{
+    width: 120px;
+  }
+
+  .cirkel_2{
+    margin-left: -15px;
+  }
 
 
+  #medlem{
+      margin-left: -8%;
+  }
 
+  #partner{
+    a{
+      margin-left: -10%;
+    }
+  }
+
+  #aktivitet{
+    margin-right: 15%;
+    margin-top: 5%;
+  }
+
+  #bestyrrelse{
+    margin-left: -5%;
+  }
+
+  #hr_fire{
+    width: 100px;
+    margin-left: -15px;
+    margin-top: 10px;
+  }
+}
 
 
 
