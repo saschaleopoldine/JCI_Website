@@ -285,6 +285,7 @@ footer{
     }
 
     #ca_cirkel_1{
+      background-size: cover;
       width: 100%;
       height: 350px;
     }
@@ -303,6 +304,7 @@ footer{
     }
 
     #ca_cirkel_2{
+      background-size: cover;
       grid-row-start: 18;
       height: 220px;
       width: 220px;
@@ -323,6 +325,7 @@ footer{
     }
 
     #ca_cirkel_3{
+      background-size: cover;
       grid-column: 3/span 3;
       grid-row-start: 24;
       height: 220px;
@@ -348,6 +351,7 @@ footer{
     }
 
     #ca_cirkel_4{
+      background-size: cover;
       grid-row-start: 30;
       width: 100%;
       height: 350px;
@@ -483,39 +487,50 @@ footer{
 }
 
 @media screen and (min-width: 660px) {
-  // iPhone 6/7/8 plus
+  // iPhone 6/7/8 liggende
 
   #mobilAlt {
 
-    grid-template-rows: repeat(39, 50px);
+    grid-template-rows: repeat(43, 50px);
+
+    #slagelseTitle{
+      grid-row-start: 3;
+      margin-top: 5%;
+    }
 
     #indledning {
-      grid-column: 2/span 4;
+      grid-row-start: 5;
     }
 
     #ca_cirkel_1 {
-      height: 375px;
+      grid-row-start: 8;
+      grid-column: 2/span 4;
+      height: 415px;
     }
-
     #firstBobleTitle {
       grid-row-start: 13;
-      margin-top: 2%;
+      margin-top: 0;
+      margin-left: 27%;
     }
     #firstBobleText {
-      margin-top: 10%;
+      margin-top: 8%;
+      width: 80%;
+      margin-left: 15%;
+      grid-column: 2/span 4;
       grid-row-start: 13;
     }
     #firstBobleButton {
-      margin-top: 2%;
+      margin-top: 0;
       grid-row-start: 15;
-      width: 55%;
-      margin-left: 22%;
+      grid-column: 2/span 4;
+      width: 50%;
+      margin-left: 25%;
     }
 
     #ca_cirkel_2 {
-      grid-row-start: 19;
-      height: 250px;
-      width: 250px;
+      grid-row-start: 18;
+      height: 310px;
+      width: 310px;
     }
     #secondBobleTitle {
       grid-row-start: 20;
@@ -525,61 +540,66 @@ footer{
     #secondBobleText {
       grid-row-start: 21;
       grid-column: 1/span 4;
-      margin-top: 0;
+      width: 50%;
+      margin-top: 3%;
     }
     #secondBobleButton {
-      grid-row-start: 22;
-      margin-left: 15%;
-      margin-top: 7%;
+      grid-row-start: 23;
+      margin-left: 18%;
+      margin-top: 0;
       width: 165px;
     }
 
     #ca_cirkel_3 {
-      grid-row-start: 25;
-      height: 250px;
-      width: 250px;
+      grid-row-start: 26;
+      grid-column: 4/span 3;
+      height: 310px;
+      width: 310px;
     }
     #thirdBobleTitle {
-      grid-column: 3/span 3;
-      margin-left: 20%;
-      margin-top: 17%;
-      grid-row-start: 26;
+      grid-column: 4/span 3;
+      margin-left: 15%;
+      margin-top: 11%;
+      grid-row-start: 28;
     }
     #thirdBobleText {
-      grid-row-start: 27;
-      grid-column: 3/span 4;
+      grid-row-start: 29;
+      grid-column: 4/span 3;
       margin-left: 15%;
       margin-top: 5%;
-      width: 80%;
+      width: 60%;
     }
     #thirdBobleButton {
-      grid-row-start: 28;
-      margin-top: 15%;
-      grid-column: 3/span 3;
+      grid-row-start: 31;
+      margin-top: 0;
+      grid-column: 4/span 3;
       margin-left: 27%;
     }
 
     #ca_cirkel_4 {
-      grid-row-start: 31;
-      height: 375px;
+      grid-row-start: 34;
+      grid-column: 2/span 4;
+      height: 415px;
     }
     #fourthBobleTitle {
-      grid-row-start: 33;
-      margin-left: 10%;
-      margin-top: 20%;
+      grid-row-start: 38;
+      grid-column: 2/span 4;
+      margin-left: 7%;
+      margin-top: 5%;
     }
     #fourthBobleText {
-      grid-row-start: 34;
-      margin-top: 8%;
+      grid-row-start: 39;
+      grid-column: 2/span 4;
+      margin-top: 1%;
       margin-left: 7%;
-      width: 300px;
+      width: 80%;
     }
     #fourthBobleButton {
-      grid-row-start: 36;
-      grid-column: 1/span 6;
+      grid-row-start: 40;
+      grid-column: 2/span 4;
       width: 275px;
       height: 30px;
-      margin-left: 13%;
+      margin-left: 17%;
       margin-top: 5%;
     }
 
@@ -589,6 +609,33 @@ footer{
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
+
+  #mobilAlt{
+    #ca_cirkel_1{
+      height: 480px;
+    }
+    #firstBobleTitle{
+      grid-column: 2/span 4;
+      margin-left: 20%;
+      margin-top: 10%;
+    }
+    #firstBobleText{
+      grid-row-start: 14;
+      margin-top: 7%;
+      margin-left: 20%;
+      width: 70%;
+    }
+    #firstBobleButton{
+      grid-row-start: 16;
+    }
+
+    #ca_cirkel_2{
+      width: 360px;
+    }
+
+
+  }
+
 }
 
 @media screen and (min-width: 992px) {
