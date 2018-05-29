@@ -534,28 +534,6 @@ footer {
       grid-row-start: 42;
       margin-left: 21%; } }
 @media screen and (min-width: 992px) {
-  .web {
-    display: inline; }
-
-  .mobil, #menuMobil, footer {
-    display: none; }
-
-  #flex_alt {
-    display: flex;
-    display: -webkit-flex;
-    justify-content: space-between; }
-
-  #left_menu {
-    background-color: #0097d7;
-    height: 101vh;
-    width: 300px; }
-    #left_menu #menuIndhold {
-      position: fixed; }
-      #left_menu #menuIndhold #logo {
-        width: 65%;
-        height: auto;
-        margin: 30px 30% 0 30%; }
-
   #mobilAlt {
     padding: 70px 50px 0 0;
     display: grid;
@@ -657,6 +635,28 @@ footer {
       width: 75%;
       margin-left: 12%; } }
 @media screen and (min-width: 1200px) {
+  .web {
+    display: inline; }
+
+  .mobil, #menuMobil, footer {
+    display: none; }
+
+  #flex_alt {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between; }
+
+  #left_menu {
+    background-color: #0097d7;
+    height: 195vh;
+    width: 300px; }
+    #left_menu #menuIndhold {
+      position: fixed; }
+      #left_menu #menuIndhold #logo {
+        width: 65%;
+        height: auto;
+        margin: 30px 30% 0 30%; }
+
   #left_menu {
     height: 195vh; }
 

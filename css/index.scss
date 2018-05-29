@@ -701,34 +701,6 @@ footer{
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
 
-  .web{
-    display: inline;
-  }
-
-  .mobil, #menuMobil, footer{
-    display: none;
-  }
-
-  #flex_alt{
-    display: flex;
-    display: -webkit-flex;
-    justify-content: space-between;
-  }
-
-  #left_menu{
-    background-color: $bluePrimary;
-    height: 101vh;
-    width: 300px;
-    #menuIndhold{
-      position: fixed;
-      #logo{
-        width: 65%;
-        height: auto;
-        margin: 30px 30% 0 30%;
-      }
-    }
-  }
-
   #mobilAlt{
     padding: 70px 50px 0 0;
     display: grid;
@@ -858,8 +830,32 @@ footer{
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
 
+  .web{
+    display: inline;
+  }
+
+  .mobil, #menuMobil, footer{
+    display: none;
+  }
+
+  #flex_alt{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+  }
+
   #left_menu{
+    background-color: $bluePrimary;
     height: 195vh;
+    width: 300px;
+    #menuIndhold{
+      position: fixed;
+      #logo{
+        width: 65%;
+        height: auto;
+        margin: 30px 30% 0 30%;
+      }
+    }
   }
 
   #mobilAlt {
