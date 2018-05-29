@@ -600,7 +600,7 @@ footer {
     grid-column: 1/span 2;
     grid-row-start: 5;
     margin-top: -30%;
-    margin-left: 30%; }
+    margin-left: 42%; }
 
   .line {
     height: 700%;
@@ -611,27 +611,27 @@ footer {
     margin-top: -15%; }
 
   .priser {
-    margin-left: 81%; }
+    margin-left: 69%; }
 
   #circlepriser {
     margin-left: 60%; }
 
   .line3 {
     width: 5px;
-    height: 1020%;
+    height: 900%;
     -ms-transform: rotate(63deg);
     -webkit-transform: rotate(63deg);
     transform: rotate(63deg);
     grid-column: 1/span 6;
     grid-row-start: 9;
-    margin-left: 65%;
-    margin-top: -15%; }
+    margin-left: 55%;
+    margin-top: -9%; }
 
   .studierabat {
     grid-column: 1/span 6;
     grid-row-start: 12;
     margin-top: 1%;
-    margin-left: 11%; }
+    margin-left: 13%; }
 
   #circlestudierabat {
     width: 37%;
@@ -652,7 +652,7 @@ footer {
     grid-column: 4/span 3;
     grid-row-start: 15;
     margin-top: 10%;
-    margin-left: 60%; }
+    margin-left: 40%; }
 
   #circlechef {
     margin-left: 60%; }
@@ -718,8 +718,7 @@ footer {
   .Fordele {
     grid-column: 1/span 2;
     grid-row-start: 5;
-    margin-top: -25%;
-    margin-left: 30%; }
+    margin-top: -25%; }
 
   .line {
     height: 1050%;
@@ -728,9 +727,6 @@ footer {
     transform: rotate(105deg);
     margin-left: 60%;
     margin-top: -20%; }
-
-  .priser {
-    margin-left: 81%; }
 
   #circlepriser {
     width: 200px;
@@ -748,8 +744,7 @@ footer {
   .studierabat {
     grid-column: 1/span 6;
     grid-row-start: 13;
-    margin-top: -0.5%;
-    margin-left: 10%; }
+    margin-top: -0.5%; }
 
   #circlestudierabat {
     width: 300px;
@@ -766,7 +761,7 @@ footer {
     -webkit-transform: rotate(70deg);
     transform: rotate(70deg);
     margin-left: 50%;
-    margin-top: -7%; }
+    margin-top: -11%; }
 
   #circlechef {
     width: 220px;
@@ -777,8 +772,8 @@ footer {
 
   .chef {
     grid-row-start: 16;
-    margin-right: 20px;
-    margin-top: 5%; }
+    margin-top: 9%;
+    margin-left: 80px; }
 
   .meld_dig_ind {
     grid-column: 1/span 4;
@@ -806,7 +801,7 @@ footer {
     margin-left: 20px; } }
 @media screen and (min-width: 1024px) {
   .line {
-    height: 1150%; }
+    height: 1100%; }
 
   #Fordeltekst {
     grid-column: 1/span 5;
