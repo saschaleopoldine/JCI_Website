@@ -328,7 +328,7 @@ footer {
 
   #left_menu {
     background-color: #0097d7;
-    height: 180vh;
+    height: 170vh;
     width: 300px; }
     #left_menu #logo {
       width: 65%;
@@ -440,11 +440,20 @@ footer {
       grid-column: 2/span 2;
       grid-row-start: 20; } }
 @media screen and (min-width: 1500px) {
+  #left_menu {
+    background-color: #0097d7;
+    height: 170vh;
+    width: 300px; }
+    #left_menu #logo {
+      width: 65%;
+      height: auto;
+      margin: 30px auto 0 auto; }
+
   #mobilAlt {
     padding: 70px 50px 50px 0;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(21, 50px);
+    grid-template-rows: repeat(20, 50px);
     grid-column-gap: 20px;
     height: 600px;
     width: 100%;
