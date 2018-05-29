@@ -139,38 +139,27 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 <script type="text/javascript">
-    //MOBIL//
+    //UNDER 767 PX//
     $(document).ready(function(){
-        $(".bold1tekst").click(function(){
-            $(".bold1tekst").hide();
-        });
-        $(".bold1tekst").click(function(){
-            $(".bold1fuldtekst").show();
-        });
-        $(".bold1fuldtekst").click(function(){
-            $(".bold1tekst").show();
-        });
-        $(".bold1fuldtekst").click(function(){
-            $(".bold1fuldtekst").hide();
-        });
-        $(".bold2tekst").click(function(){
-            $(".bold2tekst").hide();
-        });
-        $(".bold2tekst").click(function(){
-            $(".bold2fuldtekst").show();
-        });
-        $(".bold2fuldtekst").click(function(){
-            $(".bold2tekst").show();
-        });
-        $(".bold2fuldtekst").click(function(){
-            $(".bold2fuldtekst").hide();
-        });
+            if ($(window).width() <= 767) {
+                alert('Less than 767 resize');
 
-    //IPAD stående og liggende//
-        if()
+                 $(".bold1tekst").click(function(){
+                  $(".bold1tekst").hide();
+                  })}
+            else {
+                alert('More than 767 resize');
+                   $(".bold1tekst").click(function(){
+                     $(".bold1tekst").show();
+                    });}})
 
-
+    $("bold1").click(function(){
+        $("bold1").animate({left: '250px'});
     });
+
+
+
+
 
 </script>
 </body>

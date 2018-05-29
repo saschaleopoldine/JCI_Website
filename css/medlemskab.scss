@@ -135,6 +135,10 @@ $white:#f9f7f4;
   text-align: center;
   color: $blue;
   margin-right: 50px;
+  a{
+    text-decoration: none;
+    color: $blue;
+  }
 }
 .bold1fuldtekst{
   grid-column: 2 / span 5;
@@ -185,6 +189,10 @@ $white:#f9f7f4;
   margin-top: 20px;
   font-size: 19pt;
   font-family: 'Libre Baskerville', serif;
+  a{
+    text-decoration: none;
+    color: $blue;
+  }
 }
 
 .bold2fuldtekst{
