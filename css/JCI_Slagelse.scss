@@ -85,7 +85,7 @@ $overlay: rgba(93, 144, 183, 0.5);
 
 
 
-
+//--------------- Iphone ------------------------------ Iphone --------------------------- Iphone ----------------------
 
 
 //--------------------------------------------------- Header mobil -----------------------------------------------
@@ -473,12 +473,6 @@ h2{
   #caroline, #lasse, #mie, #kamilla, #anna{
     @include board_mobil;
     }
-  .round {
-    width: 85px;
-    height: 85px;
-    border-radius: 50%;
-    border: 2px solid $orange;
-  }
   h3{
     font-size: 11pt;
     margin-top: 5px;
@@ -514,67 +508,406 @@ footer{
 }
 
 
-
-
-
+//-------------- Iphone Plus ---------------------- Iphone Plus ------------------- Iphone Plus --------------------------
 @media screen and (min-width: 414px) {
+   .cirkel_1{
+     grid-row: 4;
+     margin-top: -10px;
+   }
 
-  #projekt{
-    a{
-      margin-left: -25px;
-    }
-  }
-
-  #hr_et{
-    width: 120px;
-  }
-
-  .cirkel_2{
-    margin-left: -15px;
-  }
+   #projekt{
+     grid-row: 5;
+     margin-top: 5px;
+     a{
+       margin-left: -25px;
+     }
+   }
 
 
-  #medlem{
-      margin-left: -8%;
-  }
+   .hr_et{
+     grid-row: 6;
+     width: 140px;
+   }
 
-  #partner{
-    a{
+
+   .cirkel_2{
+     grid-row: 6;
+     margin-left: -15px;
+   }
+
+   #medlem{
+     grid-row: 7;
+     margin-left: -8%;
+   }
+
+
+   .hr_to{
+     grid-row: 8;
+     width: 140px;
+   }
+
+
+   .cirkel_3{
+     grid-row: 8;
+   }
+
+   #partner{
+     grid-row: 9;
+     a{
+      text-decoration: none;
+      color: white;
       margin-left: -10%;
-    }
-  }
+     }
+   }
 
-  #aktivitet{
-    margin-right: 15%;
-    margin-top: 5%;
-  }
+
+    .hr_tre{
+      grid-row: 10;
+      width: 140px;
+      margin-top: 15px;
+    }
+
+
+   .cirkel_4{
+     grid-row: 10;
+   }
+
+
+   #aktivitet{
+     grid-row: 11;
+     margin-right: 15%; 
+     margin-top: 5%;
+   }
+
+
+   .hr_fire{
+     grid-row: 12;
+     width: 140px;
+     margin-left: -20px;
+     margin-top: 10px;    
+   }
+
+
+   .cirkel_5{
+     grid-row: 12;
+   }
+
 
   #bestyrrelse{
+    grid-row-end: 14;
     margin-left: -5%;
   }
 
-  #hr_fire{
-    width: 100px;
-    margin-left: -15px;
-    margin-top: 10px;
-  }
+  #projektelement{
+    grid-row: 15/span 8;
+  }                                       
+                                          
+                                          
+  //-------------------------------------- medlemselement iphone plus ---------------------------------------------
+  #medlemselement {
+    grid-row: 24/span 8;
+  }                                       
+                                          
+                                          
+                                          
+                                          
+  //-------------------------------------- Partnerelement iphone plus ---------------------------------------------
+  #partnerelement {
+    grid-row: 34/span 8;
+  }                                       
+                                          
+                                          
+  //-------------------------------------- Aktivitetselement iphone plus ------------------------------------------
+  #aktivitetelement {
+    grid-row: 43/span 8;
+  }                                       
+                                          
+                                          
+  //-------------------------------------- Bestyrelseselement iphone plus -----------------------------------------
+  #bestyrelseselement {
+    grid-row: 52/span 8;
+  }                                       
+                                         
 }
 
 
 
 
-
+//--------------- stående tablet -------------------- stående tablet ------------------ stående tablet -----------------
 @media screen and (min-width: 768px) {
-  // Alt der ændres i tablet stående fra mobil
+  @mixin board_mobil{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: 3px solid $orange;
+  }
+
+
+  #mobilAlt{
+     grid-template-rows: repeat(51, 50px);
+   }                                       
+
+   h1{                                         
+     font-size: 30pt;                                                      
+   }                                          
+
+  .cirkel_1{
+    width: 250px;
+    height: 250px;
+    grid-column: 2/span 2;
+    grid-row: 4;             
+    margin-left: -30%;
+  }                          
+                             
+  #projekt{
+    font-size: 24pt;
+    grid-column: 2/span 2;
+    grid-row: 6;
+    margin-top: -5%;
+    margin-left: -43%;
+  }                          
+                             
+                             
+  .hr_et{                    
+    grid-row: 7;
+    width: 250px;
+    -ms-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+
+                             
+  .cirkel_2{
+    width: 200px;
+    height: 200px;
+    grid-row: 7;
+    margin-left: 0;
+    margin-top: -5%;
+  }                          
+                             
+  #medlem{
+    font-size: 15pt;
+    grid-column: 5/span 2;
+    grid-row: 8;
+    margin-left: 0;
+    margin-right: 18%;
+    margin-top: 10%;
+  }                          
+                             
+                             
+  .hr_to{                    
+    grid-row: 11;
+    width: 300px;
+    margin-left: 0;
+    margin-top: -10%;
+    -ms-transform: rotate(155deg);
+    -webkit-transform: rotate(155deg);
+    transform: rotate(155deg);
+  }                          
+                             
+                             
+  .cirkel_3{
+    width: 175px;
+    height: 175px;
+    margin-top: -5%;
+    grid-column: 2/span 2;
+    grid-row: 11;
+  }                          
+                             
+  #partner{
+    grid-row: 12;
+    font-size: 18pt;
+    margin-top: 5%;
+    margin-right: 15%;
+  }                          
+                             
+                             
+   .hr_tre{                  
+     grid-row: 13;
+     width: 200px;
+     margin-top: 25px;
+     -ms-transform: rotate(25deg);
+     -webkit-transform: rotate(25deg);
+     transform: rotate(25deg);
+
+   }                         
+                             
+                             
+  .cirkel_4{
+    width: 225px;
+    height: 225px;
+    grid-row: 13;
+    margin-left: 10%;
+  }                          
+                             
+                             
+  #aktivitet{
+    grid-row: 15;
+    margin-right: 15%;       
+    margin-top: -3%;
+  }                          
+                             
+                             
+  .hr_fire{
+    grid-column: 2/span 3;
+    grid-row: 17;
+    width: 300px;
+    margin-left: 5%;
+    margin-top: 10px;
+  }                          
+                             
+                             
+  .cirkel_5{
+    width: 150px;
+    height: 150px;
+    grid-column: 1/span 2;
+    grid-row: 17;
+    margin-left: 25%;
+  }
+
+  #bestyrrelse{
+    font-size: 15pt;
+    grid-column: 1/Span 2;
+    grid-row: 18;
+    margin-left: 15%;
+    margin-top: -5%;
+  }                                                                                                                                                                           
+
+
+  //-------------------------------------- projektelement stående tablet ---------------------------------------------
+  #projektelement{                                                   
+    grid-row: 21/span 5;
+    grid-template-rows: repeat(5, 50px);
+    #projektoverskrift{                         
+      grid-column: 2/span 3;
+      grid-row: 1;
+      margin-left: 0;
+    }                                           
+    #projekttext{                               
+      grid-column: 2/span 4;
+      grid-row: 2;
+      width: auto;
+      margin-left: 0;
+    }                                           
+  }
+
+
+  //-------------------------------------- medlemselement stående tablet ---------------------------------------------
+  #medlemselement{
+    grid-row: 27/span 7;
+    grid-template-rows: repeat(7, 50px);
+    #medlemsoverskrift{           
+      margin-left: 0;
+    }                          
+    #medlemstext{              
+      grid-column: 2/span 4;
+      grid-row: 2;
+      width: auto;
+      margin-left: 0;
+    }                          
+    .knap{                            
+      grid-column: 2/span 2;
+      grid-row: 6;
+      margin-left: 0;
+    }                          
+  }
+
+                                                                                                         
+  //-------------------------------------- Partnerelement stående tablet ---------------------------------------------
+  #partnerelement {                                                                                      
+    grid-row: 35/span 5;
+    grid-template-rows: repeat(5, 50px);
+    #partneroverskrift {
+      margin-left: 0;
+    }                         
+    #partnertext {            
+      grid-column: 2/span 4;
+      grid-row: 2;
+      width: auto;
+      margin-left: 0;
+    }                         
+  }                                                                                                      
+                                                                                                         
+                                                                                                         
+  //-------------------------------------- Aktivitetselement stående tablet ------------------------------------------
+  #aktivitetelement {                                                                                    
+    grid-row: 41/span 5;
+    grid-template-rows: repeat(5, 50px);
+    #aktivitetoverskrift {
+      grid-column: 2/span 3;
+      grid-row: 1;
+      margin-left: 0;
+    }
+    #aktivitettext {
+      grid-column: 2/span 4;
+      grid-row: 2;          
+      width: auto;          
+      margin-left: 0;
+    }
+  }                                                                                                      
+                                                                                                         
+                                                                                                         
+  //-------------------------------------- Bestyrelseselement stående tablet -----------------------------------------
+  #bestyrelseselement {                                                                                  
+    grid-row: 47/span 4;
+    grid-template-rows: repeat(4, 50px);
+    #bestyrelseoverskrift {
+      width: 260px;
+      margin-left: 0;
+    }                          
+    #bestyrelsestext {         
+     grid-column: 2/span 4;
+     grid-row: 2;          
+     width: auto;          
+     margin-left: 0;         
+    }
+    .fa-angle-down {              
+      grid-row: 4;
+    }
+  }                                                                                                                     
+                                                    
+  .bestyrelsesmedlem{
+    #caroline, #lasse, #mie, #kamilla, #anna{       
+      @include board_mobil;                         
+      }                                                                                                                                                   
+    h3{                                             
+      font-size: 14pt;
+      margin-top: 5px;                              
+    }                                               
+    .bestyrelsesmedlemtext{                         
+      font-size: 12pt;
+      margin-bottom: 40px;
+      margin-top: 5px;
+      line-height: 18pt;
+    }                                               
+  }                                                 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
 }
 
-@media screen and (min-width: 1200px) {
-  // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
 
+
+
+
+
+
+
+//--------------------- WEB ----------------------------- WEB ---------------------------- WEB -------------------
+@media screen and (min-width: 1200px) {
   //--------------------------------------------------- Header web -----------------------------------------------
   @mixin board_web{
     width: 114px;
@@ -625,7 +958,7 @@ footer{
   }
 
 
-  //------------------------------------------------ Indhold mobil --------------------------------------------------
+  //------------------------------------------------ Indhold web --------------------------------------------------
 
   #grid{
     padding: 70px 50px 50px 0;
