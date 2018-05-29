@@ -1586,7 +1586,7 @@ footer{
 
   #Fordeltekst{
     grid-row-start:1;
-    grid-column: 5/span 6;
+    grid-column: 5/span 7;
     margin-top: -28%;
 
   }
@@ -1611,7 +1611,7 @@ footer{
 
  .line{
    width: 3px;
-   height: 775px;
+   height: 760px;
    -ms-transform: rotate(130deg);
    -webkit-transform: rotate(130deg);
    transform: rotate(130deg);
@@ -1648,12 +1648,16 @@ grid-column: 4/span 6;
   
 
  #Pristekst{
-  grid-column: 1/span 4;
+  grid-column: 1/span 5;
   grid-row-start:8;
   margin-left: -50px;
   margin-top: -10%;
 
  }
+
+  #priserafsnit{
+    font-size: 15pt;
+  }
 
 //--------------------------------Circle_Priser_med_afsnit--------------------->
 
@@ -1700,6 +1704,10 @@ margin-left: 4%;
   .studierabat{
     display: none;
   }
+
+  #studierabatafsnit{
+    font-size: 15pt;
+  }
   
 
 //--------------------------------Circle_Studierabat_med_afsnit--------------------->
@@ -1710,9 +1718,72 @@ margin-left: 4%;
 
 
   
+//--------------------------------Circle_Chef_med_afsnit-------------------------->
 
 
+
+                               
+   #circlechef{
+   width: 206px;
+   height: 206px;
+   border-radius: 100%;
+   grid-row-start:40;
+   grid-column: 4/span 6;
+     }
+
+
+  .chef{
+    display: none;
+  }
+
+
+ .line2{                              
+   width: 3px;                        
+   height: 700px;
+   -ms-transform: rotate(140deg);
+   -webkit-transform: rotate(140deg);
+   transform: rotate(140deg);
+   grid-row-start:29;
+   grid-column: 3/span 6;
+   margin-top: 14%;
+ }                                     
+
+
+ #fådincheftekst{
+  grid-column: 1/span 5;
+  grid-row-start:30;
+  margin-left: -50px;     
+  margin-top: -10%;
+
+ }
+
+  #fådinchefafsnit{
+   font-size: 15pt;
 }
+
+
+  .meld_dig_indweb{
+     @include button;
+     grid-column: 5/span 6;
+     grid-row-start: 44;
+     width: 175px;
+    height: 45px;
+
+  }
+
+
+
+  
+  
+  }
+
+
+
+
+
+
+
+
 
 @media print {
   // Alt der gælder for print specifikt

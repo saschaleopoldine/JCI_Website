@@ -884,7 +884,7 @@ footer {
 
   #Fordeltekst {
     grid-row-start: 1;
-    grid-column: 5/span 6;
+    grid-column: 5/span 7;
     margin-top: -28%; }
 
   .Fordele {
@@ -900,7 +900,7 @@ footer {
 
   .line {
     width: 3px;
-    height: 775px;
+    height: 760px;
     -ms-transform: rotate(130deg);
     -webkit-transform: rotate(130deg);
     transform: rotate(130deg);
@@ -917,10 +917,13 @@ footer {
     border-radius: 50%; }
 
   #Pristekst {
-    grid-column: 1/span 4;
+    grid-column: 1/span 5;
     grid-row-start: 8;
     margin-left: -50px;
     margin-top: -10%; }
+
+  #priserafsnit {
+    font-size: 15pt; }
 
   #circlestudierabat {
     width: 355px;
@@ -946,6 +949,52 @@ footer {
     grid-column: 3/span 6; }
 
   .studierabat {
-    display: none; } }
+    display: none; }
+
+  #studierabatafsnit {
+    font-size: 15pt; }
+
+  #circlechef {
+    width: 206px;
+    height: 206px;
+    border-radius: 100%;
+    grid-row-start: 40;
+    grid-column: 4/span 6; }
+
+  .chef {
+    display: none; }
+
+  .line2 {
+    width: 3px;
+    height: 700px;
+    -ms-transform: rotate(140deg);
+    -webkit-transform: rotate(140deg);
+    transform: rotate(140deg);
+    grid-row-start: 29;
+    grid-column: 3/span 6;
+    margin-top: 14%; }
+
+  #fådincheftekst {
+    grid-column: 1/span 5;
+    grid-row-start: 30;
+    margin-left: -50px;
+    margin-top: -10%; }
+
+  #fådinchefafsnit {
+    font-size: 15pt; }
+
+  .meld_dig_indweb {
+    background-color: #f37121;
+    color: white;
+    width: 70%;
+    padding: 5px 10px;
+    font-size: 18pt;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    grid-column: 5/span 6;
+    grid-row-start: 44;
+    width: 175px;
+    height: 45px; } }
 
 /*# sourceMappingURL=privat_medlem.css.map */
