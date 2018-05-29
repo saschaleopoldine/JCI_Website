@@ -34,7 +34,6 @@ p {
   margin: 0; // Ingen ydre margen fra paragraffer
   padding: 0; // Ingen indre margen fra paragraffer
   font-family: "Merriweather Sans", sans-serif;
-  font-size: 12pt;
 }
 
 .slagelsetekst{
@@ -107,10 +106,11 @@ img{
 
 
 #mobilAlt{
+  font-size: 12pt;
   padding: 0 20px 0 20px;
+  width: 100vw;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-column-gap: 10px;
   grid-template-rows: repeat(20, 50px);
     h1{
       font-family: 'Libre Baskerville', serif;
@@ -204,6 +204,7 @@ footer{
     }
   }
 }
+
 
 // Variabler - med størrelser
 
@@ -367,6 +368,35 @@ footer{
   }
 }
 
+@media screen and (min-width: 1024px){
+  #mobilAlt{
+    font-size: 12pt;
+    padding: 0 20px 0 20px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(20, 50px);
+  .dk {
+    display: block; // Billeder er et element (laver linjeskift)
+    width: 35%;
+    height: auto;
+    grid-column: 1/span 2;
+    grid-row-start: 5;
+    margin-top: 18%;
+    margin-left: 27%;
+  }
+
+  .world{
+    display: block;
+    width: 50%;
+    height: auto;
+    grid-column: 5/span 2;
+    grid-row-start: 14;
+    margin-top: 18%;
+  }
+
+}
+}
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
 
@@ -525,7 +555,7 @@ footer{
       grid-row-start: 19;
       margin-left: -2px;
     }
-  }
+
 
   #circle1{
     border-radius: 50%;
@@ -546,7 +576,7 @@ footer{
     grid-row-start: 13;
     margin-left: 70px;
   }
-
+}
 
 
 @media print {
