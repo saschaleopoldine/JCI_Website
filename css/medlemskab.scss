@@ -142,10 +142,11 @@ $white:#f9f7f4;
 }
 .bold1fuldtekst{
   grid-column: 2 / span 5;
-  grid-row-start: 7;
+  grid-row-start: 5;
   text-align: center;
   color: $blue;
   margin-right: 50px;
+  font-size: 15pt;
   display: none;
   z-index: 99;
 }
@@ -154,7 +155,8 @@ $white:#f9f7f4;
   grid-column: 2 / span 5;
   grid-row-start: 10;
   font-size: 18pt;
-  width: 180px;
+  font-family: 'Merriweather Sans', sans-serif;
+  width: 190px;
   height: 40px;
   background-color: $orange;
   text-align: center;
@@ -208,7 +210,8 @@ $white:#f9f7f4;
   grid-column: 2 / span 5;
   grid-row-start: 17;
   font-size: 18pt;
-  width: 180px;
+  font-family: 'Merriweather Sans', sans-serif;
+  width: 190px;
   height: 40px;
   background-color: $orange;
   text-align: center;
@@ -252,7 +255,6 @@ footer{
   grid-column: 2 / span 2;
   grid-row-start: 13;
   margin-top: 25px;
-
   }
 
 
@@ -276,16 +278,16 @@ footer{
     margin-left: 10px;
   }
   .bold1fuldtekst{
-    display: inline;
-    grid-column: 3 / span 4;
+    grid-column: 1 / span 4;
     grid-row-start: 5;
-    margin-left: 50px;
+    margin-left: 30px;
     margin-top: 10px;
+    display: none;
   }
   .CTAbold1 {
-    grid-column: 4 / span 3;
+    grid-column: 2 / span 3;
     grid-row-start: 8;
-
+    display: none;
   }
   .bold2{
     grid-column: 4 / span 3;
@@ -300,15 +302,16 @@ footer{
     margin-left: 70px;
   }
   .bold2fuldtekst {
-    grid-column: 1 / span 4;
+    grid-column: 3 / span 4;
     grid-row-start: 12;
     margin-top: 20px;
-    display: inline;
+    display: none;
   }
   .CTAbold2 {
-    grid-column: 2 / span 2;
+    grid-column: 4 / span 2;
     grid-row-start: 15;
     margin-top: 20px;
+    display: none;
   }
 
 }
@@ -322,19 +325,20 @@ footer{
     margin-left: 100px;
   }
   .bold1tekst{
-    grid-column: 2 / span 2;
+    grid-column: 1 / span 2;
     grid-row-start: 7;
-    margin-left: -155px;
+    margin-left: 120px;
   }
   .bold1fuldtekst{
-    grid-column: 3 / span 3;
+    grid-column: 1 / span 3;
     grid-row-start: 5;
     margin-right: -20px;
-    display: inline;
+    display: none;
   }
   .CTAbold1{
     grid-column: 4 / span 3;
     grid-row-start: 8;
+    display: none;
 
   }
   .bold2{
@@ -346,11 +350,14 @@ footer{
   .bold2tekst{
     grid-column: 4 / span 3;
     grid-row-start: 13;
-    margin-top: 27px;
-    margin-right: 10px;
+    margin-right: 5px;
+    margin-left: 120px;
   }
   .bold2fuldtekst{
-    display: inline;
+    display: none;
+  }
+  .CTAbold2{
+    display: none;
   }
 
 }
@@ -402,49 +409,70 @@ footer{
     grid-column: 3 / span 6;
     grid-row-start: 1;
   }
+  .bold1{
+    height: 300px;
+    width: 300px;
+  }
   .bold1tekst{
     grid-column: 3 / span 3;
     grid-row-start: 7;
+    font-size: 24pt;
+    display: inline;
   }
   .bold1fuldtekst{
-    grid-column: 5 / span 5;
-    grid-row-start: 4;
+    grid-column: 2 / span 5;
+    grid-row-start: 5;
     margin-top: 60px;
+    display: none;
   }
   .CTAbold1{
-    grid-column: 6 / span 2;
+    grid-column: 2 / span 2;
     grid-row-start: 7;
     margin-left: 80px;
     margin-top: 55px;
+    display: none;
   }
   .bold2{
     grid-column: 4 / span 3;
     grid-row-start: 11;
     margin-left: 280px;
+    height: 300px;
+    width: 300px;
   }
   .bold2tekst{
     grid-column: 6 / span 3;
     grid-row-start: 13;
     margin-right: -95px;
+    font-size: 24pt;
   }
   .bold2fuldtekst{
-    grid-column: 1 / span 5;
+    grid-column: 6 / span 3;
     grid-row-start: 12;
     margin-right: -55px;
+    display: none;
   }
   .CTAbold2{
-    grid-column: 3 / span 2;
+    grid-column: 7 / span 2;
     grid-row-start: 15;
     margin-left: -20px;
     margin-top: 10px;
+    display: none;
   }
 }
 @media screen and (min-width: 1500px) {
-.bold1tekst{
-  grid-column: 3 / span 2;
+  .bold1{
+    height: 300px;
+    width: 300px;
+  }
+  .bold1tekst{
+  grid-column: 2 / span 2;
   grid-row-start: 7;
-  margin-left: -220px;
+  margin-left: 30px;
 }
+  .bold2{
+    height: 300px;
+    width: 300px;
+  }
   .bold2tekst{
     grid-column: 5 / span 2;
     grid-row-start: 13;
@@ -453,7 +481,6 @@ footer{
   #mobilAlt {
     grid-template-rows: repeat(19, 50px);
   }
-
 
 }
 

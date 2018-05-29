@@ -90,7 +90,7 @@
 
             <div class="bold2"></div>
             <div class="bold2tekst">
-                Erhvervsmedlem
+                <h2>Erhvervsmedlem</h2>
             </div>
             <div class="bold2fuldtekst">
                 <h2>Fordele som privatmedlem</h2>
@@ -141,21 +141,103 @@
 <script type="text/javascript">
     //UNDER 767 PX//
     $(document).ready(function(){
-            if ($(window).width() <= 767) {
-                alert('Less than 767 resize');
+        if ($(window).width() <= 767) {
+            // NÅR MAN TRYKKER PÅ BOLDEN FORSVINDER TEKSTEN//
+            $(".bold1").click(function(){
+                $(".bold1tekst").hide(1000);
+            })
+            // NÅR MAN TRYKKER PÅ BOLDEN KOMMER DEN FULDE TEKST FREM//
+            $(".bold1").click(function(){
+                $(".bold1fuldtekst").show(500);
+            })
+            // NÅR MAN TRYKKER PÅ BOLDEN FORSVINDER BOLDEN
+            $(".bold1").click(function(){
+                $(".bold1").hide(500);
+            })
+            // NÅR MAN TRYKKER PÅ BOLDEN FORSVINDER PRÆSENTATIONTEKSTEN//
+            $(".bold1").click(function(){
+                $(".bold1tekst").hide(1000);
+            })
+            // NÅR MAN TRYKKER PÅ TEKSTEN FORSVINDER DEN//
+            $(".bold1tekst").click(function(){
+                $(".bold1tekst").hide(1000);
+            })
+            // NÅR MAN TRYKKER PÅ BOLDEN KOMMER DEN FULDETEKST FREM//
+            $(".bold1tekst").click(function(){
+                $(".bold1fuldtekst").show(500);
+            })
+            // NÅR MAN TRYKKER PÅ TEKSTEN FORSVINDER BOLDEN
+            $(".bold1tekst").click(function(){
+                $(".bold1").hide(500);
+            })
 
-                 $(".bold1tekst").click(function(){
-                  $(".bold1tekst").hide();
-                  })}
-            else {
-                alert('More than 767 resize');
-                   $(".bold1tekst").click(function(){
-                     $(".bold1tekst").show();
-                    });}})
+            // BOLD 2//
 
-    $("bold1").click(function(){
-        $("bold1").animate({left: '250px'});
-    });
+            $(".bold2").click(function(){
+                $(".bold2tekst").hide(1000);
+            })
+            $(".bold2").click(function(){
+                $(".bold2fuldtekst").show(500);
+            })
+            $(".bold2").click(function(){
+                $(".bold2").hide(500);
+            })
+            $(".bold2").click(function(){
+                $(".bold2tekst").hide(1000);
+            })
+
+            $(".bold2tekst").click(function(){
+                $(".bold2tekst").hide(1000);
+            })
+            $(".bold2tekst").click(function(){
+                $(".bold2fuldtekst").show(500);
+            })
+            $(".bold2tekst").click(function(){
+                $(".bold2").hide(500);
+            })
+        }
+        else {
+            //gør at præsentations teksten bliver vist//
+            $(".bold1tekst").click(function(){
+                $(".bold1tekst").show();
+            })
+
+            //gør at fordelsteksten kommer frem//
+            $(".bold1tekst").click(function(){
+                $(".bold1fuldtekst").fadeIn(2000);
+            })
+
+
+            //gør at præsentationsteksten flytter sig til højre//
+            $(".bold1tekst").click(function(){
+                $(".bold1tekst").animate({"margin-left": '450px'});
+            })
+
+            //gør at bolden også flytter sig til højre//
+            $(".bold1tekst").click(function(){
+                $(".bold1").animate({"margin-left": '430px'});
+            })
+
+            //CTA kommer frem under teksten//
+            $(".bold1tekst").click(function(){
+                $(".CTAbold1").show(1000);
+            })
+
+            // bold 2 rykker sig til højre//
+            $(".bold2tekst").click(function(){
+                $(".bold2").animate({"margin-right": '430px'});
+            })
+
+            $(".bold2tekst").click(function(){
+                $(".bold2fuldtekst").animate({"margin-right": '430px'});
+            })
+
+
+
+
+        }
+
+    })
 
 
 
