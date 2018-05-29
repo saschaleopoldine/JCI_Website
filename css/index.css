@@ -35,6 +35,35 @@ body {
 .web {
   display: none; }
 
+.ca_streger {
+  height: 3px;
+  background-color: #0097d7; }
+
+#ca_streg1 {
+  -ms-transform: rotate(-80deg);
+  -webkit-transform: rotate(-80deg);
+  transform: rotate(-80deg);
+  width: 150px;
+  grid-column: 2/span 2;
+  grid-row-start: 16; }
+
+#ca_streg2 {
+  -ms-transform: rotate(75deg);
+  -webkit-transform: rotate(75deg);
+  transform: rotate(75deg);
+  width: 150px;
+  grid-column: 2/span 3;
+  grid-row-start: 22; }
+
+#ca_streg3 {
+  -ms-transform: rotate(-80deg);
+  -webkit-transform: rotate(-80deg);
+  transform: rotate(-80deg);
+  width: 150px;
+  grid-column: 3/span 2;
+  grid-row-start: 28;
+  margin-left: -10%; }
+
 #menuMobil {
   height: 60px;
   width: 100%;
@@ -87,7 +116,8 @@ body {
     grid-row: 10/span 7;
     grid-column: 1/span 6;
     height: 280px;
-    width: 280px; }
+    width: 280px;
+    z-index: 1; }
   #mobilAlt #firstBobleTitle {
     font-size: 20pt;
     color: white;
@@ -95,14 +125,16 @@ body {
     margin-left: 10%;
     grid-row-start: 11;
     margin-top: 3%;
-    font-weight: bold; }
+    font-weight: bold;
+    z-index: 2; }
   #mobilAlt #firstBobleText {
     font-size: 12pt;
     color: white;
     grid-column: 1/span 6;
     margin-left: 10%;
     grid-row-start: 11;
-    margin-top: 13%; }
+    margin-top: 13%;
+    z-index: 2; }
   #mobilAlt #firstBobleButton {
     height: 30px;
     background-color: #f37121;
@@ -111,7 +143,8 @@ body {
     grid-column: 1/span 6;
     width: 80%;
     margin-left: 10%;
-    margin-top: 8%; }
+    margin-top: 8%;
+    z-index: 2; }
     #mobilAlt #firstBobleButton a {
       text-decoration: none;
       color: white;
@@ -121,7 +154,8 @@ body {
     grid-row: 17/span 5;
     grid-column: 1/span 5;
     width: 230px;
-    height: 230px; }
+    height: 230px;
+    z-index: 1; }
   #mobilAlt #secondBobleTitle {
     font-size: 20pt;
     color: white;
@@ -129,14 +163,16 @@ body {
     margin-left: 18%;
     grid-row-start: 17;
     margin-top: 25%;
-    font-weight: bold; }
+    font-weight: bold;
+    z-index: 2; }
   #mobilAlt #secondBobleText {
     font-size: 12pt;
     color: white;
     grid-column: 1/span 5;
     grid-row-start: 18;
     margin-top: 5%;
-    margin-left: 10%; }
+    margin-left: 10%;
+    z-index: 2; }
   #mobilAlt #secondBobleButton {
     height: 30px;
     background-color: #f37121;
@@ -145,7 +181,8 @@ body {
     margin-top: 0;
     grid-column: 1/span 4;
     width: 175px;
-    margin-left: 15%; }
+    margin-left: 15%;
+    z-index: 2; }
     #mobilAlt #secondBobleButton a {
       text-decoration: none;
       color: white;
@@ -155,14 +192,16 @@ body {
     grid-row: 23/span 5;
     grid-column: 2/span 5;
     width: 230px;
-    height: 230px; }
+    height: 230px;
+    z-index: 1; }
   #mobilAlt #thirdBobleTitle {
     font-size: 20pt;
     color: white;
     grid-column: 2/span 3;
     margin-left: 20%;
     grid-row-start: 24;
-    font-weight: bold; }
+    font-weight: bold;
+    z-index: 2; }
   #mobilAlt #thirdBobleText {
     font-size: 12pt;
     color: white;
@@ -170,7 +209,8 @@ body {
     grid-row-start: 24;
     margin-top: 13%;
     margin-left: 12%;
-    width: 70%; }
+    width: 70%;
+    z-index: 2; }
   #mobilAlt #thirdBobleButton {
     height: 30px;
     background-color: #f37121;
@@ -179,7 +219,8 @@ body {
     margin-top: 10%;
     grid-column: 2/span 3;
     width: 150px;
-    margin-left: 30%; }
+    margin-left: 30%;
+    z-index: 2; }
     #mobilAlt #thirdBobleButton a {
       text-decoration: none;
       color: white;
@@ -189,7 +230,8 @@ body {
     grid-row: 29/span 7;
     grid-column: 1/span 6;
     width: 280px;
-    height: 280px; }
+    height: 280px;
+    z-index: 1; }
   #mobilAlt #fourthBobleTitle {
     font-size: 20pt;
     color: white;
@@ -197,14 +239,16 @@ body {
     margin-left: 15%;
     grid-row-start: 30;
     margin-top: 8%;
-    font-weight: bold; }
+    font-weight: bold;
+    z-index: 2; }
   #mobilAlt #fourthBobleText {
     font-size: 12pt;
     color: white;
     grid-column: 1/span 6;
     margin-left: 10%;
     grid-row-start: 31;
-    margin-top: 0; }
+    margin-top: 0;
+    z-index: 2; }
   #mobilAlt #fourthBobleButton {
     height: 30px;
     background-color: #f37121;
@@ -214,7 +258,8 @@ body {
     grid-column: 2/span 4;
     margin-left: 2%;
     width: 175px;
-    height: 60px; }
+    height: 60px;
+    z-index: 2; }
     #mobilAlt #fourthBobleButton a {
       text-decoration: none;
       color: white;
@@ -238,6 +283,26 @@ footer {
       margin: 3px 0; }
 
 @media screen and (min-width: 360px) {
+  #ca_streg1 {
+    -ms-transform: rotate(-80deg);
+    -webkit-transform: rotate(-80deg);
+    transform: rotate(-80deg);
+    grid-row-start: 18; }
+
+  #ca_streg2 {
+    -ms-transform: rotate(65deg);
+    -webkit-transform: rotate(65deg);
+    transform: rotate(65deg);
+    grid-row-start: 23;
+    margin-left: 20%; }
+
+  #ca_streg3 {
+    -ms-transform: rotate(-75deg);
+    -webkit-transform: rotate(-75deg);
+    transform: rotate(-75deg);
+    grid-row-start: 29;
+    margin-left: 0; }
+
   #mobilAlt {
     grid-template-rows: repeat(37, 50px); }
     #mobilAlt #slagelseTitle {
@@ -319,6 +384,19 @@ footer {
       margin-left: 9%;
       margin-top: 10%; } }
 @media screen and (min-width: 410px) {
+  #ca_streg1 {
+    -ms-transform: rotate(-75deg);
+    -webkit-transform: rotate(-75deg);
+    transform: rotate(-75deg);
+    margin-left: 10%; }
+
+  #ca_streg2 {
+    grid-row-start: 24; }
+
+  #ca_streg3 {
+    grid-row-start: 30;
+    margin-left: 20%; }
+
   #mobilAlt {
     grid-template-rows: repeat(39, 50px); }
     #mobilAlt #indledning {
@@ -393,6 +471,28 @@ footer {
       margin-left: 13%;
       margin-top: 5%; } }
 @media screen and (min-width: 660px) {
+  #ca_streg1 {
+    -ms-transform: rotate(-65deg);
+    -webkit-transform: rotate(-65deg);
+    transform: rotate(-65deg);
+    grid-row-start: 17;
+    margin-left: 15%; }
+
+  #ca_streg2 {
+    -ms-transform: rotate(50deg);
+    -webkit-transform: rotate(50deg);
+    transform: rotate(50deg);
+    width: 300px;
+    grid-row-start: 25; }
+
+  #ca_streg3 {
+    -ms-transform: rotate(-70deg);
+    -webkit-transform: rotate(-70deg);
+    transform: rotate(-65deg);
+    width: 250px;
+    grid-row-start: 32;
+    margin-left: 30%; }
+
   #mobilAlt {
     grid-template-rows: repeat(43, 50px); }
     #mobilAlt #slagelseTitle {
@@ -483,6 +583,30 @@ footer {
       margin-left: 17%;
       margin-top: 5%; } }
 @media screen and (min-width: 768px) {
+  #ca_streg1 {
+    -ms-transform: rotate(-70deg);
+    -webkit-transform: rotate(-70deg);
+    transform: rotate(-70deg);
+    grid-row-start: 18;
+    margin-left: 30%; }
+
+  #ca_streg2 {
+    -ms-transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+    width: 250px;
+    grid-row-start: 26;
+    margin-left: 35%; }
+
+  #ca_streg3 {
+    -ms-transform: rotate(-65deg);
+    -webkit-transform: rotate(-65deg);
+    transform: rotate(-65deg);
+    width: 200px;
+    grid-column: 4/span 2;
+    grid-row-start: 34;
+    margin-left: 0; }
+
   #mobilAlt {
     grid-template-rows: repeat(45, 50px); }
     #mobilAlt #ca_cirkel_1 {
@@ -545,6 +669,32 @@ footer {
       grid-row-start: 42;
       margin-left: 21%; } }
 @media screen and (min-width: 992px) {
+  #ca_streg1 {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-40deg);
+    width: 250px;
+    grid-column: 4/span 2;
+    grid-row-start: 9; }
+
+  #ca_streg2 {
+    -ms-transform: rotate(65deg);
+    -webkit-transform: rotate(65deg);
+    transform: rotate(65deg);
+    width: 150px;
+    grid-column: 2/span 3;
+    grid-row-start: 23;
+    margin-left: 20%; }
+
+  #ca_streg3 {
+    -ms-transform: rotate(-75deg);
+    -webkit-transform: rotate(-75deg);
+    transform: rotate(-75deg);
+    width: 150px;
+    grid-column: 3/span 2;
+    grid-row-start: 29;
+    margin-left: 0; }
+
   #mobilAlt {
     padding: 70px 50px 0 0;
     display: grid;

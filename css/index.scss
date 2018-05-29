@@ -68,6 +68,39 @@ body{
   display: none;
 }
 
+.ca_streger{
+  height: 3px;
+  background-color: $bluePrimary;
+}
+
+#ca_streg1{
+  -ms-transform: rotate(-80deg); // sikrer at rotate virker i internet explore 9
+  -webkit-transform: rotate(-80deg); //sikrer at rotate virker i safari 3-8
+  transform: rotate(-80deg); //den funktion, der roterer elementet
+  width: 150px;
+  grid-column: 2/span 2;
+  grid-row-start: 16;
+}
+
+#ca_streg2{
+  -ms-transform: rotate(75deg); // sikrer at rotate virker i internet explore 9
+  -webkit-transform: rotate(75deg); //sikrer at rotate virker i safari 3-8
+  transform: rotate(75deg); //den funktion, der roterer elementet
+  width: 150px;
+  grid-column: 2/span 3;
+  grid-row-start: 22;
+}
+
+#ca_streg3{
+  -ms-transform: rotate(-80deg); // sikrer at rotate virker i internet explore 9
+  -webkit-transform: rotate(-80deg); //sikrer at rotate virker i safari 3-8
+  transform: rotate(-80deg); //den funktion, der roterer elementet
+  width: 150px;
+  grid-column: 3/span 2;
+  grid-row-start: 28;
+  margin-left: -10%;
+}
+
 #menuMobil{
   height: 60px;
   width: 100%;
@@ -95,6 +128,9 @@ body{
   p{
     font-size: 15pt;
   }
+
+
+
   #firstTitle{
     font-size: 25pt;
     grid-column: 1/span 6;
@@ -129,6 +165,7 @@ body{
     grid-column: 1/span 6;
     height: 280px;
     width: 280px;
+    z-index: 1;
   }
   #firstBobleTitle{
     font-size: 20pt;
@@ -138,6 +175,7 @@ body{
     grid-row-start: 11;
     margin-top: 3%;
     font-weight: bold;
+    z-index: 2;
   }
   #firstBobleText{
     font-size: 12pt;
@@ -146,6 +184,7 @@ body{
     margin-left: 10%;
     grid-row-start: 11;
     margin-top: 13%;
+    z-index: 2;
   }
   #firstBobleButton{
     @include ca_button;
@@ -154,6 +193,7 @@ body{
     width: 80%;
     margin-left: 10%;
     margin-top: 8%;
+    z-index: 2;
   }
   #ca_cirkel_2{
     background-image: url("../images/caroline_aktiviteter.png");
@@ -161,6 +201,7 @@ body{
     grid-column: 1/span 5;
     width: 230px;
     height: 230px;
+    z-index: 1;
   }
   #secondBobleTitle{
     font-size: 20pt;
@@ -170,6 +211,7 @@ body{
     grid-row-start: 17;
     margin-top: 25%;
     font-weight: bold;
+    z-index: 2;
   }
   #secondBobleText{
     font-size: 12pt;
@@ -178,6 +220,7 @@ body{
     grid-row-start: 18;
     margin-top: 5%;
     margin-left: 10%;
+    z-index: 2;
   }
   #secondBobleButton{
     @include ca_button;
@@ -186,6 +229,7 @@ body{
     grid-column: 1/span 4;
     width: 175px;
     margin-left: 15%;
+    z-index: 2;
   }
   #ca_cirkel_3{
     background-image: url("../images/caroline_partner.png");
@@ -193,6 +237,7 @@ body{
     grid-column: 2/span 5;
     width: 230px;
     height: 230px;
+    z-index: 1;
   }
   #thirdBobleTitle{
     font-size: 20pt;
@@ -201,6 +246,7 @@ body{
     margin-left: 20%;
     grid-row-start: 24;
     font-weight: bold;
+    z-index: 2;
   }
   #thirdBobleText{
     font-size: 12pt;
@@ -210,6 +256,7 @@ body{
     margin-top: 13%;
     margin-left: 12%;
     width: 70%;
+    z-index: 2;
   }
   #thirdBobleButton{
     @include ca_button;
@@ -218,6 +265,7 @@ body{
     grid-column: 2/span 3;
     width: 150px;
     margin-left: 30%;
+    z-index: 2;
   }
   #ca_cirkel_4{
     background-image: url("../images/caroline_medlemskab.png");
@@ -225,6 +273,7 @@ body{
     grid-column: 1/span 6;
     width: 280px;
     height: 280px;
+    z-index: 1;
   }
   #fourthBobleTitle{
     font-size: 20pt;
@@ -234,6 +283,7 @@ body{
     grid-row-start: 30;
     margin-top: 8%;
     font-weight: bold;
+    z-index: 2;
   }
   #fourthBobleText{
     font-size: 12pt;
@@ -242,6 +292,7 @@ body{
     margin-left: 10%;
     grid-row-start: 31;
     margin-top: 0;
+    z-index: 2;
   }
   #fourthBobleButton{
     @include ca_button;
@@ -251,6 +302,7 @@ body{
     margin-left: 2%;
     width: 175px;
     height: 60px;
+    z-index: 2;
   }
 
 }
@@ -278,6 +330,30 @@ footer{
 
 @media screen and (min-width: 360px) {
   // iPhone 6/7/8
+
+
+  #ca_streg1{
+    -ms-transform: rotate(-80deg); // sikrer at rotate virker i internet explore 9
+    -webkit-transform: rotate(-80deg); //sikrer at rotate virker i safari 3-8
+    transform: rotate(-80deg); //den funktion, der roterer elementet
+    grid-row-start: 18;
+  }
+
+  #ca_streg2{
+    -ms-transform: rotate(65deg); // sikrer at rotate virker i internet explore 9
+    -webkit-transform: rotate(65deg); //sikrer at rotate virker i safari 3-8
+    transform: rotate(65deg); //den funktion, der roterer elementet
+    grid-row-start: 23;
+    margin-left: 20%;
+  }
+
+  #ca_streg3{
+    -ms-transform: rotate(-75deg); // sikrer at rotate virker i internet explore 9
+    -webkit-transform: rotate(-75deg); //sikrer at rotate virker i safari 3-8
+    transform: rotate(-75deg); //den funktion, der roterer elementet
+    grid-row-start: 29;
+    margin-left: 0;
+  }
 
   #mobilAlt {
 
@@ -394,6 +470,22 @@ footer{
 @media screen and (min-width: 410px) {
   // iPhone 6/7/8 plus
 
+  #ca_streg1{
+    -ms-transform: rotate(-75deg); // sikrer at rotate virker i internet explore 9
+    -webkit-transform: rotate(-75deg); //sikrer at rotate virker i safari 3-8
+    transform: rotate(-75deg); //den funktion, der roterer elementet
+    margin-left: 10%;
+  }
+
+  #ca_streg2{
+    grid-row-start: 24;
+  }
+
+  #ca_streg3{
+    grid-row-start: 30;
+    margin-left: 20%;
+  }
+
   #mobilAlt {
 
     grid-template-rows: repeat(39, 50px);
@@ -498,6 +590,32 @@ footer{
 
 @media screen and (min-width: 660px) {
   // iPhone 6/7/8 liggende
+
+  #ca_streg1{
+    -ms-transform: rotate(-65deg); // sikrer at rotate virker i internet explore 9
+    -webkit-transform: rotate(-65deg); //sikrer at rotate virker i safari 3-8
+    transform: rotate(-65deg); //den funktion, der roterer elementet
+    grid-row-start: 17;
+    margin-left: 15%;
+  }
+
+  #ca_streg2{
+    -ms-transform: rotate(50deg); // sikrer at rotate virker i internet explore 9
+    -webkit-transform: rotate(50deg); //sikrer at rotate virker i safari 3-8
+    transform: rotate(50deg); //den funktion, der roterer elementet
+    width: 300px;
+    grid-row-start: 25;
+  }
+
+  #ca_streg3{
+    -ms-transform: rotate(-70deg); // sikrer at rotate virker i internet explore 9
+    -webkit-transform: rotate(-70deg); //sikrer at rotate virker i safari 3-8
+    transform: rotate(-65deg); //den funktion, der roterer elementet
+    width: 250px;
+    grid-row-start: 32;
+    margin-left: 30%;
+  }
+
 
   #mobilAlt {
 
@@ -621,6 +739,33 @@ footer{
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
 
+  #ca_streg1{
+    -ms-transform: rotate(-70deg); // sikrer at rotate virker i internet explore 9
+    -webkit-transform: rotate(-70deg); //sikrer at rotate virker i safari 3-8
+    transform: rotate(-70deg); //den funktion, der roterer elementet
+    grid-row-start: 18;
+    margin-left: 30%;
+  }
+
+  #ca_streg2{
+    -ms-transform: rotate(40deg); // sikrer at rotate virker i internet explore 9
+    -webkit-transform: rotate(40deg); //sikrer at rotate virker i safari 3-8
+    transform: rotate(40deg); //den funktion, der roterer elementet
+    width: 250px;
+    grid-row-start: 26;
+    margin-left: 35%;
+  }
+
+  #ca_streg3{
+    -ms-transform: rotate(-65deg); // sikrer at rotate virker i internet explore 9
+    -webkit-transform: rotate(-65deg); //sikrer at rotate virker i safari 3-8
+    transform: rotate(-65deg); //den funktion, der roterer elementet
+    width: 200px;
+    grid-column: 4/span 2;
+    grid-row-start: 34;
+    margin-left: 0;
+  }
+
   #mobilAlt{
 
     grid-template-rows: repeat(45, 50px);
@@ -711,6 +856,35 @@ footer{
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
+
+  #ca_streg1{
+    -ms-transform: rotate(-45deg); // sikrer at rotate virker i internet explore 9
+    -webkit-transform: rotate(-45deg); //sikrer at rotate virker i safari 3-8
+    transform: rotate(-40deg); //den funktion, der roterer elementet
+    width: 250px;
+    grid-column: 4/span 2;
+    grid-row-start: 9;
+  }
+
+  #ca_streg2{
+    -ms-transform: rotate(65deg); // sikrer at rotate virker i internet explore 9
+    -webkit-transform: rotate(65deg); //sikrer at rotate virker i safari 3-8
+    transform: rotate(65deg); //den funktion, der roterer elementet
+    width: 150px;
+    grid-column: 2/span 3;
+    grid-row-start: 23;
+    margin-left: 20%;
+  }
+
+  #ca_streg3{
+    -ms-transform: rotate(-75deg); // sikrer at rotate virker i internet explore 9
+    -webkit-transform: rotate(-75deg); //sikrer at rotate virker i safari 3-8
+    transform: rotate(-75deg); //den funktion, der roterer elementet
+    width: 150px;
+    grid-column: 3/span 2;
+    grid-row-start: 29;
+    margin-left: 0;
+  }
 
   #mobilAlt{
     padding: 70px 50px 0 0;
