@@ -584,10 +584,14 @@ footer {
       margin-left: -0.5%;
       margin-top: -1px; } }
 @media screen and (min-width: 768px) {
+  #mobilAlt {
+    grid-template-rows: repeat(42, 50px); }
+
   #circle {
-    width: 40%;
+    width: 38%;
     height: 520%;
-    border-radius: 100%; }
+    border-radius: 100%;
+    margin-left: 5%; }
 
   .fordelikon {
     margin-left: -25px; }
@@ -610,7 +614,7 @@ footer {
     margin-left: 81%; }
 
   #circlepriser {
-    margin-left: 72%; }
+    margin-left: 60%; }
 
   .line3 {
     width: 5px;
@@ -632,7 +636,8 @@ footer {
   #circlestudierabat {
     width: 37%;
     height: 510%;
-    border-radius: 90%; }
+    border-radius: 90%;
+    margin-left: 5%; }
 
   .studierabatikon {
     margin-left: 5%;
@@ -650,11 +655,12 @@ footer {
     margin-left: 60%; }
 
   #circlechef {
-    margin-left: 74%; }
+    margin-left: 60%; }
 
   .meld_dig_ind {
     margin-left: 25%;
-    grid-row-start: 20; }
+    grid-row-start: 19;
+    margin-top: -2%; }
 
   #Fordeltekst {
     grid-column: 1/span 6;

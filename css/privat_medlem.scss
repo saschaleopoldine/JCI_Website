@@ -995,15 +995,20 @@ footer{
   // Alt der ændres i tablet stående fra mobil
 
 
-
+#mobilAlt{
+  grid-template-rows: repeat(42, 50px);
+}                            
 
 //---------------------------- Circle_fordel_stående_Ipad---------------------->
 
 
   #circle {
-    width: 40%;
+    width: 38%;
     height: 520%;
     border-radius: 100%;
+    margin-left: 5%;
+   
+
   }
 
 
@@ -1058,7 +1063,8 @@ footer{
 
 
   #circlepriser {
-    margin-left: 72%;
+    margin-left: 60%;
+
   }
 
 
@@ -1104,6 +1110,7 @@ footer{
     width: 37%;
     height: 510%;
     border-radius: 90%;
+    margin-left: 5%;
   }
 
 
@@ -1141,7 +1148,9 @@ footer{
   }
 
   #circlechef {
-    margin-left: 74%;
+    margin-left: 60%;
+
+
   }
 
 //---------------------------- Circle chef_stående_Ipad---------------------->
@@ -1150,7 +1159,8 @@ footer{
 
   .meld_dig_ind {
     margin-left: 25%;
-    grid-row-start: 20;
+    grid-row-start: 19;
+    margin-top: -2%;
   }
 
 
