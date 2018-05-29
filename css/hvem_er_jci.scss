@@ -36,46 +36,16 @@ p {
   font-family: "Merriweather Sans", sans-serif;
 }
 
-.slagelsetekst{
-  color: black;
-  grid-column: 3/span 2;
-  grid-row-start: 5;
-  margin-top: 15px;
-  display: none;
-}
 
-.globaltekst{
-  color: black;
-  grid-column: 3/span 2;
-  grid-row-start: 15;
-  margin-top: -30px;
-  margin-left: -30px;
-  display: none;
-}
 
 img{
   display: block;
 }
 
 // Sikrer billeder er responsive
-.dk {
-  display: block; // Billeder er et element (laver linjeskift)
-  width: 100%;
-  height: auto;
-  grid-column: 3/span 2;
-  grid-row-start: 5;
-  margin-top: 15px;
-}
 
-.world{
-  display: block;
-  width: 160%;
-  height: auto;
-  grid-column: 3/span 2;
-  grid-row-start: 15;
-  margin-top: -30px;
-  margin-left: -30px;
-}
+
+
 
 @mixin flex{
   display: flex;
@@ -136,18 +106,36 @@ img{
       color: white;
       text-align: center;
     }
+  #circle1{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 3px solid $orangePrimary;
+    grid-column: 2/span 5;
+    grid-row-start: 5;
+    margin-left: 10px;
+  }
+  .dk {
+    display: block; // Billeder er et element (laver linjeskift)
+    width: 100%;
+    height: auto;
+    grid-column: 3/span 2;
+    grid-row-start: 5;
+    margin-top: 15px;
+  }
     .slagelse{
       grid-column: 1/span 6;
       grid-row-start: 9;
       margin-top: 25px;
       text-align: center;
   }
-    .globalt{
-      grid-column: 1/span 6;
-      grid-row-start: 17;
-      margin-top: 25px;
-      text-align: center;
-    }
+  .slagelsetekst{
+    color: black;
+    grid-column: 3/span 2;
+    grid-row-start: 5;
+    margin-top: 15px;
+    display: none;
+  }
   .button1{
     background-color: $orangePrimary;
     width: 110px;
@@ -156,6 +144,40 @@ img{
     grid-row-start: 11;
     margin-left: -2px;
   }
+  #circle2{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 3px solid $orangePrimary;
+    grid-column: 2/span 5;
+    grid-row-start: 13;
+    margin-left: 10px;
+  }
+  .world{
+    display: block;
+    width: 160%;
+    height: auto;
+    grid-column: 3/span 2;
+    grid-row-start: 15;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+    .globalt{
+      grid-column: 1/span 6;
+      grid-row-start: 17;
+      margin-top: 25px;
+      text-align: center;
+    }
+
+  .globaltekst{
+    color: black;
+    grid-column: 3/span 2;
+    grid-row-start: 15;
+    margin-top: -30px;
+    margin-left: -30px;
+    display: none;
+  }
+
   .button2{
     background-color: $orangePrimary;
     width: 110px;
@@ -165,27 +187,6 @@ img{
     margin-left: -2px;
   }
 }
-
-#circle1{
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  border: 3px solid $orangePrimary;
-  grid-column: 2/span 5;
-  grid-row-start: 5;
-  margin-left: 10px;
-}
-
-#circle2{
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  border: 3px solid $orangePrimary;
-  grid-column: 2/span 5;
-  grid-row-start: 13;
-  margin-left: 10px;
-}
-
 footer{
   background-color: $bluePrimary;
   color: white;
@@ -204,7 +205,6 @@ footer{
     }
   }
 }
-
 
 // Variabler - med størrelser
 
@@ -230,37 +230,6 @@ footer{
   }
 
 #mobilAlt {
-    .slagelse {
-      grid-column: 1/span 2;
-      grid-row-start: 4;
-      margin-left: 70px;
-      margin-top: 50px;
-    }
-    .globalt {
-      grid-column: 5/span 2;
-      grid-row-start: 12;
-      margin-top: 50px;
-      margin-left: -50px;
-    }
-    .button1{
-       background-color: $orangePrimary;
-       width: 110px;
-       height: 30px;
-       grid-column: 3/span 2;
-       grid-row-start: 9;
-      margin-left: 50px;
-      margin-top: 20px;
-     }
-    .button2{
-    background-color: $orangePrimary;
-    width: 110px;
-    height: 30px;
-    grid-column: 1/span 2;
-    grid-row-start: 17;
-      margin-left: 50px;
-      margin-top: 20px;
-  }
-}
   #circle1{
     border-radius: 50%;
     width: 200px;
@@ -270,17 +239,6 @@ footer{
     grid-row-start: 6;
     margin-left: 50px;
   }
-
-  #circle2{
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    border: 3px solid $orangePrimary;
-    grid-column: 5/span 2;
-    grid-row-start: 14;
-    margin-left: -5px;
-  }
-
   .dk {
     display: block; // Billeder er et element (laver linjeskift)
     width: 50%;
@@ -289,6 +247,38 @@ footer{
     grid-row-start: 6;
     margin-top: 5px;
     margin-left: 85px;
+  }
+    .slagelse {
+      grid-column: 1/span 2;
+      grid-row-start: 4;
+      margin-left: 70px;
+      margin-top: 50px;
+    }
+  .slagelsetekst{
+    color: black;
+    grid-column: 3/span 4;
+    grid-row-start: 6;
+    margin-top: 15px;
+    margin-left: 50px;
+    display: none;
+  }
+  .button1{
+    background-color: $orangePrimary;
+    width: 110px;
+    height: 30px;
+    grid-column: 3/span 2;
+    grid-row-start: 9;
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+  #circle2{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 3px solid $orangePrimary;
+    grid-column: 5/span 2;
+    grid-row-start: 14;
+    margin-left: -5px;
   }
   .world{
     display: block;
@@ -299,14 +289,12 @@ footer{
     margin-top: 60px;
     margin-left: 8px;
   }
-  .slagelsetekst{
-    color: black;
-    grid-column: 3/span 4;
-    grid-row-start: 6;
-    margin-top: 15px;
-    margin-left: 50px;
-    display: none;
-  }
+    .globalt {
+      grid-column: 5/span 2;
+      grid-row-start: 12;
+      margin-top: 50px;
+      margin-left: -50px;
+    }
   .globaltekst{
     color: black;
     grid-column: 1/span 2;
@@ -315,6 +303,16 @@ footer{
     margin-left: 50px;
     display: none;
   }
+    .button2{
+    background-color: $orangePrimary;
+    width: 110px;
+    height: 30px;
+    grid-column: 1/span 2;
+    grid-row-start: 17;
+      margin-left: 50px;
+      margin-top: 20px;
+  }
+}
 }
 
 @media screen and (min-width: 992px) {
@@ -326,11 +324,13 @@ footer{
       margin-left: 70px;
       margin-top: 50px;
     }
-    .globalt {
-      grid-column: 5/span 2;
-      grid-row-start: 12;
-      margin-top: 50px;
-      margin-left: -50px;
+    .slagelsetekst{
+      color: black;
+      grid-column: 3/span 4;
+      grid-row-start: 6;
+      margin-top: 15px;
+      margin-left: 50px;
+      display: none;
     }
     .button1{
       background-color: $orangePrimary;
@@ -341,21 +341,11 @@ footer{
       margin-left: 50px;
       margin-top: 20px;
     }
-    .button2{
-      background-color: $orangePrimary;
-      width: 110px;
-      height: 30px;
-      grid-column: 1/span 2;
-      grid-row-start: 17;
-      margin-left: 70px;
-    }
-    .slagelsetekst{
-      color: black;
-      grid-column: 3/span 4;
-      grid-row-start: 6;
-      margin-top: 15px;
-      margin-left: 50px;
-      display: none;
+    .globalt {
+      grid-column: 5/span 2;
+      grid-row-start: 12;
+      margin-top: 50px;
+      margin-left: -50px;
     }
     .globaltekst{
       color: black;
@@ -364,6 +354,14 @@ footer{
       margin-top: -30px;
       margin-left: 50px;
       display: none;
+    }
+    .button2{
+      background-color: $orangePrimary;
+      width: 110px;
+      height: 30px;
+      grid-column: 1/span 2;
+      grid-row-start: 17;
+      margin-left: 70px;
     }
   }
 }
@@ -385,7 +383,6 @@ footer{
     margin-top: 18%;
     margin-left: 27%;
   }
-
   .world{
     display: block;
     width: 50%;
@@ -394,9 +391,9 @@ footer{
     grid-row-start: 14;
     margin-top: 18%;
   }
+}
+}
 
-}
-}
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
 
@@ -434,6 +431,18 @@ footer{
     height: 600px;
     width: 100%;
     font-size: 15pt;
+    @mixin flex{
+      display: flex;
+      display: -webkit-flex;
+    }
+    p {
+      margin: 0; // Ingen ydre margen fra paragraffer
+      padding: 0; // Ingen indre margen fra paragraffer
+      font-family: "Merriweather Sans", sans-serif;
+    }
+    img{
+      display: block;
+    }
     h1{
       font-family: 'Libre Baskerville', serif;
       font-size: 30pt;
@@ -453,6 +462,30 @@ footer{
       margin-top: 20px;
       text-align: center;
     }
+    h4{
+      font-family: "Merriweather Sans";
+      font-size: 18pt;
+      color: white;
+      text-align: center;
+    }
+    #circle1{
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+      border: 3px solid $orangePrimary;
+      grid-column: 1/span 5;
+      grid-row-start: 6;
+      margin-left: 20%;
+    }
+    .dk {
+      display: block; // Billeder er et element (laver linjeskift)
+      width: 100%;
+      height: auto;
+      grid-column: 3/span 2;
+      grid-row-start: 5;
+      margin-top: 40%;
+      margin-left: -18%;
+    }
     .slagelse{
         grid-column: 1/span 6;
         grid-row-start: 4;
@@ -466,11 +499,7 @@ footer{
       margin-top: 15px;
       display: none;
     }
-    .globalt {
-      grid-column: 8/span 3;
-      grid-row-start: 13;
-      margin-left: 2%;
-    }
+
     .button1{
       background-color: $orangePrimary;
       width: 110px;
@@ -478,30 +507,14 @@ footer{
       grid-column: 5/span 2;
       grid-row-start: 11;
     }
-    p {
-      margin: 0; // Ingen ydre margen fra paragraffer
-      padding: 0; // Ingen indre margen fra paragraffer
-      font-family: "Merriweather Sans", sans-serif;
-    }
-    .globaltekst{
-      color: black;
-      grid-column: 3/span 2;
+    #circle2{
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+      border: 3px solid $orangePrimary;
+      grid-column: 7/span 5;
       grid-row-start: 15;
-      margin-top: -30px;
-      margin-left: -30px;
-      display: none;
-    }
-    img{
-      display: block;
-    }
-    .dk {
-      display: block; // Billeder er et element (laver linjeskift)
-      width: 100%;
-      height: auto;
-      grid-column: 3/span 2;
-      grid-row-start: 5;
-      margin-top: 40%;
-      margin-left: -18%;
+      margin-left: 70px;
     }
     .world{
       display: block;
@@ -512,15 +525,18 @@ footer{
       margin-left: 25%;
       margin-top: 25%;
     }
-    @mixin flex{
-      display: flex;
-      display: -webkit-flex;
+    .globalt {
+      grid-column: 8/span 3;
+      grid-row-start: 13;
+      margin-left: 2%;
     }
-    h4{
-      font-family: "Merriweather Sans";
-      font-size: 18pt;
-      color: white;
-      text-align: center;
+    .globaltekst{
+      color: black;
+      grid-column: 3/span 2;
+      grid-row-start: 15;
+      margin-top: -30px;
+      margin-left: -30px;
+      display: none;
     }
     .button2{
       background-color: $orangePrimary;
@@ -528,24 +544,6 @@ footer{
       height: 30px;
       grid-column: 2/span 2;
       grid-row-start: 20;
-    }
-    #circle1{
-      border-radius: 50%;
-      width: 300px;
-      height: 300px;
-      border: 3px solid $orangePrimary;
-      grid-column: 1/span 5;
-      grid-row-start: 6;
-      margin-left: 20%;
-    }
-    #circle2{
-      border-radius: 50%;
-      width: 300px;
-      height: 300px;
-      border: 3px solid $orangePrimary;
-      grid-column: 7/span 5;
-      grid-row-start: 15;
-      margin-left: 70px;
     }
   }
 }
@@ -596,7 +594,6 @@ footer{
       margin-left: -20%;
       display: none;
     }
-
   }
 }
 
