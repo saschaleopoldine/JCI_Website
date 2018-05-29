@@ -347,7 +347,7 @@ h2 {
     height: 85px;
     border-radius: 50%;
     border: 3px solid #ee7125; }
-  .bestyrelsesmedlem h3 {
+  .bestyrelsesmedlem h4 {
     font-size: 11pt;
     margin-top: 5px; }
   .bestyrelsesmedlem .bestyrelsesmedlemtext {
@@ -485,11 +485,11 @@ footer {
     margin-top: -5%; }
 
   #medlem {
-    font-size: 15pt;
+    font-size: 18pt;
     grid-column: 5/span 2;
     grid-row: 8;
     margin-left: 0;
-    margin-right: 18%;
+    margin-right: 17%;
     margin-top: 10%; }
 
   .hr_to {
@@ -529,6 +529,7 @@ footer {
     margin-left: 10%; }
 
   #aktivitet {
+    font-size: 24pt;
     grid-row: 15;
     margin-right: 15%;
     margin-top: -3%; }
@@ -624,8 +625,10 @@ footer {
     width: 125px;
     height: 125px;
     border-radius: 50%;
-    border: 3px solid #ee7125; }
-  .bestyrelsesmedlem h3 {
+    border: 3px solid #ee7125;
+    width: 125px;
+    height: 125px; }
+  .bestyrelsesmedlem h4 {
     font-size: 14pt;
     margin-top: 5px; }
   .bestyrelsesmedlem .bestyrelsesmedlemtext {
@@ -638,19 +641,22 @@ footer {
     grid-template-rows: repeat(42, 50px); }
 
   .cirkel_1 {
+    width: 240px;
+    height: 240px;
     grid-column: 2/span 2;
-    grid-row: 3;
+    grid-row: 2;
+    margin-top: 3%;
     margin-left: -30%; }
 
   #projekt {
     grid-column: 1/span 2;
-    grid-row: 5;
-    margin-top: 0;
+    grid-row: 4;
+    margin-top: 3%;
     margin-left: 25%; }
 
   .hr_et {
     grid-column: 3/span 4;
-    grid-row: 6;
+    grid-row: 5;
     width: 400px;
     margin-left: -8%;
     margin-top: 0;
@@ -659,20 +665,19 @@ footer {
     transform: rotate(10deg); }
 
   .cirkel_2 {
-    grid-row: 5;
-    margin-left: 0;
+    grid-row: 4;
+    margin-left: -10%;
     margin-top: -5%; }
 
   #medlem {
-    grid-column: 5/span 2;
-    grid-row: 6;
-    margin-left: -35%;
-    margin-right: 0;
-    margin-top: 8%; }
+    grid-column: 5/span 1;
+    grid-row: 5;
+    margin-right: 5%;
+    margin-top: 15%; }
 
   .hr_to {
     grid-column: 3/span 2;
-    grid-row: 9;
+    grid-row: 8;
     width: 250px;
     margin-top: -10%;
     margin-left: 50%;
@@ -683,18 +688,18 @@ footer {
   .cirkel_3 {
     margin-top: -15%;
     grid-column: 3/span 2;
-    grid-row: 9; }
+    grid-row: 8; }
 
   #partner {
     grid-column: 3/span 2;
-    grid-row: 9;
+    grid-row: 8;
     margin-top: 8%;
     margin-right: 15%;
     margin-left: -20%; }
 
   .hr_tre {
     grid-column: 3/span 2;
-    grid-row: 11;
+    grid-row: 10;
     width: 250px;
     margin-top: 20px;
     margin-left: 48%;
@@ -704,18 +709,18 @@ footer {
 
   .cirkel_4 {
     grid-column: 5/span 2;
-    grid-row: 10;
+    grid-row: 9;
     margin-left: 10%; }
 
   #aktivitet {
     grid-column: 5/span 2;
-    grid-row: 12;
+    grid-row: 11;
     margin-right: 10%;
     margin-top: 0; }
 
   .hr_fire {
     grid-column: 2/span 3;
-    grid-row: 12;
+    grid-row: 11;
     width: 500px;
     margin-left: 10%;
     margin-top: 15%;
@@ -725,13 +730,13 @@ footer {
 
   .cirkel_5 {
     grid-column: 2/span 2;
-    grid-row: 12;
+    grid-row: 11;
     margin-left: 0;
     margin-top: 10%; }
 
   #bestyrrelse {
     grid-column: 2/Span 1;
-    grid-row: 14;
+    grid-row: 13;
     margin-left: 0;
     margin-top: -15%; }
 
@@ -785,11 +790,11 @@ footer {
       grid-row: 4; }
 
   .bestyrelsesmedlem #caroline, .bestyrelsesmedlem #lasse, .bestyrelsesmedlem #mie, .bestyrelsesmedlem #kamilla, .bestyrelsesmedlem #anna {
-    width: 85px;
-    height: 85px;
+    width: 125px;
+    height: 125px;
     border-radius: 50%;
     border: 3px solid #ee7125; }
-  .bestyrelsesmedlem h3 {
+  .bestyrelsesmedlem h4 {
     font-size: 14pt;
     margin-top: 5px; }
   .bestyrelsesmedlem .bestyrelsesmedlemtext {
@@ -797,6 +802,123 @@ footer {
     margin-bottom: 40px;
     margin-top: 5px;
     line-height: 18pt; } }
+@media screen and (min-width: 1024px) {
+  #mobilAlt {
+    grid-template-rows: repeat(54, 50px); }
+
+  .cirkel_1 {
+    width: 250px;
+    height: 250px;
+    grid-column: 2/span 2;
+    grid-row: 5;
+    margin-top: 3%;
+    margin-left: -30%; }
+
+  #projekt {
+    grid-column: 1/span 2;
+    grid-row: 7;
+    margin-top: 3%;
+    margin-left: 30%; }
+
+  .hr_et {
+    grid-column: 3/span 4;
+    grid-row: 9;
+    width: 400px;
+    margin-left: -8%;
+    margin-top: 0;
+    -ms-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg); }
+
+  .cirkel_2 {
+    grid-row: 9;
+    margin-left: -10%;
+    margin-top: -5%; }
+
+  #medlem {
+    grid-column: 4/span 2;
+    grid-row: 10;
+    margin-right: -47%;
+    margin-top: 5%; }
+
+  .hr_to {
+    grid-column: 2/span 2;
+    grid-row: 14;
+    width: 300px;
+    margin-top: -10%;
+    margin-left: 75%;
+    -ms-transform: rotate(140deg);
+    -webkit-transform: rotate(140deg);
+    transform: rotate(140deg); }
+
+  .cirkel_3 {
+    margin-top: -15%;
+    grid-column: 3/span 2;
+    grid-row: 15; }
+
+  #partner {
+    grid-column: 3/span 2;
+    grid-row: 15;
+    margin-top: 8%;
+    margin-right: 15%;
+    margin-left: -20%; }
+
+  .hr_tre {
+    grid-column: 4/span 2;
+    grid-row: 18;
+    width: 350px;
+    margin-top: 0;
+    margin-left: -15%;
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg); }
+
+  .cirkel_4 {
+    grid-column: 5/span 2;
+    grid-row: 19;
+    margin-left: 10%; }
+
+  #aktivitet {
+    font-size: 24pt;
+    grid-column: 5/span 2;
+    grid-row: 21;
+    margin-right: 10%;
+    margin-top: -3%; }
+
+  .hr_fire {
+    grid-column: 2/span 3;
+    grid-row: 22;
+    width: 500px;
+    margin-left: 10%;
+    margin-top: 15%;
+    -ms-transform: rotate(165deg);
+    -webkit-transform: rotate(165deg);
+    transform: rotate(165deg); }
+
+  .cirkel_5 {
+    grid-column: 2/span 2;
+    grid-row: 23;
+    margin-top: 0; }
+
+  #bestyrrelse {
+    grid-column: 2/Span 1;
+    grid-row: 24;
+    margin-top: 0; }
+
+  #projektelement {
+    grid-row: 28/span 5; }
+
+  #medlemselement {
+    grid-row: 33/span 7; }
+
+  #partnerelement {
+    grid-row: 40/span 5; }
+
+  #aktivitetelement {
+    grid-row: 45/span 5; }
+
+  #bestyrelseselement {
+    grid-row: 50/span 4; } }
 @media screen and (min-width: 1200px) {
   .web {
     display: inline; }
