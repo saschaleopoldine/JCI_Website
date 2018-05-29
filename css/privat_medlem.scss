@@ -124,6 +124,8 @@ footer{
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 10px;
   grid-template-rows: repeat(57, 50px);
+
+
 }
 
 
@@ -998,7 +1000,7 @@ footer{
 
 #mobilAlt{
   grid-template-rows: repeat(42, 50px);
-}                            
+}
 
 //---------------------------- Circle_fordel_stående_Ipad---------------------->
 
@@ -1008,7 +1010,7 @@ footer{
     height: 520%;
     border-radius: 100%;
     margin-left: 5%;
-   
+
 
   }
 
@@ -1508,9 +1510,14 @@ footer{
   }
 
   #mobilAlt{
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(50, 50px);
-  
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(50, 50px);
+  padding: 70px 50px 50px 0;
+  display: grid;
+  grid-column-gap: 20px;
+  height: 600px;
+  width: 100%;
+
   }
 
   #flex_alt{
@@ -1530,22 +1537,25 @@ footer{
     }
   }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
-  #grid{
-    padding: 70px 50px 50px 0;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-column-gap: 20px;
-    height: 600px;
-    width: 100%;
-  }
 
-
-
-
-  
-
-  
 
 }
 
