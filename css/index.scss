@@ -706,74 +706,74 @@ footer{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-column-gap: 20px;
-    grid-template-rows: repeat(26, 50px);
+    grid-template-rows: repeat(40, 50px);
     width: 100%;
     height: auto;
 
     #slagelseTitle{
-      margin-top: 8%;
+      margin-top: 6%;
     }
 
     #ca_cirkel_1{
       grid-column: 6/span 5;
-      height: 360px;
+      height: 480px;
       grid-row-start: 1;
     }
     #firstBobleTitle{
-      grid-row-start: 4;
-      margin-top: 10%;
+      grid-row-start: 6;
+      margin-top: 6%;
       grid-column: 6/span 3;
       width: 100%;
       margin-left: 17%;
     }
     #firstBobleText{
-      grid-row-start: 4;
-      margin-top: 15%;
+      grid-row-start: 7;
+      margin-top: 0;
       grid-column: 6/span 5;
       width: 80%;
       margin-left: 10%;
     }
     #firstBobleButton{
-      grid-row-start: 6;
-      margin-top: 12%;
+      grid-row-start: 8;
+      margin-top: 10%;
       grid-column: 7/span 3;
-      width: 100%;
-      margin-left: 0;
+      width: 80%;
+      margin-left: 7%;
     }
 
     #ca_cirkel_2{
       grid-column: 2/span 4;
-      width: 280px;
-      height: 280px;
-      grid-row-start: 8;
+      width: 100%;
+      height: 380px;
+      grid-row-start: 9;
     }
     #secondBobleTitle{
-      grid-row-start: 9;
-      margin-top: 35%;
+      grid-row-start: 12;
+      margin-top: 15%;
       grid-column: 2/span 2;
       width: 100%;
       margin-left: 22%;
     }
     #secondBobleText{
-      grid-row-start: 10;
-      margin-top: 10%;
+      grid-row-start: 13;
+      margin-top: 4%;
       grid-column: 2/span 4;
       width: 80%;
       margin-left: 10%;
     }
     #secondBobleButton{
-      grid-row-start: 12;
-      margin-top: 0;
+      grid-row-start: 14;
+      margin-top: 15%;
       grid-column: 2/span 3;
-      width: 80%;
-      margin-left: 25%;
+      width: 65%;
+      margin-left: 35%;
     }
 
     #ca_cirkel_3{
       grid-column: 6/span 4;
-      width: 280px;
-      height: 280px;
-      grid-row-start: 13;
+      width: 100%;
+      height: 380px;
+      grid-row-start: 15;
     }
     #thirdBobleTitle{
       grid-row-start: 15;
@@ -799,8 +799,8 @@ footer{
 
     #ca_cirkel_4{
       grid-column: 2/span 5;
-      height: 360px;
-      grid-row-start: 19;
+      height: 480px;
+      grid-row-start: 22;
     }
     #fourthBobleTitle{
       grid-row-start: 21;
