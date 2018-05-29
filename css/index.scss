@@ -13,6 +13,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0; // Ingen ydre margen fra overskrifter
   padding: 0; // Ingen indre margen fra overskrifter
   font-family: 'Libre Baskerville', serif; //Font til overskrifter
+  letter-spacing: 1.5px;
 }
 
 ul, ol {
@@ -749,7 +750,7 @@ footer{
     }
     #secondBobleTitle{
       grid-row-start: 12;
-      margin-top: 15%;
+      margin-top: 17%;
       grid-column: 2/span 2;
       width: 100%;
       margin-left: 22%;
@@ -776,25 +777,25 @@ footer{
       grid-row-start: 15;
     }
     #thirdBobleTitle{
-      grid-row-start: 15;
-      margin-top: 8%;
+      grid-row-start: 19;
+      margin-top: 5%;
       grid-column: 6/span 2;
       width: 100%;
       margin-left: 32%;
     }
     #thirdBobleText{
-      grid-row-start: 15;
-      margin-top: 15%;
+      grid-row-start: 19;
+      margin-top: 12%;
       grid-column: 6/span 4;
       width: 80%;
       margin-left: 15%;
     }
     #thirdBobleButton{
-      grid-row-start: 17;
-      margin-top: 5%;
+      grid-row-start: 21;
+      margin-top: 0;
       grid-column: 6/span 4;
-      width: 50%;
-      margin-left: 24%;
+      width: 40%;
+      margin-left: 30%;
     }
 
     #ca_cirkel_4{
@@ -803,25 +804,25 @@ footer{
       grid-row-start: 22;
     }
     #fourthBobleTitle{
-      grid-row-start: 21;
-      margin-top: 10%;
+      grid-row-start: 27;
+      margin-top: 3%;
       grid-column: 2/span 3;
       width: 100%;
       margin-left: 17%;
     }
     #fourthBobleText{
-      grid-row-start: 22;
-      margin-top: 2%;
+      grid-row-start: 27;
+      margin-top: 9%;
       grid-column: 2/span 5;
       width: 80%;
       margin-left: 10%;
     }
     #fourthBobleButton{
-      grid-row-start: 24;
-      margin-top: 0;
-      grid-column: 2/span 5;
-      width: 75%;
-      margin-left: 12%;
+      grid-row-start: 29;
+      margin-top: 6%;
+      grid-column: 3/span 3;
+      width: 100%;
+      margin-left: 0;
     }
 
   }
@@ -846,7 +847,7 @@ footer{
 
   #left_menu{
     background-color: $bluePrimary;
-    height: 195vh;
+    height: 167vh;
     width: 300px;
     #menuIndhold{
       position: fixed;
@@ -859,6 +860,28 @@ footer{
   }
 
   #mobilAlt {
+
+    #firstTitle{
+      font-size: 30pt;
+      grid-column: 1/span 5;
+    }
+    #indledning{
+      font-size: 20pt;
+      grid-column: 1/span 5;
+    }
+    #firstBobleTitle, #secondBobleTitle, #thirdBobleTitle, #fourthBobleTitle{
+      font-size: 24pt;
+    }
+    #firstBobleText, #secondBobleText, #thirdBobleText, #fourthBobleText{
+      font-size: 15pt;
+    }
+    #slagelseTitle{
+      font-size: 24pt;
+      margin-top: 0;
+      grid-row-start: 4;
+      grid-column: 1/span 5;
+    }
+
     grid-template-rows: repeat(32, 50px);
     height: auto;
 
@@ -869,14 +892,14 @@ footer{
     }
     #firstBobleTitle {
       grid-row-start: 5;
-      margin-top: 17%;
+      margin-top: 8%;
       grid-column: 6/span 3;
       width: 100%;
       margin-left: 17%;
     }
     #firstBobleText {
       grid-row-start: 6;
-      margin-top: 7%;
+      margin-top: 3%;
       grid-column: 6/span 5;
       width: 80%;
       margin-left: 10%;
@@ -949,6 +972,125 @@ footer{
       grid-column: 2/span 5;
       height: 445px;
       grid-row-start: 23;
+    }
+    #fourthBobleTitle {
+      grid-row-start: 27;
+      margin-top: 17%;
+      grid-column: 2/span 3;
+      width: 100%;
+      margin-left: 17%;
+    }
+    #fourthBobleText {
+      grid-row-start: 28;
+      margin-top: 7%;
+      grid-column: 2/span 5;
+      width: 80%;
+      margin-left: 10%;
+    }
+    #fourthBobleButton {
+      grid-row-start: 30;
+      margin-top: 0;
+      grid-column: 2/span 5;
+      width: 60%;
+      margin-left: 20%;
+    }
+  }
+
+}
+
+@media screen and (min-width: 1500px) {
+
+  #mobilAlt {
+    grid-template-rows: repeat(39, 50px);
+    height: auto;
+
+    #ca_cirkel_1 {
+      grid-column: 6/span 5;
+      height: 590px;
+      grid-row-start: 1;
+    }
+    #firstBobleTitle {
+      grid-row-start: 5;
+      margin-top: 17%;
+      grid-column: 6/span 3;
+      width: 100%;
+      margin-left: 17%;
+    }
+    #firstBobleText {
+      grid-row-start: 6;
+      margin-top: 7%;
+      grid-column: 6/span 5;
+      width: 80%;
+      margin-left: 10%;
+    }
+    #firstBobleButton {
+      grid-row-start: 8;
+      margin-top: 0;
+      grid-column: 7/span 3;
+      width: 80%;
+      margin-left: 10%;
+    }
+
+    #ca_cirkel_2 {
+      grid-column: 2/span 4;
+      width: 100%;
+      height: 470px;
+      grid-row-start: 11;
+    }
+    #secondBobleTitle {
+      grid-row-start: 12;
+      margin-top: 12%;
+      grid-column: 2/span 2;
+      width: 100%;
+      margin-left: 22%;
+    }
+    #secondBobleText {
+      grid-row-start: 13;
+      margin-top: 2%;
+      grid-column: 2/span 4;
+      width: 80%;
+      margin-left: 10%;
+    }
+    #secondBobleButton {
+      grid-row-start: 14;
+      margin-top: 10%;
+      grid-column: 2/span 3;
+      width: 64%;
+      margin-left: 35%;
+    }
+
+    #ca_cirkel_3 {
+      grid-column: 6/span 4;
+      width: 100%;
+      height: 470px;
+      grid-row-start: 19;
+    }
+    #thirdBobleTitle {
+      grid-row-start: 19;
+      margin-top: 10%;
+      grid-column: 6/span 2;
+      width: 100%;
+      margin-left: 32%;
+    }
+    #thirdBobleText {
+      grid-row-start: 20;
+      margin-top: 1%;
+      grid-column: 6/span 4;
+      width: 80%;
+      margin-left: 15%;
+    }
+    #thirdBobleButton {
+      grid-row-start: 21;
+      margin-top: 6%;
+      grid-column: 6/span 4;
+      width: 40%;
+      margin-left: 30%;
+    }
+
+    #ca_cirkel_4 {
+      grid-column: 2/span 5;
+      height: 590px;
+      grid-row-start: 27;
     }
     #fourthBobleTitle {
       grid-row-start: 27;
