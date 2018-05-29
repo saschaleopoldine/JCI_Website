@@ -36,16 +36,9 @@ p {
   font-family: "Merriweather Sans", sans-serif;
 }
 
-
-
 img{
   display: block;
 }
-
-// Sikrer billeder er responsive
-
-
-
 
 @mixin flex{
   display: flex;
@@ -74,7 +67,6 @@ img{
   }
 }
 
-
 #mobilAlt{
   font-size: 12pt;
   padding: 0 20px 0 20px;
@@ -88,10 +80,12 @@ img{
       grid-column: 1/span 6;
       grid-row-start: 2;
       text-align: center;
+      font-weight: bold;
   }
     h2{
       font-family: 'Libre Baskerville', serif;
       font-size: 20pt;
+      font-weight: bold;
     }
     h3{
       font-family: "Merriweather Sans";
@@ -106,62 +100,62 @@ img{
       color: white;
       text-align: center;
     }
-  #circle1{
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    border: 3px solid $orangePrimary;
-    grid-column: 2/span 5;
-    grid-row-start: 5;
-    margin-left: 10px;
-  }
-  .dk {
-    display: block; // Billeder er et element (laver linjeskift)
-    width: 100%;
-    height: auto;
-    grid-column: 3/span 2;
-    grid-row-start: 5;
-    margin-top: 15px;
-  }
+    #circle1{
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      border: 3px solid $orangePrimary;
+      grid-column: 2/span 5;
+      grid-row-start: 5;
+      margin-left: 10px;
+    }
+    .dk {
+      display: block; // Billeder er et element (laver linjeskift)
+      width: 100%;
+      height: auto;
+      grid-column: 3/span 2;
+      grid-row-start: 5;
+      margin-top: 15px;
+    }
     .slagelse{
       grid-column: 1/span 6;
       grid-row-start: 9;
       margin-top: 25px;
       text-align: center;
-  }
-  .slagelsetekst{
-    color: black;
-    grid-column: 3/span 2;
-    grid-row-start: 5;
-    margin-top: 15px;
-    display: none;
-  }
-  .button1{
-    background-color: $orangePrimary;
-    width: 110px;
-    height: 30px;
-    grid-column: 3/span 2;
-    grid-row-start: 11;
-    margin-left: -2px;
-  }
-  #circle2{
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    border: 3px solid $orangePrimary;
-    grid-column: 2/span 5;
-    grid-row-start: 13;
-    margin-left: 10px;
-  }
-  .world{
-    display: block;
-    width: 160%;
-    height: auto;
-    grid-column: 3/span 2;
-    grid-row-start: 15;
-    margin-top: -30px;
-    margin-left: -30px;
-  }
+    }
+    .slagelsetekst{
+      color: black;
+      grid-column: 3/span 2;
+      grid-row-start: 5;
+      margin-top: 15px;
+      display: none;
+    }
+    .button1{
+      background-color: $orangePrimary;
+      width: 110px;
+      height: 30px;
+      grid-column: 3/span 2;
+      grid-row-start: 11;
+      margin-left: -2px;
+    }
+    #circle2{
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      border: 3px solid $orangePrimary;
+      grid-column: 2/span 5;
+      grid-row-start: 13;
+      margin-left: 10px;
+    }
+    .world{
+      display: block;
+      width: 160%;
+      height: auto;
+      grid-column: 3/span 2;
+      grid-row-start: 15;
+      margin-top: -30px;
+      margin-left: -30px;
+    }
     .globalt{
       grid-column: 1/span 6;
       grid-row-start: 17;
@@ -169,24 +163,24 @@ img{
       text-align: center;
     }
 
-  .globaltekst{
-    color: black;
-    grid-column: 3/span 2;
-    grid-row-start: 15;
-    margin-top: -30px;
-    margin-left: -30px;
-    display: none;
-  }
+    .globaltekst{
+      color: black;
+      grid-column: 3/span 2;
+      grid-row-start: 15;
+      margin-top: -30px;
+      margin-left: -30px;
+      display: none;
+    }
 
-  .button2{
-    background-color: $orangePrimary;
-    width: 110px;
-    height: 30px;
-    grid-column: 3/span 2;
-    grid-row-start: 19;
-    margin-left: -2px;
+    .button2{
+      background-color: $orangePrimary;
+      width: 110px;
+      height: 30px;
+      grid-column: 3/span 2;
+      grid-row-start: 19;
+      margin-left: -2px;
+    }
   }
-}
 footer{
   background-color: $bluePrimary;
   color: white;
@@ -194,23 +188,22 @@ footer{
   padding: 22px 50px;
   @include flex;
   justify-content: space-between;
-  p{
-    margin-top: 15px;
-  }
-  #some{
-    @include flex;
-    flex-direction: column;
-    i{
-      margin: 3px 0;
+    p{
+      margin-top: 15px;
     }
-  }
+    #some{
+      @include flex;
+      flex-direction: column;
+      i{
+        margin: 3px 0;
+      }
+    }
 }
 
 // Variabler - med størrelser
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil'
-
   h2{
     font-family: 'Libre Baskerville', serif;
     font-size: 20pt;
@@ -221,6 +214,7 @@ footer{
     grid-column: 1/span 6;
     grid-row-start: 3;
     text-align: center;
+    font-weight: bold;
   }
   h4{
     font-family: "Merriweather Sans";
@@ -230,89 +224,89 @@ footer{
   }
 
 #mobilAlt {
-  #circle1{
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    border: 3px solid $orangePrimary;
-    grid-column: 1/span 2;
-    grid-row-start: 6;
-    margin-left: 50px;
-  }
-  .dk {
-    display: block; // Billeder er et element (laver linjeskift)
-    width: 50%;
-    height: auto;
-    grid-column: 1/span 2;
-    grid-row-start: 6;
-    margin-top: 5px;
-    margin-left: 85px;
-  }
+    #circle1{
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      border: 3px solid $orangePrimary;
+      grid-column: 1/span 2;
+      grid-row-start: 6;
+      margin-left: 50px;
+    }
+    .dk {
+      display: block; // Billeder er et element (laver linjeskift)
+      width: 50%;
+      height: auto;
+      grid-column: 1/span 2;
+      grid-row-start: 6;
+      margin-top: 5px;
+      margin-left: 85px;
+    }
     .slagelse {
       grid-column: 1/span 2;
       grid-row-start: 4;
       margin-left: 70px;
       margin-top: 50px;
     }
-  .slagelsetekst{
-    color: black;
-    grid-column: 3/span 4;
-    grid-row-start: 6;
-    margin-top: 15px;
-    margin-left: 50px;
-    display: none;
-  }
-  .button1{
-    background-color: $orangePrimary;
-    width: 110px;
-    height: 30px;
-    grid-column: 3/span 2;
-    grid-row-start: 9;
-    margin-left: 50px;
-    margin-top: 20px;
-  }
-  #circle2{
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    border: 3px solid $orangePrimary;
-    grid-column: 5/span 2;
-    grid-row-start: 14;
-    margin-left: -5px;
-  }
-  .world{
-    display: block;
-    width: 75%;
-    height: auto;
-    grid-column: 5/span 2;
-    grid-row-start: 14;
-    margin-top: 60px;
-    margin-left: 8px;
-  }
+    .slagelsetekst{
+      color: black;
+      grid-column: 3/span 4;
+      grid-row-start: 6;
+      margin-top: 15px;
+      margin-left: 50px;
+      display: none;
+    }
+    .button1{
+      background-color: $orangePrimary;
+      width: 110px;
+      height: 30px;
+      grid-column: 3/span 2;
+      grid-row-start: 9;
+      margin-left: 50px;
+      margin-top: 20px;
+    }
+    #circle2{
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      border: 3px solid $orangePrimary;
+      grid-column: 5/span 2;
+      grid-row-start: 14;
+      margin-left: -5px;
+    }
+    .world{
+      display: block;
+      width: 75%;
+      height: auto;
+      grid-column: 5/span 2;
+      grid-row-start: 14;
+      margin-top: 60px;
+      margin-left: 8px;
+    }
     .globalt {
       grid-column: 5/span 2;
       grid-row-start: 12;
       margin-top: 50px;
       margin-left: -50px;
     }
-  .globaltekst{
-    color: black;
-    grid-column: 1/span 2;
-    grid-row-start: 15;
-    margin-top: -30px;
-    margin-left: 50px;
-    display: none;
-  }
-    .button2{
-    background-color: $orangePrimary;
-    width: 110px;
-    height: 30px;
-    grid-column: 1/span 2;
-    grid-row-start: 17;
+    .globaltekst{
+      color: black;
+      grid-column: 1/span 2;
+      grid-row-start: 15;
+      margin-top: -30px;
       margin-left: 50px;
-      margin-top: 20px;
+      display: none;
+    }
+      .button2{
+      background-color: $orangePrimary;
+      width: 110px;
+      height: 30px;
+      grid-column: 1/span 2;
+      grid-row-start: 17;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
   }
-}
 }
 
 @media screen and (min-width: 992px) {
@@ -374,24 +368,24 @@ footer{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(20, 50px);
-  .dk {
-    display: block; // Billeder er et element (laver linjeskift)
-    width: 35%;
-    height: auto;
-    grid-column: 1/span 2;
-    grid-row-start: 5;
-    margin-top: 18%;
-    margin-left: 27%;
+    .dk {
+      display: block; // Billeder er et element (laver linjeskift)
+      width: 35%;
+      height: auto;
+      grid-column: 1/span 2;
+      grid-row-start: 5;
+      margin-top: 18%;
+      margin-left: 27%;
+    }
+    .world{
+      display: block;
+      width: 50%;
+      height: auto;
+      grid-column: 5/span 2;
+      grid-row-start: 14;
+      margin-top: 18%;
+    }
   }
-  .world{
-    display: block;
-    width: 50%;
-    height: auto;
-    grid-column: 5/span 2;
-    grid-row-start: 14;
-    margin-top: 18%;
-  }
-}
 }
 
 @media screen and (min-width: 1200px) {
@@ -400,17 +394,14 @@ footer{
   .web{
     display: inline;
   }
-
   .mobil, #menuMobil, footer{
     display: none;
   }
-
   #flex_alt{
     display: flex;
     display: -webkit-flex;
     justify-content: space-between;
   }
-
   #left_menu{
     background-color: $bluePrimary;
     height: 180vh;
@@ -421,7 +412,6 @@ footer{
       margin: 30px auto 0 auto;
     }
   }
-
   #mobilAlt{
     padding: 70px 50px 50px 0;
     display: grid;
@@ -449,6 +439,7 @@ footer{
       grid-column: 4/span 4;
       grid-row-start: 1;
       text-align: center;
+      font-weight: bold;
     }
     h2{
       font-family: 'Libre Baskerville', serif;
@@ -461,6 +452,7 @@ footer{
       grid-row-start: 2;
       margin-top: 20px;
       text-align: center;
+      font-weight: bold;
     }
     h4{
       font-family: "Merriweather Sans";
@@ -487,11 +479,11 @@ footer{
       margin-left: -18%;
     }
     .slagelse{
-        grid-column: 1/span 6;
-        grid-row-start: 4;
-        text-align: center;
-        margin-left: -10%;
-      }
+      grid-column: 1/span 6;
+      grid-row-start: 4;
+      text-align: center;
+      margin-left: -10%;
+    }
     .slagelsetekst{
       color: black;
       grid-column: 5/span 3;
@@ -499,7 +491,6 @@ footer{
       margin-top: 15px;
       display: none;
     }
-
     .button1{
       background-color: $orangePrimary;
       width: 110px;

@@ -57,10 +57,12 @@ img {
     font-size: 25pt;
     grid-column: 1/span 6;
     grid-row-start: 2;
-    text-align: center; }
+    text-align: center;
+    font-weight: bold; }
   #mobilAlt h2 {
     font-family: 'Libre Baskerville', serif;
-    font-size: 20pt; }
+    font-size: 20pt;
+    font-weight: bold; }
   #mobilAlt h3 {
     font-family: "Merriweather Sans";
     font-size: 15pt;
@@ -168,7 +170,8 @@ footer {
     font-size: 15pt;
     grid-column: 1/span 6;
     grid-row-start: 3;
-    text-align: center; }
+    text-align: center;
+    font-weight: bold; }
 
   h4 {
     font-family: "Merriweather Sans";
@@ -352,7 +355,8 @@ footer {
       font-size: 30pt;
       grid-column: 4/span 4;
       grid-row-start: 1;
-      text-align: center; }
+      text-align: center;
+      font-weight: bold; }
     #mobilAlt h2 {
       font-family: 'Libre Baskerville', serif;
       font-size: 24pt; }
@@ -362,7 +366,8 @@ footer {
       grid-column: 3/span 7;
       grid-row-start: 2;
       margin-top: 20px;
-      text-align: center; }
+      text-align: center;
+      font-weight: bold; }
     #mobilAlt h4 {
       font-family: "Merriweather Sans";
       font-size: 18pt;
