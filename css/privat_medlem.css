@@ -831,8 +831,12 @@ footer {
   .web {
     display: inline; }
 
-  .mobil, #mobilAlt, #menuMobil, footer {
+  .mobil, #menuMobil, footer {
     display: none; }
+
+  #mobilAlt {
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(50, 50px); }
 
   #flex_alt {
     display: flex;
