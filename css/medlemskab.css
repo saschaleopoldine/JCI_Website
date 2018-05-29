@@ -177,6 +177,16 @@ footer {
     footer #some i {
       margin: 3px 0; }
 
+@media screen and (min-width: 414px) {
+  .bold1tekst {
+    grid-column: 2 / span 2;
+    grid-row-start: 7;
+    margin-left: 10px; }
+
+  .bold2tekst {
+    grid-column: 2 / span 2;
+    grid-row-start: 13;
+    margin-top: 25px; } }
 @media screen and (min-width: 768px) {
   .bold1 {
     grid-column: 1 / span 3;
@@ -332,5 +342,18 @@ footer {
     grid-row-start: 15;
     margin-left: -20px;
     margin-top: 10px; } }
+@media screen and (min-width: 1500px) {
+  .bold1tekst {
+    grid-column: 3 / span 2;
+    grid-row-start: 7;
+    margin-left: -220px; }
+
+  .bold2tekst {
+    grid-column: 5 / span 2;
+    grid-row-start: 13;
+    margin-right: -260px; }
+
+  #mobilAlt {
+    grid-template-rows: repeat(19, 50px); } }
 
 /*# sourceMappingURL=medlemskab.css.map */

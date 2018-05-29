@@ -25,7 +25,6 @@ h3{
   font-size: 15pt;
 }
 
-
 ul, ol {
   margin: 0; // Ingen ydre margen fra lister
   padding: 0; // Ingen indre margen fra lister
@@ -112,7 +111,6 @@ $white:#f9f7f4;
   grid-column-gap: 10px;
   grid-template-rows: repeat(17, 50px);
 }
-
 
 .indledning{
   text-align: center;
@@ -234,6 +232,28 @@ footer{
     }
   }
 }
+
+@media screen and (min-width: 414px) {
+
+.bold1tekst {
+  grid-column: 2 / span 2;
+  grid-row-start: 7;
+  margin-left: 10px;
+}
+.bold2tekst{
+  grid-column: 2 / span 2;
+  grid-row-start: 13;
+  margin-top: 25px;
+
+  }
+
+
+}
+
+
+
+
+
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
@@ -410,7 +430,21 @@ footer{
     margin-left: -20px;
     margin-top: 10px;
   }
-
+}
+@media screen and (min-width: 1500px) {
+.bold1tekst{
+  grid-column: 3 / span 2;
+  grid-row-start: 7;
+  margin-left: -220px;
+}
+  .bold2tekst{
+    grid-column: 5 / span 2;
+    grid-row-start: 13;
+    margin-right: -260px;
+  }
+  #mobilAlt {
+    grid-template-rows: repeat(19, 50px);
+  }
 
 
 }
