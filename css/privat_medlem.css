@@ -585,7 +585,7 @@ footer {
       margin-top: -1px; } }
 @media screen and (min-width: 768px) {
   #mobilAlt {
-    grid-template-rows: repeat(42, 50px); }
+    grid-template-rows: repeat(44, 50px); }
 
   #circle {
     width: 38%;
@@ -996,5 +996,41 @@ footer {
     grid-row-start: 44;
     width: 175px;
     height: 45px; } }
+@media screen and (min-width: 1500px) {
+  .indledningtilweb {
+    margin-left: 7%; }
+
+  .meld_dig_ind {
+    margin-left: 40%;
+    margin-top: -4%; }
+
+  #Fordeltekst {
+    grid-row-start: 4; }
+
+  #fordelafsnit {
+    margin-top: 2%; }
+
+  .line {
+    height: 950px;
+    margin-top: -25%; }
+
+  .line3 {
+    margin-top: 20%; }
+
+  #studierabattekst {
+    grid-row-start: 24; }
+
+  #Pristekst {
+    grid-row-start: 11; }
+
+  .line2 {
+    height: 800px;
+    -ms-transform: rotate(130deg);
+    -webkit-transform: rotate(130deg);
+    transform: rotate(130deg);
+    margin-top: 10%; }
+
+  #fådincheftekst {
+    grid-row-start: 31; } }
 
 /*# sourceMappingURL=privat_medlem.css.map */
