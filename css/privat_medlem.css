@@ -249,7 +249,8 @@ h1 {
   #Fordeltekst .fordelafsnitoverskrift {
     grid-column: 2/span 6;
     grid-row: 8;
-    margin-left: -0.5%; }
+    margin-left: -0.5%;
+    margin-top: 8%; }
 
 h2 {
   font-size: 20pt;
@@ -351,7 +352,8 @@ h2 {
   #fådincheftekst .fådinchefafsnitoverskrift {
     grid-column: 2/span 3;
     grid-row: 8;
-    margin-left: -0.5%; }
+    margin-left: -0.5%;
+    margin-top: 15%; }
 
 h2 {
   font-size: 20pt;
