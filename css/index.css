@@ -584,11 +584,12 @@ footer {
       margin-top: 5%; } }
 @media screen and (min-width: 768px) {
   #ca_streg1 {
-    -ms-transform: rotate(-70deg);
+    -ms-transform: rotate(-65deg);
     -webkit-transform: rotate(-70deg);
-    transform: rotate(-70deg);
+    transform: rotate(-65deg);
     grid-row-start: 18;
-    margin-left: 30%; }
+    margin-left: 10%;
+    width: 250px; }
 
   #ca_streg2 {
     -ms-transform: rotate(40deg);
@@ -674,26 +675,25 @@ footer {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-40deg);
     width: 250px;
-    grid-column: 4/span 2;
+    grid-column: 4/span 3;
     grid-row-start: 9; }
 
   #ca_streg2 {
-    -ms-transform: rotate(65deg);
+    -ms-transform: rotate(50deg);
     -webkit-transform: rotate(65deg);
-    transform: rotate(65deg);
-    width: 150px;
-    grid-column: 2/span 3;
-    grid-row-start: 23;
+    transform: rotate(40deg);
+    width: 250px;
+    grid-column: 4/span 3;
+    grid-row-start: 16;
     margin-left: 20%; }
 
   #ca_streg3 {
-    -ms-transform: rotate(-75deg);
-    -webkit-transform: rotate(-75deg);
-    transform: rotate(-75deg);
-    width: 150px;
-    grid-column: 3/span 2;
-    grid-row-start: 29;
-    margin-left: 0; }
+    -ms-transform: rotate(-50deg);
+    -webkit-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+    grid-column: 5/span 2;
+    grid-row-start: 22;
+    margin-left: 20%; }
 
   #mobilAlt {
     padding: 70px 50px 0 0;
@@ -796,6 +796,13 @@ footer {
       width: 100%;
       margin-left: 0; } }
 @media screen and (min-width: 1200px) {
+  #ca_streg1 {
+    grid-column: 4/span 4;
+    margin-left: 20%; }
+
+  #ca_streg3 {
+    grid-row-start: 23; }
+
   .web {
     display: inline; }
 
@@ -929,6 +936,21 @@ footer {
       width: 60%;
       margin-left: 20%; } }
 @media screen and (min-width: 1500px) {
+  #ca_streg1 {
+    grid-column: 4/span 5;
+    grid-row-start: 11; }
+
+  #ca_streg2 {
+    grid-column: 4/span 3;
+    grid-row-start: 20;
+    margin-left: 40%; }
+
+  #ca_streg3 {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    grid-row-start: 27; }
+
   #left_menu {
     height: 200vh; }
 
