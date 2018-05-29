@@ -767,6 +767,9 @@ footer {
       width: 60%;
       margin-left: 20%; } }
 @media screen and (min-width: 1500px) {
+  #left_menu {
+    height: 200vh; }
+
   #mobilAlt {
     grid-template-rows: repeat(39, 50px);
     height: auto; }
@@ -849,20 +852,20 @@ footer {
       height: 590px;
       grid-row-start: 27; }
     #mobilAlt #fourthBobleTitle {
-      grid-row-start: 32;
-      margin-top: 12%;
+      grid-row-start: 33;
+      margin-top: 6%;
       grid-column: 2/span 3;
       width: 100%;
       margin-left: 29%; }
     #mobilAlt #fourthBobleText {
-      grid-row-start: 33;
-      margin-top: 8%;
+      grid-row-start: 34;
+      margin-top: 4%;
       grid-column: 2/span 5;
       width: 70%;
       margin-left: 17%; }
     #mobilAlt #fourthBobleButton {
       grid-row-start: 36;
-      margin-top: 0;
+      margin-top: 5%;
       grid-column: 2/span 5;
       width: 48%;
       margin-left: 25%; } }
