@@ -64,6 +64,14 @@ body {
   grid-row-start: 28;
   margin-left: -10%; }
 
+#ca_image1 {
+  grid-column: 1/span 6;
+  grid-row-start: 12; }
+
+#ca_image2 {
+  grid-column: 1/span 6;
+  grid-row-start: 20; }
+
 #menuMobil {
   height: 60px;
   width: 100%;
