@@ -738,7 +738,7 @@ footer {
       grid-row-start: 1; }
     #mobilAlt #firstBobleTitle {
       grid-row-start: 6;
-      margin-top: 6%;
+      margin-top: 7%;
       grid-column: 6/span 3;
       width: 100%;
       margin-left: 17%; }
@@ -761,7 +761,7 @@ footer {
       grid-row-start: 9; }
     #mobilAlt #secondBobleTitle {
       grid-row-start: 12;
-      margin-top: 17%;
+      margin-top: 20%;
       grid-column: 2/span 2;
       width: 100%;
       margin-left: 22%; }
@@ -784,13 +784,13 @@ footer {
       grid-row-start: 15; }
     #mobilAlt #thirdBobleTitle {
       grid-row-start: 19;
-      margin-top: 5%;
+      margin-top: 3%;
       grid-column: 6/span 2;
       width: 100%;
       margin-left: 32%; }
     #mobilAlt #thirdBobleText {
       grid-row-start: 19;
-      margin-top: 12%;
+      margin-top: 10%;
       grid-column: 6/span 4;
       width: 80%;
       margin-left: 15%; }
