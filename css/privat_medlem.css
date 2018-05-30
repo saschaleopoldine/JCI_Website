@@ -439,6 +439,11 @@ footer {
     margin-left: 64px;
     margin-top: 5px; } }
 @media screen and (min-width: 667px) {
+  body {
+    background-image: url("../images/netvearkIpad.png");
+    background-repeat: no-repeat;
+    background-position: top; }
+
   #circle {
     width: 43%;
     height: 520%;
@@ -833,6 +838,10 @@ footer {
     grid-row-start: 22;
     margin-left: 222px; } }
 @media screen and (min-width: 1200px) {
+  body {
+    background-image: url("../images/netvearkWeb.png");
+    background-repeat: no-repeat; }
+
   .web {
     display: inline; }
 
@@ -905,11 +914,11 @@ footer {
 
   .line {
     width: 3px;
-    height: 760px;
+    height: 750px;
     -ms-transform: rotate(130deg);
     -webkit-transform: rotate(130deg);
     transform: rotate(130deg);
-    margin-top: -11%; }
+    margin-top: -8%; }
 
   .priser {
     display: none; }
@@ -1003,8 +1012,8 @@ footer {
     height: 45px; } }
 @media screen and (min-width: 1200px) {
   .line {
-    height: 782px;
-    margin-top: -8%; } }
+    height: 750px;
+    margin-top: -6%; } }
 @media screen and (min-width: 1300px) {
   .line {
     height: 792px;
@@ -1016,6 +1025,10 @@ footer {
   #Fordeltekst {
     grid-row-start: 2; } }
 @media screen and (min-width: 1380px) {
+  body {
+    background-image: url("../images/netvearkWeb_1380.png");
+    background-repeat: no-repeat; }
+
   .line {
     height: 850px;
     margin-top: -8%; } }
@@ -1031,6 +1044,10 @@ footer {
   .indledningtilweb {
     margin-left: 5%; } }
 @media screen and (min-width: 1480px) {
+  body {
+    background-image: url("../images/netveark_1480.png");
+    background-repeat: no-repeat; }
+
   .line {
     height: 940px;
     margin-top: -20%; }

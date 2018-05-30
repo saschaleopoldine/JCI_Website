@@ -312,7 +312,7 @@ margin-left: -20px;
     cursor: pointer;
   }
   margin-left: 10%;
-  
+
 }
 
 
@@ -717,6 +717,15 @@ footer{
 
 
 @media screen and (min-width: 667px) {
+
+
+
+
+  body {
+    background-image: url("../images/netvearkIpad.png");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
 
 //---------------------------- Circkle Fordel_lille_Ipad---------------------->
 
@@ -1507,6 +1516,19 @@ footer{
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
 
+  body {
+    background-image: url("../images/netvearkWeb.png");
+    background-repeat: no-repeat;
+  }
+
+
+
+
+
+
+
+
+
   .web{
     display: inline;
   }
@@ -1545,33 +1567,33 @@ footer{
   }
 
 
-//--------------------------------Indledning_Header_Web--------------------->    
-                                                                                 
-                                                                                 
-  h1{                                                                            
-   grid-column: 4/span 6;                                                        
-   grid-row-start:1;                                                             
-   margin-top: -3%;                                                              
-    font-size: 30pt;                                                             
-  }                                                                              
-                                                                                 
-  .indledningtilweb{                                                             
-    font-size: 15pt;                                                             
-    font-family: 'Merriweather Sans', sans-serif;                                
-    grid-column: 5/span 6;                                                         
-    grid-row-start:2;                                                            
-  }                                                                              
-                                                                                 
-  .meld_dig_ind{                                                                 
-   grid-column: 4/span 6;                                                        
-   grid-row-start:4;                                                             
-   height: 35px;                                                                 
-   margin-left: 35%;                                                             
-  }                                                                              
-                                                                                 
-//--------------------------------Indledning_Header_Web--------------------->    
-                                                                                 
-                                                                                 
+//--------------------------------Indledning_Header_Web--------------------->
+
+
+  h1{
+   grid-column: 4/span 6;
+   grid-row-start:1;
+   margin-top: -3%;
+    font-size: 30pt;
+  }
+
+  .indledningtilweb{
+    font-size: 15pt;
+    font-family: 'Merriweather Sans', sans-serif;
+    grid-column: 5/span 6;
+    grid-row-start:2;
+  }
+
+  .meld_dig_ind{
+   grid-column: 4/span 6;
+   grid-row-start:4;
+   height: 35px;
+   margin-left: 35%;
+  }
+
+//--------------------------------Indledning_Header_Web--------------------->
+
+
 
 
 
@@ -1597,7 +1619,7 @@ footer{
 
   }
 
-  
+
 .Fordele{
   display: none;
 }
@@ -1617,11 +1639,11 @@ footer{
 
  .line{
    width: 3px;
-   height: 760px;
+   height: 750px;
    -ms-transform: rotate(130deg);
    -webkit-transform: rotate(130deg);
    transform: rotate(130deg);
-   margin-top: -11%;
+   margin-top: -8%;
 
  }
 
@@ -1651,7 +1673,7 @@ grid-column: 4/span 6;
   width: 269px;
   border-radius: 50%;
   }
-  
+
 
  #Pristekst{
   grid-column: 1/span 5;
@@ -1682,8 +1704,8 @@ grid-column: 4/span 6;
  #circlestudierabat{
 width: 355px;
 height: 355px;
-border-radius: 100%;     
-grid-column: 1/span 6;   
+border-radius: 100%;
+grid-column: 1/span 6;
 grid-row-start:27;
 margin-left: 4%;
    }
@@ -1691,10 +1713,10 @@ margin-left: 4%;
 
   #studierabattekst{
     grid-row-start:22;
-    grid-column: 5/span 6; 
-    margin-top: -28%;      
-                           
-  }                        
+    grid-column: 5/span 6;
+    margin-top: -28%;
+
+  }
 
  .line3{
    width: 3px;
@@ -1714,7 +1736,7 @@ margin-left: 4%;
   #studierabatafsnit{
     font-size: 15pt;
   }
-  
+
 
 //--------------------------------Circle_Studierabat_med_afsnit--------------------->
 
@@ -1723,12 +1745,12 @@ margin-left: 4%;
 
 
 
-  
+
 //--------------------------------Circle_Chef_med_afsnit-------------------------->
 
 
 
-                               
+
    #circlechef{
    width: 206px;
    height: 206px;
@@ -1743,8 +1765,8 @@ margin-left: 4%;
   }
 
 
- .line2{                              
-   width: 3px;                        
+ .line2{
+   width: 3px;
    height: 700px;
    -ms-transform: rotate(140deg);
    -webkit-transform: rotate(140deg);
@@ -1752,13 +1774,13 @@ margin-left: 4%;
    grid-row-start:29;
    grid-column: 3/span 6;
    margin-top: 14%;
- }                                     
+ }
 
 
  #fådincheftekst{
   grid-column: 1/span 5;
   grid-row-start:30;
-  margin-left: -50px;     
+  margin-left: -50px;
   margin-top: -10%;
 
  }
@@ -1777,7 +1799,7 @@ margin-left: 4%;
 
   }
 
-   
+
   }
 
 
@@ -1786,11 +1808,12 @@ margin-left: 4%;
 
 @media screen and (min-width: 1200px) {
   .line {
-    height: 782px;
-    margin-top: - 8%;
+    height: 750px;
+    margin-top: -6%;
   }
 }
 
+//--------------------------------Rettelser i forskellige str.-------------------------->
 
 
 
@@ -1815,6 +1838,12 @@ margin-left: 4%;
 
 
 @media screen and (min-width: 1380px) {
+
+  body {
+    background-image: url("../images/netvearkWeb_1380.png");
+    background-repeat: no-repeat;
+  }
+
 
 
   .line {
@@ -1841,6 +1870,9 @@ margin-left: 4%;
 @media screen and (min-width: 1440px) {
 
 
+
+
+
   .line {
     height: 900px;
     margin-top: - 20%;
@@ -1855,6 +1887,12 @@ margin-left: 4%;
 
 
 @media screen and (min-width: 1480px) {
+
+  body {
+    background-image: url("../images/netveark_1480.png");
+    background-repeat: no-repeat;
+  }
+
 
 
   .line {
@@ -1897,11 +1935,7 @@ margin-left: 4%;
     margin-top: 10%;
   }
 
-
-
-
-
-
+  //--------------------------------Rettelser i forskellige str.-------------------------->
 
 }
 
@@ -1916,11 +1950,11 @@ margin-left: 4%;
 
  @media screen and (min-width: 1500px) {
 
- h1{                    
+ h1{
 
    margin-left: 15%;
  }
-   
+
 .indledningtilweb{
   margin-left: 14%;
 }
@@ -1936,18 +1970,18 @@ margin-left: 4%;
    grid-row-start:4;
  }
 
-   
+
 
 #fordelafsnit{
   margin-top: 2%;
    }
 
 
-.line{                                                  
+.line{
   height: 950px;
   margin-top: -25%;
-}                                     
-   
+}
+
 
  .line3{
    margin-top: 20%;
@@ -1976,19 +2010,11 @@ margin-left: 4%;
 
    #fådincheftekst{
      grid-row-start:31;
-
-     
    }
 
-   
+
 
  }
-
-
-
-
-
-
 
 
 
@@ -2000,5 +2026,5 @@ margin-left: 4%;
 @media print {
   // Alt der gælder for print specifikt
 
-  
+
 }
