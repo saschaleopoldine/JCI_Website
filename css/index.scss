@@ -900,7 +900,7 @@ footer{
   }
 
   #mobilAlt{
-    padding: 70px 50px 0 0;
+    padding: 70px 50px 0 50px;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-column-gap: 20px;
@@ -1053,9 +1053,9 @@ footer{
   }
 
   #left_menu{
-    width: 300px;
+    width: 25%;
     #menuIndhold{
-      width: 300px;
+      width: inherit;
       background-color: $bluePrimary;
       height: 100vh;
       padding: 50px 25px;
@@ -1064,7 +1064,7 @@ footer{
       #logo{
         width: 70%;
         margin: auto;
-        margin-bottom: 30px;
+        margin-bottom: 10%;
       }
       nav a{
         @include flex;
@@ -1075,26 +1075,42 @@ footer{
         margin-bottom: 5px;
         font-family: 'Libre Baskerville', serif;
       }
-      .undermenu1, .undermenu2{
+      .flexMenu{
+        @include flex;
+        justify-content: left;
+      }
+      #hvemKlik, #hvemKlik2, #medKlik, #medKlik2{
+        color: white;
+        margin-right: 2%;
+        cursor: pointer;
+      }
+      #hvemKlik2, #medKlik2{
+        display: none;
+      }
+      #undermenu1, #undermenu2{
         margin-left: 10%;
+        display: none;
       }
       nav button{
         @include ca_button;
         width: 170px;
         font-size: 18pt;
-        font-family: 'Merriweather Sans', sans-serif
+        font-family: 'Merriweather Sans', sans-serif;
+        margin: 8% 0;
       }
       .kontakt{
+        margin: 5% 0;
         font-family: 'Libre Baskerville', serif;
         color: white;
         font-size: 15pt;
       }
       .soMeCirkler{
-        width: 45px;
-        height: 45px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         border: solid $orangePrimary 3px;
-        padding: 2%;
+        padding: 2% 3%;
+        margin: 7%;
         i{
           color: white;
         }
@@ -1103,11 +1119,19 @@ footer{
         @include flex;
         justify-content: center;
       }
+
+      #soMeCirkel3{
+        margin: auto;
+      }
+      #active{
+        border-bottom: solid $orangePrimary 3px;
+        width: 30%;
+      }
     }
   }
 
   #mobilAlt {
-    width: 80%;
+    width: 75%;
 
     #firstTitle{
       font-size: 30pt;
@@ -1269,10 +1293,11 @@ footer{
   }
 
   #left_menu{
-    height: 200vh;
+    width: 20%;
   }
 
   #mobilAlt {
+    width: 80%;
     grid-template-rows: repeat(39, 50px);
     height: auto;
 

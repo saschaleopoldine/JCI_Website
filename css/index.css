@@ -716,7 +716,7 @@ footer {
     margin-left: 20%; }
 
   #mobilAlt {
-    padding: 70px 50px 0 0;
+    padding: 70px 50px 0 50px;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-column-gap: 20px;
@@ -835,9 +835,9 @@ footer {
     justify-content: space-between; }
 
   #left_menu {
-    width: 300px; }
+    width: 25%; }
     #left_menu #menuIndhold {
-      width: 300px;
+      width: inherit;
       background-color: #0097d7;
       height: 100vh;
       padding: 50px 25px;
@@ -845,7 +845,7 @@ footer {
       #left_menu #menuIndhold #logo {
         width: 70%;
         margin: auto;
-        margin-bottom: 30px; }
+        margin-bottom: 10%; }
       #left_menu #menuIndhold nav a {
         display: flex;
         display: -webkit-flex;
@@ -855,8 +855,19 @@ footer {
         font-size: 15pt;
         margin-bottom: 5px;
         font-family: 'Libre Baskerville', serif; }
-      #left_menu #menuIndhold .undermenu1, #left_menu #menuIndhold .undermenu2 {
-        margin-left: 10%; }
+      #left_menu #menuIndhold .flexMenu {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: left; }
+      #left_menu #menuIndhold #hvemKlik, #left_menu #menuIndhold #hvemKlik2, #left_menu #menuIndhold #medKlik, #left_menu #menuIndhold #medKlik2 {
+        color: white;
+        margin-right: 2%;
+        cursor: pointer; }
+      #left_menu #menuIndhold #hvemKlik2, #left_menu #menuIndhold #medKlik2 {
+        display: none; }
+      #left_menu #menuIndhold #undermenu1, #left_menu #menuIndhold #undermenu2 {
+        margin-left: 10%;
+        display: none; }
       #left_menu #menuIndhold nav button {
         height: 30px;
         background-color: #f37121;
@@ -866,30 +877,38 @@ footer {
         font-size: 18pt;
         width: 170px;
         font-size: 18pt;
-        font-family: "Merriweather Sans", sans-serif; }
+        font-family: 'Merriweather Sans', sans-serif;
+        margin: 8% 0; }
         #left_menu #menuIndhold nav button a {
           text-decoration: none;
           color: white;
           font-size: 18pt; }
       #left_menu #menuIndhold .kontakt {
+        margin: 5% 0;
         font-family: 'Libre Baskerville', serif;
         color: white;
         font-size: 15pt; }
       #left_menu #menuIndhold .soMeCirkler {
-        width: 45px;
-        height: 45px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         border: solid #f37121 3px;
-        padding: 2%; }
+        padding: 2% 3%;
+        margin: 7%; }
         #left_menu #menuIndhold .soMeCirkler i {
           color: white; }
       #left_menu #menuIndhold #flexSoMe {
         display: flex;
         display: -webkit-flex;
         justify-content: center; }
+      #left_menu #menuIndhold #soMeCirkel3 {
+        margin: auto; }
+      #left_menu #menuIndhold #active {
+        border-bottom: solid #f37121 3px;
+        width: 30%; }
 
   #mobilAlt {
-    width: 80%;
+    width: 75%;
     grid-template-rows: repeat(32, 50px);
     height: auto; }
     #mobilAlt #firstTitle {
@@ -1016,9 +1035,10 @@ footer {
     grid-row-start: 27; }
 
   #left_menu {
-    height: 200vh; }
+    width: 20%; }
 
   #mobilAlt {
+    width: 80%;
     grid-template-rows: repeat(39, 50px);
     height: auto; }
     #mobilAlt #firstTitle {
