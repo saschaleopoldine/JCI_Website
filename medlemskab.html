@@ -139,9 +139,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 <script type="text/javascript">
-    //UNDER 767 PX//
+    //MOBIL//
     $(document).ready(function(){
         if ($(window).width() <= 767) {
+            alert ("1");
             // NÅR MAN TRYKKER PÅ BOLDEN FORSVINDER TEKSTEN//
             $(".bold1").click(function(){
                 $(".bold1tekst").hide(1000);
@@ -196,7 +197,127 @@
                 $(".bold2").hide(500);
             })
         }
-        else {
+        //LIGGENDE IPAD//
+       else if ($(window).width() <= 991 && $(window).width() > 767){
+            alert("2");
+            //BOLD 1
+            $(".bold1tekst").click(function(){
+                $(".bold1tekst").show();
+            })
+
+            //gør at fordelsteksten kommer frem//
+            $(".bold1tekst").click(function(){
+                $(".bold1fuldtekst").fadeIn(2000);
+            })
+
+            //gør at præsentationsteksten flytter sig til højre//
+            $(".bold1tekst").click(function(){
+                $(".bold1tekst").animate({"margin-left": '126%'});
+            })
+
+            //gør at bolden også flytter sig til højre//
+            $(".bold1tekst").click(function(){
+                $(".bold1").animate({"margin-left": '120%'});
+            })
+
+            //CTA kommer frem under teksten//
+            $(".bold1tekst").click(function(){
+                $(".CTAbold1").show(1000);
+            })
+
+
+            //BOLD 2
+            $(".bold2tekst").click(function(){
+                $(".bold2tekst").show();
+            })
+
+            //gør at fordelsteksten kommer frem//
+            $(".bold2tekst").click(function(){
+                $(".bold2fuldtekst").fadeIn(2000);
+            })
+
+            //gør at præsentationsteksten flytter sig til højre//
+            $(".bold2tekst").click(function(){
+                $(".bold2tekst").animate({"margin-left": '-200%'});
+            })
+
+            //gør at bolden også flytter sig til højre//
+            $(".bold2tekst").click(function(){
+                $(".bold2").animate({"margin-left": '-140%'});
+            })
+
+            //CTA kommer frem under teksten//
+            $(".bold2tekst").click(function(){
+                $(".CTAbold2").show(1000);
+            })
+
+
+
+        }
+        else if ($(window).width() >= 1023  && $(window).width() > 767  && $(window).width() < 1199){
+            alert ("3");
+
+            //BOLD 1//
+            //gør at præsentations teksten bliver vist//
+            $(".bold1tekst").click(function(){
+                $(".bold1tekst").show();
+            })
+            $(".bold1tekst").click(function(){
+                $(".bold1tekst").css({"margin-left":"30px"});
+            })
+
+            //gør at fordelsteksten kommer frem//
+            $(".bold1tekst").click(function(){
+                $(".bold1fuldtekst").fadeIn(2000);
+            })
+
+            //gør at præsentationsteksten flytter sig til højre//
+            $(".bold1tekst").click(function(){
+                $(".bold1tekst").animate({"margin-left": '210%'});
+            })
+
+            //gør at bolden også flytter sig til højre//
+            $(".bold1tekst").click(function(){
+                $(".bold1").animate({"margin-left": '135%'});
+            })
+
+            //CTA kommer frem under teksten//
+            $(".bold1tekst").click(function(){
+                $(".CTAbold1").show(500);
+            })
+            $(".bold1tekst").click(function(){
+                $(".CTAbold1").show(500);
+            })
+
+
+            //bold 2//
+
+            // bold 2 rykker sig til venstre//
+            $(".bold2tekst").click(function(){
+                $(".bold2").animate({"margin-left": '-175%'});
+            })
+
+            $(".bold2tekst").click(function(){
+
+                $(".bold2fuldtekst").fadeIn(2000);
+            })
+            $(".bold2tekst").click(function(){
+
+                $(".bold2tekst").animate({"margin-left": "-202%"});
+            })
+
+            $(".bold2tekst").click(function(){
+
+                $(".CTAbold2").show(200);
+            })
+
+        }
+
+        // WEB (1200)///
+        else if ($(window).width() >= 1199 && $(window).width() < 1499){
+
+
+            alert ("4")
             //gør at præsentations teksten bliver vist//
             $(".bold1tekst").click(function(){
                 $(".bold1tekst").show();
@@ -207,33 +328,92 @@
                 $(".bold1fuldtekst").fadeIn(2000);
             })
 
-
             //gør at præsentationsteksten flytter sig til højre//
             $(".bold1tekst").click(function(){
-                $(".bold1tekst").animate({"margin-left": '450px'});
+                $(".bold1tekst").animate({"margin-left": '200%'});
             })
 
             //gør at bolden også flytter sig til højre//
             $(".bold1tekst").click(function(){
-                $(".bold1").animate({"margin-left": '430px'});
+                $(".bold1").animate({"margin-left": '215%'});
             })
 
             //CTA kommer frem under teksten//
             $(".bold1tekst").click(function(){
-                $(".CTAbold1").show(1000);
+                $(".CTAbold1").show(500);
             })
 
-            // bold 2 rykker sig til højre//
+            // bold 2 rykker sig til venstre//
             $(".bold2tekst").click(function(){
-                $(".bold2").animate({"margin-right": '430px'});
+                $(".bold2").animate({"margin-left": '-70%'});
             })
 
             $(".bold2tekst").click(function(){
-                $(".bold2fuldtekst").animate({"margin-right": '430px'});
+
+                $(".bold2fuldtekst").fadeIn(2000);
             })
-            
+            $(".bold2tekst").click(function(){
+
+                $(".bold2tekst").animate({"margin-left": "-305%"});
+            })
+
+            $(".bold2tekst").click(function(){
+
+                $(".CTAbold2").show(200);
+            })
+
         }
 
+
+
+        /// WEB(1500)///
+        else {
+            alert ("5")
+            //gør at præsentations teksten bliver vist//
+            $(".bold1tekst").click(function(){
+                $(".bold1tekst").show();
+            })
+
+            //gør at fordelsteksten kommer frem//
+            $(".bold1tekst").click(function(){
+                $(".bold1fuldtekst").fadeIn(2000);
+            })
+
+            //gør at præsentationsteksten flytter sig til højre//
+            $(".bold1tekst").click(function(){
+                $(".bold1tekst").animate({"margin-left": '290%'});
+            })
+
+            //gør at bolden også flytter sig til højre//
+            $(".bold1tekst").click(function(){
+                $(".bold1").animate({"margin-left": '320%'});
+            })
+
+            //CTA kommer frem under teksten//
+            $(".bold1tekst").click(function(){
+                $(".CTAbold1").show(500);
+            })
+
+            // bold 2 rykker sig til venstre//
+            $(".bold2tekst").click(function(){
+                $(".bold2").animate({"margin-left": '-280%'});
+            })
+
+            $(".bold2tekst").click(function(){
+
+                $(".bold2fuldtekst").fadeIn(2000);
+            })
+            $(".bold2tekst").click(function(){
+
+                $(".bold2tekst").animate({"margin-left": "-555%"});
+            })
+
+            $(".bold2tekst").click(function(){
+
+                $(".CTAbold2").show(200);
+            })
+
+    }
     })
 
 
