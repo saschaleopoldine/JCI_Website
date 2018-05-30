@@ -147,6 +147,9 @@ body {
     height: 30px;
     background-color: #f37121;
     border: none;
+    text-decoration: none;
+    color: white;
+    font-size: 18pt;
     grid-row: 13/span 1;
     grid-column: 1/span 6;
     width: 80%;
@@ -185,6 +188,9 @@ body {
     height: 30px;
     background-color: #f37121;
     border: none;
+    text-decoration: none;
+    color: white;
+    font-size: 18pt;
     grid-row: 20/span 1;
     margin-top: 0;
     grid-column: 1/span 4;
@@ -223,6 +229,9 @@ body {
     height: 30px;
     background-color: #f37121;
     border: none;
+    text-decoration: none;
+    color: white;
+    font-size: 18pt;
     grid-row: 26/span 1;
     margin-top: 10%;
     grid-column: 2/span 3;
@@ -261,6 +270,9 @@ body {
     height: 30px;
     background-color: #f37121;
     border: none;
+    text-decoration: none;
+    color: white;
+    font-size: 18pt;
     grid-row: 32/span 1;
     margin-top: 18%;
     grid-column: 2/span 4;
@@ -823,17 +835,61 @@ footer {
     justify-content: space-between; }
 
   #left_menu {
-    background-color: #0097d7;
-    height: 167vh;
     width: 300px; }
     #left_menu #menuIndhold {
+      width: 300px;
+      background-color: #0097d7;
+      height: 100vh;
+      padding: 50px 25px;
       position: fixed; }
       #left_menu #menuIndhold #logo {
-        width: 65%;
-        height: auto;
-        margin: 30px 30% 0 30%; }
+        width: 70%;
+        margin: auto;
+        margin-bottom: 30px; }
+      #left_menu #menuIndhold nav a {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: white;
+        font-size: 15pt;
+        margin-bottom: 5px;
+        font-family: 'Libre Baskerville', serif; }
+      #left_menu #menuIndhold .undermenu1, #left_menu #menuIndhold .undermenu2 {
+        margin-left: 10%; }
+      #left_menu #menuIndhold nav button {
+        height: 30px;
+        background-color: #f37121;
+        border: none;
+        text-decoration: none;
+        color: white;
+        font-size: 18pt;
+        width: 170px;
+        font-size: 18pt;
+        font-family: "Merriweather Sans", sans-serif; }
+        #left_menu #menuIndhold nav button a {
+          text-decoration: none;
+          color: white;
+          font-size: 18pt; }
+      #left_menu #menuIndhold .kontakt {
+        font-family: 'Libre Baskerville', serif;
+        color: white;
+        font-size: 15pt; }
+      #left_menu #menuIndhold .soMeCirkler {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        border: solid #f37121 3px;
+        padding: 2%; }
+        #left_menu #menuIndhold .soMeCirkler i {
+          color: white; }
+      #left_menu #menuIndhold #flexSoMe {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center; }
 
   #mobilAlt {
+    width: 80%;
     grid-template-rows: repeat(32, 50px);
     height: auto; }
     #mobilAlt #firstTitle {

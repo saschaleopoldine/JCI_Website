@@ -53,6 +53,9 @@ $overlay: rgba(93, 144, 183, 0.5);
   height: 30px;
   background-color: $orangePrimary;
   border: none;
+  text-decoration: none;
+  color: white;
+  font-size: 18pt;
   a{
     text-decoration: none;
     color: white;
@@ -1050,20 +1053,61 @@ footer{
   }
 
   #left_menu{
-    background-color: $bluePrimary;
-    height: 167vh;
     width: 300px;
     #menuIndhold{
+      width: 300px;
+      background-color: $bluePrimary;
+      height: 100vh;
+      padding: 50px 25px;
       position: fixed;
+
       #logo{
-        width: 65%;
-        height: auto;
-        margin: 30px 30% 0 30%;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 30px;
+      }
+      nav a{
+        @include flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: white;
+        font-size: 15pt;
+        margin-bottom: 5px;
+        font-family: 'Libre Baskerville', serif;
+      }
+      .undermenu1, .undermenu2{
+        margin-left: 10%;
+      }
+      nav button{
+        @include ca_button;
+        width: 170px;
+        font-size: 18pt;
+        font-family: 'Merriweather Sans', sans-serif
+      }
+      .kontakt{
+        font-family: 'Libre Baskerville', serif;
+        color: white;
+        font-size: 15pt;
+      }
+      .soMeCirkler{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        border: solid $orangePrimary 3px;
+        padding: 2%;
+        i{
+          color: white;
+        }
+      }
+      #flexSoMe{
+        @include flex;
+        justify-content: center;
       }
     }
   }
 
   #mobilAlt {
+    width: 80%;
 
     #firstTitle{
       font-size: 30pt;
