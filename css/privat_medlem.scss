@@ -1781,6 +1781,139 @@ margin-left: 4%;
   }
 
 
+
+
+
+@media screen and (min-width: 1200px) {
+  .line {
+    height: 782px;
+    margin-top: - 8%;
+  }
+}
+
+
+
+
+@media screen and (min-width: 1300px) {
+  .line{ height: 792px;
+    margin-top: -8%;
+  }
+
+
+  #fordelafsnit{
+    margin-top: 3%;
+
+  }
+
+  #Fordeltekst{
+    grid-row-start: 2;
+
+  }
+
+
+}
+
+
+@media screen and (min-width: 1380px) {
+
+
+  .line {
+    height: 850px;
+    margin-top: - 8%;
+  }
+
+
+
+}
+
+@media screen and (min-width: 1400px) {
+
+
+  .line {
+    height: 860px;
+    margin-top: - 10%;
+  }
+
+
+
+}
+
+@media screen and (min-width: 1440px) {
+
+
+  .line {
+    height: 900px;
+    margin-top: - 20%;
+  }
+
+  .indledningtilweb{
+    margin-left: 5%;
+  }
+
+
+}
+
+
+@media screen and (min-width: 1480px) {
+
+
+  .line {
+    height: 940px;
+    margin-top: - 20%;
+  }
+
+  #Fordeltekst{
+    grid-row-start: 3;
+
+  }
+
+  #studierabattekst{
+    grid-row-start: 23;
+
+  }
+
+#Pristekst{
+  grid-row-start: 10;
+}
+
+
+  .line3{
+    margin-top: 33%;
+
+  }
+
+  .line2{
+    margin-top: 33%;
+
+  }
+
+
+  .line2{
+    width: 3px;
+    height: 750px;
+    -ms-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    margin-top: 10%;
+  }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
  @media screen and (min-width: 1500px) {
 
  h1{                    
