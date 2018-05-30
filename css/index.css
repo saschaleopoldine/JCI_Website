@@ -688,7 +688,14 @@ footer {
     #mobilAlt #fourthBobleButton {
       margin-top: 8%;
       grid-row-start: 42;
-      margin-left: 21%; } }
+      margin-left: 21%; }
+
+  footer {
+    justify-content: center; }
+    footer p, footer #some {
+      margin: 0 10%; }
+    footer p {
+      margin-top: 2%; } }
 @media screen and (min-width: 992px) {
   #ca_streg1 {
     -ms-transform: rotate(-45deg);
@@ -843,7 +850,7 @@ footer {
       padding: 50px 25px;
       position: fixed; }
       #left_menu #menuIndhold #logo {
-        width: 70%;
+        width: 60%;
         margin: auto;
         margin-bottom: 10%; }
       #left_menu #menuIndhold nav a {
@@ -853,7 +860,7 @@ footer {
         text-decoration: none;
         color: white;
         font-size: 15pt;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         font-family: 'Libre Baskerville', serif; }
       #left_menu #menuIndhold .flexMenu {
         display: flex;
@@ -894,7 +901,7 @@ footer {
         border-radius: 50%;
         border: solid #f37121 3px;
         padding: 2% 3%;
-        margin: 7%; }
+        margin: 5%; }
         #left_menu #menuIndhold .soMeCirkler i {
           color: white; }
       #left_menu #menuIndhold #flexSoMe {
@@ -903,9 +910,13 @@ footer {
         justify-content: center; }
       #left_menu #menuIndhold #soMeCirkel3 {
         margin: auto; }
+      #left_menu #menuIndhold .fa-facebook-f {
+        margin: 7% 0 0 15%; }
+      #left_menu #menuIndhold .fa-linkedin {
+        margin-left: 3%; }
       #left_menu #menuIndhold #active {
         border-bottom: solid #f37121 3px;
-        width: 30%; }
+        width: 102px; }
 
   #mobilAlt {
     width: 75%;
@@ -930,94 +941,94 @@ footer {
       grid-column: 1/span 5; }
     #mobilAlt #ca_cirkel_1 {
       grid-column: 6/span 5;
-      height: 445px;
+      height: 400px;
       grid-row-start: 1; }
     #mobilAlt #firstBobleTitle {
-      grid-row-start: 5;
-      margin-top: 8%;
-      grid-column: 6/span 3;
+      grid-row-start: 4;
+      margin-top: 4%;
+      grid-column: 6/span 4;
       width: 100%;
-      margin-left: 17%; }
+      margin-left: 15%; }
     #mobilAlt #firstBobleText {
-      grid-row-start: 6;
-      margin-top: 3%;
+      grid-row-start: 5;
+      margin-top: 0;
       grid-column: 6/span 5;
       width: 80%;
-      margin-left: 10%; }
+      margin-left: 12%; }
     #mobilAlt #firstBobleButton {
-      grid-row-start: 8;
-      margin-top: 0;
+      grid-row-start: 7;
+      margin-top: 5%;
       grid-column: 7/span 3;
-      width: 80%;
-      margin-left: 10%; }
+      width: 95%;
+      margin-left: 3%; }
     #mobilAlt #ca_cirkel_2 {
       grid-column: 2/span 4;
       width: 100%;
-      height: 350px;
+      height: 310px;
       grid-row-start: 9; }
     #mobilAlt #secondBobleTitle {
-      grid-row-start: 11;
-      margin-top: 25%;
+      grid-row-start: 10;
+      margin-top: 20%;
       grid-column: 2/span 2;
       width: 100%;
       margin-left: 22%; }
     #mobilAlt #secondBobleText {
-      grid-row-start: 12;
-      margin-top: 10%;
+      grid-row-start: 11;
+      margin-top: 5%;
       grid-column: 2/span 4;
       width: 80%;
       margin-left: 10%; }
     #mobilAlt #secondBobleButton {
-      grid-row-start: 14;
-      margin-top: 8%;
+      grid-row-start: 13;
+      margin-top: 12%;
       grid-column: 2/span 3;
-      width: 64%;
-      margin-left: 35%; }
+      width: 78%;
+      margin-left: 30%; }
     #mobilAlt #ca_cirkel_3 {
       grid-column: 6/span 4;
       width: 100%;
-      height: 350px;
+      height: 310px;
       grid-row-start: 16; }
     #mobilAlt #thirdBobleTitle {
       grid-row-start: 18;
-      margin-top: 25%;
+      margin-top: 8%;
       grid-column: 6/span 2;
       width: 100%;
       margin-left: 32%; }
     #mobilAlt #thirdBobleText {
       grid-row-start: 19;
-      margin-top: 10%;
+      margin-top: 0;
       grid-column: 6/span 4;
       width: 80%;
       margin-left: 15%; }
     #mobilAlt #thirdBobleButton {
-      grid-row-start: 21;
-      margin-top: 6%;
+      grid-row-start: 20;
+      margin-top: 12%;
       grid-column: 6/span 4;
-      width: 40%;
-      margin-left: 30%; }
+      width: 48%;
+      margin-left: 25%; }
     #mobilAlt #ca_cirkel_4 {
       grid-column: 2/span 5;
-      height: 445px;
+      height: 400px;
       grid-row-start: 23; }
     #mobilAlt #fourthBobleTitle {
-      grid-row-start: 26;
-      margin-top: 10%;
+      grid-row-start: 25;
+      margin-top: 13%;
       grid-column: 2/span 3;
       width: 100%;
       margin-left: 17%; }
     #mobilAlt #fourthBobleText {
-      grid-row-start: 27;
+      grid-row-start: 26;
       margin-top: 5%;
       grid-column: 2/span 5;
       width: 80%;
       margin-left: 10%; }
     #mobilAlt #fourthBobleButton {
-      grid-row-start: 29;
+      grid-row-start: 28;
       margin-top: 8%;
       grid-column: 2/span 5;
-      width: 60%;
-      margin-left: 20%; } }
+      width: 70%;
+      margin-left: 15%; } }
 @media screen and (min-width: 1500px) {
   #ca_streg1 {
     grid-column: 4/span 5;
