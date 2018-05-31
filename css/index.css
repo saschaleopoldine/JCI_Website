@@ -8,7 +8,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
-  font-family: 'Libre Baskerville', serif; }
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 1.5px; }
 
 ul, ol {
   margin: 0;
@@ -28,8 +29,49 @@ img {
   max-width: 100%;
   height: auto; }
 
+body {
+  background-image: url("../images/Forside_mobil_mockup_baggrund.png");
+  background-size: cover; }
+
 .web {
   display: none; }
+
+.ca_streger {
+  height: 3px;
+  background-color: #0097d7; }
+
+#ca_streg1 {
+  -ms-transform: rotate(-80deg);
+  -webkit-transform: rotate(-80deg);
+  transform: rotate(-80deg);
+  width: 150px;
+  grid-column: 2/span 2;
+  grid-row-start: 16; }
+
+#ca_streg2 {
+  -ms-transform: rotate(75deg);
+  -webkit-transform: rotate(75deg);
+  transform: rotate(75deg);
+  width: 150px;
+  grid-column: 2/span 3;
+  grid-row-start: 22; }
+
+#ca_streg3 {
+  -ms-transform: rotate(-80deg);
+  -webkit-transform: rotate(-80deg);
+  transform: rotate(-80deg);
+  width: 150px;
+  grid-column: 3/span 2;
+  grid-row-start: 28;
+  margin-left: -10%; }
+
+#ca_image1 {
+  grid-column: 1/span 6;
+  grid-row-start: 12; }
+
+#ca_image2 {
+  grid-column: 1/span 6;
+  grid-row-start: 20; }
 
 #menuMobil {
   height: 60px;
@@ -52,7 +94,204 @@ img {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 10px;
-  grid-template-rows: repeat(10, 60px); }
+  grid-template-rows: repeat(35, 50px); }
+  #mobilAlt p {
+    font-size: 15pt; }
+  #mobilAlt #firstTitle {
+    font-size: 25pt;
+    grid-column: 1/span 6;
+    grid-row-start: 2;
+    text-align: center;
+    font-weight: bold; }
+  #mobilAlt #slagelseTitle {
+    font-size: 18pt;
+    color: #f37121;
+    grid-column: 1/span 6;
+    text-align: center;
+    grid-row-start: 4;
+    margin-top: 10%;
+    font-weight: bold; }
+  #mobilAlt #indledning {
+    font-size: 15pt;
+    grid-column: 1/span 6;
+    grid-row-start: 6;
+    margin-top: 0;
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif; }
+  #mobilAlt .ca_cirkler {
+    border-radius: 50%; }
+  #mobilAlt #ca_cirkel_1 {
+    background-image: url("../images/caroline_jci.png");
+    grid-row: 10/span 7;
+    grid-column: 1/span 6;
+    height: 280px;
+    width: 280px;
+    z-index: 1; }
+  #mobilAlt #firstBobleTitle {
+    font-size: 20pt;
+    color: white;
+    grid-column: 1/span 6;
+    width: 250px;
+    margin-left: 28px;
+    grid-row-start: 11;
+    margin-top: 8px;
+    font-weight: bold;
+    z-index: 2; }
+  #mobilAlt #firstBobleText {
+    font-size: 12pt;
+    color: white;
+    grid-column: 1/span 6;
+    margin-left: 28px;
+    width: 250px;
+    grid-row-start: 11;
+    margin-top: 37px;
+    z-index: 2; }
+  #mobilAlt #firstBobleButton {
+    height: 30px;
+    background-color: #f37121;
+    border: none;
+    text-decoration: none;
+    color: white;
+    font-size: 18pt;
+    grid-row: 13/span 1;
+    grid-column: 1/span 6;
+    width: 220px;
+    margin-left: 28px;
+    margin-top: 22px;
+    z-index: 2; }
+    #mobilAlt #firstBobleButton a {
+      text-decoration: none;
+      color: white;
+      font-size: 18pt; }
+  #mobilAlt #ca_cirkel_2 {
+    background-image: url("../images/caroline_aktiviteter.png");
+    grid-row: 17/span 5;
+    grid-column: 1/span 5;
+    width: 230px;
+    height: 230px;
+    z-index: 1; }
+  #mobilAlt #secondBobleTitle {
+    font-size: 20pt;
+    color: white;
+    grid-column: 1/span 3;
+    width: 110px;
+    margin-left: 24px;
+    grid-row-start: 17;
+    margin-top: 34px;
+    font-weight: bold;
+    z-index: 2; }
+  #mobilAlt #secondBobleText {
+    font-size: 12pt;
+    color: white;
+    grid-column: 1/span 5;
+    grid-row-start: 18;
+    margin-top: 11px;
+    width: 210px;
+    margin-left: 24px;
+    z-index: 2; }
+  #mobilAlt #secondBobleButton {
+    height: 30px;
+    background-color: #f37121;
+    border: none;
+    text-decoration: none;
+    color: white;
+    font-size: 18pt;
+    grid-row: 20/span 1;
+    margin-top: 0;
+    grid-column: 1/span 4;
+    width: 175px;
+    margin-left: 27px;
+    z-index: 2; }
+    #mobilAlt #secondBobleButton a {
+      text-decoration: none;
+      color: white;
+      font-size: 18pt; }
+  #mobilAlt #ca_cirkel_3 {
+    background-image: url("../images/caroline_partner.png");
+    grid-row: 23/span 5;
+    grid-column: 2/span 5;
+    width: 230px;
+    height: 230px;
+    z-index: 1; }
+  #mobilAlt #thirdBobleTitle {
+    font-size: 20pt;
+    color: white;
+    grid-column: 2/span 3;
+    width: 110px;
+    margin-left: 27px;
+    grid-row-start: 24;
+    font-weight: bold;
+    z-index: 2; }
+  #mobilAlt #thirdBobleText {
+    font-size: 12pt;
+    color: white;
+    grid-column: 2/span 5;
+    grid-row-start: 24;
+    margin-top: 30px;
+    margin-left: 27px;
+    width: 160px;
+    z-index: 2; }
+  #mobilAlt #thirdBobleButton {
+    height: 30px;
+    background-color: #f37121;
+    border: none;
+    text-decoration: none;
+    color: white;
+    font-size: 18pt;
+    grid-row: 26/span 1;
+    margin-top: 13px;
+    grid-column: 2/span 3;
+    width: 150px;
+    margin-left: 40px;
+    z-index: 2; }
+    #mobilAlt #thirdBobleButton a {
+      text-decoration: none;
+      color: white;
+      font-size: 18pt; }
+  #mobilAlt #ca_cirkel_4 {
+    background-image: url("../images/caroline_medlemskab.png");
+    grid-row: 29/span 7;
+    grid-column: 1/span 6;
+    width: 280px;
+    height: 280px;
+    z-index: 1; }
+  #mobilAlt #fourthBobleTitle {
+    font-size: 20pt;
+    color: white;
+    grid-column: 1/span 4;
+    width: 150px;
+    margin-left: 27px;
+    grid-row-start: 30;
+    margin-top: 15px;
+    font-weight: bold;
+    z-index: 2; }
+  #mobilAlt #fourthBobleText {
+    font-size: 12pt;
+    color: white;
+    grid-column: 1/span 6;
+    width: 250px;
+    margin-left: 27px;
+    grid-row-start: 31;
+    margin-top: 0;
+    z-index: 2; }
+  #mobilAlt #fourthBobleButton {
+    height: 30px;
+    background-color: #f37121;
+    border: none;
+    text-decoration: none;
+    color: white;
+    font-size: 18pt;
+    grid-row: 32/span 1;
+    margin-top: 32px;
+    grid-column: 2/span 4;
+    margin-left: 4px;
+    width: 175px;
+    height: 60px;
+    z-index: 2; }
+    #mobilAlt #fourthBobleButton a {
+      text-decoration: none;
+      color: white;
+      font-size: 18pt; }
 
 footer {
   background-color: #0097d7;
@@ -63,7 +302,7 @@ footer {
   display: -webkit-flex;
   justify-content: space-between; }
   footer p {
-    margin-top: 15px; }
+    margin-top: 12px; }
   footer #some {
     display: flex;
     display: -webkit-flex;
@@ -71,11 +310,565 @@ footer {
     footer #some i {
       margin: 3px 0; }
 
+@media screen and (min-width: 360px) {
+  #ca_streg1 {
+    -ms-transform: rotate(-80deg);
+    -webkit-transform: rotate(-80deg);
+    transform: rotate(-80deg);
+    grid-row-start: 18; }
+
+  #ca_streg2 {
+    -ms-transform: rotate(65deg);
+    -webkit-transform: rotate(65deg);
+    transform: rotate(65deg);
+    grid-row-start: 23;
+    margin-left: 20%; }
+
+  #ca_streg3 {
+    -ms-transform: rotate(-75deg);
+    -webkit-transform: rotate(-75deg);
+    transform: rotate(-75deg);
+    grid-row-start: 29;
+    margin-left: 0; }
+
+  #mobilAlt {
+    grid-template-rows: repeat(37, 50px); }
+    #mobilAlt #slagelseTitle {
+      margin-top: 0; }
+    #mobilAlt #indledning {
+      grid-column: 2/span 4;
+      grid-row-start: 5;
+      margin-top: 12%; }
+    #mobilAlt #ca_cirkel_1 {
+      background-size: cover;
+      width: 330px;
+      height: 330px; }
+    #mobilAlt #firstBobleTitle {
+      grid-row-start: 12;
+      margin-top: 25px;
+      margin-left: 45px; }
+    #mobilAlt #firstBobleText {
+      margin-top: 9px;
+      grid-row-start: 13;
+      margin-left: 45px; }
+    #mobilAlt #firstBobleButton {
+      margin-top: 0;
+      grid-row-start: 15;
+      margin-left: 55px; }
+    #mobilAlt #ca_cirkel_2 {
+      background-size: cover;
+      grid-row-start: 18;
+      height: 240px;
+      width: 240px; }
+    #mobilAlt #secondBobleTitle {
+      grid-row-start: 18;
+      margin-left: 28px;
+      margin-top: 38px; }
+    #mobilAlt #secondBobleText {
+      grid-row-start: 19;
+      grid-column: 1/span 4;
+      margin-top: 21px;
+      margin-left: 28px; }
+    #mobilAlt #secondBobleButton {
+      grid-row-start: 21;
+      margin-top: 10px;
+      margin-left: 32px; }
+    #mobilAlt #ca_cirkel_3 {
+      background-size: cover;
+      grid-column: 2/span 4;
+      grid-row-start: 24;
+      height: 240px;
+      width: 240px; }
+    #mobilAlt #thirdBobleTitle {
+      grid-column: 3/span 3;
+      grid-row-start: 24;
+      margin-left: -20px;
+      margin-top: 43px; }
+    #mobilAlt #thirdBobleText {
+      grid-row-start: 25;
+      grid-column: 3/span 4;
+      margin-left: -20px;
+      margin-top: 24px; }
+    #mobilAlt #thirdBobleButton {
+      grid-row-start: 27;
+      margin-top: 15px;
+      grid-column: 3/span 3;
+      margin-left: -15px; }
+    #mobilAlt #ca_cirkel_4 {
+      background-size: cover;
+      grid-row-start: 30;
+      width: 340px;
+      height: 340px; }
+    #mobilAlt #fourthBobleTitle {
+      grid-row-start: 32;
+      margin-left: 26px;
+      margin-top: 8px; }
+    #mobilAlt #fourthBobleText {
+      grid-row-start: 32;
+      margin-top: 43px;
+      margin-left: 26px;
+      width: 300px; }
+    #mobilAlt #fourthBobleButton {
+      grid-row-start: 34;
+      grid-column: 1/span 6;
+      width: 275px;
+      height: 30px;
+      margin-left: 26px; } }
+@media screen and (min-width: 410px) {
+  #ca_streg1 {
+    -ms-transform: rotate(-75deg);
+    -webkit-transform: rotate(-75deg);
+    transform: rotate(-75deg);
+    margin-left: 10%; }
+
+  #ca_streg2 {
+    grid-row-start: 24; }
+
+  #ca_streg3 {
+    grid-row-start: 30;
+    margin-left: 20%;
+    grid-column: 2/span 5; }
+
+  #mobilAlt {
+    grid-template-rows: repeat(39, 50px); }
+    #mobilAlt #indledning {
+      grid-column: 2/span 4; }
+    #mobilAlt #ca_cirkel_1 {
+      height: 375px;
+      width: 375px; }
+    #mobilAlt #firstBobleTitle {
+      grid-row-start: 13;
+      margin-top: 15px; }
+    #mobilAlt #firstBobleText {
+      margin-top: 45px;
+      grid-row-start: 13; }
+    #mobilAlt #firstBobleButton {
+      margin-top: 35px;
+      grid-row-start: 15;
+      margin-left: 81px; }
+    #mobilAlt #ca_cirkel_2 {
+      grid-row-start: 19;
+      height: 250px;
+      width: 250px; }
+    #mobilAlt #secondBobleTitle {
+      grid-row-start: 19;
+      margin-top: 45px; }
+    #mobilAlt #secondBobleText {
+      grid-row-start: 20;
+      grid-column: 1/span 4;
+      margin-top: 27px; }
+    #mobilAlt #secondBobleButton {
+      grid-row-start: 22;
+      margin-left: 36px;
+      margin-top: 17px; }
+    #mobilAlt #ca_cirkel_3 {
+      grid-row-start: 25;
+      grid-column: 3/span 3;
+      height: 250px;
+      width: 250px; }
+    #mobilAlt #thirdBobleTitle {
+      grid-column: 3/span 3;
+      margin-left: 30px;
+      margin-top: 25px;
+      grid-row-start: 26; }
+    #mobilAlt #thirdBobleText {
+      grid-row-start: 27;
+      grid-column: 3/span 4;
+      margin-left: 30px;
+      margin-top: 7px;
+      width: 195px; }
+    #mobilAlt #thirdBobleButton {
+      grid-row-start: 28;
+      margin-top: 27px;
+      grid-column: 3/span 3;
+      margin-left: 50px; }
+    #mobilAlt #ca_cirkel_4 {
+      grid-row-start: 31;
+      height: 375px;
+      width: 375px; }
+    #mobilAlt #fourthBobleTitle {
+      grid-row-start: 33;
+      margin-left: 26px;
+      margin-top: 45px; }
+    #mobilAlt #fourthBobleText {
+      grid-row-start: 34;
+      margin-top: 25px;
+      margin-left: 26px;
+      width: 300px; }
+    #mobilAlt #fourthBobleButton {
+      grid-row-start: 36;
+      grid-column: 1/span 6;
+      height: 30px;
+      margin-left: 48px;
+      margin-top: 15px; } }
+@media screen and (min-width: 540px) {
+  body {
+    background-image: url("../images/Forside_mobil_mockup_baggrund_2.png"); } }
+@media screen and (min-width: 660px) {
+  #ca_streg1 {
+    -ms-transform: rotate(-65deg);
+    -webkit-transform: rotate(-65deg);
+    transform: rotate(-65deg);
+    grid-row-start: 17;
+    margin-left: 0;
+    width: 250px; }
+
+  #ca_streg2 {
+    -ms-transform: rotate(50deg);
+    -webkit-transform: rotate(50deg);
+    transform: rotate(50deg);
+    width: 300px;
+    grid-row-start: 25; }
+
+  #ca_streg3 {
+    -ms-transform: rotate(-70deg);
+    -webkit-transform: rotate(-70deg);
+    transform: rotate(-65deg);
+    width: 250px;
+    grid-row-start: 32;
+    margin-left: 30%; }
+
+  #mobilAlt {
+    grid-template-rows: repeat(43, 50px); }
+    #mobilAlt #slagelseTitle {
+      grid-row-start: 3;
+      margin-top: 5%; }
+    #mobilAlt #indledning {
+      grid-row-start: 5;
+      margin-top: 3%; }
+    #mobilAlt #ca_cirkel_1 {
+      grid-row-start: 8;
+      grid-column: 2/span 4;
+      width: 375px;
+      height: 375px; }
+    #mobilAlt #firstBobleTitle {
+      grid-column: 2/span 4;
+      grid-row-start: 11;
+      margin-top: 45px;
+      margin-left: 60px; }
+    #mobilAlt #firstBobleText {
+      margin-top: 30px;
+      width: 320px;
+      margin-left: 60px;
+      grid-column: 2/span 4;
+      grid-row-start: 12; }
+    #mobilAlt #firstBobleButton {
+      margin-top: 0;
+      grid-row-start: 14;
+      grid-column: 2/span 4;
+      margin-left: 75px; }
+    #mobilAlt #ca_cirkel_2 {
+      grid-row-start: 18;
+      height: 310px;
+      width: 310px; }
+    #mobilAlt #secondBobleTitle {
+      grid-row-start: 20;
+      margin-top: 25px; }
+    #mobilAlt #secondBobleText {
+      grid-row-start: 21;
+      grid-column: 1/span 4;
+      width: 250px;
+      margin-top: 10px; }
+    #mobilAlt #secondBobleButton {
+      grid-row-start: 22;
+      margin-left: 65px;
+      margin-top: 30px; }
+    #mobilAlt #ca_cirkel_3 {
+      grid-row-start: 26;
+      grid-column: 4/span 3;
+      height: 310px;
+      width: 310px; }
+    #mobilAlt #thirdBobleTitle {
+      grid-column: 4/span 3;
+      margin-left: 46px;
+      margin-top: 33px;
+      grid-row-start: 28; }
+    #mobilAlt #thirdBobleText {
+      grid-row-start: 29;
+      grid-column: 4/span 3;
+      margin-left: 46px;
+      margin-top: 20px;
+      width: 250px; }
+    #mobilAlt #thirdBobleButton {
+      grid-row-start: 30;
+      margin-top: 40px;
+      grid-column: 4/span 3;
+      margin-left: 82px; }
+    #mobilAlt #ca_cirkel_4 {
+      grid-row-start: 34;
+      grid-column: 2/span 4;
+      width: 375px;
+      height: 375px; }
+    #mobilAlt #fourthBobleTitle {
+      grid-row-start: 37;
+      grid-column: 2/span 4;
+      margin-left: 28px;
+      margin-top: 5px; }
+    #mobilAlt #fourthBobleText {
+      grid-row-start: 37;
+      grid-column: 2/span 4;
+      margin-top: 40px;
+      margin-left: 28px;
+      width: 80%; }
+    #mobilAlt #fourthBobleButton {
+      grid-row-start: 39;
+      grid-column: 2/span 4;
+      height: 30px;
+      margin-left: 50px;
+      margin-top: 10px; } }
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url("../images/Forside_mobil_mockup_baggrund_3.png"); }
+
+  #menuMobil {
+    height: 100px; }
+    #menuMobil i {
+      font-size: 40pt;
+      margin-top: 15px; }
+
+  #ca_streg1 {
+    -ms-transform: rotate(-65deg);
+    -webkit-transform: rotate(-70deg);
+    transform: rotate(-65deg);
+    grid-row-start: 18;
+    margin-left: 10%;
+    width: 250px; }
+
+  #ca_streg2 {
+    -ms-transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+    width: 250px;
+    grid-row-start: 26;
+    margin-left: 35%; }
+
+  #ca_streg3 {
+    -ms-transform: rotate(-65deg);
+    -webkit-transform: rotate(-65deg);
+    transform: rotate(-65deg);
+    width: 200px;
+    grid-column: 4/span 2;
+    grid-row-start: 34;
+    margin-left: 0; }
+
+  #mobilAlt {
+    grid-template-rows: repeat(45, 50px); }
+    #mobilAlt #ca_cirkel_1 {
+      height: 480px;
+      width: 480px; }
+    #mobilAlt #firstBobleTitle {
+      grid-column: 2/span 4;
+      margin-left: 97px;
+      margin-top: 45px;
+      grid-row-start: 13; }
+    #mobilAlt #firstBobleText {
+      grid-row-start: 14;
+      margin-top: 33px;
+      margin-left: 97px;
+      width: 70%; }
+    #mobilAlt #firstBobleButton {
+      grid-row-start: 16;
+      margin-left: 125px; }
+    #mobilAlt #ca_cirkel_2 {
+      width: 360px;
+      height: 360px;
+      grid-row-start: 19; }
+    #mobilAlt #secondBobleTitle {
+      grid-row-start: 22;
+      margin-top: 30px;
+      margin-left: 65px; }
+    #mobilAlt #secondBobleText {
+      grid-row-start: 23;
+      margin-top: 15px;
+      margin-left: 65px; }
+    #mobilAlt #secondBobleButton {
+      grid-row-start: 24;
+      margin-left: 90px;
+      margin-top: 35px; }
+    #mobilAlt #ca_cirkel_3 {
+      width: 360px;
+      height: 360px; }
+    #mobilAlt #thirdBobleTitle {
+      margin-top: 32px;
+      grid-row-start: 29;
+      margin-left: 60px; }
+    #mobilAlt #thirdBobleText {
+      grid-row-start: 30;
+      margin-top: 20px;
+      margin-left: 60px; }
+    #mobilAlt #thirdBobleButton {
+      grid-row-start: 31;
+      margin-left: 100px; }
+    #mobilAlt #ca_cirkel_4 {
+      height: 480px;
+      width: 480px;
+      grid-row-start: 35; }
+    #mobilAlt #fourthBobleTitle {
+      grid-row-start: 40;
+      margin-left: 82px;
+      margin-top: 30px; }
+    #mobilAlt #fourthBobleText {
+      grid-row-start: 41;
+      margin-top: 20px;
+      margin-left: 82px;
+      width: 340px; }
+    #mobilAlt #fourthBobleButton {
+      margin-top: 39px;
+      grid-row-start: 42;
+      margin-left: 100px; }
+
+  footer {
+    justify-content: center; }
+    footer p, footer #some {
+      margin: 0 10%; }
+    footer p {
+      margin-top: 2%; } }
+@media screen and (min-width: 992px) {
+  body {
+    background-image: url("../images/Forside_mobil_mockup_baggrund_4.png"); }
+
+  #ca_streg1 {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-40deg);
+    width: 250px;
+    grid-column: 4/span 3;
+    grid-row-start: 9; }
+
+  #ca_streg2 {
+    -ms-transform: rotate(50deg);
+    -webkit-transform: rotate(65deg);
+    transform: rotate(40deg);
+    width: 250px;
+    grid-column: 4/span 3;
+    grid-row-start: 16;
+    margin-left: 20%; }
+
+  #ca_streg3 {
+    -ms-transform: rotate(-50deg);
+    -webkit-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+    grid-column: 5/span 2;
+    grid-row-start: 22;
+    margin-left: 20%; }
+
+  #mobilAlt {
+    padding: 70px 50px 0 50px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-column-gap: 20px;
+    grid-template-rows: repeat(32, 50px);
+    width: 100%;
+    height: auto; }
+    #mobilAlt #slagelseTitle {
+      margin-top: 6%; }
+    #mobilAlt #ca_cirkel_1 {
+      grid-column: 6/span 5;
+      width: 435px;
+      height: 435px;
+      grid-row-start: 1; }
+    #mobilAlt #firstBobleTitle {
+      grid-row-start: 5;
+      margin-top: 45px;
+      grid-column: 6/span 3;
+      width: 100%;
+      margin-left: 70px; }
+    #mobilAlt #firstBobleText {
+      grid-row-start: 6;
+      margin-top: 30px;
+      grid-column: 6/span 5;
+      width: 300px;
+      margin-left: 70px; }
+    #mobilAlt #firstBobleButton {
+      grid-row-start: 8;
+      margin-top: 0;
+      grid-column: 7/span 3;
+      margin-left: 18px; }
+    #mobilAlt #ca_cirkel_2 {
+      grid-column: 2/span 4;
+      width: 380px;
+      height: 380px;
+      grid-row-start: 9; }
+    #mobilAlt #secondBobleTitle {
+      grid-row-start: 12;
+      margin-top: 33px;
+      grid-column: 2/span 2;
+      width: 165px;
+      margin-left: 35px; }
+    #mobilAlt #secondBobleText {
+      grid-row-start: 13;
+      margin-top: 14px;
+      grid-column: 2/span 4;
+      width: 275px;
+      margin-left: 35px; }
+    #mobilAlt #secondBobleButton {
+      grid-row-start: 14;
+      margin-top: 38px;
+      grid-column: 2/span 3;
+      margin-left: 89px; }
+    #mobilAlt #ca_cirkel_3 {
+      grid-column: 6/span 4;
+      width: 380px;
+      height: 380px;
+      grid-row-start: 15; }
+    #mobilAlt #thirdBobleTitle {
+      grid-row-start: 19;
+      margin-top: 0;
+      grid-column: 6/span 2;
+      width: 165px;
+      margin-left: 52px; }
+    #mobilAlt #thirdBobleText {
+      grid-row-start: 19;
+      margin-top: 34px;
+      grid-column: 6/span 4;
+      width: 275px;
+      margin-left: 52px; }
+    #mobilAlt #thirdBobleButton {
+      grid-row-start: 21;
+      margin-top: 0;
+      grid-column: 6/span 4;
+      margin-left: 115px; }
+    #mobilAlt #ca_cirkel_4 {
+      grid-column: 2/span 5;
+      width: 435px;
+      height: 435px;
+      grid-row-start: 22; }
+    #mobilAlt #fourthBobleTitle {
+      grid-row-start: 26;
+      margin-top: 20px;
+      grid-column: 2/span 3;
+      width: 100%;
+      margin-left: 44px; }
+    #mobilAlt #fourthBobleText {
+      grid-row-start: 27;
+      margin-top: 5px;
+      grid-column: 2/span 5;
+      width: 350px;
+      margin-left: 44px; }
+    #mobilAlt #fourthBobleButton {
+      grid-row-start: 28;
+      margin-top: 25px;
+      grid-column: 2/span 3;
+      margin-left: 77px; } }
 @media screen and (min-width: 1200px) {
+  body {
+    background-image: url("../images/Forside_web_mockup_baggrund.png"); }
+
+  #ca_streg1 {
+    grid-column: 3/span 8;
+    margin-left: 20%; }
+
+  #ca_streg2 {
+    grid-column: 3/span 6; }
+
+  #ca_streg3 {
+    grid-column: 4/span 5;
+    grid-row-start: 23; }
+
   .web {
     display: inline; }
 
-  .mobil, #mobilAlt, #menuMobil, footer {
+  .mobil, #menuMobil, footer {
     display: none; }
 
   #flex_alt {
@@ -84,25 +877,324 @@ footer {
     justify-content: space-between; }
 
   #left_menu {
-    background-color: #0097d7;
-    height: 100vh;
-    width: 300px; }
-    #left_menu #logo {
-      width: 65%;
-      height: auto;
-      margin: 30px auto 0 auto; }
+    width: 25%; }
+    #left_menu #menuIndhold {
+      width: inherit;
+      background-color: #0097d7;
+      height: 100vh;
+      padding: 50px 25px;
+      position: fixed; }
+      #left_menu #menuIndhold #logo {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 10%; }
+      #left_menu #menuIndhold nav a {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: white;
+        font-size: 15pt;
+        margin-bottom: 10px;
+        font-family: 'Libre Baskerville', serif; }
+      #left_menu #menuIndhold .flexMenu {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: left; }
+      #left_menu #menuIndhold #hvemKlik, #left_menu #menuIndhold #hvemKlik2, #left_menu #menuIndhold #medKlik, #left_menu #menuIndhold #medKlik2 {
+        color: white;
+        margin-right: 2%;
+        cursor: pointer; }
+      #left_menu #menuIndhold #hvemKlik2, #left_menu #menuIndhold #medKlik2 {
+        display: none; }
+      #left_menu #menuIndhold #undermenu1, #left_menu #menuIndhold #undermenu2 {
+        margin-left: 10%;
+        display: none; }
+      #left_menu #menuIndhold nav button {
+        height: 30px;
+        background-color: #f37121;
+        border: none;
+        text-decoration: none;
+        color: white;
+        font-size: 18pt;
+        width: 170px;
+        height: 40px;
+        font-size: 18pt;
+        font-family: 'Merriweather Sans', sans-serif;
+        margin: 8% 0; }
+        #left_menu #menuIndhold nav button a {
+          text-decoration: none;
+          color: white;
+          font-size: 18pt; }
+      #left_menu #menuIndhold .kontakt {
+        margin: 5% 0;
+        font-family: 'Libre Baskerville', serif;
+        color: white;
+        font-size: 15pt; }
+      #left_menu #menuIndhold .soMeCirkler {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: solid #f37121 3px;
+        padding: 2% 3%;
+        margin: 5%; }
+        #left_menu #menuIndhold .soMeCirkler i {
+          color: white; }
+      #left_menu #menuIndhold #flexSoMe {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center; }
+      #left_menu #menuIndhold #soMeCirkel3 {
+        margin: auto; }
+      #left_menu #menuIndhold .fa-facebook-f {
+        margin: 7% 0 0 15%; }
+      #left_menu #menuIndhold .fa-linkedin {
+        margin-left: 3%; }
+      #left_menu #menuIndhold #active {
+        border-bottom: solid #f37121 3px;
+        width: 102px; }
 
-  #grid {
-    padding: 70px 50px 50px 0;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-column-gap: 20px;
-    height: 600px;
-    width: 100%; }
+  #mobilAlt {
+    width: 75%;
+    grid-template-rows: repeat(32, 50px);
+    height: auto; }
+    #mobilAlt #firstTitle {
+      font-size: 30pt;
+      grid-column: 1/span 5; }
+    #mobilAlt #indledning {
+      font-size: 20pt;
+      grid-column: 1/span 5;
+      width: 100%;
+      margin-top: 3%; }
+    #mobilAlt #firstBobleTitle, #mobilAlt #secondBobleTitle, #mobilAlt #thirdBobleTitle, #mobilAlt #fourthBobleTitle {
+      font-size: 24pt; }
+    #mobilAlt #firstBobleText, #mobilAlt #secondBobleText, #mobilAlt #thirdBobleText, #mobilAlt #fourthBobleText {
+      font-size: 15pt; }
+    #mobilAlt #slagelseTitle {
+      font-size: 24pt;
+      margin-top: 0;
+      grid-row-start: 4;
+      grid-column: 1/span 5; }
+    #mobilAlt #ca_cirkel_1 {
+      grid-column: 6/span 5;
+      width: 400px;
+      height: 400px;
+      grid-row-start: 1; }
+    #mobilAlt #firstBobleTitle {
+      grid-row-start: 4;
+      margin-top: 12px;
+      grid-column: 6/span 4;
+      width: 300px;
+      margin-left: 46px; }
+    #mobilAlt #firstBobleText {
+      grid-row-start: 5;
+      margin-top: 0;
+      grid-column: 6/span 5;
+      width: 300px;
+      margin-left: 46px; }
+    #mobilAlt #firstBobleButton {
+      grid-row-start: 7;
+      margin-top: 11px;
+      grid-column: 7/span 3;
+      width: 220px;
+      margin-left: 5px; }
+    #mobilAlt #ca_cirkel_2 {
+      grid-column: 2/span 4;
+      width: 310px;
+      height: 310px;
+      grid-row-start: 9; }
+    #mobilAlt #secondBobleTitle {
+      grid-row-start: 10;
+      margin-top: 29px;
+      grid-column: 2/span 2;
+      width: 155px;
+      margin-left: 31px; }
+    #mobilAlt #secondBobleText {
+      grid-row-start: 11;
+      margin-top: 15px;
+      grid-column: 2/span 4;
+      width: 220px;
+      margin-left: 31px; }
+    #mobilAlt #secondBobleButton {
+      grid-row-start: 13;
+      margin-top: 27px;
+      grid-column: 2/span 3;
+      width: 175px;
+      margin-left: 68px; }
+    #mobilAlt #ca_cirkel_3 {
+      grid-column: 6/span 4;
+      width: 310px;
+      height: 310px;
+      grid-row-start: 16; }
+    #mobilAlt #thirdBobleTitle {
+      grid-row-start: 17;
+      margin-top: 40px;
+      grid-column: 6/span 2;
+      width: 150px;
+      margin-left: 46px; }
+    #mobilAlt #thirdBobleText {
+      grid-row-start: 18;
+      margin-top: 25px;
+      grid-column: 6/span 4;
+      width: 220px;
+      margin-left: 46px; }
+    #mobilAlt #thirdBobleButton {
+      grid-row-start: 20;
+      margin-top: 37px;
+      grid-column: 6/span 4;
+      width: 150px;
+      margin-left: 75px; }
+    #mobilAlt #ca_cirkel_4 {
+      grid-column: 2/span 5;
+      width: 400px;
+      height: 400px;
+      grid-row-start: 23; }
+    #mobilAlt #fourthBobleTitle {
+      grid-row-start: 25;
+      margin-top: 5px;
+      grid-column: 2/span 3;
+      width: 230px;
+      margin-left: 39px; }
+    #mobilAlt #fourthBobleText {
+      grid-row-start: 25;
+      margin-top: 42px;
+      grid-column: 2/span 5;
+      width: 300px;
+      margin-left: 39px; }
+    #mobilAlt #fourthBobleButton {
+      grid-row-start: 28;
+      margin-top: 31px;
+      grid-column: 2/span 5;
+      width: 275px;
+      margin-left: 65px; } }
+@media screen and (min-width: 1500px) {
+  body {
+    background-image: url("../images/Forside_web_mockup_baggrund_2.png"); }
 
-  #lol {
-    background-color: red;
-    grid-column: 4/span 2;
-    height: 200px; } }
+  #ca_streg1 {
+    grid-column: 4/span 5;
+    grid-row-start: 10;
+    margin-left: 0;
+    width: 500px; }
+
+  #ca_streg2 {
+    grid-column: 4/span 3;
+    grid-row-start: 20;
+    margin-left: 0;
+    width: 500px; }
+
+  #ca_streg3 {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    grid-row-start: 27;
+    margin-left: 0;
+    width: 500px; }
+
+  #left_menu {
+    width: 20%; }
+
+  #mobilAlt {
+    width: 80%;
+    grid-template-rows: repeat(39, 50px);
+    height: auto; }
+    #mobilAlt #firstTitle {
+      grid-row-start: 3; }
+    #mobilAlt #slagelseTitle {
+      grid-row-start: 5; }
+    #mobilAlt #indledning {
+      grid-row-start: 6;
+      margin-top: 5%; }
+    #mobilAlt #ca_cirkel_1 {
+      grid-column: 6/span 5;
+      width: 540px;
+      height: 540px;
+      grid-row-start: 1; }
+    #mobilAlt #firstBobleTitle {
+      grid-row-start: 7;
+      margin-top: 25px;
+      grid-column: 6/span 3;
+      width: 315px;
+      margin-left: 108px; }
+    #mobilAlt #firstBobleText {
+      grid-row-start: 8;
+      margin-top: 15px;
+      grid-column: 6/span 5;
+      width: 380px;
+      margin-left: 108px; }
+    #mobilAlt #firstBobleButton {
+      grid-row-start: 10;
+      margin-top: 0;
+      grid-column: 7/span 3;
+      margin-left: 47px; }
+    #mobilAlt #ca_cirkel_2 {
+      grid-column: 2/span 4;
+      width: 430px;
+      height: 430px;
+      grid-row-start: 11; }
+    #mobilAlt #secondBobleTitle {
+      grid-row-start: 15;
+      margin-top: 25px;
+      grid-column: 2/span 2;
+      width: 205px;
+      margin-left: 75px; }
+    #mobilAlt #secondBobleText {
+      grid-row-start: 16;
+      margin-top: 15px;
+      grid-column: 2/span 4;
+      width: 300px;
+      margin-left: 75px; }
+    #mobilAlt #secondBobleButton {
+      grid-row-start: 18;
+      margin-top: 0;
+      grid-column: 2/span 3;
+      margin-left: 126px; }
+    #mobilAlt #ca_cirkel_3 {
+      grid-column: 6/span 4;
+      width: 430px;
+      height: 430px;
+      grid-row-start: 19; }
+    #mobilAlt #thirdBobleTitle {
+      grid-row-start: 23;
+      margin-top: 25px;
+      grid-column: 6/span 2;
+      width: 205px;
+      margin-left: 70px; }
+    #mobilAlt #thirdBobleText {
+      grid-row-start: 24;
+      margin-top: 15px;
+      grid-column: 6/span 4;
+      width: 300px;
+      margin-left: 70px; }
+    #mobilAlt #thirdBobleButton {
+      grid-row-start: 26;
+      margin-top: 0;
+      grid-column: 6/span 4;
+      margin-left: 135px; }
+    #mobilAlt #ca_cirkel_4 {
+      grid-column: 2/span 5;
+      width: 540px;
+      height: 540px;
+      grid-row-start: 27; }
+    #mobilAlt #fourthBobleTitle {
+      grid-row-start: 32;
+      margin-top: 40px;
+      grid-column: 2/span 3;
+      width: 320px;
+      margin-left: 92px; }
+    #mobilAlt #fourthBobleText {
+      grid-row-start: 33;
+      margin-top: 30px;
+      grid-column: 2/span 5;
+      width: 380px;
+      margin-left: 92px; }
+    #mobilAlt #fourthBobleButton {
+      grid-row-start: 35;
+      margin-top: 40px;
+      grid-column: 2/span 5;
+      margin-left: 135px; } }
+@media screen and (min-width: 1800px) {
+  body {
+    background-image: url("../images/Forside_web_mockup_baggrund_3.png"); } }
 
 /*# sourceMappingURL=index.css.map */

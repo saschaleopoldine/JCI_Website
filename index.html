@@ -46,91 +46,198 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
-<div id="menuMobil" class="mobil">
-    <img src="images/logo.png">
-    <i class="fa fas fa-bars fa-2x"></i>
-</div>
+    <div id="flex_alt">
 
-<div id="mobilAlt" class="mobil">
+        <div id="left_menu">
 
-    <div id="lol2">
+            <div id="menuIndhold" class="web">
+
+                <a href="index.html"><img src="images/logo.png" id="logo"></a>
+
+                <nav class="web">
+                    <a href="index.html" id="active">FORSIDE</a>
+                    <div class="flexMenu"><i class="fa fa-angle-right" id="hvemKlik"></i><i class="fa fa-angle-down" id="hvemKlik2"></i><a href="#">HVEM ER JCI?</a></div>
+                    <div id="undermenu1">
+                        <a href="#">JCI SLAGELSE</a>
+                        <a href="#">JCI GLOBAL</a>
+                    </div>
+                    <div class="flexMenu"><i class="fa fa-angle-right leftArrow" id="medKlik"></i><i class="fa fa-angle-down" id="medKlik2"></i><a href="#">MEDLEMSKAB</a></div>
+                    <div id="undermenu2">
+                        <a href="#">PRIVATMEDLEM</a>
+                        <a href="#">ERHVERVSMEDLEM</a>
+                    </div>
+                    <a href="#">AKTIVITETER</a>
+                    <a href="#">PARTNERE</a>
+                    <button>Meld dig ind</button>
+                </nav>
+                <p class="kontakt"><strong>KONTAKT OS</strong></p>
+                <p class="kontakt">MAIL:<br>slagelse@jci.dk</p>
+                <div id="flexSoMe">
+                    <div class="soMeCirkler" id="soMeCirkel1"><i class="fa fa-facebook-f fa-2x"></i></div>
+                    <div class="soMeCirkler" id="soMeCirkel2"><i class="fa fa-twitter fa-2x"></i></div>
+                </div>
+                <div class="soMeCirkler" id="soMeCirkel3"><i class="fa fa-linkedin fa-2x"></i></div>
+
+            </div>
+
+
+        </div>
+
+        <div id="menuMobil" class="mobil">
+            <img src="images/logo.png">
+            <i class="fa fas fa-bars fa-2x"></i>
+        </div>
+
+        <div id="mobilAlt" class="mobil">
+
+            <div id="ca_streg1" class="ca_streger">
+
+            </div>
+
+            <div id="ca_streg2" class="ca_streger">
+
+            </div>
+
+            <div id="ca_streg3" class="ca_streger">
+
+            </div>
+
+
+            <h1 id="firstTitle">
+                Junior Chamber
+                <br>
+                International
+            </h1>
+            <h5 id="slagelseTitle">
+                Slagelse
+            </h5>
+            <h3 id="indledning">
+                “Vi skaber udviklingsmuligheder, der styrker unge mennesker til at skabe positive forandringer.”
+            </h3>
+
+            <div id="ca_cirkel_1" class="ca_cirkler">
+            </div>
+
+            <h2 id="firstBobleTitle">
+                Hvem er JCI?
+            </h2>
+            <p id="firstBobleText">
+                JCI handler om at skabe sig et netværk, samt at udvikle sine leder- og projektstyringsegenskaber.
+            </p>
+
+            <button id="firstBobleButton">
+                <a href="#">Læs mere om JCI</a>
+            </button>
+
+            <div id="ca_cirkel_2" class="ca_cirkler">
+            </div>
+
+            <h2 id="secondBobleTitle">
+                Aktiviteter
+            </h2>
+            <p id="secondBobleText">
+                Som medlem af JCI Slagelse kan du deltage i en række forskellige aktiviteter.
+            </p>
+
+            <button id="secondBobleButton">
+                <a href="#">Alle aktiviteter</a>
+            </button>
+
+            <div id="ca_cirkel_3" class="ca_cirkler">
+            </div>
+
+            <h2 id="thirdBobleTitle">
+                Partnere
+            </h2>
+            <p id="thirdBobleText">
+                Som erhvervsejer kan du blive partner med JCI. Læs mere om fordelene.
+            </p>
+
+            <button id="thirdBobleButton">
+                <a href="#">Bliv partner</a>
+            </button>
+
+            <div id="ca_cirkel_4" class="ca_cirkler">
+            </div>
+
+            <h2 id="fourthBobleTitle">
+                Medlemskab
+            </h2>
+            <p id="fourthBobleText">
+                Du kan blive medlem på to måder. Enten som privatperson, eller gennem din arbejdsplads. Læs mere om fordelene.
+            </p>
+
+            <button id="fourthBobleButton">
+                <a href="#">Læs om medlemskaber</a>
+            </button>
+
+        </div>
 
     </div>
 
+    <footer>
+        <p>
+            KONTAKT OS:
+            <br><br>
+            MAIL:
+            <br>
+            kontakt@slagelsejci.dk
+        </p>
 
-</div>
-
-<footer>
-    <p>
-        KONTAKT OS:
-        <br><br>
-        MAIL:
-        <br>
-        kontakt@slagelsejci.dk
-    </p>
-
-    <div id="some">
-        <i class="fa fas fa-facebook-square fa-2x"></i>
-        <i class="fa fab fa-twitter fa-2x"></i>
-        <i class="fa fab fa-linkedin fa-2x"></i>
-    </div>
-</footer>
+        <div id="some">
+            <i class="fa fas fa-facebook-square fa-2x"></i>
+            <i class="fa fab fa-twitter fa-2x"></i>
+            <i class="fa fab fa-linkedin fa-2x"></i>
+        </div>
+    </footer>
 
 
 
 
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 
+    <script type="text/javascript">
+        $(document).ready(function (e) {
+            $("#hvemKlik").click(function (e) {
+                $("#undermenu1").slideDown(1000);
+                $("#undermenu2").slideUp(1000);
+                $("#hvemKlik").hide(0);
+                $("#hvemKlik2").show(0);
+                $("#medKlik2").hide(0);
+                $("#medKlik").show(0);
+            });
+
+            $("#hvemKlik2").click(function (e) {
+                $("#undermenu1").slideUp(1000);
+                $("#hvemKlik2").hide(0);
+                $("#hvemKlik").show(0);
+
+            });
+
+            $("#medKlik").click(function (e) {
+                $("#undermenu2").slideDown(1000);
+                $("#undermenu1").slideUp(1000);
+                $("#medKlik").hide(0);
+                $("#medKlik2").show(0);
+                $("#hvemKlik2").hide(0);
+                $("#hvemKlik").show(0);
+            });
+
+            $("#medKlik2").click(function (e) {
+                $("#undermenu2").slideUp(1000);
+                $("#medKlik2").hide(0);
+                $("#medKlik").show(0);
+            })
+        });
+    </script>
 
 
+    <script>
 
-
-
-
-
-
-
-
-
-<div id="flex_alt" class="web">
-
-    <div id="left_menu">
-
-        <img src="images/logo.png" id="logo">
-
-        <nav class="web">
-
-        </nav>
-
-
-    </div>
-
-    <div id="grid">
-
-
-
-    </div>
-
-</div>
-
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-
-<script type="text/javascript">
-    $(document).ready(function (e) {
-        // Din kode her
-    });
-</script>
-
-
-<script>
-
-</script>
+    </script>
 
 
 </body>
