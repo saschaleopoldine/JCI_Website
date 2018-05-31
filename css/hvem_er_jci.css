@@ -300,6 +300,14 @@ footer {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(20, 50px); }
+    #mobilAlt #circle1 {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      border: 3px solid #f37121;
+      grid-column: 1/span 2;
+      grid-row-start: 6;
+      margin-left: 60px; }
     #mobilAlt .dk {
       display: block;
       width: 35%;
@@ -307,14 +315,63 @@ footer {
       grid-column: 1/span 2;
       grid-row-start: 5;
       margin-top: 18%;
-      margin-left: 27%; }
+      margin-left: 30%; }
+    #mobilAlt .slagelse {
+      grid-column: 1/span 2;
+      grid-row-start: 4;
+      margin-left: 50px;
+      margin-top: 50px; }
+    #mobilAlt .slagelsetekst {
+      color: black;
+      grid-column: 1/span 4;
+      grid-row-start: 6;
+      margin-top: 15px;
+      margin-left: 100px;
+      display: none; }
+    #mobilAlt .button1 {
+      background-color: #f37121;
+      width: 110px;
+      height: 30px;
+      grid-column: 1/span 2;
+      grid-row-start: 9;
+      margin-left: 100px;
+      margin-top: 20px;
+      display: none; }
     #mobilAlt .world {
       display: block;
       width: 50%;
       height: auto;
       grid-column: 5/span 2;
       grid-row-start: 14;
-      margin-top: 18%; } }
+      margin-top: 18%; }
+    #mobilAlt .globalt {
+      grid-column: 4/span 3;
+      grid-row-start: 12;
+      margin-top: 50px;
+      margin-left: 20px; }
+    #mobilAlt .globaltekst {
+      color: black;
+      grid-column: 4/span 2;
+      grid-row-start: 15;
+      margin-top: -30px;
+      margin-left: 100px;
+      display: none; }
+    #mobilAlt .button2 {
+      background-color: #f37121;
+      width: 110px;
+      height: 30px;
+      grid-column: 4/span 2;
+      grid-row-start: 17;
+      margin-left: 100px;
+      display: none; }
+    #mobilAlt #circle1 {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      border: 3px solid #f37121;
+      grid-column: 1/span 2;
+      grid-row-start: 6;
+      margin-left: 60px; } }
 @media screen and (min-width: 1200px) {
   .web {
     display: inline; }
@@ -397,7 +454,7 @@ footer {
       margin-left: -10%; }
     #mobilAlt .slagelsetekst {
       color: black;
-      grid-column: 5/span 3;
+      grid-column: 1/span 3;
       grid-row-start: 6;
       margin-top: 15px;
       display: none; }
@@ -405,8 +462,10 @@ footer {
       background-color: #f37121;
       width: 110px;
       height: 30px;
-      grid-column: 5/span 2;
-      grid-row-start: 11; }
+      margin-left: 100px;
+      grid-column: 1/span 2;
+      grid-row-start: 11;
+      display: none; }
     #mobilAlt #circle2 {
       border-radius: 50%;
       width: 300px;
@@ -429,8 +488,8 @@ footer {
       margin-left: 2%; }
     #mobilAlt .globaltekst {
       color: black;
-      grid-column: 3/span 2;
-      grid-row-start: 15;
+      grid-column: 8/span 2;
+      grid-row-start: 16;
       margin-top: -30px;
       margin-left: -30px;
       display: none; }
@@ -438,8 +497,10 @@ footer {
       background-color: #f37121;
       width: 110px;
       height: 30px;
-      grid-column: 2/span 2;
-      grid-row-start: 20; } }
+      grid-column: 7/span 2;
+      grid-row-start: 20;
+      margin-left: 60px;
+      display: none; } }
 @media screen and (min-width: 1500px) {
   #left_menu {
     background-color: #0097d7;
