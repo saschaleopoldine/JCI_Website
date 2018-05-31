@@ -796,17 +796,19 @@ footer{
     }
     #firstBobleTitle{
       grid-column: 2/span 4;
-      margin-left: 20%;
-      margin-top: 10%;
+      margin-left: 97px;
+      margin-top: 45px;
+      grid-row-start: 13;
     }
     #firstBobleText{
       grid-row-start: 14;
-      margin-top: 7%;
-      margin-left: 20%;
+      margin-top: 33px;
+      margin-left: 97px;
       width: 70%;
     }
     #firstBobleButton{
       grid-row-start: 16;
+      margin-left: 125px;
     }
 
     #ca_cirkel_2{
@@ -815,18 +817,19 @@ footer{
       grid-row-start: 19;
     }
     #secondBobleTitle{
-      grid-row-start: 23;
-      margin-top: 0;
-      margin-left: 21%;
+      grid-row-start: 22;
+      margin-top: 40;
+      margin-left: 65px;
     }
     #secondBobleText{
       grid-row-start: 23;
-      margin-top: 7%;
-      margin-left: 15%;
+      margin-top: 15px;
+      margin-left: 65px;
     }
     #secondBobleButton{
-      grid-row-start: 25;
-      margin-left: 20%;
+      grid-row-start: 24;
+      margin-left: 90px;
+      margin-top: 35px;
     }
 
     #ca_cirkel_3{
@@ -835,19 +838,18 @@ footer{
     }
 
     #thirdBobleTitle{
-      margin-top: 0;
-      grid-row-start: 30;
-      margin-left: 22%;
+      margin-top: 32px;
+      grid-row-start: 29;
+      margin-left: 60px;
     }
     #thirdBobleText{
       grid-row-start: 30;
-      width: 60%;
-      margin-top: 10%;
-      margin-left: 22%;
+      margin-top: 20px;
+      margin-left: 60px;
     }
     #thirdBobleButton{
-      grid-row-start: 32;
-      margin-left: 28%;
+      grid-row-start: 31;
+      margin-left: 100px;
     }
 
     #ca_cirkel_4{
@@ -857,19 +859,19 @@ footer{
     }
     #fourthBobleTitle{
       grid-row-start: 40;
-      margin-left: 17%;
-      margin-top: 8%;
+      margin-left: 82px;
+      margin-top: 30px;
     }
     #fourthBobleText{
       grid-row-start: 41;
-      margin-top: 5%;
-      margin-left: 17%;
-      width: 70%;
+      margin-top: 20px;
+      margin-left: 82px;
+      width: 340px;
     }
     #fourthBobleButton{
-      margin-top: 8%;
+      margin-top: 39px;
       grid-row-start: 42;
-      margin-left: 21%;
+      margin-left: 100px;
     }
 
   }
@@ -932,7 +934,8 @@ footer{
 
     #ca_cirkel_1{
       grid-column: 6/span 5;
-      height: 480px;
+      width: 435px;
+      height: 435px;
       grid-row-start: 1;
     }
     #firstBobleTitle{
@@ -958,7 +961,7 @@ footer{
 
     #ca_cirkel_2{
       grid-column: 2/span 4;
-      width: 100%;
+      width: 380px;
       height: 380px;
       grid-row-start: 9;
     }
@@ -985,7 +988,7 @@ footer{
 
     #ca_cirkel_3{
       grid-column: 6/span 4;
-      width: 100%;
+      width: 380px;
       height: 380px;
       grid-row-start: 15;
     }
@@ -1012,7 +1015,8 @@ footer{
 
     #ca_cirkel_4{
       grid-column: 2/span 5;
-      height: 480px;
+      width: 435px;
+      height: 435px;
       grid-row-start: 22;
     }
     #fourthBobleTitle{
