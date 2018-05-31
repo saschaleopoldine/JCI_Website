@@ -442,20 +442,20 @@ footer{
     #thirdBobleTitle{
       grid-column: 3/span 3;
       grid-row-start: 25;
-      margin-left: 10px;
+      margin-left: -20px;
       margin-top: 0;
     }
     #thirdBobleText{
       grid-row-start: 25;
       grid-column: 3/span 4;
-      margin-left: 10px;
+      margin-left: -20px;
       margin-top: 31px;
     }
     #thirdBobleButton{
       grid-row-start: 27;
       margin-top: 15px;
       grid-column: 3/span 3;
-      margin-left: 20px;
+      margin-left: -15px;
     }
 
     #ca_cirkel_4{
@@ -616,7 +616,8 @@ footer{
     -webkit-transform: rotate(-65deg); //sikrer at rotate virker i safari 3-8
     transform: rotate(-65deg); //den funktion, der roterer elementet
     grid-row-start: 17;
-    margin-left: 15%;
+    margin-left: 0;
+    width: 250px;
   }
 
   #ca_streg2{
@@ -818,7 +819,7 @@ footer{
     }
     #secondBobleTitle{
       grid-row-start: 22;
-      margin-top: 40;
+      margin-top: 30px;
       margin-left: 65px;
     }
     #secondBobleText{
@@ -939,24 +940,24 @@ footer{
       grid-row-start: 1;
     }
     #firstBobleTitle{
-      grid-row-start: 6;
-      margin-top: 7%;
+      grid-row-start: 5;
+      margin-top: 45px;
       grid-column: 6/span 3;
       width: 100%;
-      margin-left: 17%;
+      margin-left: 70px;
     }
     #firstBobleText{
-      grid-row-start: 7;
-      margin-top: 0;
+      grid-row-start: 6;
+      margin-top: 30px;
       grid-column: 6/span 5;
-      width: 80%;
-      margin-left: 10%;
+      width: 300px;
+      margin-left: 70px;
     }
     #firstBobleButton{
       grid-row-start: 8;
-      margin-top: 10%;
+      margin-top: 0;
       grid-column: 7/span 3;
-      margin-left: 7%;
+      margin-left: 18px;
     }
 
     #ca_cirkel_2{
@@ -967,23 +968,23 @@ footer{
     }
     #secondBobleTitle{
       grid-row-start: 12;
-      margin-top: 20%;
+      margin-top: 33px;
       grid-column: 2/span 2;
-      width: 100%;
-      margin-left: 22%;
+      width: 165px;
+      margin-left: 35px;
     }
     #secondBobleText{
       grid-row-start: 13;
-      margin-top: 4%;
+      margin-top: 14px;
       grid-column: 2/span 4;
-      width: 80%;
-      margin-left: 10%;
+      width: 275px;
+      margin-left: 35px;
     }
     #secondBobleButton{
       grid-row-start: 14;
-      margin-top: 15%;
+      margin-top: 38px;
       grid-column: 2/span 3;
-      margin-left: 35%;
+      margin-left: 89px;
     }
 
     #ca_cirkel_3{
@@ -994,23 +995,23 @@ footer{
     }
     #thirdBobleTitle{
       grid-row-start: 19;
-      margin-top: 3%;
+      margin-top: 0;
       grid-column: 6/span 2;
-      width: 100%;
-      margin-left: 32%;
+      width: 165px;
+      margin-left: 52px;
     }
     #thirdBobleText{
       grid-row-start: 19;
-      margin-top: 10%;
+      margin-top: 34px;
       grid-column: 6/span 4;
-      width: 80%;
-      margin-left: 15%;
+      width: 275px;
+      margin-left: 52px;
     }
     #thirdBobleButton{
       grid-row-start: 21;
       margin-top: 0;
       grid-column: 6/span 4;
-      margin-left: 30%;
+      margin-left: 115px;
     }
 
     #ca_cirkel_4{
@@ -1020,24 +1021,24 @@ footer{
       grid-row-start: 22;
     }
     #fourthBobleTitle{
-      grid-row-start: 27;
-      margin-top: 3%;
+      grid-row-start: 26;
+      margin-top: 20px;
       grid-column: 2/span 3;
       width: 100%;
-      margin-left: 17%;
+      margin-left: 44px;
     }
     #fourthBobleText{
       grid-row-start: 27;
-      margin-top: 9%;
+      margin-top: 5px;
       grid-column: 2/span 5;
-      width: 80%;
-      margin-left: 10%;
+      width: 350px;
+      margin-left: 44px;
     }
     #fourthBobleButton{
-      grid-row-start: 29;
-      margin-top: 6%;
-      grid-column: 3/span 3;
-      margin-left: 0;
+      grid-row-start: 28;
+      margin-top: 25px;
+      grid-column: 2/span 3;
+      margin-left: 77px;
     }
 
   }
@@ -1197,24 +1198,24 @@ footer{
     }
     #firstBobleTitle {
       grid-row-start: 4;
-      margin-top: 4%;
+      margin-top: 12px;
       grid-column: 6/span 4;
       width: 300px;
-      margin-left: 15%;
+      margin-left: 46px;
     }
     #firstBobleText {
       grid-row-start: 5;
       margin-top: 0;
       grid-column: 6/span 5;
       width: 300px;
-      margin-left: 12%;
+      margin-left: 46px;
     }
     #firstBobleButton {
       grid-row-start: 7;
-      margin-top: 5%;
+      margin-top: 11px;
       grid-column: 7/span 3;
       width: 220px;
-      margin-left: -5px;
+      margin-left: 5px;
     }
 
     #ca_cirkel_2 {
@@ -1225,21 +1226,21 @@ footer{
     }
     #secondBobleTitle {
       grid-row-start: 10;
-      margin-top: 20%;
+      margin-top: 29px;
       grid-column: 2/span 2;
-      width: 100%;
-      margin-left: 22%;
+      width: 155px;
+      margin-left: 31px;
     }
     #secondBobleText {
       grid-row-start: 11;
-      margin-top: 5%;
+      margin-top: 15px;
       grid-column: 2/span 4;
       width: 220px;
-      margin-left: 10%;
+      margin-left: 31px;
     }
     #secondBobleButton {
       grid-row-start: 13;
-      margin-top: 12%;
+      margin-top: 27px;
       grid-column: 2/span 3;
       width: 175px;
       margin-left: 68px;
@@ -1252,22 +1253,22 @@ footer{
       grid-row-start: 16;
     }
     #thirdBobleTitle {
-      grid-row-start: 18;
-      margin-top: 0;
+      grid-row-start: 17;
+      margin-top: 40px;
       grid-column: 6/span 2;
-      width: 100%;
-      margin-left: 32%;
+      width: 150px;
+      margin-left: 46px;
     }
     #thirdBobleText {
       grid-row-start: 18;
-      margin-top: 8%;
+      margin-top: 25px;
       grid-column: 6/span 4;
       width: 220px;
-      margin-left: 15%;
+      margin-left: 46px;
     }
     #thirdBobleButton {
       grid-row-start: 20;
-      margin-top: 12%;
+      margin-top: 37px;
       grid-column: 6/span 4;
       width: 150px;
       margin-left: 75px;
@@ -1281,21 +1282,21 @@ footer{
     }
     #fourthBobleTitle {
       grid-row-start: 25;
-      margin-top: 5%;
+      margin-top: 5px;
       grid-column: 2/span 3;
-      width: 100%;
-      margin-left: 17%;
+      width: 230px;
+      margin-left: 39px;
     }
     #fourthBobleText {
-      grid-row-start: 26;
-      margin-top: 0;
+      grid-row-start: 25;
+      margin-top: 42px;
       grid-column: 2/span 5;
       width: 300px;
-      margin-left: 10%;
+      margin-left: 39px;
     }
     #fourthBobleButton {
       grid-row-start: 28;
-      margin-top: 8%;
+      margin-top: 31px;
       grid-column: 2/span 5;
       width: 275px;
       margin-left: 65px;
@@ -1308,13 +1309,16 @@ footer{
 
   #ca_streg1{
     grid-column: 4/span 5;
-    grid-row-start: 11;
+    grid-row-start: 10;
+    margin-left: 0;
+    width: 500px;
   }
 
   #ca_streg2{
     grid-column: 4/span 3;
     grid-row-start: 20;
-    margin-left: 40%;
+    margin-left: 0;
+    width: 500px;
   }
 
   #ca_streg3{
@@ -1322,6 +1326,8 @@ footer{
     -webkit-transform: rotate(-45deg); //sikrer at rotate virker i safari 3-8
     transform: rotate(-45deg); //den funktion, der roterer elementet
     grid-row-start: 27;
+    margin-left: 0;
+    width: 500px;
   }
 
   #left_menu{
@@ -1346,112 +1352,110 @@ footer{
 
     #ca_cirkel_1 {
       grid-column: 6/span 5;
-      height: 590px;
+      width: 540px;
+      height: 540px;
       grid-row-start: 1;
     }
     #firstBobleTitle {
-      grid-row-start: 8;
-      margin-top: 0;
+      grid-row-start: 7;
+      margin-top: 25px;
       grid-column: 6/span 3;
-      width: 100%;
-      margin-left: 34%;
+      width: 315px;
+      margin-left: 108px;
     }
     #firstBobleText {
-      grid-row-start: 9;
-      margin-top: 0;
+      grid-row-start: 8;
+      margin-top: 15px;
       grid-column: 6/span 5;
-      width: 70%;
-      margin-left: 20%;
+      width: 380px;
+      margin-left: 108px;
     }
     #firstBobleButton {
       grid-row-start: 10;
-      margin-top: 15%;
+      margin-top: 0;
       grid-column: 7/span 3;
-      width: 65%;
-      margin-left: 15%;
+      margin-left: 47px;
     }
 
     #ca_cirkel_2 {
       grid-column: 2/span 4;
-      width: 100%;
-      height: 470px;
+      width: 430px;
+      height: 430px;
       grid-row-start: 11;
     }
     #secondBobleTitle {
       grid-row-start: 15;
-      margin-top: 14%;
+      margin-top: 25px;
       grid-column: 2/span 2;
-      width: 100%;
-      margin-left: 43%;
+      width: 205px;
+      margin-left: 75px;
     }
     #secondBobleText {
       grid-row-start: 16;
-      margin-top: 7%;
+      margin-top: 15px;
       grid-column: 2/span 4;
-      width: 60%;
-      margin-left: 20%;
+      width: 300px;
+      margin-left: 75px;
     }
     #secondBobleButton {
       grid-row-start: 18;
-      margin-top: 10%;
+      margin-top: 0;
       grid-column: 2/span 3;
-      width: 52%;
-      margin-left: 40%;
+      margin-left: 126px;
     }
 
     #ca_cirkel_3 {
       grid-column: 6/span 4;
-      width: 100%;
-      height: 470px;
+      width: 430px;
+      height: 430px;
       grid-row-start: 19;
     }
     #thirdBobleTitle {
       grid-row-start: 23;
-      margin-top: 17%;
+      margin-top: 25px;
       grid-column: 6/span 2;
-      width: 100%;
-      margin-left: 40%;
+      width: 205px;
+      margin-left: 70px;
     }
     #thirdBobleText {
       grid-row-start: 24;
-      margin-top: 8%;
+      margin-top: 15px;
       grid-column: 6/span 4;
-      width: 70%;
-      margin-left: 20%;
+      width: 300px;
+      margin-left: 70px;
     }
     #thirdBobleButton {
       grid-row-start: 26;
-      margin-top: 9%;
+      margin-top: 0;
       grid-column: 6/span 4;
-      width: 33%;
-      margin-left: 33%;
+      margin-left: 135px;
     }
 
     #ca_cirkel_4 {
       grid-column: 2/span 5;
-      height: 590px;
+      width: 540px;
+      height: 540px;
       grid-row-start: 27;
     }
     #fourthBobleTitle {
-      grid-row-start: 33;
-      margin-top: 6%;
+      grid-row-start: 32;
+      margin-top: 40px;
       grid-column: 2/span 3;
-      width: 100%;
-      margin-left: 29%;
+      width: 320px;
+      margin-left: 92px;
     }
     #fourthBobleText {
-      grid-row-start: 34;
-      margin-top: 4%;
+      grid-row-start: 33;
+      margin-top: 30px;
       grid-column: 2/span 5;
-      width: 70%;
-      margin-left: 17%;
+      width: 380px;
+      margin-left: 92px;
     }
     #fourthBobleButton {
-      grid-row-start: 36;
-      margin-top: 5%;
+      grid-row-start: 35;
+      margin-top: 40px;
       grid-column: 2/span 5;
-      width: 48%;
-      margin-left: 25%;
+      margin-left: 135px;
     }
   }
 
