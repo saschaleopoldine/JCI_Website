@@ -528,6 +528,7 @@ footer{
 }
 
 
+
 //-------------- Iphone Plus ---------------------- Iphone Plus ------------------- Iphone Plus --------------------------
 @media screen and (min-width: 414px) {
    .cirkel_1{
@@ -651,7 +652,6 @@ footer{
 
 
 
-
 //--------------- stående tablet -------------------- stående tablet ------------------ stående tablet -----------------
 @media screen and (min-width: 768px) {
   @mixin board_tablet{
@@ -664,22 +664,22 @@ footer{
 
   #mobilAlt{
      grid-template-rows: repeat(51, 50px);
-   }                                       
+   }
 
-   h1{                                         
-     font-size: 30pt;                                                      
-   }                                          
+   h1{
+     font-size: 30pt;
+   }
 
   .cirkel_1{
     grid-column: 2/span 2;
-    grid-row: 4;          
-    margin-left: -30%;    
+    grid-row: 4;
+    margin-left: -30%;
     img {
       width: 250px;
       height: 250px;
     }
-  }                          
-                             
+  }
+
   #projekt{
     font-size: 24pt;
     grid-column: 2/span 2;
