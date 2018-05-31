@@ -30,7 +30,8 @@ img {
   height: auto; }
 
 body {
-  background-color: #f9f7f4; }
+  background-image: url("../images/Forside_mobil_mockup_baggrund.png");
+  background-size: cover; }
 
 .web {
   display: none; }
@@ -497,6 +498,9 @@ footer {
       height: 30px;
       margin-left: 48px;
       margin-top: 15px; } }
+@media screen and (min-width: 540px) {
+  body {
+    background-image: url("../images/Forside_mobil_mockup_baggrund_2.png"); } }
 @media screen and (min-width: 660px) {
   #ca_streg1 {
     -ms-transform: rotate(-65deg);
@@ -610,6 +614,9 @@ footer {
       margin-left: 50px;
       margin-top: 10px; } }
 @media screen and (min-width: 768px) {
+  body {
+    background-image: url("../images/Forside_mobil_mockup_baggrund_3.png"); }
+
   #ca_streg1 {
     -ms-transform: rotate(-65deg);
     -webkit-transform: rotate(-70deg);
@@ -708,6 +715,9 @@ footer {
     footer p {
       margin-top: 2%; } }
 @media screen and (min-width: 992px) {
+  body {
+    background-image: url("../images/Forside_mobil_mockup_baggrund_4.png"); }
+
   #ca_streg1 {
     -ms-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
@@ -832,6 +842,9 @@ footer {
       grid-column: 2/span 3;
       margin-left: 77px; } }
 @media screen and (min-width: 1200px) {
+  body {
+    background-image: url("../images/Forside_web_mockup_baggrund.png"); }
+
   #ca_streg1 {
     grid-column: 3/span 8;
     margin-left: 20%; }
@@ -1046,6 +1059,9 @@ footer {
       width: 275px;
       margin-left: 65px; } }
 @media screen and (min-width: 1500px) {
+  body {
+    background-image: url("../images/Forside_web_mockup_baggrund_2.png"); }
+
   #ca_streg1 {
     grid-column: 4/span 5;
     grid-row-start: 10;
@@ -1168,5 +1184,8 @@ footer {
       margin-top: 40px;
       grid-column: 2/span 5;
       margin-left: 135px; } }
+@media screen and (min-width: 1800px) {
+  body {
+    background-image: url("../images/Forside_web_mockup_baggrund_3.png"); } }
 
 /*# sourceMappingURL=index.css.map */

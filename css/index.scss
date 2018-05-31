@@ -64,7 +64,8 @@ $overlay: rgba(93, 144, 183, 0.5);
 }
 
 body{
-  background-color: $baggrund;
+  background-image: url("../images/Forside_mobil_mockup_baggrund.png");
+  background-size: cover;
 }
 
 .web{
@@ -608,6 +609,13 @@ footer{
 
 }
 
+@media screen and (min-width: 540px) {
+  body{
+    background-image: url("../images/Forside_mobil_mockup_baggrund_2.png");
+  }
+
+}
+
 @media screen and (min-width: 660px) {
   // iPhone 6/7/8 liggende
 
@@ -759,6 +767,10 @@ footer{
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
 
+  body{
+    background-image: url("../images/Forside_mobil_mockup_baggrund_3.png");
+  }
+
   #ca_streg1{
     -ms-transform: rotate(-65deg); // sikrer at rotate virker i internet explore 9
     -webkit-transform: rotate(-70deg); //sikrer at rotate virker i safari 3-8
@@ -891,6 +903,10 @@ footer{
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
+
+  body{
+    background-image: url("../images/Forside_mobil_mockup_baggrund_4.png");
+  }
 
   #ca_streg1{
     -ms-transform: rotate(-45deg); // sikrer at rotate virker i internet explore 9
@@ -1047,6 +1063,9 @@ footer{
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
 
+  body{
+    background-image: url("../images/Forside_web_mockup_baggrund.png");
+  }
 
   #ca_streg1{
     grid-column: 3/span 8;
@@ -1307,6 +1326,10 @@ footer{
 
 @media screen and (min-width: 1500px) {
 
+  body{
+    background-image: url("../images/Forside_web_mockup_baggrund_2.png");
+  }
+
   #ca_streg1{
     grid-column: 4/span 5;
     grid-row-start: 10;
@@ -1460,6 +1483,13 @@ footer{
   }
 
 }
+
+@media screen and (min-width: 1800px) {
+  body{
+    background-image: url("../images/Forside_web_mockup_baggrund_3.png");
+  }
+}
+
 
 @media print {
   // Alt der gælder for print specifikt
