@@ -78,7 +78,8 @@ p {
     border: 3px solid #f37121;
     grid-column: 2/span 5;
     grid-row-start: 5;
-    margin-left: 10px; }
+    margin-left: 10px;
+    background-color: #f9f7f4; }
   #mobilAlt .dk {
     display: block;
     width: 100%;
@@ -111,7 +112,8 @@ p {
     border: 3px solid #f37121;
     grid-column: 2/span 5;
     grid-row-start: 13;
-    margin-left: 10px; }
+    margin-left: 10px;
+    background-color: #f9f7f4; }
   #mobilAlt .world {
     display: block;
     width: 160%;
@@ -119,7 +121,8 @@ p {
     grid-column: 3/span 2;
     grid-row-start: 15;
     margin-top: -30px;
-    margin-left: -30px; }
+    margin-left: -30px;
+    z-index: 1; }
   #mobilAlt .globalt {
     grid-column: 1/span 6;
     grid-row-start: 17;
@@ -187,7 +190,8 @@ footer {
     border: 3px solid #f37121;
     grid-column: 1/span 2;
     grid-row-start: 6;
-    margin-left: 50px; }
+    margin-left: 50px;
+    background-color: #f9f7f4; }
   #mobilAlt .dk {
     display: block;
     width: 50%;
@@ -224,7 +228,8 @@ footer {
     border: 3px solid #f37121;
     grid-column: 5/span 2;
     grid-row-start: 14;
-    margin-left: -5px; }
+    margin-left: -5px;
+    background-color: #f9f7f4; }
   #mobilAlt .world {
     display: block;
     width: 75%;
@@ -232,7 +237,8 @@ footer {
     grid-column: 5/span 2;
     grid-row-start: 14;
     margin-top: 60px;
-    margin-left: 8px; }
+    margin-left: 8px;
+    z-index: 1; }
   #mobilAlt .globalt {
     grid-column: 5/span 2;
     grid-row-start: 12;
@@ -298,6 +304,10 @@ footer {
     grid-row-start: 17;
     margin-left: 70px; } }
 @media screen and (min-width: 1024px) {
+  body {
+    background-image: url("../images/network1024.png");
+    background-repeat: no-repeat; }
+
   #mobilAlt {
     font-size: 12pt;
     padding: 0 20px 0 20px;
@@ -312,7 +322,8 @@ footer {
       border: 3px solid #f37121;
       grid-column: 1/span 2;
       grid-row-start: 6;
-      margin-left: 60px; }
+      margin-left: 60px;
+      background-color: #f9f7f4; }
     #mobilAlt .dk {
       display: block;
       width: 35%;
@@ -348,7 +359,8 @@ footer {
       height: auto;
       grid-column: 5/span 2;
       grid-row-start: 14;
-      margin-top: 18%; }
+      margin-top: 18%;
+      z-index: 1; }
     #mobilAlt .globalt {
       grid-column: 4/span 3;
       grid-row-start: 12;
@@ -376,7 +388,8 @@ footer {
       border: 3px solid #f37121;
       grid-column: 1/span 2;
       grid-row-start: 6;
-      margin-left: 60px; } }
+      margin-left: 60px;
+      background-color: #f9f7f4; } }
 @media screen and (min-width: 1200px) {
   body {
     background-image: url("../images/network1200.png");
@@ -395,7 +408,7 @@ footer {
 
   #left_menu {
     background-color: #0097d7;
-    height: 100vh;
+    height: 170vh;
     width: 300px; }
     #left_menu #logo {
       width: 65%;
@@ -447,7 +460,8 @@ footer {
       border: 3px solid #f37121;
       grid-column: 1/span 5;
       grid-row-start: 6;
-      margin-left: 20%; }
+      margin-left: 20%;
+      background-color: #f9f7f4; }
     #mobilAlt .dk {
       display: block;
       width: 100%;
@@ -482,7 +496,8 @@ footer {
       border: 3px solid #f37121;
       grid-column: 7/span 5;
       grid-row-start: 15;
-      margin-left: 70px; }
+      margin-left: 70px;
+      background-color: #f9f7f4; }
     #mobilAlt .world {
       display: block;
       width: 70%;
@@ -490,7 +505,8 @@ footer {
       grid-column: 7/span 5;
       grid-row-start: 15;
       margin-left: 25%;
-      margin-top: 25%; }
+      margin-top: 25%;
+      z-index: 1; }
     #mobilAlt .globalt {
       grid-column: 8/span 3;
       grid-row-start: 13;
@@ -561,7 +577,8 @@ footer {
       grid-column: 7/span 5;
       grid-row-start: 15;
       margin-left: 18%;
-      margin-top: 20%; }
+      margin-top: 20%;
+      z-index: 1; }
     #mobilAlt .globalt {
       grid-column: 8/span 3;
       grid-row-start: 13;
