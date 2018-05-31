@@ -300,13 +300,7 @@
 
 
 
-
-
-
-
-
-
-
+<i class="fa fas fa-chevron-circle-up fa-3x"></i>
 
 
 
@@ -316,12 +310,22 @@
 
 
 <script type="text/javascript">
-    $(document).ready(function (e) {
-        // Din kode her
+    $(document).ready(function(){
+        $(window).scroll(function(){
+
+            if($(this).scrollTop() > 100){
+                $('.fa-chevron-circle-up').fadeIn();
+            }else{
+                $('.fa-chevron-circle-up').fadeOut();
+            }
+
+        });
+        $('.fa-chevron-circle-up').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
     });
-
 </script>
-
 
 
 
