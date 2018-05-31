@@ -36,9 +36,6 @@ p {
   font-family: "Merriweather Sans", sans-serif;
 }
 
-img{
-  display: block;
-}
 
 @mixin flex{
   display: flex;
@@ -204,6 +201,10 @@ footer{
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil'
+  body{
+    background-image: url("../images/network768.png");
+    background-repeat: no-repeat;
+  }
   h2{
     font-family: 'Libre Baskerville', serif;
     font-size: 20pt;
@@ -312,6 +313,11 @@ footer{
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
+  body{
+    background-image: url("../images/network992.png");
+    background-repeat: no-repeat;
+  }
+
   #mobilAlt {
     .slagelse {
       grid-column: 1/span 2;
@@ -456,7 +462,10 @@ footer{
 
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
-
+  body{
+    background-image: url("../images/network1200.png");
+    background-repeat: no-repeat;
+  }
   .web{
     display: inline;
   }
@@ -470,7 +479,7 @@ footer{
   }
   #left_menu{
     background-color: $bluePrimary;
-    height: 170vh;
+    height: 100vh;
     width: 300px;
     #logo{
       width: 65%;
@@ -610,6 +619,10 @@ footer{
 }
 
 @media screen and (min-width: 1500px) {
+  body{
+    background-image: url("../images/network1500.png");
+    background-repeat: no-repeat;
+  }
   #left_menu{
     background-color: $bluePrimary;
     height: 170vh;
