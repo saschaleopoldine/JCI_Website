@@ -620,6 +620,12 @@ footer {
   body {
     background-image: url("../images/Forside_mobil_mockup_baggrund_3.png"); }
 
+  #menuMobil {
+    height: 100px; }
+    #menuMobil i {
+      font-size: 40pt;
+      margin-top: 15px; }
+
   #ca_streg1 {
     -ms-transform: rotate(-65deg);
     -webkit-transform: rotate(-70deg);

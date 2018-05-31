@@ -774,6 +774,14 @@ footer{
     background-image: url("../images/Forside_mobil_mockup_baggrund_3.png");
   }
 
+  #menuMobil{
+    height: 100px;
+    i{
+      font-size: 40pt;
+      margin-top: 15px;
+    }
+  }
+
   #ca_streg1{
     -ms-transform: rotate(-65deg); // sikrer at rotate virker i internet explore 9
     -webkit-transform: rotate(-70deg); //sikrer at rotate virker i safari 3-8
