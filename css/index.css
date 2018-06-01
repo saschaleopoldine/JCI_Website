@@ -691,6 +691,10 @@ footer {
   body {
     background-image: url("../images/Forside_mobil_mockup_baggrund_3.png"); }
 
+  #burgerFold {
+    padding-left: 35%;
+    height: 68vh; }
+
   #menuMobil {
     height: 100px; }
     #menuMobil i {
@@ -797,6 +801,10 @@ footer {
 @media screen and (min-width: 992px) {
   body {
     background-image: url("../images/Forside_mobil_mockup_baggrund_4.png"); }
+
+  #burgerFold {
+    padding-left: 37%;
+    height: 55vh; }
 
   #ca_streg1 {
     -ms-transform: rotate(-45deg);
