@@ -37,12 +37,12 @@ body {
   display: none; }
 
 #burgerFold {
-  padding: 8% 0 5% 25%;
+  padding: 8% 0 5% 15%;
   display: none;
   width: 100vw;
   margin: auto;
   background-color: #0097d7;
-  height: 70vh;
+  height: 100vh;
   position: absolute;
   z-index: 5; }
   #burgerFold a {
@@ -374,6 +374,10 @@ footer {
   display: none; }
 
 @media screen and (min-width: 360px) {
+  #burgerFold {
+    padding-left: 20%;
+    height: 85vh; }
+
   #ca_streg1 {
     -ms-transform: rotate(-80deg);
     -webkit-transform: rotate(-80deg);
@@ -478,6 +482,10 @@ footer {
       height: 30px;
       margin-left: 26px; } }
 @media screen and (min-width: 410px) {
+  #burgerFold {
+    padding-left: 25%;
+    height: 80vh; }
+
   #ca_streg1 {
     -ms-transform: rotate(-75deg);
     -webkit-transform: rotate(-75deg);

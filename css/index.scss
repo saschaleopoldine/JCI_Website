@@ -73,12 +73,12 @@ body{
 }
 
 #burgerFold{
-  padding: 8% 0 5% 25%;
+  padding: 8% 0 5% 15%;
   display: none;
   width: 100vw;
   margin: auto;
   background-color: $bluePrimary;
-  height: 70vh;
+  height: 100vh;
   position: absolute;
   z-index: 5;
 
@@ -414,6 +414,10 @@ footer{
 @media screen and (min-width: 360px) {
   // iPhone 6/7/8
 
+  #burgerFold{
+    padding-left: 20%;
+    height: 85vh;
+  }
 
   #ca_streg1{
     -ms-transform: rotate(-80deg); // sikrer at rotate virker i internet explore 9
@@ -555,6 +559,11 @@ footer{
 
 @media screen and (min-width: 410px) {
   // iPhone 6/7/8 plus
+
+  #burgerFold{
+    padding-left: 25%;
+    height: 80vh;
+  }
 
   #ca_streg1{
     -ms-transform: rotate(-75deg); // sikrer at rotate virker i internet explore 9
