@@ -72,6 +72,58 @@ body{
   display: none;
 }
 
+#burgerFold{
+  padding: 8% 0 5% 25%;
+  display: none;
+  width: 100vw;
+  margin: auto;
+  background-color: $bluePrimary;
+  height: 70vh;
+  position: absolute;
+  z-index: 5;
+
+  a{
+    @include flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    text-align: left;
+    font-size: 15pt;
+    margin-bottom: 20px;
+    font-family: 'Libre Baskerville', serif;
+  }
+  .flexMenu{
+    @include flex;
+    justify-content: left;
+  }
+  .hvemKlik, .hvemKlik2, .medKlik, .medKlik2{
+    color: white;
+    margin-right: 2%;
+    cursor: pointer;
+  }
+  .hvemKlik2, .medKlik2{
+    display: none;
+  }
+  .undermenu1, .undermenu2{
+    margin-left: 10%;
+    display: none;
+  }
+  button{
+    @include ca_button;
+    width: 170px;
+    height: 40px;
+    font-size: 18pt;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin: 8% 0;
+  }
+  .kontakt{
+    margin: 5% 0;
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    font-size: 15pt;
+  }
+}
+
 .ca_streger{
   height: 3px;
   background-color: $bluePrimary;
@@ -1084,6 +1136,8 @@ footer{
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
 
+
+
   body{
     background-image: url("../images/Forside_web_mockup_baggrund.png");
   }
@@ -1106,7 +1160,7 @@ footer{
     display: inline;
   }
 
-  .mobil, #menuMobil, footer{
+  .mobil, #menuMobil, footer {
     display: none;
   }
 
@@ -1143,15 +1197,15 @@ footer{
         @include flex;
         justify-content: left;
       }
-      #hvemKlik, #hvemKlik2, #medKlik, #medKlik2{
+      .hvemKlik, .hvemKlik2, .medKlik, .medKlik2{
         color: white;
         margin-right: 2%;
         cursor: pointer;
       }
-      #hvemKlik2, #medKlik2{
+      .hvemKlik2, .medKlik2{
         display: none;
       }
-      #undermenu1, #undermenu2{
+      .undermenu1, .undermenu2{
         margin-left: 10%;
         display: none;
       }
