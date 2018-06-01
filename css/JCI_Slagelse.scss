@@ -166,7 +166,7 @@ h3{
 .cirkel_1{
   grid-column: 1/span 3;
   grid-row: 3;          
-  margin-top: 5%;       
+  margin-top: 7px;
   z-index: 1;
   img{
     width: 155px;
@@ -184,12 +184,12 @@ h3{
   text-align: center;
   grid-column: 1/span 3;   
   grid-row: 4;
-  margin-top: 12%;
+  margin-top: 20px;
   z-index: 2;  
   a{
     grid-column: 1/span 3;
     grid-row: 4;
-    margin-left: -15px;
+    margin-left: -10px;
     text-decoration: none;
     color: white;
   }
@@ -230,8 +230,8 @@ h3{
   text-align: center;
   grid-column: 5/span 2;
   grid-row: 6;
-  margin-left: -15%;
-  margin-top: 5%;
+  margin-left: -20px;
+  margin-top: 5px;
   z-index: 2;  
   a{
    text-decoration: none;
@@ -271,8 +271,8 @@ h3{
   letter-spacing: 1px;
   text-align: center;
   grid-column: 2/span 2;
-  grid-row: 8;
-  margin-top: -12px;
+  grid-row: 7/span 2;
+  margin-top: 35px;
   margin-left: -10px;
   z-index: 2;  
   a{
@@ -313,7 +313,7 @@ h3{
   grid-column: 4/span 3;
   grid-row: 10;
   margin-right: 10px;
-  margin-top: 8px;
+  margin-top: 10px;
   z-index: 2;  
   a{
    text-decoration: none;
@@ -580,7 +580,7 @@ footer{
 
    #medlem{
      grid-row: 7;
-     margin-left: -8%;
+     margin-left: -10px;
    }
 
 
@@ -595,11 +595,12 @@ footer{
    }
 
    #partner{
-     grid-row: 9;
+     grid-row: 8/span 2;
+     margin-top: 45px;
      a{
       text-decoration: none;
       color: white;
-      margin-left: -10%;
+      margin-left: -15px;
      }
    }
 
@@ -618,8 +619,8 @@ footer{
 
    #aktivitet{
      grid-row: 11;
-     margin-right: 15%; 
-     margin-top: 5%;
+     margin-right: 25px;
+     margin-top: 10px;
    }
 
 
@@ -638,7 +639,7 @@ footer{
 
   #bestyrrelse{
     grid-row-end: 14;
-    margin-left: -5%;
+    margin-left: -5px;
   }
 
   #projektelement{
@@ -700,9 +701,9 @@ footer{
    }
 
   .cirkel_1{
-    grid-column: 2/span 2;
+    grid-column: 1/span 2;
     grid-row: 4;
-    margin-left: -30%;
+    margin-left: 50px;
     img {
       width: 250px;
       height: 250px;
@@ -711,10 +712,10 @@ footer{
 
   #projekt{
     font-size: 24pt;
-    grid-column: 2/span 2;
+    grid-column: 1/span 2;
     grid-row: 6;
-    margin-top: -5%;
-    margin-left: -43%;
+    margin-top: -5px;
+    margin-left: 122px;
   }                          
                              
                              
@@ -730,7 +731,7 @@ footer{
   .cirkel_2{
     grid-row: 7;
     margin-left: 0;
-    margin-top: -5%;
+    margin-top: -10px;
     img{
       width: 200px;  
       height: 200px; 
@@ -741,9 +742,9 @@ footer{
     font-size: 18pt;
     grid-column: 5/span 2;
     grid-row: 8;
-    margin-left: 0;
-    margin-right: 17%;
-    margin-top: 10%;
+    margin-left: -30px;
+    margin-right: 0;
+    margin-top: 25px;
   }                          
                              
                              
@@ -751,7 +752,7 @@ footer{
     grid-row: 11;
     width: 300px;
     margin-left: 0;
-    margin-top: -10%;
+    margin-top: -20px;
     -ms-transform: rotate(155deg);
     -webkit-transform: rotate(155deg);
     transform: rotate(155deg);
@@ -759,7 +760,7 @@ footer{
                              
                              
   .cirkel_3{
-    margin-top: -5%;
+    margin-top: -10px;
     grid-column: 2/span 2;
     grid-row: 11;
     img{
@@ -771,8 +772,8 @@ footer{
   #partner{
     grid-row: 12;
     font-size: 18pt;
-    margin-top: 5%;
-    margin-right: 15%;
+    margin-top: 10px;
+    margin-right: 30px;
   }                          
                              
                              
@@ -789,7 +790,7 @@ footer{
                              
   .cirkel_4{
     grid-row: 13;
-    margin-left: 10%;
+    margin-left: 40px;
     img{
       width: 225px; 
       height: 225px;
@@ -800,8 +801,9 @@ footer{
   #aktivitet{
     font-size: 24pt;
     grid-row: 15;
-    margin-right: 15%;       
-    margin-top: -3%;
+    margin-right: 40px;
+    margin-left: -10px;
+    margin-top: -5px;
   }                          
                              
                              
@@ -809,7 +811,7 @@ footer{
     grid-column: 2/span 3;
     grid-row: 17;
     width: 300px;
-    margin-left: 5%;
+    margin-left: 10px;
     margin-top: 10px;
   }                          
                              
@@ -817,7 +819,7 @@ footer{
   .cirkel_5{
     grid-column: 1/span 2;
     grid-row: 17;
-    margin-left: 25%;
+    margin-left: 60px;
     img{
       width: 150px; 
       height: 150px;
@@ -828,8 +830,8 @@ footer{
     font-size: 15pt;
     grid-column: 1/Span 2;
     grid-row: 18;
-    margin-left: 15%;
-    margin-top: -5%;
+    margin-left: 30px;
+    margin-top: -10px;
   }                                                                                                                                                                           
 
 
