@@ -213,7 +213,7 @@ h1{
 }
 
 #circle {
-  width: 65%;
+  width: 55%;
   height: 340%;
   border-radius: 100%;
   background-color: #f9f7f4;
@@ -351,7 +351,7 @@ margin-left: -20px;
 
 
 #circlestudierabat {
-  width: 65%;
+  width: 55%;
   height: 350%;
   border-radius: 100%;
   background-color: #f9f7f4;
@@ -365,7 +365,7 @@ margin-left: -20px;
 
 .studierabatikon{
   margin-left: 4%;
-  margin-top: -40%;
+  margin-top: -38%;
 }
 
 
@@ -406,10 +406,10 @@ margin-left: -20px;
   font-family: 'Libre Baskerville', serif;
   font-style: normal;
   font-weight: bold;
-  grid-column: 3/span 6;
+  grid-column: 4/span 6;
   grid-row-start:15;
   margin-top: 15%;
-  margin-right: 30%;
+  margin-left: 20%;
   a{
     text-decoration: none;
     color: black;
@@ -447,6 +447,7 @@ margin-left: -20px;
   grid-row-start: 19;
   margin-left: 59px;
   margin-top: 5px;
+  width: 80%;
 
 }
 
@@ -736,7 +737,7 @@ footer{
 
 
 .meld_dig_ind{
-  margin-left: 64px;
+  margin-left: 35px;
   margin-top: 5px;
 }
 
@@ -1764,7 +1765,7 @@ footer{
   #Fordeltekst{
     grid-row-start:1;
     grid-column: 5/span 7;
-    margin-top: -28%;
+    margin-top: -26%;
 
   }
 
@@ -1787,12 +1788,16 @@ footer{
   }
 
  .line{
+   grid-row-start:9;
    width: 3px;
-   height: 750px;
-   -ms-transform: rotate(130deg);
-   -webkit-transform: rotate(130deg);
-   transform: rotate(130deg);
-   margin-top: -8%;
+   height: 730px;
+   -ms-transform: rotate(135deg);
+   -webkit-transform: rotate(135deg);
+   transform: rotate(135deg);
+   margin-top: -20%;
+   grid-column: 2/span 6;
+
+
 
  }
 
@@ -1966,7 +1971,7 @@ margin-left: 4%;
 
 
   #fordelafsnit{
-    margin-top: 3%;
+    margin-top: 18%;
 
   }
 
@@ -1974,6 +1979,10 @@ margin-left: 4%;
     grid-row-start: 2;
 
   }
+
+.fordelafsnitoverskrift{
+  margin-top: -2%;
+}
 
 
 }
@@ -2016,6 +2025,7 @@ margin-left: 4%;
 
 
 
+
 }
 
 @media screen and (min-width: 1440px) {
@@ -2032,6 +2042,13 @@ margin-left: 4%;
   .indledningtilweb{
     margin-left: 5%;
   }
+
+  #fordelafsnit{
+    margin-top: 3%;
+
+  }
+
+
 
 }
 
@@ -2126,6 +2143,8 @@ margin-left: 4%;
 .line{
   height: 950px;
   margin-top: -18%;
+  grid-row-start:8;
+
 }
 
 
