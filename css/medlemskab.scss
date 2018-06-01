@@ -252,7 +252,7 @@ footer{
   @include flex;
   justify-content: space-between;
   p{
-    margin-top: 15px;
+    margin-top: 12px;
   }
   #some{
     @include flex;
@@ -453,7 +453,7 @@ footer{
     grid-template-columns: repeat(10, 1fr);
     grid-column-gap: 20px;
     height: 600px;
-    width: 100%;
+    width: 75%;
   }
 
   #flex_alt{
@@ -605,6 +605,10 @@ footer{
   }
 }
 @media screen and (min-width: 1500px) {
+
+  #mobilAlt{
+    width: 80%;
+  }
 
   #left_menu{
     width: 20%;
