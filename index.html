@@ -211,7 +211,7 @@
         </div>
     </footer>
 
-    <i class="fa fas fa-chevron-circle-up fa-3x"></i>
+    <i class="fa fas fa-chevron-circle-up fa-3x" id="bttBtn"></i>
 
 
 
@@ -253,10 +253,23 @@
                 $(".medKlik").show(0);
             });
 
+            $(window).scroll(function (e) {
+                if ($(this).scrollTop() >= 100){
+                    $('.fa-chevron-circle-up').fadeIn(300);
+                }
+                else {
+                    $('.fa-chevron-circle-up').fadeOut(300);
+                }
+            });
+
+            $('#bttBtn').click(function (e) {
+                $('html, body').animate({scrollTop:0}, '300');
+                return false;
+            });
 
 
             $("#burgerKlik").click(function (e) {
-                $("#burgerFold").slideToggle(500);
+                $("#burgerFold").slideToggle(700);
             });
 
         });

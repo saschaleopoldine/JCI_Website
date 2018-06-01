@@ -399,7 +399,7 @@ footer{
   }
 }
 
-.fa-chevron-circle-up{
+#bttBtn{
   color: $bluePrimary;
   position: fixed;
   bottom: 160px;
@@ -1140,6 +1140,11 @@ footer{
 
   body{
     background-image: url("../images/Forside_web_mockup_baggrund.png");
+  }
+
+  #bttBtn{
+    bottom: 50px;
+    right: 50px;
   }
 
   #ca_streg1{

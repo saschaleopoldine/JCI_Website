@@ -364,7 +364,7 @@ footer {
     footer #some i {
       margin: 3px 0; }
 
-.fa-chevron-circle-up {
+#bttBtn {
   color: #0097d7;
   position: fixed;
   bottom: 160px;
@@ -916,6 +916,10 @@ footer {
 @media screen and (min-width: 1200px) {
   body {
     background-image: url("../images/Forside_web_mockup_baggrund.png"); }
+
+  #bttBtn {
+    bottom: 50px;
+    right: 50px; }
 
   #ca_streg1 {
     grid-column: 3/span 8;
