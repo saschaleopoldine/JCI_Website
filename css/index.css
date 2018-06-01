@@ -376,7 +376,7 @@ footer {
 @media screen and (min-width: 360px) {
   #burgerFold {
     padding-left: 20%;
-    height: 85vh; }
+    height: 100vh; }
 
   #ca_streg1 {
     -ms-transform: rotate(-80deg);
