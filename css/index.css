@@ -310,6 +310,15 @@ footer {
     footer #some i {
       margin: 3px 0; }
 
+.fa-chevron-circle-up {
+  color: #0097d7;
+  position: fixed;
+  bottom: 160px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 2;
+  display: none; }
+
 @media screen and (min-width: 360px) {
   #ca_streg1 {
     -ms-transform: rotate(-80deg);

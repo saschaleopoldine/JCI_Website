@@ -347,6 +347,16 @@ footer{
   }
 }
 
+.fa-chevron-circle-up{
+  color: $bluePrimary;
+  position: fixed;
+  bottom: 160px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 2;
+  display: none;
+}
+
 // Variabler - med størrelser
 
 @media screen and (min-width: 360px) {
