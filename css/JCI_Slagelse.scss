@@ -112,6 +112,14 @@ $overlay: rgba(93, 144, 183, 0.5);
   }
 }
 
+#back-to-top{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #0097d7;
+  cursor:pointer;
+  z-index: 2;
+}
 
 
 

@@ -47,6 +47,14 @@ img {
     color: white;
     margin: 5px 20px; }
 
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #0097d7;
+  cursor: pointer;
+  z-index: 2; }
+
 #mobilAlt {
   padding: 0 20px 0 20px;
   display: grid;
