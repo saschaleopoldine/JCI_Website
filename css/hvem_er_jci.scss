@@ -42,6 +42,20 @@ p {
   display: -webkit-flex;
 }
 
+@mixin ca_button{
+  height: 30px;
+  background-color: $orangePrimary;
+  border: none;
+  text-decoration: none;
+  color: white;
+  font-size: 18pt;
+  a{
+    text-decoration: none;
+    color: white;
+    font-size: 18pt;
+  }
+}
+
 .web{
   display: none;
 }
@@ -189,7 +203,7 @@ footer{
   @include flex;
   justify-content: space-between;
     p{
-      margin-top: 15px;
+      margin-top: 12px;
     }
     #some{
       @include flex;
@@ -226,7 +240,13 @@ footer{
     color: white;
     text-align: center;
   }
-
+  #menuMobil{
+    height: 100px;
+    i{
+      font-size: 40pt;
+      margin-top: 15px;
+    }
+  }
 #mobilAlt {
     #circle1{
       border-radius: 50%;
@@ -313,6 +333,15 @@ footer{
       margin-top: 20px;
         margin-left: -25px;
       display: none;
+    }
+  }
+  footer{
+    justify-content: center;
+    p, #some{
+      margin: 0 10%;
+    }
+    p{
+      margin-top: 2%;
     }
   }
 }
@@ -491,13 +520,86 @@ footer{
     justify-content: space-between;
   }
   #left_menu{
-    background-color: $bluePrimary;
-    height: 170vh;
-    width: 300px;
-    #logo{
-      width: 65%;
-      height: auto;
-      margin: 30px auto 0 auto;
+    width: 25%;
+    #menuIndhold{
+      width: inherit;
+      background-color: $bluePrimary;
+      height: 100vh;
+      padding: 50px 25px;
+      position: fixed;
+
+      #logo{
+        width: 60%;
+        margin: auto 18% 10px 18%;
+      }
+      nav a{
+        @include flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: white;
+        font-size: 15pt;
+        margin-bottom: 10px;
+        font-family: 'Libre Baskerville', serif;
+      }
+      .flexMenu{
+        @include flex;
+        justify-content: left;
+      }
+      #hvemKlik, #hvemKlik2, #medKlik, #medKlik2{
+        color: white;
+        margin-right: 2%;
+        cursor: pointer;
+      }
+      #hvemKlik2, #medKlik2{
+        display: none;
+      }
+      #undermenu1, #undermenu2{
+        margin-left: 10%;
+        display: none;
+      }
+      nav button{
+        @include ca_button;
+        width: 170px;
+        height: 40px;
+        font-size: 18pt;
+        font-family: 'Merriweather Sans', sans-serif;
+        margin: 8% 0;
+      }
+      .kontakt{
+        margin: 5% 0;
+        font-family: 'Libre Baskerville', serif;
+        color: white;
+        font-size: 15pt;
+      }
+      .soMeCirkler{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: solid $orangePrimary 3px;
+        padding: 2% 3%;
+        margin: 5%;
+        i{
+          color: white;
+        }
+      }
+      #flexSoMe{
+        @include flex;
+        justify-content: center;
+      }
+
+      #soMeCirkel3{
+        margin: auto;
+      }
+      .fa-facebook-f{
+        margin: 7% 0 0 15%;
+      }
+      .fa-linkedin{
+        margin-left: 3%;
+      }
+      #active{
+        border-bottom: solid $orangePrimary 3px;
+        width: 162px;
+      }
     }
   }
   #mobilAlt{
@@ -507,7 +609,7 @@ footer{
     grid-template-rows: repeat(21, 50px);
     grid-column-gap: 20px;
     height: 600px;
-    width: 100%;
+    width: 75%;
     font-size: 15pt;
     @mixin flex{
       display: flex;
@@ -640,14 +742,7 @@ footer{
     background-repeat: no-repeat;
   }
   #left_menu{
-    background-color: $bluePrimary;
-    height: 170vh;
-    width: 300px;
-    #logo{
-      width: 65%;
-      height: auto;
-      margin: 30px auto 0 auto;
-    }
+    width: 20%;
   }
   #mobilAlt{
     padding: 70px 50px 50px 0;
@@ -656,7 +751,7 @@ footer{
     grid-template-rows: repeat(20, 50px);
     grid-column-gap: 20px;
     height: 600px;
-    width: 100%;
+    width: 80%;
     font-size: 15pt;
     .dk {
       display: block;
