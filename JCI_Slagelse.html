@@ -394,7 +394,7 @@
 
 
 <!------------------------------------------------ back-to-top -------------------------------------------------->
-<a id="back-to-top" href="JCI_Slagelse.html"><i class="fa fas fa-chevron-circle-up fa-3x"></i></a>
+<i class="fa fas fa-chevron-circle-up fa-3x"></i>
 
 
 
@@ -410,15 +410,15 @@
         });
 
         $(window).scroll(function (e) {
-            if ($(this).scrollTop() >= 50){
-                $('#back-to-top').fadeIn(300);
+            if ($(this).scrollTop() >= 100){
+                $('.fa-chevron-circle-up').fadeIn(300);
             }
             else {
-                $('#back-to-top').fadeOut(300);
+                $('.fa-chevron-circle-up').fadeOut(300);
             }
         });
 
-        $('#back-to-top').click(function (e) {
+        $('.fa-chevron-circle-up').click(function (e) {
             $('html, body').animate({scrollTop:0}, '300');
             return false;
         });

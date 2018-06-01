@@ -47,9 +47,9 @@ img {
     color: white;
     margin: 5px 20px; }
 
-#back-to-top {
+.fa-chevron-circle-up {
   position: fixed;
-  bottom: 20px;
+  bottom: 160px;
   right: 20px;
   color: #0097d7;
   cursor: pointer;
