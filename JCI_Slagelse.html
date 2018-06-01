@@ -410,13 +410,18 @@
         });
 
         $(window).scroll(function (e) {
-            if ($this)
-
+            if ($(this).scrollTop() >= 50){
+                $('#back-to-top').fadeIn(300);
+            }
+            else {
+                $('#back-to-top').fadeOut(300);
+            }
         });
 
-
-
-
+        $('#back-to-top').click(function (e) {
+            $('html, body').animate({scrollTop:0}, '300');
+            return false;
+        });
 
 
     });

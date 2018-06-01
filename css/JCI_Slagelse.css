@@ -53,7 +53,8 @@ img {
   right: 20px;
   color: #0097d7;
   cursor: pointer;
-  z-index: 2; }
+  z-index: 2;
+  display: none; }
 
 #mobilAlt {
   padding: 0 20px 0 20px;
