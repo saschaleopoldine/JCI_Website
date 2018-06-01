@@ -52,13 +52,38 @@
     <div id="flex_alt" class="web">
 
         <div id="left_menu">
-            <div class="menutekst">
-                <img src="images/logo.png" id="logo">
+
+            <div id="menuIndhold" class="web">
+
+                <a href="index.html"><img src="images/logo.png" id="logo"></a>
 
                 <nav class="web">
-
+                    <a href="index.html">FORSIDE</a>
+                    <div class="flexMenu"><i class="fa fa-angle-right" id="hvemKlik"></i><i class="fa fa-angle-down" id="hvemKlik2"></i><a href="#">HVEM ER JCI?</a></div>
+                    <div id="undermenu1">
+                        <a href="#">JCI SLAGELSE</a>
+                        <a href="#">JCI GLOBAL</a>
+                    </div>
+                    <div class="flexMenu"><i class="fa fa-angle-right leftArrow" id="medKlik"></i><i class="fa fa-angle-down" id="medKlik2"></i><a href="#" id="active">MEDLEMSKAB</a></div>
+                    <div id="undermenu2">
+                        <a href="#">PRIVATMEDLEM</a>
+                        <a href="#">ERHVERVSMEDLEM</a>
+                    </div>
+                    <a href="#">AKTIVITETER</a>
+                    <a href="#">PARTNERE</a>
+                    <button>Meld dig ind</button>
                 </nav>
+                <p class="kontakt"><strong>KONTAKT OS</strong></p>
+                <p class="kontakt">MAIL:<br>slagelse@jci.dk</p>
+                <div id="flexSoMe">
+                    <div class="soMeCirkler" id="soMeCirkel1"><i class="fa fa-facebook-f fa-2x"></i></div>
+                    <div class="soMeCirkler" id="soMeCirkel2"><i class="fa fa-twitter fa-2x"></i></div>
+                </div>
+                <div class="soMeCirkler" id="soMeCirkel3"><i class="fa fa-linkedin fa-2x"></i></div>
+
             </div>
+
+
         </div>
 
         <div id="mobilAlt" class="mobil">
@@ -528,6 +553,39 @@
             })
 
     }
+
+
+        $("#hvemKlik").click(function (e) {
+            $("#undermenu1").slideDown(1000);
+            $("#undermenu2").slideUp(1000);
+            $("#hvemKlik").hide(0);
+            $("#hvemKlik2").show(0);
+            $("#medKlik2").hide(0);
+            $("#medKlik").show(0);
+        });
+
+        $("#hvemKlik2").click(function (e) {
+            $("#undermenu1").slideUp(1000);
+            $("#hvemKlik2").hide(0);
+            $("#hvemKlik").show(0);
+
+        });
+
+        $("#medKlik").click(function (e) {
+            $("#undermenu2").slideDown(1000);
+            $("#undermenu1").slideUp(1000);
+            $("#medKlik").hide(0);
+            $("#medKlik2").show(0);
+            $("#hvemKlik2").hide(0);
+            $("#hvemKlik").show(0);
+        });
+
+        $("#medKlik2").click(function (e) {
+            $("#undermenu2").slideUp(1000);
+            $("#medKlik2").hide(0);
+            $("#medKlik").show(0);
+        });
+
     })
 
 
