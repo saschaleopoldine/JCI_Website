@@ -6,7 +6,11 @@
 }
 
 body {
+  background-color: #f9f7f4;
   margin: 0; // Ingen kanter i siden af browser
+  background-image: url("../images/netveark.png");
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -36,20 +40,2040 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
+
+
+
+@mixin afsnit{
+  font-size: 12pt;
+  color: black;
+  text-align: left;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+}
+
+
+@mixin headline2{
+    font-size: 20pt;
+    color: black;
+    text-align: left;
+    a{
+      text-decoration: none;
+      color: black;
+    }
+    font-family: 'Libre Baskerville', serif;
+    font-style: normal;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-top: 3%;
+}
+
+
+
+
+
+
+
+@mixin button{
+  background-color: #f37121;
+  color: white;
+  width: 70%;
+  padding: 5px 10px;
+  font-size: 18pt;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+}
+
+$bluePrimary: #0097d7;
+$orangePrimary: #f37121;
+$overlay: rgba(93, 144, 183, 0.5);
+
+@mixin flex{
+  display: flex;
+  display: -webkit-flex;
+}
+
+.web{
+  display: none;
+
+}
+
+#menuMobil{
+  height: 60px;
+  width: 100%;
+  background-color: $bluePrimary;
+  padding: 7px;
+  @include flex;
+  justify-content: space-between;
+  img{
+    margin-left: 20px;
+    height: 100%;
+    width: auto;
+  }
+  i{
+    color: white;
+    margin: 5px 20px;
+  }
+}
+
+footer{
+
+}
+
+#mobilAlt{
+  padding: 0 20px 0 20px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 10px;
+  grid-template-rows: repeat(57, 50px);
+
+
+}
+
+
+//---------------------------- Back  to top---------------------->
+
+
+.fa-chevron-circle-up{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #0097d7;
+  cursor:pointer;
+  z-index: 2;
+}
+
+//---------------------------- Back  to top---------------------->
+
+
+
+
+
+
+
+
+
+
+h1{
+  font-size: 25pt;
+  color: black;
+  text-align: center;
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  font-family: 'Libre Baskerville', serif;
+  font-style: normal;
+  font-weight: bold;
+  grid-column: 1/span 6;
+  grid-row-start:2;
+
+}
+
+
+
+
+
+
+
+
+
+//---------------------------- Circkle FordelMobil---------------------->
+
+
+.Fordele{
+  font-size: 16pt;
+  color: black;
+  font-family: 'Libre Baskerville', serif;
+  font-style: normal;
+  font-weight: bold;
+  grid-column: 1/span 4;
+  grid-row-start:4;
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  margin-top: -8%;
+  margin-left: 11%;
+}
+
+#circle {
+  width: 55%;
+  height: 350%;
+  border-radius: 100%;
+  background-color: #f9f7f4;
+  border: 3px solid #0097d7;
+  grid-column: 1/span 6;
+  grid-row-start:4;
+  margin-top: 48px;
+  z-index: 1;
+
+}
+
+.fordelikon{
+margin-left: -20px;
+  margin-top: 10px;
+
+}
+
+
+
+.line{
+  width: 3px;
+  height: 235%;
+  background-color: #f37121;
+  -ms-transform: rotate(130deg);
+  -webkit-transform: rotate(130deg);
+  transform: rotate(130deg);
+  grid-column: 1/span 6;
+  grid-row-start:8;
+  margin-left: 60%;
+  margin-top: -8%;
+  z-index: -1;
+
+}
+
+//---------------------------- Circkle FordelMobil---------------------->
+
+
+
+
+
+
+
+//---------------------------- Circkle PriserMobil---------------------->
+
+
+.priser{
+  font-size: 16pt;
+  color: black;
+  font-family: 'Libre Baskerville', serif;
+  font-style: normal;
+  font-weight: bold;
+  grid-column: 2/span 5;
+  grid-row-start:8;
+  margin-left: 70%;
+  margin-top: 10px;
+  a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+
+}
+
+
+#circlepriser {
+  width: 97px;
+  height: 97px;
+  border-radius: 50px;
+  background-color: #f9f7f4;
+  border: 3px solid #0097d7;
+  grid-column: 2/span 5;
+  grid-row-start: 9;
+  margin-left: 65%;
+  z-index: 1;
+
+}
+
+
+.priserikon{
+  margin-left: -15%;
+  margin-top: -85%;
+}
+
+
+.line2{
+  width: 3px;
+  height: 330%;
+  background-color: #f37121;
+  -ms-transform: rotate(140deg);
+  -webkit-transform: rotate(140deg);
+  transform: rotate(140deg);
+  grid-column: 1/span 6;
+  grid-row-start:15;
+  margin-left: 57%;
+  margin-top: -10px;
+  z-index: -1;
+}
+
+
+
+
+
+
+
+//---------------------------- Circkle PriserMobil---------------------->
+
+
+
+
+
+
+
+//---------------------------- Circkle StudierabatMobil---------------------->
+
+
+
+
+.studierabat{
+  font-size: 16pt;
+  color: black;
+  font-family: 'Libre Baskerville', serif;
+  font-style: normal;
+  font-weight: bold;
+  grid-column: 1/span 6;
+  grid-row-start:11;
+  margin-top: 3%;
+  a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+  margin-left: 10%;
+
+}
+
+
+#circlestudierabat {
+  width: 55%;
+  height: 350%;
+  border-radius: 100%;
+  background-color: #f9f7f4;
+  border: 3px solid #0097d7;
+  grid-column: 1/span 6;
+  grid-row-start:12;
+  z-index: 1;
+
+}
+
+
+.studierabatikon{
+  margin-left: 4%;
+  margin-top: -40%;
+}
+
+
+.line3{
+  width: 3px;
+  height: 330%;
+  background-color: #f37121;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  grid-column: 1/span 6;
+  grid-row-start:9;
+  margin-left: 65%;
+  margin-top: 12%;
+  z-index: -1;
+}
+
+
+
+
+//---------------------------- Circkle StudierabatMobil---------------------->
+
+
+
+
+
+
+
+
+
+//---------------------------- Circkle ChefMobil---------------------->
+
+
+
+.chef{
+  font-size: 16pt;
+  color: black;
+  font-family: 'Libre Baskerville', serif;
+  font-style: normal;
+  font-weight: bold;
+  grid-column: 4/span 3;
+  grid-row-start:15;
+  margin-top: 15%;
+  margin-left: 25%;
+  a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+
+}
+
+
+#circlechef {
+  width: 121px;
+  height: 121px;
+  border-radius: 60px;
+  background-color: #f9f7f4;
+  border: 3px solid #0097d7;
+  grid-column: 2/span 5;
+  grid-row-start: 17;
+  margin-left: 57%;
+
+}
+
+
+.chefikon{
+  margin-left: -30%;
+  margin-top: -45%;
+}
+
+
+
+//---------------------------- Circkle ChefMobil---------------------->
+
+.meld_dig_ind{
+  @include button;
+  grid-column: 1/span 4;
+  grid-row-start: 19;
+  margin-left: 59px;
+  margin-top: 5px;
+
+}
+
+
+//---------------------------- Fordel_afsnit_mobil---------------------->
+
+
+
+#Fordeltekst{
+  grid-column: 1/span 6;
+  grid-row: 14/span 8;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(9, 50px);
+  .fordelafsnitoverskrift{
+    grid-column: 2/span 6;
+    grid-row: 8;
+    margin-left: -0.5%;
+    margin-top: 8%;
+  }
+}
+
+
+
+h2{
+  @include headline2
+}
+
+
+
+#fordelafsnit{
+  @include afsnit;
+  grid-column: 2/span 4;
+  grid-row-start: 23;
+
+}
+
+//---------------------------- Fordel_afsnit_mobil---------------------->
+
+
+
+
+
+//---------------------------- Priser_afsnit_mobil---------------------->
+
+
+#Pristekst{
+  grid-column: 1/span 6;
+  grid-row: 21/span 8;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(9, 50px);
+  .priserafsnitoverskrift{
+    grid-column: 2/span 6;
+    grid-row: 9;
+    margin-left: -0.5%;
+  }
+}
+
+
+
+h2{
+  @include headline2
+}
+
+
+
+#priserafsnit {
+  @include afsnit;
+  grid-column: 2/span 4;
+  grid-row-start: 23;
+}
+
+//---------------------------- Priser_afsnit_mobil---------------------->
+
+
+
+
+
+
+
+//---------------------------- studierabat_afsnit_mobil---------------------->
+
+#studierabattekst{
+  grid-column: 1/span 6;
+  grid-row: 29/span 8;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(9, 50px);
+  .studierabatafsnitoverskrift{
+    grid-column: 2/span 6;
+    grid-row: 9;
+    margin-left: -0.5%;
+  }
+}
+
+
+
+h2{
+  @include headline2
+}
+
+
+
+#studierabatafsnit {
+  @include afsnit;
+  grid-column: 2/span 4;
+  grid-row-start: 23;
+}
+
+
+
+
+
+//---------------------------- studierabat_afsnit_mobil---------------------->
+
+
+
+
+
+
+
+
+
+//---------------------------- Få din chef_afsnit_mobil---------------------->
+
+
+
+#fådincheftekst{
+  grid-column: 1/span 6;
+  grid-row: 38/span 8;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(9, 50px);
+  .fådinchefafsnitoverskrift{
+    grid-column: 2/span 3;
+    grid-row: 8;
+    margin-left: -0.5%;
+    margin-top: 15%;
+
+  }
+}
+
+
+
+h2{
+  @include headline2
+}
+
+
+
+#fådinchefafsnit {
+  @include afsnit;
+  grid-column: 2/span 4;
+  grid-row-start: 23;
+}
+
+//---------------------------- Få din chef_afsnit_mobil---------------------->
+
+
+
+
+
+
+
+
+
+footer{
+  background-color: $bluePrimary;
+  color: white;
+  height: 150px;
+  padding: 22px 50px;
+  @include flex;
+  justify-content: space-between;
+  p{
+    margin-top: 15px;
+  }
+  #some{
+    @include flex;
+    flex-direction: column;
+    i{
+      margin: 3px 0;
+    }
+  }
+}
+
+
+@media screen and (min-width: 320px) {
+
+
+
+  //---------------------------- Det hele_mobil_Iphone5---------------------->
+
+
+
+  .studierabat{
+    margin-left: 5%;
+  }
+
+  .studierabatikon{
+    margin-left: 4%;
+  }
+
+
+.meld_dig_ind{
+  margin: 10px;
+  height: 60px;
+}
+
+
+
+  #Pristekst{
+    grid-row: 22/span 8;
+  }
+
+  #studierabattekst{
+    grid-row: 30/span 8;
+
+  }
+
+
+  #fådincheftekst{
+    grid-row: 39/span 8;
+  }
+
+  //---------------------------- Det hele_mobil_Iphone5---------------------->
+
+
+
+}
+
+
+
+
+@media screen and (min-width: 414px) {
+
+
+
+//---------------------------- Circkle Fordel_Iphone_Plus---------------------->
+
+
+  #circle {
+    width: 50%;
+    height: 350%;
+    border-radius: 100%;
+  }
+
+
+  .line {
+    height: 300%;
+    margin-top: -11%;
+  }
+
+//---------------------------- Circkle Fordel_Iphone_Plus---------------------->
+
+
+
+
+
+
+//---------------------------- Circkle Studierabat_Iphone_Plus---------------------->
+
+
+
+  #circlestudierabat {
+    width: 50%;}
+
+
+//---------------------------- Circkle Studierabat_Iphone_Plus---------------------->
+
+
+
+//---------------------------- Lines_Iphone_Plus---------------------->
+
+
+
+  .line2 {
+    height: 450%;
+    margin-top: -10%;
+  }
+
+
+    .line3 {
+      height: 450%;
+      margin-top: 8px;
+    }
+
+
+.meld_dig_ind{
+  margin-left: 64px;
+  margin-top: 5px;
+}
+
+//---------------------------- Lines_Iphone_Plus---------------------->
+
+
+}
+
+
+
 // Variabler - med størrelser
+
+
+@media screen and (min-width: 667px) {
+
+  #mobilAlt{
+    grid-template-rows: repeat(44, 50px);
+  }
+
+
+  body {
+    background-image: url("../images/netvearkIpad.png");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+//---------------------------- Circkle Fordel_lille_Ipad---------------------->
+
+  #circle {
+    width: 43%;
+    height: 520%;
+    border-radius: 100%;
+
+  }
+
+
+  .fordelikon{
+    margin-left: -25px;
+}
+
+
+  .Fordele{
+    grid-column: 1/span 3;
+    grid-row-start:4;
+    margin-top: -10%;
+    margin-left: 23%;
+  }
+
+  .line{
+    height: 520%;
+    -ms-transform: rotate(115deg);
+    -webkit-transform: rotate(115deg);
+    transform: rotate(115deg);
+    margin-left: 60%;
+    margin-top: -8%;
+  }
+
+
+
+
+
+
+
+
+//---------------------------- Circkle Fordel_lille_Ipad---------------------->
+
+
+
+//---------------------------- Circkle Priser_lille_Ipad---------------------->
+
+
+
+  .priser{
+    grid-column: 2/span 5;
+    grid-row-start:8;
+    margin-left: 76%;
+    margin-top: 10px;
+
+
+  }
+
+
+  #circlepriser {
+    width: 170px;
+    height: 170px;
+    border-radius: 95px;
+    grid-column: 2/span 5;
+    grid-row-start: 9;
+    margin-left: 67.5%;
+  }
+
+
+  .priserikon{
+    margin-left: -14.5%;
+    margin-top: -85%;
+  }
+
+
+  .line3{
+    width: 3px;
+    height: 820%;
+    -ms-transform: rotate(55deg);
+    -webkit-transform: rotate(55deg);
+    transform: rotate(55deg);
+    grid-column: 1/span 6;
+    grid-row-start:9;
+    margin-left: 65%;
+    margin-top: -5%;
+  }
+
+
+
+
+//---------------------------- Circkle Priser_lille_Ipad---------------------->
+
+
+
+
+//---------------------------- Circkle Studierabat_lille_Ipad---------------------->
+
+
+
+
+  .studierabat{
+    grid-column: 1/span 6;
+    grid-row-start:12;
+    margin-top: 1%;
+    margin-left: 10%;
+
+  }
+
+
+  #circlestudierabat {
+    width: 40%;
+    height: 500%;
+    border-radius: 90%;
+    grid-row-start:13;
+  }
+
+
+  .studierabatikon{
+    margin-left: 5%;
+    margin-top: -35%;
+  }
+
+
+  .line2{
+    height: 595%;
+    -ms-transform: rotate(110deg);
+    -webkit-transform: rotate(110deg);
+    transform: rotate(110deg);
+    margin-left: 60%;
+    margin-top: -3%;
+  }
+
+
+
+  //---------------------------- Circkle Studierabat_lille_Ipad---------------------->
+
+
+
+
+
+
+
+
+
+//---------------------------- Få din chef_lille_Ipad-------------------------------->
+
+
+  .chef{
+    grid-column: 4/span 3;
+    grid-row-start:15;
+    margin-top: 10%;
+    margin-left: 50%;
+  }
+
+
+  #circlechef {
+    width: 160px;
+    height: 160px;
+    border-radius: 90px;
+    margin-left: 69.5%;
+  }
+
+
+  .chefikon{
+    margin-left: -30%;
+    margin-top: -45%;
+  }
+
+//---------------------------- Få din chef_lille_Ipad-------------------------------->
+
+
+
+  .meld_dig_ind {
+    background-color: #f37121;
+    color: white;
+    width: 150px;
+    padding:1px 9px;
+    font-size: 18pt;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    margin-left: 25%;
+
+  }
+
+
+
+//---------------------------- Fordel_afsnit_lille_Ipad---------------------->
+
+
+
+  #Fordeltekst{
+    grid-column: 1/span 6;
+    grid-row: 13/span 8;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 50px);
+    .fordelafsnitoverskrift{
+      grid-column: 2/span 6;
+      grid-row: 9;
+      margin-left: -0.5%;
+      margin-top: -1px;
+    }
+  }
+
+  //---------------------------- Fordel_afsnit_lille_Ipad---------------------->
+
+
+
+
+
+
+
+
+
+
+//---------------------------- Priser_afsnit_lille_Ipad---------------------->
+
+
+
+  #Pristekst{
+    grid-column: 1/span 6;
+    grid-row: 19/span 8;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 50px);
+    .priserafsnitoverskrift{
+      grid-column: 2/span 6;
+      grid-row: 9;
+      margin-left: -0.5%;
+      margin-top: -1px;
+    }
+  }
+
+//---------------------------- Priser_afsnit_lille_Ipad---------------------->
+
+
+
+
+
+  //---------------------------- Studierabat_afsnit_lille_Ipad---------------------->
+
+  #studierabattekst{
+    grid-column: 1/span 6;
+    grid-row: 25/span 8;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 50px);
+    .studierabatafsnitoverskrift{
+      grid-column: 2/span 6;
+      grid-row: 9;
+      margin-left: -0.5%;
+      margin-top: -1px;
+    }
+  }
+
+//---------------------------- Studierabat_afsnit_lille_Ipad---------------------->
+
+
+
+
+
+
+//---------------------------- Få din chef_afsnit_lille_Ipad---------------------->
+
+
+  #fådincheftekst{
+    grid-column: 1/span 6;
+    grid-row: 31/span 8;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 50px);
+    .fådinchefafsnitoverskrift{
+      grid-column: 2/span 6;
+      grid-row: 9;
+      margin-left: -0.5%;
+      margin-top: -1px;
+    }
+
+  }
+//---------------------------- Få din chef_afsnit_lille_Ipad---------------------->
+
+
+}
+
+
+
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
+
+
+
+  body {
+    background-image: url("../images/netvearkIpad_768.png");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+
+
+
+
+
+
+#mobilAlt{
+  grid-template-rows: repeat(44, 50px);
 }
 
-@media screen and (min-width: 992px) {
-  // Alt der ændres i tablet liggende fra mobil og tablet stående
+//---------------------------- Circle_fordel_stående_Ipad---------------------->
+
+
+  #circle {
+    width: 38%;
+    height: 520%;
+    border-radius: 100%;
+    margin-left: 5%;
+
+
+  }
+
+
+  .fordelikon{
+    margin-left: -25px;
+  }
+
+
+  .Fordele{
+    grid-column: 1/span 2;
+    grid-row-start:5;
+    margin-top: -30%;
+    margin-left: 42%;
+  }
+
+
+
+
+  .line{
+    height: 700%;
+    -ms-transform: rotate(110deg);
+    -webkit-transform: rotate(110deg);
+    transform: rotate(110deg);
+    margin-left: 60%;
+    margin-top: -15%;
+  }
+
+
+
+
+
+
+
+
+//---------------------------- Circle_fordel_stående_Ipad---------------------->
+
+
+
+
+
+
+
+
+//---------------------------- Circle_priser_stående_Ipad---------------------->
+
+
+
+
+  .priser{
+    margin-left: 69%;
+  }
+
+
+  #circlepriser {
+    margin-left: 60%;
+
+  }
+
+
+  .line3{
+    width: 3px;
+    height: 900%;
+    -ms-transform: rotate(63deg);
+    -webkit-transform: rotate(63deg);
+    transform: rotate(63deg);
+    grid-column: 1/span 6;
+    grid-row-start:9;
+    margin-left: 55%;
+    margin-top: -9%;
+  }
+
+
+
+
+//---------------------------- Circle_priser_stående_Ipad---------------------->
+
+
+
+
+
+
+
+//---------------------------- Circle Studierabat_stående_Ipad---------------------->
+
+
+
+
+
+  .studierabat{
+    grid-column: 1/span 6;
+    grid-row-start:12;
+    margin-top: 1%;
+    margin-left: 13%;
+
+  }
+
+
+  #circlestudierabat {
+    width: 37%;
+    height: 510%;
+    border-radius: 90%;
+    margin-left: 5%;
+  }
+
+
+  .studierabatikon{
+    margin-left: 5%;
+    margin-top: -35%;
+  }
+
+  .line2{
+    height: 750%;
+    margin-left: 55%;
+    margin-top: -10%;
+  }
+
+
+
+
+
+
+//---------------------------- Circle Studierabat_stående_Ipad---------------------->
+
+
+
+
+
+//---------------------------- Circle chef_stående_Ipad---------------------->
+
+
+
+  .chef{
+    grid-column: 4/span 3;
+    grid-row-start:15;
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+
+  #circlechef {
+    margin-left: 60%;
+
+
+  }
+
+//---------------------------- Circle chef_stående_Ipad---------------------->
+
+
+
+  .meld_dig_ind {
+    margin-left: 25%;
+    grid-row-start: 19;
+    margin-top: -2%;
+  }
+
+
+
+//---------------------------- Fordel_tekstafsnit_stående_Ipad---------------------->
+
+
+
+#Fordeltekst{
+    grid-column: 1/span 6;
+    grid-row: 14/span 8;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 50px);
+    .fordelafsnitoverskrift{
+      grid-column: 2/span 6;
+      grid-row: 9;
+      margin-left: -0.5%;
+      margin-top: -1px;
+    }
+  }
+
+//----------------------------  Fordel_tekstafsnit_stående_Ipad---------------------->
+
+
+
+
+//----------------------------  Pris_tekstafsnit_stående_Ipad---------------------->
+
+
+  #Pristekst{
+    grid-column: 1/span 6;
+    grid-row: 19/span 8;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 50px);
+    .priserafsnitoverskrift{
+      grid-column: 2/span 6;
+      grid-row: 9;
+      margin-left: -0.5%;
+      margin-top: -1px;
+    }
+  }
+
+
+  //----------------------------  Pris_tekstafsnit_stående_Ipad---------------------->
+
+
+
+  #studierabattekst{
+    grid-column: 1/span 6;
+    grid-row: 24/span 8;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 50px);
+    .studierabatafsnitoverskrift{
+      grid-column: 2/span 6;
+      grid-row: 9;
+      margin-left: -0.5%;
+      margin-top: -1px;
+    }
+  }
+
+
+  #fådincheftekst{
+    grid-column: 1/span 6;
+    grid-row: 29/span 8;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 50px);
+    .fådinchefafsnitoverskrift{
+      grid-column: 2/span 6;
+      grid-row: 9;
+      margin-left: -0.5%;
+      margin-top: -1px;
+    }
+  }
+
+
 }
+
+
+@media screen and (min-width: 992px) {
+
+
+
+//----------------------------  Cirkel_Fordel_liggende_Ipad---------------------->
+
+
+
+
+  #circle {
+    width: 320px;
+    height: 320px;
+    border-radius: 170px;
+  }
+
+
+
+  .Fordele{
+    grid-column: 1/span 2;
+    grid-row-start:5;
+    margin-top: -25%;
+  }
+
+
+
+  .line{
+    height: 1050%;
+    -ms-transform: rotate(105deg);
+    -webkit-transform: rotate(105deg);
+    transform: rotate(105deg);
+    margin-left: 60%;
+    margin-top: -20%;
+  }
+
+
+//----------------------------  Cirkel_Fordel_liggende_Ipad---------------------->
+
+
+
+
+
+//----------------------------  Cirkel_Priser_liggende_Ipad---------------------->
+
+
+  .priser{
+  }
+
+
+  #circlepriser {
+    width: 200px;
+    height: 200px;
+    border-radius: 120px;
+  }
+
+
+
+  .line2{
+    height: 1000%;
+    margin-left: 55%;
+    margin-top: -7%;
+    -ms-transform: rotate(102deg);
+    -webkit-transform: rotate(102deg);
+    transform: rotate(102deg);
+  }
+
+
+
+
+  //----------------------------  Cirkel_Priser_liggende_Ipad---------------------->
+
+
+
+
+
+
+
+//----------------------------  Cirkel_Studierabat_liggende_Ipad---------------------->
+
+
+
+  .studierabat{
+    grid-column: 1/span 6;
+    grid-row-start:13;
+    margin-top: -0.5%;
+
+  }
+
+
+  #circlestudierabat {
+    width: 300px;
+    height: 300px;
+    border-radius: 160px;
+    grid-column: 1/span 6;
+    grid-row-start:14;
+    z-index: 1;
+  }
+
+
+//----------------------------  Cirkel_Studierabat_liggende_Ipad---------------------->
+
+
+
+
+
+
+  //----------------------------  Cirkel_chef_liggende_Ipad---------------------->
+
+
+
+
+
+  .line3{
+    width: 3px;
+    height: 1350%;
+    -ms-transform: rotate(70deg);
+    -webkit-transform: rotate(70deg);
+    transform: rotate(70deg);
+    margin-left: 50%;
+    margin-top: -11%;
+  }
+
+
+
+  #circlechef {
+    width: 220px;
+    height: 220px;
+    border-radius: 130px;
+    grid-column: 1/span 6;
+    grid-row-start:18;
+  }
+
+  .chef{
+    grid-row-start:16;
+    margin-top: 9%;
+    margin-left: 80px;
+  }
+
+
+  //----------------------------  Cirkel_chef_liggende_Ipad---------------------->
+
+
+
+  //----------------------------  Overskrifter_liggende_Ipad---------------------->
+
+  .meld_dig_ind{
+    grid-column: 1/span 4;
+    grid-row-start: 21;
+    margin-right: 40px;
+  }
+
+
+
+
+  #Fordeltekst{
+    grid-column: 1/span 6;
+    grid-row: 15/span 8;
+    margin-left: 20px;
+
+  }
+
+
+  #Pristekst{
+      grid-column: 1/span 6;
+      grid-row: 19/span 8;
+      margin-left: 20px;
+  }
+
+
+  #studierabattekst{
+    grid-column: 1/span 6;
+    grid-row: 23/span 8;
+    margin-left: 20px;
+  }
+
+
+  #fådincheftekst{
+    grid-column: 1/span 6;
+    grid-row: 27/span 8;
+    margin-left: 20px;
+  }
+
+
+//----------------------------  Overskrifter_liggende_Ipad---------------------->
+
+
+}
+
+
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url("../images/netvearkIpad_1024.png");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+
+
+
+  //----------------------------  Overskrifter_Ipad Pro---------------------->
+
+
+
+  .line{
+    height: 1100%;
+  }
+
+  #Fordeltekst{
+    grid-column: 1/span 5;
+    grid-row: 16/span 8;
+    margin-left: 110px;
+
+  }
+
+  #Pristekst{
+    grid-column: 1/span 5;
+    grid-row: 21/span 8;
+    margin-left: 110px;
+
+  }
+
+
+  #studierabattekst{
+    grid-column: 1/span 5;
+    grid-row: 26/span 8;
+    margin-left: 110px;
+
+  }
+
+
+  #fådincheftekst{
+    grid-column: 1/span 5;
+    grid-row: 31/span 8;
+    margin-left: 110px;
+
+  }
+
+  .meld_dig_ind{
+    grid-column: 1/span 6;
+    grid-row-start: 22;
+    margin-left: 222px;
+
+
+  }
+
+//----------------------------  Overskrifter_Ipad Pro---------------------->
+
+
+}
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+
+  body {
+    background-image: url("../images/netvearkWeb.png");
+    background-repeat: no-repeat;
+  }
+
+
+
+
+
+
+
+
+
+  .web{
+    display: inline;
+  }
+
+  .mobil, #menuMobil, footer{
+    display: none;
+  }
+
+  #mobilAlt{
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(50, 50px);
+  padding: 70px 50px 50px 0;
+  display: grid;
+  grid-column-gap: 20px;
+  height: 600px;
+  width: 100%;
+
+  }
+
+  #flex_alt{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+  }
+
+
+  #left_menu{
+    background-color: $bluePrimary;
+    height: 100vh;
+    width: 300px;
+    #logo{
+      width: 65%;
+      height: auto;
+      margin: 30px auto 0 auto;
+    }
+  }
+
+
+//--------------------------------Indledning_Header_Web--------------------->
+
+
+  h1{
+   grid-column: 3/span 6;
+   grid-row-start:2;
+    font-size: 30pt;
+  }
+
+  .indledningtilweb{
+    font-size: 15pt;
+    font-family: 'Merriweather Sans', sans-serif;
+    grid-column: 4/span 6;
+    grid-row-start:3;
+  }
+
+  .meld_dig_ind{
+   grid-column: 3/span 6;
+   grid-row-start:4;
+   height: 35px;
+   margin-left: 35%;
+   margin-top: 3%;
+
+  }
+
+//--------------------------------Indledning_Header_Web--------------------->
+
+
+
+
+
+
+
+
+
+//--------------------------------Circle_Fordel_med_afsnit--------------------->
+
+ #circle {
+    width: 348px;
+    height: 348px;
+    border-radius: 100%;
+    grid-column: 1/span 6;
+    grid-row-start:5;
+ }
+
+
+  #Fordeltekst{
+    grid-row-start:1;
+    grid-column: 5/span 7;
+    margin-top: -28%;
+
+  }
+
+
+.Fordele{
+  display: none;
 }
+
+
+  .fordelafsnitoverskrift{
+    font-size: 24pt;
+    grid-column: 4/span 6;
+
+  }
+
+
+  #fordelafsnit{
+    font-size: 15pt;
+    margin-top: 15%;
+  }
+
+ .line{
+   width: 3px;
+   height: 750px;
+   -ms-transform: rotate(130deg);
+   -webkit-transform: rotate(130deg);
+   transform: rotate(130deg);
+   margin-top: -8%;
+
+ }
+
+
+//--------------------------------Circle_Fordel_med_afsnit--------------------->
+
+
+
+
+
+
+
+//--------------------------------Circle_Priser_med_afsnit--------------------->
+
+
+
+
+.priser{
+display: none;
+}
+
+
+#circlepriser{
+grid-row-start:18;
+grid-column: 4/span 6;
+  height: 269px;
+  width: 269px;
+  border-radius: 50%;
+  }
+
+
+ #Pristekst{
+  grid-column: 1/span 5;
+  grid-row-start:8;
+  margin-left: -50px;
+  margin-top: -10%;
+
+ }
+
+  #priserafsnit{
+    font-size: 15pt;
+  }
+
+//--------------------------------Circle_Priser_med_afsnit--------------------->
+
+
+
+
+
+
+
+
+
+//--------------------------------Circle_Studierabat_med_afsnit--------------------->
+
+
+
+ #circlestudierabat{
+width: 355px;
+height: 355px;
+border-radius: 100%;
+grid-column: 1/span 6;
+grid-row-start:27;
+margin-left: 4%;
+   }
+
+
+  #studierabattekst{
+    grid-row-start:22;
+    grid-column: 5/span 6;
+    margin-top: -28%;
+
+  }
+
+ .line3{
+   width: 3px;
+   height: 700px;
+   -ms-transform: rotate(50deg);
+   -webkit-transform: rotate(50deg);
+   transform: rotate(50deg);
+   margin-top: 35%;
+   grid-row-start:16;
+   grid-column: 3/span 6;
+ }
+
+  .studierabat{
+    display: none;
+  }
+
+  #studierabatafsnit{
+    font-size: 15pt;
+  }
+
+
+//--------------------------------Circle_Studierabat_med_afsnit--------------------->
+
+
+
+
+
+
+
+//--------------------------------Circle_Chef_med_afsnit-------------------------->
+
+
+
+
+   #circlechef{
+   width: 206px;
+   height: 206px;
+   border-radius: 100%;
+   grid-row-start:40;
+   grid-column: 4/span 6;
+     }
+
+
+  .chef{
+    display: none;
+  }
+
+
+ .line2{
+   width: 3px;
+   height: 700px;
+   -ms-transform: rotate(140deg);
+   -webkit-transform: rotate(140deg);
+   transform: rotate(140deg);
+   grid-row-start:29;
+   grid-column: 3/span 6;
+   margin-top: 14%;
+ }
+
+
+ #fådincheftekst{
+  grid-column: 1/span 5;
+  grid-row-start:30;
+  margin-left: -50px;
+  margin-top: -10%;
+
+ }
+
+  #fådinchefafsnit{
+   font-size: 15pt;
+}
+
+
+  .meld_dig_indweb{
+     @include button;
+     grid-column: 5/span 6;
+     grid-row-start: 44;
+     width: 175px;
+    height: 45px;
+
+  }
+
+
+  }
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+  .line {
+    height: 750px;
+    margin-top: -6%;
+  }
+}
+
+//--------------------------------Rettelser i forskellige str.-------------------------->
+
+
+
+@media screen and (min-width: 1300px) {
+  .line{ height: 792px;
+    margin-top: -8%;
+  }
+
+
+  #fordelafsnit{
+    margin-top: 3%;
+
+  }
+
+  #Fordeltekst{
+    grid-row-start: 2;
+
+  }
+
+
+}
+
+
+@media screen and (min-width: 1380px) {
+
+  body {
+    background-image: url("../images/netvearkWeb_1380.png");
+    background-repeat: no-repeat;
+  }
+
+
+
+  .line {
+    height: 850px;
+    margin-top: - 8%;
+  }
+
+
+
+  .indledningtilweb{
+    margin-left: 3%;
+  }
+
+
+
+
+
+
+}
+
+@media screen and (min-width: 1400px) {
+
+
+  .line {
+    height: 860px;
+    margin-top: - 10%;
+  }
+
+
+
+}
+
+@media screen and (min-width: 1440px) {
+
+
+
+
+
+  .line {
+    height: 900px;
+    margin-top: - 20%;
+  }
+
+  .indledningtilweb{
+    margin-left: 5%;
+  }
+
+}
+
+
+@media screen and (min-width: 1480px) {
+
+  body {
+    background-image: url("../images/netveark_1480.png");
+    background-repeat: no-repeat;
+  }
+
+
+
+  .line {
+    height: 940px;
+    margin-top: - 18%;
+    grid-row-start: 7;
+
+  }
+
+
+  #Fordeltekst{
+    grid-row-start: 3;
+
+  }
+
+  #studierabattekst{
+    grid-row-start: 23;
+
+  }
+
+#Pristekst{
+  grid-row-start: 10;
+}
+
+
+  .line3{
+    margin-top: 33%;
+
+  }
+
+  .line2{
+    margin-top: 33%;
+
+  }
+
+
+  .line2{
+    width: 3px;
+    height: 750px;
+    -ms-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    margin-top: 10%;
+  }
+
+
+
+
+
+
+
+
+  //--------------------------------Rettelser i forskellige str.-------------------------->
+
+}
+
+
+
+
+
+
+
+
+
+
+ @media screen and (min-width: 1500px) {
+
+
+
+#Fordeltekst{
+   grid-row-start:4;
+ }
+
+
+
+#fordelafsnit{
+  margin-top: 2%;
+   }
+
+
+.line{
+  height: 950px;
+  margin-top: -18%;
+}
+
+
+ .line3{
+   margin-top: 20%;
+ }
+
+
+  #studierabattekst{
+    grid-row-start:24;
+  }
+
+
+
+  #Pristekst{
+   grid-row-start:11;
+ }
+
+  .line2{
+    height: 800px;
+    -ms-transform: rotate(130deg);
+    -webkit-transform: rotate(130deg);
+    transform: rotate(130deg);
+    margin-top: 10%;
+  }
+
+
+
+   #fådincheftekst{
+     grid-row-start:31;
+   }
+
+
+
+ }
+
+
+
+
+
+
+
 
 @media print {
   // Alt der gælder for print specifikt
+
+
 }

@@ -47,6 +47,15 @@ img {
     color: white;
     margin: 5px 20px; }
 
+.fa-chevron-circle-up {
+  position: fixed;
+  bottom: 160px;
+  right: 20px;
+  color: #0097d7;
+  cursor: pointer;
+  z-index: 2;
+  display: none; }
+
 #mobilAlt {
   padding: 0 20px 0 20px;
   display: grid;
