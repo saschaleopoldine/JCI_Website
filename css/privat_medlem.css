@@ -610,6 +610,12 @@ footer {
     background-repeat: no-repeat;
     background-position: top; }
 
+  #menuMobil {
+    height: 100px; }
+    #menuMobil i {
+      font-size: 40pt;
+      margin-top: 15px; }
+
   #mobilAlt {
     grid-template-rows: repeat(44, 50px); }
 
@@ -734,7 +740,14 @@ footer {
       grid-column: 2/span 6;
       grid-row: 9;
       margin-left: -0.5%;
-      margin-top: -1px; } }
+      margin-top: -1px; }
+
+  footer {
+    justify-content: center; }
+    footer p, footer #some {
+      margin: 0 10%; }
+    footer p {
+      margin-top: 2%; } }
 @media screen and (min-width: 992px) {
   #circle {
     width: 320px;
@@ -876,7 +889,7 @@ footer {
     display: grid;
     grid-column-gap: 20px;
     height: 600px;
-    width: 100%; }
+    width: 75%; }
 
   #flex_alt {
     display: flex;
@@ -884,13 +897,82 @@ footer {
     justify-content: space-between; }
 
   #left_menu {
-    background-color: #0097d7;
-    height: 100vh;
-    width: 300px; }
-    #left_menu #logo {
-      width: 65%;
-      height: auto;
-      margin: 30px auto 0 auto; }
+    width: 25%; }
+    #left_menu #menuIndhold {
+      width: inherit;
+      background-color: #0097d7;
+      height: 100vh;
+      padding: 50px 25px;
+      position: fixed; }
+      #left_menu #menuIndhold #logo {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 10%; }
+      #left_menu #menuIndhold nav a {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: white;
+        font-size: 15pt;
+        margin-bottom: 10px;
+        font-family: 'Libre Baskerville', serif; }
+      #left_menu #menuIndhold .flexMenu {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: left; }
+      #left_menu #menuIndhold #hvemKlik, #left_menu #menuIndhold #hvemKlik2, #left_menu #menuIndhold #medKlik, #left_menu #menuIndhold #medKlik2 {
+        color: white;
+        margin-right: 2%;
+        cursor: pointer; }
+      #left_menu #menuIndhold #hvemKlik2, #left_menu #menuIndhold #medKlik2 {
+        display: none; }
+      #left_menu #menuIndhold #undermenu1, #left_menu #menuIndhold #undermenu2 {
+        margin-left: 10%;
+        display: none; }
+      #left_menu #menuIndhold nav button {
+        height: 30px;
+        background-color: #f37121;
+        border: none;
+        text-decoration: none;
+        color: white;
+        font-size: 18pt;
+        width: 170px;
+        height: 40px;
+        font-size: 18pt;
+        font-family: 'Merriweather Sans', sans-serif;
+        margin: 8% 0; }
+        #left_menu #menuIndhold nav button a {
+          text-decoration: none;
+          color: white;
+          font-size: 18pt; }
+      #left_menu #menuIndhold .kontakt {
+        margin: 5% 0;
+        font-family: 'Libre Baskerville', serif;
+        color: white;
+        font-size: 15pt; }
+      #left_menu #menuIndhold .soMeCirkler {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: solid #f37121 3px;
+        padding: 2% 3%;
+        margin: 5%; }
+        #left_menu #menuIndhold .soMeCirkler i {
+          color: white; }
+      #left_menu #menuIndhold #flexSoMe {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center; }
+      #left_menu #menuIndhold #soMeCirkel3 {
+        margin: auto; }
+      #left_menu #menuIndhold .fa-facebook-f {
+        margin: 7% 0 0 15%; }
+      #left_menu #menuIndhold .fa-linkedin {
+        margin-left: 3%; }
+      #left_menu #menuIndhold #active {
+        border-bottom: solid #f37121 3px;
+        width: 102px; }
 
   h1 {
     grid-column: 3/span 6;
@@ -1031,10 +1113,6 @@ footer {
     grid-row-start: 44;
     width: 175px;
     height: 45px; } }
-@media screen and (min-width: 1200px) {
-  .line {
-    height: 750px;
-    margin-top: -6%; } }
 @media screen and (min-width: 1300px) {
   .line {
     height: 792px;
@@ -1128,5 +1206,10 @@ footer {
 
   #fådincheftekst {
     grid-row-start: 31; } }
+#mobilAlt {
+  width: 80%; }
+
+#left_menu {
+  width: 20%; }
 
 /*# sourceMappingURL=privat_medlem.css.map */

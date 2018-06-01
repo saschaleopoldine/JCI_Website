@@ -89,6 +89,20 @@ $bluePrimary: #0097d7;
 $orangePrimary: #f37121;
 $overlay: rgba(93, 144, 183, 0.5);
 
+@mixin ca_button{
+  height: 30px;
+  background-color: $orangePrimary;
+  border: none;
+  text-decoration: none;
+  color: white;
+  font-size: 18pt;
+  a{
+    text-decoration: none;
+    color: white;
+    font-size: 18pt;
+  }
+}
+
 @mixin flex{
   display: flex;
   display: -webkit-flex;
@@ -1046,7 +1060,13 @@ footer{
   }
 
 
-
+  #menuMobil{
+    height: 100px;
+    i{
+      font-size: 40pt;
+      margin-top: 15px;
+    }
+  }
 
 
 
@@ -1295,6 +1315,16 @@ footer{
     }
   }
 
+  footer{
+    justify-content: center;
+    p, #some{
+      margin: 0 10%;
+    }
+    p{
+      margin-top: 2%;
+    }
+  }
+  
 
 }
 
@@ -1588,7 +1618,7 @@ footer{
   display: grid;
   grid-column-gap: 20px;
   height: 600px;
-  width: 100%;
+  width: 75%;
 
   }
 
@@ -1600,13 +1630,87 @@ footer{
 
 
   #left_menu{
-    background-color: $bluePrimary;
-    height: 100vh;
-    width: 300px;
-    #logo{
-      width: 65%;
-      height: auto;
-      margin: 30px auto 0 auto;
+    width: 25%;
+    #menuIndhold{
+      width: inherit;
+      background-color: $bluePrimary;
+      height: 100vh;
+      padding: 50px 25px;
+      position: fixed;
+
+      #logo{
+        width: 60%;
+        margin: auto;
+        margin-bottom: 10%;
+      }
+      nav a{
+        @include flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: white;
+        font-size: 15pt;
+        margin-bottom: 10px;
+        font-family: 'Libre Baskerville', serif;
+      }
+      .flexMenu{
+        @include flex;
+        justify-content: left;
+      }
+      #hvemKlik, #hvemKlik2, #medKlik, #medKlik2{
+        color: white;
+        margin-right: 2%;
+        cursor: pointer;
+      }
+      #hvemKlik2, #medKlik2{
+        display: none;
+      }
+      #undermenu1, #undermenu2{
+        margin-left: 10%;
+        display: none;
+      }
+      nav button{
+        @include ca_button;
+        width: 170px;
+        height: 40px;
+        font-size: 18pt;
+        font-family: 'Merriweather Sans', sans-serif;
+        margin: 8% 0;
+      }
+      .kontakt{
+        margin: 5% 0;
+        font-family: 'Libre Baskerville', serif;
+        color: white;
+        font-size: 15pt;
+      }
+      .soMeCirkler{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: solid $orangePrimary 3px;
+        padding: 2% 3%;
+        margin: 5%;
+        i{
+          color: white;
+        }
+      }
+      #flexSoMe{
+        @include flex;
+        justify-content: center;
+      }
+
+      #soMeCirkel3{
+        margin: auto;
+      }
+      .fa-facebook-f {
+        margin: 7% 0 0 15%;
+      }
+      .fa-linkedin{
+      margin-left: 3%;
+      }
+      #active{
+        border-bottom: solid $orangePrimary 3px;
+        width: 102px;
+      }
     }
   }
 
@@ -1851,13 +1955,6 @@ margin-left: 4%;
 
 
 
-@media screen and (min-width: 1200px) {
-  .line {
-    height: 750px;
-    margin-top: -6%;
-  }
-}
-
 //--------------------------------Rettelser i forskellige str.-------------------------->
 
 
@@ -2065,8 +2162,13 @@ margin-left: 4%;
 
  }
 
+#mobilAlt{
+  width: 80%;
+}
 
-
+#left_menu{
+  width: 20%;
+}
 
 
 
