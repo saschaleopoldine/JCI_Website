@@ -330,7 +330,7 @@ h2 {
   #bestyrelseselement #bestyrelsestext {
     grid-column: 2/span 3;
     grid-row: 2/span 2; }
-  #bestyrelseselement .fa-angle-down {
+  #bestyrelseselement #down {
     grid-column: 4/span 1;
     grid-row: 5;
     margin-left: -15px;
@@ -466,6 +466,12 @@ footer {
   #bestyrelseselement {
     grid-row: 52/span 8; } }
 @media screen and (min-width: 768px) {
+  #menuMobil {
+    height: 100px; }
+    #menuMobil i {
+      font-size: 40pt;
+      margin-top: 15px; }
+
   #mobilAlt {
     grid-template-rows: repeat(51, 50px); }
 
@@ -639,7 +645,7 @@ footer {
       grid-row: 2;
       width: auto;
       margin-left: 0; }
-    #bestyrelseselement .fa-angle-down {
+    #bestyrelseselement #down {
       grid-row: 4; }
 
   .bestyrelsesmedlem #caroline, .bestyrelsesmedlem #lasse, .bestyrelsesmedlem #mie, .bestyrelsesmedlem #kamilla, .bestyrelsesmedlem #anna {
@@ -656,7 +662,14 @@ footer {
     font-size: 12pt;
     margin-bottom: 40px;
     margin-top: 5px;
-    line-height: 18pt; } }
+    line-height: 18pt; }
+
+  footer {
+    justify-content: center; }
+    footer p, footer #some {
+      margin: 0 10%; }
+    footer p {
+      margin-top: 2%; } }
 @media screen and (min-width: 992px) {
   body {
     background-image: url("../images/baggrund_liggende_tablet.png"); }
@@ -811,7 +824,7 @@ footer {
       grid-row: 2;
       width: auto;
       margin-left: 0; }
-    #bestyrelseselement .fa-angle-down {
+    #bestyrelseselement #down {
       grid-row: 4; }
 
   .bestyrelsesmedlem #caroline, .bestyrelsesmedlem #lasse, .bestyrelsesmedlem #mie, .bestyrelsesmedlem #kamilla, .bestyrelsesmedlem #anna {
@@ -964,13 +977,13 @@ footer {
   .mobil, #menuMobil, footer {
     display: none; }
 
-  #projekt, #medlem, #partner, #aktivitet, #bestyrrelse, #bestyrelsesmedlemmer_mobil, .fa-angle-down, .hr_fire {
+  #projekt, #medlem, #partner, #aktivitet, #bestyrrelse, #bestyrelsesmedlemmer_mobil, #down, .hr_fire {
     display: none; }
 
   #mobilAlt {
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(50, 50px);
-    width: 100%; }
+    width: 75%; }
 
   #flex_alt {
     display: flex;
@@ -978,15 +991,82 @@ footer {
     justify-content: space-between; }
 
   #left_menu {
-    background-color: #0097d7;
-    height: 100vh;
-    width: 300px; }
-    #left_menu #menuIndholdSascha {
+    width: 25%; }
+    #left_menu #menuIndhold {
+      width: inherit;
+      background-color: #0097d7;
+      height: 100vh;
+      padding: 50px 25px;
       position: fixed; }
-    #left_menu #logo {
-      width: 65%;
-      height: auto;
-      margin: 30px auto 0 auto; }
+      #left_menu #menuIndhold #logo {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 10%; }
+      #left_menu #menuIndhold nav a {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: white;
+        font-size: 15pt;
+        margin-bottom: 10px;
+        font-family: 'Libre Baskerville', serif; }
+      #left_menu #menuIndhold .flexMenu {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: left; }
+      #left_menu #menuIndhold #hvemKlik, #left_menu #menuIndhold #hvemKlik2, #left_menu #menuIndhold #medKlik, #left_menu #menuIndhold #medKlik2 {
+        color: white;
+        margin-right: 2%;
+        cursor: pointer; }
+      #left_menu #menuIndhold #hvemKlik2, #left_menu #menuIndhold #medKlik2 {
+        display: none; }
+      #left_menu #menuIndhold #undermenu1, #left_menu #menuIndhold #undermenu2 {
+        margin-left: 10%;
+        display: none; }
+      #left_menu #menuIndhold nav button {
+        height: 30px;
+        background-color: #ee7125;
+        border: none;
+        text-decoration: none;
+        color: white;
+        font-size: 18pt;
+        width: 170px;
+        height: 40px;
+        font-size: 18pt;
+        font-family: 'Merriweather Sans', sans-serif;
+        margin: 8% 0; }
+        #left_menu #menuIndhold nav button a {
+          text-decoration: none;
+          color: white;
+          font-size: 18pt; }
+      #left_menu #menuIndhold .kontakt {
+        margin: 5% 0;
+        font-family: 'Libre Baskerville', serif;
+        color: white;
+        font-size: 15pt; }
+      #left_menu #menuIndhold .soMeCirkler {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: solid #ee7125 3px;
+        padding: 2% 3%;
+        margin: 5%; }
+        #left_menu #menuIndhold .soMeCirkler i {
+          color: white; }
+      #left_menu #menuIndhold #flexSoMe {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center; }
+      #left_menu #menuIndhold #soMeCirkel3 {
+        margin: auto; }
+      #left_menu #menuIndhold .fa-facebook-f {
+        margin: 7% 0 0 15%; }
+      #left_menu #menuIndhold .fa-linkedin {
+        margin-left: 3%; }
+      #left_menu #menuIndhold #active {
+        border-bottom: solid #ee7125 3px;
+        width: 102px; }
 
   #grid {
     padding: 70px 50px 50px 0;
@@ -1130,6 +1210,12 @@ footer {
   body {
     background-image: url("../images/Background_Website_2.png");
     background-size: cover; }
+
+  #mobilAlt {
+    width: 80%; }
+
+  #left_menu {
+    width: 20%; }
 
   .hr_et {
     grid-column: 3/span 4;

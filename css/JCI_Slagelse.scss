@@ -83,6 +83,19 @@ $overlay: rgba(93, 144, 183, 0.5);
   z-index: -1;
 }
 
+@mixin ca_button{
+  height: 30px;
+  background-color: $orange;
+  border: none;
+  text-decoration: none;
+  color: white;
+  font-size: 18pt;
+  a{
+    text-decoration: none;
+    color: white;
+    font-size: 18pt;
+  }
+}
 
 
 
@@ -458,7 +471,7 @@ h2{
     grid-column: 2/span 3;
     grid-row: 2/span 2;
   }
-  .fa-angle-down {
+  #down {
     grid-column: 4/span 1;
     grid-row: 5;
     margin-left: -15px;
@@ -661,6 +674,13 @@ footer{
     border: 3px solid $orange;
   }
 
+  #menuMobil{
+    height: 100px;
+    i{
+      font-size: 40pt;
+      margin-top: 15px;
+    }
+  }
 
   #mobilAlt{
      grid-template-rows: repeat(51, 50px);
@@ -891,7 +911,7 @@ footer{
      width: auto;          
      margin-left: 0;         
     }
-    .fa-angle-down {              
+    #down {
       grid-row: 4;
     }
   }                                                                                                                     
@@ -912,7 +932,18 @@ footer{
       margin-top: 5px;
       line-height: 18pt;
     }                                               
-  }                                                 
+  }
+
+  footer{
+    justify-content: center;
+    p, #some{
+      margin: 0 10%;
+    }
+    p{
+      margin-top: 2%;
+    }
+  }
+
 }
 
 
@@ -1116,7 +1147,7 @@ footer{
       width: auto;
       margin-left: 0;
     }
-    .fa-angle-down {
+    #down {
       grid-row: 4;
     }
   }
@@ -1353,14 +1384,14 @@ footer{
     display: none;
   }
 
-  #projekt, #medlem, #partner, #aktivitet, #bestyrrelse, #bestyrelsesmedlemmer_mobil, .fa-angle-down, .hr_fire{
+  #projekt, #medlem, #partner, #aktivitet, #bestyrrelse, #bestyrelsesmedlemmer_mobil, #down, .hr_fire{
     display: none;
   }
 
   #mobilAlt{
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(50, 50px);
-    width: 100%;
+    width: 75%;
   }
 
   #flex_alt{
@@ -1369,17 +1400,89 @@ footer{
     justify-content: space-between;
   }
 
+
   #left_menu{
-    background-color: $blue;
-    height: 100vh;
-    width: 300px;
-    #menuIndholdSascha{
+    width: 25%;
+    #menuIndhold{
+      width: inherit;
+      background-color: $blue;
+      height: 100vh;
+      padding: 50px 25px;
       position: fixed;
-    }
-    #logo{
-      width: 65%;
-      height: auto;
-      margin: 30px auto 0 auto;
+
+      #logo{
+        width: 60%;
+        margin: auto;
+        margin-bottom: 10%;
+      }
+      nav a{
+        @include flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: white;
+        font-size: 15pt;
+        margin-bottom: 10px;
+        font-family: 'Libre Baskerville', serif;
+      }
+      .flexMenu{
+        @include flex;
+        justify-content: left;
+      }
+      #hvemKlik, #hvemKlik2, #medKlik, #medKlik2{
+        color: white;
+        margin-right: 2%;
+        cursor: pointer;
+      }
+      #hvemKlik2, #medKlik2{
+        display: none;
+      }
+      #undermenu1, #undermenu2{
+        margin-left: 10%;
+        display: none;
+      }
+      nav button{
+        @include ca_button;
+        width: 170px;
+        height: 40px;
+        font-size: 18pt;
+        font-family: 'Merriweather Sans', sans-serif;
+        margin: 8% 0;
+      }
+      .kontakt{
+        margin: 5% 0;
+        font-family: 'Libre Baskerville', serif;
+        color: white;
+        font-size: 15pt;
+      }
+      .soMeCirkler{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: solid $orange 3px;
+        padding: 2% 3%;
+        margin: 5%;
+        i{
+          color: white;
+        }
+      }
+      #flexSoMe{
+        @include flex;
+        justify-content: center;
+      }
+
+      #soMeCirkel3{
+        margin: auto;
+      }
+      .fa-facebook-f {
+        margin: 7% 0 0 15%;
+      }
+      .fa-linkedin{
+        margin-left: 3%;
+      }
+      #active{
+        border-bottom: solid $orange 3px;
+        width: 102px;
+      }
     }
   }
 
@@ -1580,6 +1683,14 @@ footer{
   body{
     background-image: url("../images/Background_Website_2.png");
     background-size: cover;
+  }
+
+  #mobilAlt{
+    width: 80%;
+  }
+
+  #left_menu{
+    width: 20%;
   }
 
   .hr_et {
