@@ -404,7 +404,7 @@ footer{
 
 @media screen and (min-width: 1024px){
   body{
-    background-image: url("../images/network1024.png");
+    background-image: url("../images/network1024v2.png");
     background-repeat: no-repeat;
   }
   #mobilAlt{
@@ -413,11 +413,11 @@ footer{
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(20, 50px);
+    grid-template-rows: repeat(23, 50px);
     #circle1{
       border-radius: 50%;
-      width: 200px;
-      height: 200px;
+      width: 300px;
+      height: 300px;
       border: 3px solid $orangePrimary;
       grid-column: 1/span 2;
       grid-row-start: 6;
@@ -426,12 +426,12 @@ footer{
     }
     .dk {
       display: block; // Billeder er et element (laver linjeskift)
-      width: 35%;
+      width: 45%;
       height: auto;
       grid-column: 1/span 2;
       grid-row-start: 5;
-      margin-top: 18%;
-      margin-left: 30%;
+      margin-top: 24%;
+      margin-left: 40%;
     }
     .slagelse {
       grid-column: 1/span 2;
@@ -442,7 +442,7 @@ footer{
     .slagelsetekst{
       color: black;
       grid-column: 1/span 4;
-      grid-row-start: 6;
+      grid-row-start: 7;
       margin-top: 15px;
       margin-left: 100px;
       display: none;
@@ -452,30 +452,31 @@ footer{
       width: 110px;
       height: 30px;
       grid-column: 1/span 2;
-      grid-row-start: 9;
+      grid-row-start: 10;
       margin-left: 100px;
       margin-top: 20px;
       display: none;
     }
     .world{
       display: block;
-      width: 50%;
+      width: 70%;
       height: auto;
       grid-column: 5/span 2;
       grid-row-start: 14;
-      margin-top: 18%;
+      margin-top: 45%;
+      margin-left: -2%;
       z-index: 1;
     }
     .globalt {
       grid-column: 4/span 3;
-      grid-row-start: 12;
+      grid-row-start: 13;
       margin-top: 50px;
       margin-left: 20px;
     }
     .globaltekst{
       color: black;
       grid-column: 4/span 2;
-      grid-row-start: 15;
+      grid-row-start: 17;
       margin-top: -30px;
       margin-left: 100px;
       display: none;
@@ -485,19 +486,20 @@ footer{
       width: 110px;
       height: 30px;
       grid-column: 4/span 2;
-      grid-row-start: 17;
+      grid-row-start: 19;
       margin-left: 100px;
       display: none;
     }
-    #circle1{
+    #circle2{
       border-radius: 50%;
-      width: 200px;
-      height: 200px;
+      width: 300px;
+      height: 300px;
       border: 3px solid $orangePrimary;
-      grid-column: 1/span 2;
-      grid-row-start: 6;
-      margin-left: 60px;
+      grid-column: 5/span 2;
+      grid-row-start: 15;
+      margin-left: -10%;
       background-color: $white;
+
     }
   }
 }
