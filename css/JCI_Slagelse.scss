@@ -1510,6 +1510,7 @@ footer{
       height: 100vh;
       padding: 50px 25px;
       position: fixed;
+      letter-spacing: 1px;
 
       #logo{
         width: 60%;
@@ -1534,10 +1535,14 @@ footer{
         margin-right: 2%;
         cursor: pointer;
       }
-      #hvemKlik2, #medKlik2{
+      #hvemKlik, #medKlik2{
         display: none;
       }
-      #undermenu1, #undermenu2{
+      #undermenu1{
+        margin-left: 10%;
+      }
+
+      #undermenu2{
         margin-left: 10%;
         display: none;
       }
@@ -1582,7 +1587,8 @@ footer{
       }
       #active{
         border-bottom: solid $orange 3px;
-        width: 102px;
+        margin-top: 5px;
+        width: 167px;
       }
     }
   }
@@ -1789,7 +1795,7 @@ footer{
   #mobilAlt{
     width: 80%;
   }
-
+                                                                  
   #left_menu{
     width: 20%;
   }

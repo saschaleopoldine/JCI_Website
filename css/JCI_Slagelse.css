@@ -1065,7 +1065,8 @@ footer {
       background-color: #0097d7;
       height: 100vh;
       padding: 50px 25px;
-      position: fixed; }
+      position: fixed;
+      letter-spacing: 1px; }
       #left_menu #menuIndhold #logo {
         width: 60%;
         margin: auto;
@@ -1087,9 +1088,11 @@ footer {
         color: white;
         margin-right: 2%;
         cursor: pointer; }
-      #left_menu #menuIndhold #hvemKlik2, #left_menu #menuIndhold #medKlik2 {
+      #left_menu #menuIndhold #hvemKlik, #left_menu #menuIndhold #medKlik2 {
         display: none; }
-      #left_menu #menuIndhold #undermenu1, #left_menu #menuIndhold #undermenu2 {
+      #left_menu #menuIndhold #undermenu1 {
+        margin-left: 10%; }
+      #left_menu #menuIndhold #undermenu2 {
         margin-left: 10%;
         display: none; }
       #left_menu #menuIndhold nav button {
@@ -1134,7 +1137,8 @@ footer {
         margin-left: 3%; }
       #left_menu #menuIndhold #active {
         border-bottom: solid #ee7125 3px;
-        width: 102px; }
+        margin-top: 5px;
+        width: 167px; }
 
   #grid {
     padding: 70px 50px 50px 0;
