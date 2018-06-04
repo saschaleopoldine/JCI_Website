@@ -974,7 +974,7 @@ footer {
         margin-left: 3%; }
       #left_menu #menuIndhold #active {
         border-bottom: solid #f37121 3px;
-        width: 102px; }
+        width: 200px; }
 
   h1 {
     grid-column: 3/span 6;
