@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Sigende titel</title>
+    <title>Hvem er JCI?</title>
 
     <!-- Metatags -->
     <meta name="description" content="Kort beskrivelse af denne ene undersides indhold. Max 170-200ord">
@@ -30,30 +30,557 @@
     <meta property="og:locale" content="da_DK">
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/hvem_er_jci.css" rel="stylesheet" type="text/css">
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Merriweather+Sans" rel="stylesheet">
+
+    <script src="https://use.fontawesome.com/4574f88dc3.js"></script>
+
 
 </head>
 
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
+<div id="flex_alt">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <div id="left_menu">
 
+        <div id="menuIndhold" class="web">
+
+            <a href="index.html"><img src="images/logo.png" id="logo"></a>
+
+            <nav class="web">
+                <a href="index.html" >FORSIDE</a>
+                <div class="flexMenu"><i class="fa fa-angle-right" id="hvemKlik"></i><i class="fa fa-angle-down" id="hvemKlik2"></i><a href="#"id="active">HVEM ER JCI?</a></div>
+                <div id="undermenu1">
+                    <a href="#">JCI SLAGELSE</a>
+                    <a href="#">JCI GLOBAL</a>
+                </div>
+                <div class="flexMenu"><i class="fa fa-angle-right leftArrow" id="medKlik"></i><i class="fa fa-angle-down" id="medKlik2"></i><a href="#">MEDLEMSKAB</a></div>
+                <div id="undermenu2">
+                    <a href="#">PRIVATMEDLEM</a>
+                    <a href="#">ERHVERVSMEDLEM</a>
+                </div>
+                <a href="#">AKTIVITETER</a>
+                <a href="#">PARTNERE</a>
+                <button>Meld dig ind</button>
+            </nav>
+            <p class="kontakt"><strong>KONTAKT OS</strong></p>
+            <p class="kontakt">MAIL:<br>slagelse@jci.dk</p>
+            <div id="flexSoMe">
+                <div class="soMeCirkler" id="soMeCirkel1"><i class="fa fa-facebook-f fa-2x"></i></div>
+                <div class="soMeCirkler" id="soMeCirkel2"><i class="fa fa-twitter fa-2x"></i></div>
+            </div>
+            <div class="soMeCirkler" id="soMeCirkel3"><i class="fa fa-linkedin fa-2x"></i></div>
+
+        </div>
+
+
+    </div>
+
+    <div id="menuMobil" class="mobil">
+        <img src="images/logo.png" alt="JCI logo">
+        <i class="fa fas fa-bars fa-2x"></i>
+    </div>
+
+    <div id="mobilAlt" class="mobil">
+
+        <h1>Hvem er JCI?</h1>
+
+        <h3>Lorem impsum rjgbrægbwfefegegegfrgvrvr</h3>
+
+        <div id="circle1">
+
+        </div>
+
+        <img class="dk" src="images/dk-icon4.png" alt="Sjællandskort ikon" height="200" width="120"/>
+
+        <h2 class="slagelse">JCI Slagelse</h2>
+
+        <img class="world" src="images/world-icon4.png" alt="Verdenskort ikon" height="99" width="200"/>
+
+        <div class="slagelsetekst"><p>ebfærbværiubv<br>urbvvbirbvilbr<br>gjtbnjktbkjtkjjktbnkj<br>rvnirnvotnbotnbol</p></div>
+
+        <h4 class="button1"><a href="#">Se mere</a></h4>
+
+        <div id="circle2">
+
+        </div>
+
+        <h2 class="globalt">JCI Globalt</h2>
+
+        <div class="globaltekst"><p>ebfærbværiubv<br>urbvvbirbvilbr<br>gjtbnjktbkjtkjjktbnkj<br>rvnirnvotnbotnbol</p></div>
+
+        <div class="button2"><h4><a href="#">Se mere</a></h4></div>
+
+    </div>
+
+
+</div>
+
+
+<footer>
+    <p>
+        KONTAKT OS:
+        <br><br>
+        MAIL:
+        <br>
+        kontakt@slagelsejci.dk
+    </p>
+
+    <div id="some">
+        <i class="fa fas fa-facebook-square fa-2x"></i>
+        <i class="fa fab fa-twitter fa-2x"></i>
+        <i class="fa fab fa-linkedin fa-2x"></i>
+    </div>
+</footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 <script type="text/javascript">
-    $(document).ready(function (e) {
-        // Din kode her
-    });
+    //MOBIL//
+    $(document).ready(function(){
+        if ($(window).width() <= 767) {
+            alert ("1");
+            // NÅR MAN TRYKKER PÅ BOLDEN FORSVINDER TEKSTEN//
+            $("#circle1").click(function(){
+                $(".dk").hide(1000);
+            })
+            // NÅR MAN TRYKKER PÅ BOLDEN KOMMER DEN FULDE TEKST FREM//
+            $("#circle1").click(function(){
+                $(".slagelsetekst").show(500);
+            })
+            // NÅR MAN TRYKKER PÅ BOLDEN FORSVINDER BOLDEN
+            $("#circle1").click(function(){
+                $("#circle1").hide(500);
+            })
+            // NÅR MAN TRYKKER PÅ BOLDEN FORSVINDER BOLDEN//
+            $("#circle1").click(function(){
+                $(".dk").hide(1000);
+            })
+            // NÅR MAN TRYKKER PÅ TEKSTEN FORSVINDER DEN//
+            $(".dk").click(function(){
+                $(".dk").hide(1000);
+            })
+            // NÅR MAN TRYKKER PÅ BOLDEN KOMMER DEN FULDETEKST FREM//
+            $(".dk").click(function(){
+                $(".slagelsetekst").show(500);
+            })
+            // NÅR MAN TRYKKER PÅ TEKSTEN FORSVINDER BOLDEN
+            $(".dk").click(function(){
+                $("#circle1").hide(500);
+            })
+
+            // BOLD 2//
+
+            $("#circle2").click(function(){
+                $(".world").hide(1000);
+            })
+            $("#circle2").click(function(){
+                $(".world").show(500);
+            })
+            $("#circle2").click(function(){
+                $("#circle2").hide(500);
+            })
+            $("#circle2").click(function(){
+                $(".world").hide(1000);
+            })
+
+            $(".world").click(function(){
+                $(".world").hide(1000);
+            })
+            $(".world").click(function(){
+                $(".globaltekst").show(500);
+            })
+            $(".world").click(function(){
+                $("#circle2").hide(500);
+            })
+        }
+        //LIGGENDE IPAD//
+        else if ($(window).width() <= 991 && $(window).width() > 767){
+            alert("2");
+            //BOLD 1
+            $(".dk").click(function(){
+                $(".dk").show();
+            })
+            $("#circle1").click(function(){
+                $(".dk").show();
+            })
+
+            //gør at fordelsteksten kommer frem//
+            $(".dk").click(function(){
+                $(".slagelsetekst").fadeIn(2000);
+            })
+            $("#circle1").click(function(){
+                $(".slagelsetekst").fadeIn(2000);
+            })
+
+            //gør at billedet flytter sig til højre//
+            $(".dk").click(function(){
+                $(".dk").animate({"margin-left": '205%'});
+            })
+            $("#circle1").click(function(){
+                $(".dk").animate({"margin-left": '205%'});
+            })
+
+            //gør at bolden også flytter sig til højre//
+            $(".dk").click(function(){
+                $("#circle1").animate({"margin-left": '190%'});
+            })
+            $("#circle1").click(function(){
+                $("#circle1").animate({"margin-left": '190%'});
+            })
+
+            //CTA kommer frem under teksten//
+            $(".dk").click(function(){
+                $(".button1").show(1000);
+            })
+            $("#circle1").click(function(){
+                $(".button1").show(1000);
+            })
+
+
+            //BOLD 2
+            $(".world").click(function(){
+                $(".world").show();
+            })
+            $("#circle2").click(function(){
+                $(".world").show();
+            })
+
+            //gør at fordelsteksten kommer frem//
+            $(".world").click(function(){
+                $(".globaltekst").fadeIn(2000);
+            })
+            $("#circle2").click(function(){
+                $(".globaltekst").fadeIn(2000);
+            })
+
+            //gør at billedet flytter sig til højre//
+            $(".world").click(function(){
+                $(".world").animate({"margin-left": '-176%'});
+            })
+            $("#circle2").click(function(){
+                $(".world").animate({"margin-left": '-176%'});
+            })
+
+            //gør at bolden også flytter sig til højre//
+            $(".world").click(function(){
+                $("#circle2").animate({"margin-left": '-180%'});
+            })
+            $("#circle2").click(function(){
+                $("#circle2").animate({"margin-left": '-180%'});
+            })
+
+            //CTA kommer frem under teksten//
+            $(".world").click(function(){
+                $(".button2").show(1000);
+            })
+            $("#circle2").click(function(){
+                $(".button2").show(1000);
+            })
+
+        }
+        else if ($(window).width() >= 1023  && $(window).width() > 767  && $(window).width() < 1199){
+            alert ("3");
+
+            //BOLD 1//
+            //gør at billedet bliver vist//
+            $(".dk").click(function(){
+                $(".dk").show();
+            })
+            $("#circle1").click(function(){
+                $(".dk").show();
+            })
+            $(".dk").click(function(){
+                $(".dk").css({"margin-left":"30px"});
+            })
+            $("#circle1").click(function(){
+                $(".dk").css({"margin-left":"30px"});
+            })
+
+            //gør at fordelsteksten kommer frem//
+            $(".dk").click(function(){
+                $(".slagelsetekst").fadeIn(2000);
+            })
+            $("#circle1").click(function(){
+                $(".slagelsetekstt").fadeIn(2000);
+            })
+
+            //gør at billedet flytter sig til højre//
+            $(".dk").click(function(){
+                $(".dk").animate({"margin-left": '212%'});
+            })
+            $("#circle1").click(function(){
+                $(".dk").animate({"margin-left": '212%'});
+            })
+
+            //gør at bolden også flytter sig til højre//
+            $(".dk").click(function(){
+                $("#circle1").animate({"margin-left": '190%'});
+            })
+            $("#circle1").click(function(){
+                $("#circle1").animate({"margin-left": '190%'});
+            })
+
+            //CTA kommer frem under teksten//
+            $(".dk").click(function(){
+                $(".button1").show(500);
+            })
+            $("#circle1").click(function(){
+                $(".button1").show(500);
+            })
+            $(".dk").click(function(){
+                $(".button1").show(500);
+            })
+            $("#circle1").click(function(){
+                $(".button1").show(500);
+            })
+
+
+            //bold 2//
+
+            // bold 2 rykker sig til venstre//
+            $(".world").click(function(){
+                $("#circle2").animate({"margin-left": '-175%'});
+            })
+
+            $(".world").click(function(){
+
+                $(".globaltekst").fadeIn(2000);
+            })
+            $(".world").click(function(){
+
+                $(".world").animate({"margin-left": "-170%"});
+            })
+
+            $(".world").click(function(){
+
+                $(".button2").show(200);
+            })
+            $("#circle2").click(function(){
+                $("#circle2").animate({"margin-left": '-175%'});
+            })
+
+            $("#circle2").click(function(){
+
+                $(".globaltekst").fadeIn(2000);
+            })
+            $("#circle2").click(function(){
+
+                $(".world").animate({"margin-left": "-170%"});
+            })
+
+            $("#circle2").click(function(){
+
+                $(".button2").show(200);
+            })
+
+        }
+
+        // WEB (1200)///
+        else if ($(window).width() >= 1199 && $(window).width() < 1499){
+
+
+            alert ("4")
+            //gør at billedet bliver vist//
+            $(".dk").click(function(){
+                $(".dk").show();
+            })
+            $("#circle1").click(function(){
+                $(".dk").show();
+            })
+
+            //gør at fordelsteksten kommer frem//
+            $(".dk").click(function(){
+                $(".slagelsetekst").fadeIn(2000);
+            })
+            $("#circle1").click(function(){
+                $(".slagelsetekst").fadeIn(2000);
+            })
+
+            //gør at billedet flytter sig til højre//
+            $(".dk").click(function(){
+                $(".dk").animate({"margin-left": '300%'});
+            })
+            $("#circle1").click(function(){
+                $(".dk").animate({"margin-left": '300%'});
+            })
+
+            //gør at bolden også flytter sig til højre//
+            $(".dk").click(function(){
+                $("#circle1").animate({"margin-left": '140%'});
+            })
+            $("#circle1").click(function(){
+                $("#circle1").animate({"margin-left": '140%'});
+            })
+
+            //CTA kommer frem under teksten//
+            $(".dk").click(function(){
+                $(".button1").show(500);
+            })
+            $("#circle1").click(function(){
+                $(".button1").show(500);
+            })
+
+            // bold 2 rykker sig til venstre//
+            $(".world").click(function(){
+                $("#circle2").animate({"margin-left": '-120%'});
+            })
+            $("#circle2").click(function(){
+                $("#circle2").animate({"margin-left": '-120%'});
+            })
+
+            $(".world").click(function(){
+                $(".globaltekst").fadeIn(2000);
+            })
+            $("#circle2").click(function(){
+
+                $(".globaltekst").fadeIn(2000);
+            })
+            $(".world").click(function(){
+
+                $(".world").animate({"margin-left": "-115%"});
+            })
+            $("#circle2").click(function(){
+
+                $(".world").animate({"margin-left": "-115%"});
+            })
+
+            $(".world").click(function(){
+
+                $(".button2").show(200);
+            })
+            $("#circle2").click(function(){
+
+                $(".button2").show(200);
+            })
+
+        }
+
+
+
+        /// WEB(1500)///
+        else {
+            alert ("5")
+            //gør at billedet bliver vist//
+            $(".dk").click(function(){
+                $(".dk").show();
+            })
+            $("#circle1").click(function(){
+                $(".dk").show();
+            })
+
+            //gør at fordelsteksten kommer frem//
+            $(".dk").click(function(){
+                $(".slagelsetekst").fadeIn(2000);
+            })
+            $("#circle1").click(function(){
+                $(".slagelsetekst").fadeIn(2000);
+            })
+
+            //gør at billedet flytter sig til højre//
+            $(".dk").click(function(){
+                $(".dk").animate({"margin-left": '275%'});
+            })
+            $("#circle1").click(function(){
+                $(".dk").animate({"margin-left": '275%'});
+            })
+
+            //gør at bolden også flytter sig til højre//
+            $(".dk").click(function(){
+                $("#circle1").animate({"margin-left": '135%'});
+            })
+            $("#circle1").click(function(){
+                $("#circle1").animate({"margin-left": '135%'});
+            })
+
+            //CTA kommer frem under teksten//
+            $(".dk").click(function(){
+                $(".button1").show(500);
+            })
+            $("#circle1").click(function(){
+                $(".button1").show(500);
+            })
+
+            // bold 2 rykker sig til venstre//
+            $(".world").click(function(){
+                $("#circle2").animate({"margin-left": '-125%'});
+            })
+            $("#circle2").click(function(){
+                $("#circle2").animate({"margin-left": '-125%'});
+            })
+
+            $(".world").click(function(){
+
+                $(".globaltekst").fadeIn(2000);
+            })
+            $("#circle2").click(function(){
+
+                $(".globaltekst").fadeIn(2000);
+            })
+            $(".world").click(function(){
+
+                $(".world").animate({"margin-left": "-122%"});
+            })
+            $("#circle2").click(function(){
+
+                $(".world").animate({"margin-left": "-122%"});
+            })
+
+            $(".world").click(function(){
+
+                $(".button2").show(200);
+            })
+            $("#circle2").click(function(){
+
+                $(".button2").show(200);
+            })
+
+        }
+        $("#hvemKlik").click(function (e) {
+            $("#undermenu1").slideDown(1000);
+            $("#undermenu2").slideUp(1000);
+            $("#hvemKlik").hide(0);
+            $("#hvemKlik2").show(0);
+            $("#medKlik2").hide(0);
+            $("#medKlik").show(0);
+        });
+
+        $("#hvemKlik2").click(function (e) {
+            $("#undermenu1").slideUp(1000);
+            $("#hvemKlik2").hide(0);
+            $("#hvemKlik").show(0);
+
+        });
+
+        $("#medKlik").click(function (e) {
+            $("#undermenu2").slideDown(1000);
+            $("#undermenu1").slideUp(1000);
+            $("#medKlik").hide(0);
+            $("#medKlik2").show(0);
+            $("#hvemKlik2").hide(0);
+            $("#hvemKlik").show(0);
+        });
+
+        $("#medKlik2").click(function (e) {
+            $("#undermenu2").slideUp(1000);
+            $("#medKlik2").hide(0);
+            $("#medKlik").show(0);
+        });
+    })
+
 </script>
 
 
-<script>
 
-</script>
+
 
 
 </body>
