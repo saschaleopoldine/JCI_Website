@@ -116,6 +116,9 @@ $white:#f9f7f4;
 #logo{
   display: none;
 }
+#left_menu{
+  display: none;
+}
 
 #mobilAlt{
   padding: 0 20px 0 20px;
@@ -198,11 +201,11 @@ $white:#f9f7f4;
 }
 
 .bold2tekst{
-  grid-column: 2 / span 5;
+  grid-column: 2 / span 4;
   grid-row-start: 13;
   text-align: center;
   color: $blue;
-  margin-right: 60px;
+  margin-left: -3%;
   margin-top: 20px;
   font-size: 19pt;
   font-family: 'Libre Baskerville', serif;
@@ -260,7 +263,9 @@ footer{
 }
 
 @media screen and (min-width: 414px) {
-
+  #left_menu{
+    display: none;
+  }
 .bold1tekst {
   grid-column: 2 / span 2;
   grid-row-start: 7;
@@ -284,6 +289,9 @@ footer{
   // Alt der ændres i tablet stående fra mobil
   body{
     background-image: url("../images/network.png");
+  }
+  #left_menu{
+    display: none;
   }
   #menuMobil{
     height: 100px;
@@ -328,12 +336,10 @@ footer{
     grid-column: 4 / span 3;
     grid-row-start: 13;
     margin-top: 27px;
-    margin-left: 45px;
   }
   .bold2fuldtekst {
     grid-column: 3 / span 4;
     grid-row-start: 12;
-    margin-top: 20px;
     display: none;
     margin-left: 40px;
   }
@@ -360,6 +366,9 @@ footer{
   // Alt der ændres i tablet liggende fra mobil og tablet stående
   body{
     background-image: url("../images/networkPro.png");
+  }
+  #left_menu{
+    display: none;
   }
   .bold1{
     grid-column: 1 / span 3;
@@ -408,7 +417,9 @@ footer{
   #mobilAlt{
     grid-template-rows: repeat(25, 50px);
   }
-
+#left_menu{
+  display: none;
+}
   .bold1{
     grid-column: 1 / span 4;
     grid-row-start: 6;
@@ -439,18 +450,20 @@ footer{
     margin-left: -30%;
   }
   .bold2tekst{
-    grid-column: 4 / span 3;
+    grid-column: 4 / span 2;
     grid-row-start: 21;
+    margin-left: 45%;
   }
   .bold2fuldtekst{
     display: none;
-    grid-column: 4 / span 4;
-    grid-row-start: 19;
+    grid-column: 4 / span 5;
+    grid-row-start: 20;
   }
   .CTAbold2{
-    grid-column: 5 / span 4;
+    grid-column: 5 / span 2;
     grid-row-start: 23;
     display: none;
+    margin-left: -5%;
 
   }
 
@@ -464,6 +477,9 @@ footer{
     background-repeat: no-repeat;
   }
   .web{
+    display: inline;
+  }
+  #left_menu{
     display: inline;
   }
   #logo{
@@ -638,6 +654,8 @@ footer{
 @media screen and (min-width: 1500px) {
   #left_menu{
     width: 20%;
+    display: inline;
+
   }
 
   #mobilAlt{
@@ -681,6 +699,7 @@ footer{
     grid-column: 5 / span 5;
     grid-row-start: 15;
     margin-left: 45px;
+    margin-top: 3%;
 
   }
   .CTAbold2{
