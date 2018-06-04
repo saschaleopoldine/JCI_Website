@@ -30,10 +30,13 @@
     <meta property="og:locale" content="da_DK">
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/privat_medlem.css" rel="stylesheet" type="text/css">
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Merriweather+Sans" rel="stylesheet">
+    <script src="https://use.fontawesome.com/4574f88dc3.js"></script>
+
 
 </head>
 
@@ -41,19 +44,345 @@
 <body>
 
 
+
+
+
+
+<div id="flex_alt">
+    <div id="left_menu">
+
+        <div id="menuIndhold" class="web">
+
+            <a href="index.html"><img src="images/logo.png" id="logo"></a>
+
+            <nav class="web">
+                <a href="index.html">FORSIDE</a>
+                <div class="flexMenu"><i class="fa fa-angle-right" id="hvemKlik"></i><i class="fa fa-angle-down" id="hvemKlik2"></i><a href="#">HVEM ER JCI?</a></div>
+                <div id="undermenu1">
+                    <a href="#">JCI SLAGELSE</a>
+                    <a href="#">JCI GLOBAL</a>
+                </div>
+                <div class="flexMenu"><i class="fa fa-angle-right leftArrow" id="medKlik"></i><i class="fa fa-angle-down" id="medKlik2"></i><a href="#">MEDLEMSKAB</a></div>
+                <div id="undermenu2">
+                    <a href="privat_medlem.html" id="active">PRIVATMEDLEM</a>
+                    <a href="#">ERHVERVSMEDLEM</a>
+                </div>
+                <a href="#">AKTIVITETER</a>
+                <a href="#">PARTNERE</a>
+                <button>Meld dig ind</button>
+            </nav>
+                <p class="kontakt"><strong>KONTAKT OS</strong></p>
+                <p class="kontakt">MAIL:<br>slagelse@jci.dk</p>
+                <div id="flexSoMe">
+                <div class="soMeCirkler" id="soMeCirkel1"><i class="fa fa-facebook-f fa-2x"></i></div>
+                <div class="soMeCirkler" id="soMeCirkel2"><i class="fa fa-twitter fa-2x"></i></div>
+            </div>
+            <div class="soMeCirkler" id="soMeCirkel3"><i class="fa fa-linkedin fa-2x"></i></div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <div id="menuMobil" class="mobil">
+    <img src="images/logo.png">
+    <i class="fa fas fa-bars fa-2x"></i>
+</div>
+
+<div id="mobilAlt" class="mobil">
+
+
+    <h1> <a href="#"> Privatmedlem</a></h1>
+
+    <p class="indledningtilweb web "> Ipsum dolor sit amet,
+        consectetur adipi <br>sicing elit,
+        sed do eiusmod consectetur </p>
+
+
+
+<!---------------------------- Circkle Fordel---------------------->
+    <div class="line"></div>
+
+    <p class="Fordele"> <a href="#Fordeltekst"> Fordele ved medlemskab </a></p>
+
+    <div id="circle"><a href="#Fordeltekst"></a>
+
+       <a href="#Fordeltekst"> <img alt="Fordele Ikon"class="fordelikon" src="images/fordelikon.png" height="768" width="630"/></a>
+
+
+    </div>
+
+<!---------------------------- Circkle Fordel---------------------->
+
+
+
+
+
+
+
+
+<!---------------------------- Circkle Priser---------------------->
+
+
+    <div class="line2"></div>
+
+
+    <p class="priser"><a href="#Pristekst"> Priser </a></p>
+
+    <div id="circlepriser">
+
+        <a href="#Pristekst"> <img alt="Kroner Ikon" class="priserikon" src="images/Kronerikon.png" height="468" width="262"/></a>
+    </div>
+
+
+<!---------------------------- Circkle Priser---------------------->
+
+
+
+
+
+
+
+
+
+<!---------------------------- Circkle Studierabat---------------------->
+
+    <div class="line3"></div>
+
+
+    <p class="studierabat"> <a href="#studierabattekst"> Studierabat </a></p>
+
+    <div id="circlestudierabat">
+
+
+        <a href="#studierabattekst"> <img alt="Studierabat Ikon" class="studierabatikon" src="images/studierabatikon.png" height="936" width="524"/></a>
+
+    </div>
+
+<!---------------------------- Circkle Studierabat---------------------->
+
+
+
+
+
+
+<!---------------------------- Circkle Chef---------------------->
+
+
+    <p class="chef"> <a href="#fådincheftekst"> Få din chef til at betale </a></p>
+
+    <div id="circlechef">
+
+
+       <a href="#fådincheftekst"> <img alt="Chef Ikon" class="chefikon" src="images/chefikon.png" height="936" width="524"/></a>
+
+    </div>
+
+<!---------------------------- Circkle Chef---------------------->
+
+
+    <button class="meld_dig_indweb web"> Meld dig ind</button>
+
+
+ <button class="meld_dig_ind"> Meld dig ind</button>
+
+
+
+
+<!---------------------------- Fordel afsnit---------------------->
+
+
+
+
+
+
+<section id="Fordeltekst">
+
+<h2 class="fordelafsnitoverskrift"> <a href="#"> Fordele ved <br>medlemskab</a></h2>
+
+    <p id="fordelafsnit"> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. </p>
+</section>
+
+
+
+<!---------------------------- Fordel afsnit---------------------->
+
+
+
+
+
+<!---------------------------- Priser afsnit---------------------->
+
+
+
+<section id="Pristekst">
+
+<h2 class="priserafsnitoverskrift">Priser </h2>
+
+    <p id="priserafsnit"> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+        non proident</p>
+    </section>
+
+
+<!---------------------------- Priser afsnit---------------------->
+
+
+
+
+
+<!---------------------------- Studierabat afsnit---------------------->
+
+    <section id="studierabattekst">
+
+
+    <h2 class="studierabatafsnitoverskrift"> Studierabat</h2>
+
+    <p id="studierabatafsnit"> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+        non proident</p>
+    </section>
+
+
+
+    <!---------------------------- Studierabat afsnit---------------------->
+
+
+
+
+
+
+
+<!---------------------------- Din chef afsnit---------------------->
+
+
+<section id="fådincheftekst">
+
+
+    <h2 class="fådinchefafsnitoverskrift"> Få din chef <br>til at betale</h2>
+
+    <p id="fådinchefafsnit"> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+        non proident</p>
+</section>
+
+
+    <!---------------------------- Din chef afsnit---------------------->
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <p>
+        KONTAKT OS:
+        <br><br>
+        MAIL:
+        <br>
+        kontakt@slagelsejci.dk
+    </p>
+
+    <div id="some">
+        <i class="fa fas fa-facebook-square fa-2x"></i>
+        <i class="fa fab fa-twitter fa-2x"></i>
+        <i class="fa fab fa-linkedin fa-2x"></i>
+    </div>
+</footer>
+
+
+
+
+<i class="fa fas fa-chevron-circle-up fa-3x"></i>
+
+
+
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 
 <script type="text/javascript">
-    $(document).ready(function (e) {
-        // Din kode her
+    $(document).ready(function(){
+        $(window).scroll(function(){
+
+            if($(this).scrollTop() > 100){
+                $('.fa-chevron-circle-up').fadeIn();
+            }else{
+                $('.fa-chevron-circle-up').fadeOut();
+            }
+
+        });
+        $('.fa-chevron-circle-up').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+
+        $("#hvemKlik").click(function (e) {
+            $("#undermenu1").slideDown(1000);
+            $("#undermenu2").slideUp(1000);
+            $("#hvemKlik").hide(0);
+            $("#hvemKlik2").show(0);
+            $("#medKlik2").hide(0);
+            $("#medKlik").show(0);
+        });
+
+        $("#hvemKlik2").click(function (e) {
+            $("#undermenu1").slideUp(1000);
+            $("#hvemKlik2").hide(0);
+            $("#hvemKlik").show(0);
+
+        });
+
+        $("#medKlik").click(function (e) {
+            $("#undermenu2").slideDown(1000);
+            $("#undermenu1").slideUp(1000);
+            $("#medKlik").hide(0);
+            $("#medKlik2").show(0);
+            $("#hvemKlik2").hide(0);
+            $("#hvemKlik").show(0);
+        });
+
+        $("#medKlik2").click(function (e) {
+            $("#undermenu2").slideUp(1000);
+            $("#medKlik2").hide(0);
+            $("#medKlik").show(0);
+        });
+
+
     });
 </script>
 
 
-<script>
-
-</script>
 
 
 </body>
