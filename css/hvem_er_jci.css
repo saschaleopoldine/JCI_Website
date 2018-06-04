@@ -423,6 +423,7 @@ footer {
   #left_menu {
     width: 25%; }
     #left_menu #menuIndhold {
+      letter-spacing: 1px;
       width: inherit;
       background-color: #0097d7;
       height: 100vh;
