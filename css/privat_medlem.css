@@ -94,7 +94,7 @@ h1 {
 
 #circle {
   width: 55%;
-  height: 350%;
+  height: 340%;
   border-radius: 100%;
   background-color: #f9f7f4;
   border: 3px solid #0097d7;
@@ -128,7 +128,7 @@ h1 {
   font-weight: bold;
   grid-column: 2/span 5;
   grid-row-start: 8;
-  margin-left: 70%;
+  margin-left: 75%;
   margin-top: 10px; }
   .priser a {
     text-decoration: none;
@@ -190,7 +190,7 @@ h1 {
 
 .studierabatikon {
   margin-left: 4%;
-  margin-top: -40%; }
+  margin-top: -38%; }
 
 .line3 {
   width: 3px;
@@ -211,10 +211,10 @@ h1 {
   font-family: 'Libre Baskerville', serif;
   font-style: normal;
   font-weight: bold;
-  grid-column: 4/span 3;
+  grid-column: 4/span 6;
   grid-row-start: 15;
   margin-top: 15%;
-  margin-left: 25%; }
+  margin-left: 20%; }
   .chef a {
     text-decoration: none;
     color: black;
@@ -246,7 +246,8 @@ h1 {
   grid-column: 1/span 4;
   grid-row-start: 19;
   margin-left: 59px;
-  margin-top: 5px; }
+  margin-top: 5px;
+  width: 80%; }
 
 #Fordeltekst {
   grid-column: 1/span 6;
@@ -444,7 +445,7 @@ footer {
     margin-top: 8px; }
 
   .meld_dig_ind {
-    margin-left: 64px;
+    margin-left: 35px;
     margin-top: 5px; } }
 @media screen and (min-width: 667px) {
   #mobilAlt {
@@ -610,6 +611,12 @@ footer {
     background-repeat: no-repeat;
     background-position: top; }
 
+  #menuMobil {
+    height: 100px; }
+    #menuMobil i {
+      font-size: 40pt;
+      margin-top: 15px; }
+
   #mobilAlt {
     grid-template-rows: repeat(44, 50px); }
 
@@ -734,7 +741,14 @@ footer {
       grid-column: 2/span 6;
       grid-row: 9;
       margin-left: -0.5%;
-      margin-top: -1px; } }
+      margin-top: -1px; }
+
+  footer {
+    justify-content: center; }
+    footer p, footer #some {
+      margin: 0 10%; }
+    footer p {
+      margin-top: 2%; } }
 @media screen and (min-width: 992px) {
   #circle {
     width: 320px;
@@ -876,7 +890,7 @@ footer {
     display: grid;
     grid-column-gap: 20px;
     height: 600px;
-    width: 100%; }
+    width: 75%; }
 
   #flex_alt {
     display: flex;
@@ -884,13 +898,83 @@ footer {
     justify-content: space-between; }
 
   #left_menu {
-    background-color: #0097d7;
-    height: 100vh;
-    width: 300px; }
-    #left_menu #logo {
-      width: 65%;
-      height: auto;
-      margin: 30px auto 0 auto; }
+    width: 25%; }
+    #left_menu #menuIndhold {
+      letter-spacing: 1px;
+      width: inherit;
+      background-color: #0097d7;
+      height: 100vh;
+      padding: 50px 25px;
+      position: fixed; }
+      #left_menu #menuIndhold #logo {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 10%; }
+      #left_menu #menuIndhold nav a {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: white;
+        font-size: 15pt;
+        margin-bottom: 10px;
+        font-family: 'Libre Baskerville', serif; }
+      #left_menu #menuIndhold .flexMenu {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: left; }
+      #left_menu #menuIndhold #hvemKlik, #left_menu #menuIndhold #hvemKlik2, #left_menu #menuIndhold #medKlik, #left_menu #menuIndhold #medKlik2 {
+        color: white;
+        margin-right: 2%;
+        cursor: pointer; }
+      #left_menu #menuIndhold #hvemKlik2, #left_menu #menuIndhold #medKlik2 {
+        display: none; }
+      #left_menu #menuIndhold #undermenu1, #left_menu #menuIndhold #undermenu2 {
+        margin-left: 10%;
+        display: none; }
+      #left_menu #menuIndhold nav button {
+        height: 30px;
+        background-color: #f37121;
+        border: none;
+        text-decoration: none;
+        color: white;
+        font-size: 18pt;
+        width: 170px;
+        height: 40px;
+        font-size: 18pt;
+        font-family: 'Merriweather Sans', sans-serif;
+        margin: 8% 0; }
+        #left_menu #menuIndhold nav button a {
+          text-decoration: none;
+          color: white;
+          font-size: 18pt; }
+      #left_menu #menuIndhold .kontakt {
+        margin: 5% 0;
+        font-family: 'Libre Baskerville', serif;
+        color: white;
+        font-size: 15pt; }
+      #left_menu #menuIndhold .soMeCirkler {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: solid #f37121 3px;
+        padding: 2% 3%;
+        margin: 5%; }
+        #left_menu #menuIndhold .soMeCirkler i {
+          color: white; }
+      #left_menu #menuIndhold #flexSoMe {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center; }
+      #left_menu #menuIndhold #soMeCirkel3 {
+        margin: auto; }
+      #left_menu #menuIndhold .fa-facebook-f {
+        margin: 7% 0 0 15%; }
+      #left_menu #menuIndhold .fa-linkedin {
+        margin-left: 3%; }
+      #left_menu #menuIndhold #active {
+        border-bottom: solid #f37121 3px;
+        width: 200px; }
 
   h1 {
     grid-column: 3/span 6;
@@ -920,7 +1004,7 @@ footer {
   #Fordeltekst {
     grid-row-start: 1;
     grid-column: 5/span 7;
-    margin-top: -28%; }
+    margin-top: -26%; }
 
   .Fordele {
     display: none; }
@@ -934,12 +1018,14 @@ footer {
     margin-top: 15%; }
 
   .line {
+    grid-row-start: 9;
     width: 3px;
-    height: 750px;
-    -ms-transform: rotate(130deg);
-    -webkit-transform: rotate(130deg);
-    transform: rotate(130deg);
-    margin-top: -8%; }
+    height: 730px;
+    -ms-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    margin-top: -20%;
+    grid-column: 2/span 6; }
 
   .priser {
     display: none; }
@@ -959,6 +1045,9 @@ footer {
 
   #priserafsnit {
     font-size: 15pt; }
+
+  .priserafsnitoverskrift {
+    font-size: 24pt; }
 
   #circlestudierabat {
     width: 355px;
@@ -989,6 +1078,9 @@ footer {
   #studierabatafsnit {
     font-size: 15pt; }
 
+  .studierabatafsnitoverskrift {
+    font-size: 24pt; }
+
   #circlechef {
     width: 206px;
     height: 206px;
@@ -1016,7 +1108,8 @@ footer {
     margin-top: -10%; }
 
   #fådinchefafsnit {
-    font-size: 15pt; }
+    font-size: 15pt;
+    margin-top: 13%; }
 
   .meld_dig_indweb {
     background-color: #f37121;
@@ -1030,21 +1123,23 @@ footer {
     grid-column: 5/span 6;
     grid-row-start: 44;
     width: 175px;
-    height: 45px; } }
-@media screen and (min-width: 1200px) {
-  .line {
-    height: 750px;
-    margin-top: -6%; } }
+    height: 45px; }
+
+  .fådinchefafsnitoverskrift {
+    font-size: 24pt; } }
 @media screen and (min-width: 1300px) {
   .line {
     height: 792px;
     margin-top: -8%; }
 
   #fordelafsnit {
-    margin-top: 3%; }
+    margin-top: 15%; }
 
   #Fordeltekst {
-    grid-row-start: 2; } }
+    grid-row-start: 2; }
+
+  .fordelafsnitoverskrift {
+    margin-top: -2%; } }
 @media screen and (min-width: 1380px) {
   body {
     background-image: url("../images/netvearkWeb_1380.png");
@@ -1066,7 +1161,10 @@ footer {
     margin-top: -20%; }
 
   .indledningtilweb {
-    margin-left: 5%; } }
+    margin-left: 5%; }
+
+  #fordelafsnit {
+    margin-top: 15%; } }
 @media screen and (min-width: 1480px) {
   body {
     background-image: url("../images/netveark_1480.png");
@@ -1079,6 +1177,9 @@ footer {
 
   #Fordeltekst {
     grid-row-start: 3; }
+
+  #fordelafsnit {
+    margin-top: 12%; }
 
   #studierabattekst {
     grid-row-start: 23; }
@@ -1103,12 +1204,10 @@ footer {
   #Fordeltekst {
     grid-row-start: 4; }
 
-  #fordelafsnit {
-    margin-top: 2%; }
-
   .line {
     height: 950px;
-    margin-top: -18%; }
+    margin-top: -18%;
+    grid-row-start: 8; }
 
   .line3 {
     margin-top: 20%; }
@@ -1127,6 +1226,12 @@ footer {
     margin-top: 10%; }
 
   #fådincheftekst {
-    grid-row-start: 31; } }
+    grid-row-start: 31; }
+
+  #mobilAlt {
+    width: 80%; }
+
+  #left_menu {
+    width: 20%; } }
 
 /*# sourceMappingURL=privat_medlem.css.map */
