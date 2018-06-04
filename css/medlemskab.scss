@@ -60,6 +60,20 @@ $white:#f9f7f4;
   font-weight: bold;
 }
 
+@mixin ca_button{
+  height: 30px;
+  background-color: $orange;
+  border: none;
+  text-decoration: none;
+  color: white;
+  font-size: 18pt;
+  a{
+    text-decoration: none;
+    color: white;
+    font-size: 18pt;
+  }
+}
+
 @mixin undertext{
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 15pt;
@@ -271,6 +285,13 @@ footer{
   body{
     background-image: url("../images/network.png");
   }
+  #menuMobil{
+    height: 100px;
+    i{
+      font-size: 40pt;
+      margin-top: 15px;
+    }
+  }
   .bold1{
     grid-column: 1 / span 3;
     grid-row-start: 5;
@@ -321,6 +342,16 @@ footer{
     grid-row-start: 15;
     margin-top: 20px;
     display: none;
+  }
+
+  footer{
+    justify-content: center;
+    p, #some{
+      margin: 0 10%;
+    }
+    p{
+      margin-top: 2%;
+    }
   }
 
 }
@@ -450,6 +481,7 @@ footer{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-column-gap: 20px;
+    width: 75%;
     grid-template-rows: repeat(28, 50px);
   }
 
@@ -460,16 +492,87 @@ footer{
   }
 
   #left_menu{
-    background-color: $blue;
-    height: 100vh;
-    width: 400px;
-    .menutekst{
+    width: 25%;
+    #menuIndhold{
+      width: inherit;
+      background-color: $blue;
+      height: 100vh;
+      padding: 50px 25px;
       position: fixed;
-    }
-    #logo{
-      width: 65%;
-      height: auto;
-      margin: 30px auto 0 auto;
+
+      #logo{
+        width: 60%;
+        margin: auto;
+        margin-bottom: 10%;
+      }
+      nav a{
+        @include flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: white;
+        font-size: 15pt;
+        margin-bottom: 10px;
+        font-family: 'Libre Baskerville', serif;
+      }
+      .flexMenu{
+        @include flex;
+        justify-content: left;
+      }
+      #hvemKlik, #hvemKlik2, #medKlik, #medKlik2{
+        color: white;
+        margin-right: 2%;
+        cursor: pointer;
+      }
+      #hvemKlik2, #medKlik2{
+        display: none;
+      }
+      #undermenu1, #undermenu2{
+        margin-left: 10%;
+        display: none;
+      }
+      nav button{
+        @include ca_button;
+        width: 170px;
+        height: 40px;
+        font-size: 18pt;
+        font-family: 'Merriweather Sans', sans-serif;
+        margin: 8% 0;
+      }
+      .kontakt{
+        margin: 5% 0;
+        font-family: 'Libre Baskerville', serif;
+        color: white;
+        font-size: 15pt;
+      }
+      .soMeCirkler{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: solid $orange 3px;
+        padding: 2% 3%;
+        margin: 5%;
+        i{
+          color: white;
+        }
+      }
+      #flexSoMe{
+        @include flex;
+        justify-content: center;
+      }
+
+      #soMeCirkel3{
+        margin: auto;
+      }
+      .fa-facebook-f {
+        margin: 7% 0 0 15%;
+      }
+      .fa-linkedin{
+        margin-left: 3%;
+      }
+      #active{
+        border-bottom: solid $orange 3px;
+        width: 102px;
+      }
     }
   }
   .indledning{
@@ -477,18 +580,19 @@ footer{
     grid-row-start: 1;
   }
   .bold1{
-    grid-column: 1 / span 3;
+    grid-column: 2 / span 2;
     grid-row-start: 6;
-
-    height: 350px;
-    width: 350px;
+    height: 330px;
+    width: 330px;
+    margin-left: -10%;
   }
   .bold1tekst{
-    grid-column: 1 / span 3;
+    grid-column: 2 / span 2;
     grid-row-start: 9;
     font-size: 24pt;
     margin-top: 4%;
     display: inline;
+    margin-left: 35%;
   }
   .bold1fuldtekst{
     grid-column: 1 / span 5;
@@ -504,24 +608,25 @@ footer{
 
   }
   .bold2{
-    grid-column: 5 / span 2;
+    grid-column: 7 / span 2;
     grid-row-start: 15;
-    margin-left: 280px;
-    height: 350px;
-    width: 350px;
+    height: 330px;
+    width: 330px;
   }
   .bold2tekst{
-    grid-column: 7 / span 3;
+    grid-column: 5 / span 5;
     grid-row-start: 18;
     font-size: 24pt;
-    margin-left: 44%;
+    margin-left: 42%
 
   }
   .bold2fuldtekst{
-    grid-column: 4 / span 8;
-    grid-row-start: 17;
+    grid-column: 5 / span 6;
+    grid-row-start: 16;
     display: none;
-    margin-left: 130px;
+    margin-left: 100px;
+
+
   }
   .CTAbold2{
     grid-column: 7 / span 2;
@@ -531,39 +636,58 @@ footer{
   }
 }
 @media screen and (min-width: 1500px) {
+  #left_menu{
+    width: 20%;
+  }
+
+  #mobilAlt{
+    width: 80%;
+  }
+
   .bold1{
-    grid-column: 1 / span 2;
+    grid-column: 2 / span 3;
     grid-row-start: 4;
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px;
   }
   .bold1tekst{
   grid-column: 2 / span 2;
-  grid-row-start: 6;
-  margin-left: 30px;
+  grid-row-start: 7;
+  margin-left: 38px;
 }
+  .bold1fuldtekst{
+    grid-column: 2 / span 4;
+    grid-row-start: 6;
+  }
   .CTAbold1{
     grid-column: 3 / span 2;
-    grid-row-start: 8;
-    margin-left: -9px;
+    grid-row-start: 9;
     display: none;
+    margin-left: 18%;
   }
   .bold2{
     grid-column: 7 / span 2;
-    grid-row-start: 10;
+    grid-row-start: 13;
     margin-left: -10px;
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px;
   }
   .bold2tekst{
     grid-column: 7 / span 2;
-    grid-row-start: 13;
-    margin-left: -45px;
+    grid-row-start: 16;
+    margin-left: 45px;
+  }
+  .bold2fuldtekst{
+    grid-column: 5 / span 5;
+    grid-row-start: 15;
+    margin-left: 45px;
+
   }
   .CTAbold2{
     grid-column: 7 / span 2;
-    grid-row-start: 15;
+    grid-row-start: 18;
     display: none;
+    margin-left: -18%;
   }
   #mobilAlt {
     grid-template-rows: repeat(19, 50px);
