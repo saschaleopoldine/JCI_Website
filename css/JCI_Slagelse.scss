@@ -6,7 +6,10 @@
 }
 
 body {
+  background-color: #f9f7f4;
   margin: 0; // Ingen kanter i siden af browser
+  background-image: url("../images/baggrund_mobil.png");
+  background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,22 +35,1809 @@ p {
 // Sikrer billeder er responsive
 img {
   display: block; // Billeder er et element (laver linjeskift)
-  max-width: 100%; // Bredde må maks fylde 100%
   height: auto; // Højden skal tilpasse sig
 }
 
+$blue:#0097d7;
+$orange:#ee7125;
+$yellow:#fccc28;
+$white:#f9f7f4;
+$overlay: rgba(93, 144, 183, 0.5);
+
+@mixin undertitle{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+@mixin undertext{
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 12pt;
+}
+
+@mixin buttoms{
+  height: 30px;
+  background-color: $orange;
+  color: $white;
+  font-size: 18pt;
+  font-family: 'Merriweather Sans', sans-serif;
+  text-align: center;
+}
+
+@mixin board_mobil{
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  border: 3px solid $orange;
+}
+
+@mixin flex{
+  display: flex;
+  display: -webkit-flex;
+}
+
+@mixin streg{
+  background-color: $blue;
+  height: 3px;
+  width: 100px;
+  z-index: -1;
+}
+
+@mixin ca_button{
+  height: 30px;
+  background-color: $orange;
+  border: none;
+  text-decoration: none;
+  color: white;
+  font-size: 18pt;
+  a{
+    text-decoration: none;
+    color: white;
+    font-size: 18pt;
+  }
+}
+
+
+
+//--------------- Iphone ------------------------------ Iphone --------------------------- Iphone ----------------------
+
+
+//--------------------------------------------------- Header mobil -----------------------------------------------
+.web, #bestyrelsesmedlemmer_web{
+  display: none;
+}
+
+#menuMobil{
+  height: 60px;
+  width: 100%;
+  background-color: $blue;
+  padding: 7px;
+  @include flex;
+  justify-content: space-between;
+  img{
+    margin-left: 20px;
+    height: 100%;
+    width: auto;
+  }
+  i{
+    color: white;
+    margin: 5px 20px;
+  }
+}
+
+.fa-chevron-circle-up{
+  position: fixed;
+  bottom: 160px;
+  right: 20px;
+  color: #0097d7;
+  cursor:pointer;
+  z-index: 2;
+  display: none;
+}
+
+
+
+//------------------------------------------------ Indhold mobil --------------------------------------------------
+
+#mobilAlt{
+  padding: 0 20px 0 20px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 10px;
+  grid-template-rows: repeat(54, 50px);
+}
+
+h1{
+  font-family: "Libre Baskerville", Serif;
+  font-size: 25pt;
+  grid-column: 1/span 6;
+  grid-row: 2;
+  text-align: center;
+}
+
+h3{
+  display: none;
+}
+
+.web_baggrund{
+  display: none;
+}
+
+.cirkel_1{
+  grid-column: 1/span 3;
+  grid-row: 3;          
+  margin-top: 7px;
+  z-index: 1;
+  img{
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+  }
+}
+
+#projekt{
+  color: white;
+  font-family: "Libre Baskerville", Serif;
+  font-size: 18pt;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  grid-column: 1/span 3;   
+  grid-row: 4;
+  margin-top: 20px;
+  margin-left: 25px;
+  z-index: 2;  
+  a{
+    grid-column: 1/span 3;
+    grid-row: 4;
+    margin-left: -10px;
+    text-decoration: none;
+    color: white;
+  }
+
+}
+
+
+.hr_et{
+  @include streg;
+  grid-column: 3/span 2;
+  grid-row: 5;
+  -ms-transform: rotate(25deg);
+  -webkit-transform: rotate(25deg);
+  transform: rotate(25deg);
+  margin-left: 17px;
+  margin-top: 20px;
+}
+
+
+.cirkel_2{
+  grid-column: 5/span 2;
+  grid-row: 5;
+  margin-left: -26px;
+  z-index: 1;
+  img{
+    border-radius: 50%;
+    width: 135px;
+    height: 135px;
+  }
+}
+
+#medlem{
+  color: white;
+  font-family: "Libre Baskerville", Serif;
+  font-size: 12pt;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  grid-column: 5/span 2;
+  grid-row: 6;
+  margin-left: -18px;
+  margin-top: 5px;
+  z-index: 2;  
+  a{
+   text-decoration: none;
+   color: white;
+  }
+}
+
+
+.hr_to{
+  @include streg;
+  grid-column: 3/span 2;            
+  grid-row: 7;
+  -ms-transform: rotate(150deg);
+  -webkit-transform: rotate(150deg);
+  transform: rotate(150deg);                              
+  margin-left: 20px;
+  margin-top: 5px;
+}                                   
+
+
+
+.cirkel_3{
+  grid-column: 2/span 2;
+  grid-row: 7;
+  img{
+    border-radius: 50%;
+    width: 95px;
+    height: 95px;
+  }
+}
+
+#partner{
+  color: white;
+  font-family: "Libre Baskerville", Serif;
+  font-size: 12pt;
+  font-weight: bold;
+  letter-spacing: 1px;
+  grid-column: 2/span 2;
+  grid-row: 7/span 2;
+  margin-top: 35px;
+  margin-left: 10px;
+  z-index: 2;  
+  a{
+   text-decoration: none;
+   color: white;
+  }                      
+}
+
+
+ .hr_tre{
+   @include streg;
+   grid-column: 3/span 2;
+   grid-row: 9;
+   -ms-transform: rotate(40deg);
+   -webkit-transform: rotate(40deg);
+   transform: rotate(40deg);
+ }
+
+
+.cirkel_4{
+  grid-column: 4/span 3;
+  grid-row: 9;
+  img{
+   border-radius: 50%;
+   width: 155px;       
+   height: 155px;
+  }
+}
+
+
+#aktivitet{
+  color: white;
+  font-family: "Libre Baskerville", Serif;
+  font-size: 18pt;
+  font-weight: bold;
+  letter-spacing: 1px;
+  grid-column: 4/span 3;
+  grid-row: 10;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-left: 8px;
+  z-index: 2;  
+  a{
+   text-decoration: none;
+   color: white;
+  }
+}
+
+
+.hr_fire{
+  @include streg;
+  grid-column: 3/span 2;
+  grid-row: 11;
+  -ms-transform: rotate(155deg);
+  -webkit-transform: rotate(155deg);
+  transform: rotate(155deg);
+  margin-left: -20px;
+  margin-top: 5px;
+}
+
+
+.cirkel_5{
+  grid-column: 1/span 2;
+  grid-row: 11;
+  margin-top: -12px;
+  img{
+    border-radius: 50%;
+    width: 115px;
+    height: 115px;
+  }
+}
+
+#b_bobble{
+  grid-column: 1/span 2;
+  grid-row: 12;
+  width: 115px;
+}
+
+
+#bestyrrelse{
+  color: white;
+  font-family: "Libre Baskerville", Serif;
+  font-size: 12pt;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 7px;
+  margin-top: -30px;
+  z-index: 2;  
+  a{                     
+   text-decoration: none;
+   color: white;
+  }                      
+}
+
+h2{
+  @include undertitle;
+  margin-left: -10px;
+}
+
+#projekttext, #medlemstext, #partnertext, #aktivitettext, #bestyrelsestext{
+  @include undertext;
+  width: 250px;
+  margin-left: -10px;
+}
+
+
+//--------------------------------------------------- projekt mobil --------------------------------------------------
+
+#projektelement{
+  grid-column: 1/span 6;
+  grid-row: 15/span 8;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 50px);
+  #projektoverskrift{                 
+    grid-column: 2/span 3;            
+    grid-row: 1;
+  }                                                                       
+  #projekttext{                       
+    grid-column: 2/span 3;            
+    grid-row: 2/span 7;
+  }                                                                       
+}
+
+
+//--------------------------------------------------- medlem mobil --------------------------------------------------
+
+
+#medlemselement {
+  grid-column: 1/span 6;
+  grid-row: 24/span 8;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(9, 50px);
+  #medlemsoverskrift{            
+    grid-column: 2/span 3;       
+    grid-row: 1;
+  }                                                            
+  #medlemstext{                  
+    grid-column: 2/span 3;       
+    grid-row: 2/span 7;
+  }
+  .knap{                  
+    @include buttoms;
+    grid-column: 2/span 3;
+    grid-row: 9;
+    margin-left: -10px;
+  }                       
+}
+
+
+
+
+//--------------------------------------------------- partner mobil --------------------------------------------------
+
+
+#partnerelement {
+  grid-column: 1/span 6;
+  grid-row: 34/span 8;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 50px);
+  #partneroverskrift {
+    grid-column: 2/span 3;
+    grid-row: 1;
+  }
+  #partnertext {
+    grid-column: 2/span 3;
+    grid-row: 2/span 7;
+  }
+}
+
+
+//--------------------------------------------------- aktivitet mobil --------------------------------------------------
+
+
+#aktivitetelement {
+  grid-column: 1/span 6;
+  grid-row: 43/span 8;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 50px);
+  #aktivitetoverskrift {
+    grid-column: 2/span 3;
+    grid-row: 1;
+  }
+  #aktivitettext {
+    grid-column: 2/span 3;
+    grid-row: 2/span 7;
+  }
+}
+
+
+//--------------------------------------------------- bestyrrelse mobil --------------------------------------------------
+
+
+#bestyrelseselement {
+  grid-column: 1/span 6;
+  grid-row: 52/span 8;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 50px);
+  #bestyrelseoverskrift {
+    grid-column: 2/span 3;
+    grid-row: 1;
+    width: 260px;
+  }
+  #bestyrelsestext {
+    grid-column: 2/span 3;
+    grid-row: 2/span 2;
+  }
+  #down {
+    grid-column: 4/span 1;
+    grid-row: 5;
+    margin-left: -15px;
+    margin-top: -10px;
+  }
+}
+
+
+#bestyrelsesmedlemmer_mobil{
+  display: none;
+  background-image: url("../images/network_mobil_bestyrrelse.png");
+  background-size: cover;
+  padding: 5% 0;
+  
+  img{
+    display: inline;
+  }
+}
+
+.flex{
+  @include flex;
+  justify-content: space-around;
+}
+
+.bestyrelsesmedlem{
+  text-align: center;
+  font-family: 'Merriweather Sans', sans-serif;
+  img{              
+    display: inline;
+    @include board_mobil
+  }                 
+  #caroline, #lasse, #mie, #kamilla, #anna{
+    @include board_mobil;
+    }
+  h4{
+    font-size: 11pt;
+    margin-top: 5px;
+  }
+  .bestyrelsesmedlemtext{
+    font-size: 9pt;
+    margin-bottom: 25px;
+    margin-top: 3px;
+  }
+}
+
+
+
+
+//--------------------------------------------------- Footer mobil --------------------------------------------------
+footer{
+  background-color: $blue;
+  color: white;
+  height: 150px;
+  padding: 22px 50px;
+  @include flex;
+  justify-content: space-between;
+  p{
+    margin-top: 15px;
+  }
+  #some{
+    @include flex;
+    flex-direction: column;
+    i{
+      margin: 3px 0;
+    }
+  }
+}
+
+
+
+//-------------- Iphone Plus ---------------------- Iphone Plus ------------------- Iphone Plus --------------------------
+@media screen and (min-width: 414px) {
+   .cirkel_1{
+     grid-row: 4;
+     margin-top: -10px;
+   }
+
+   #projekt{
+     grid-row: 5;
+     margin-top: 5px;
+     margin-left: 25px;
+   }
+
+
+   .hr_et{
+     grid-row: 6;
+     width: 330px;
+     margin-left: -95px;
+     -ms-transform: rotate(13deg);
+     -webkit-transform: rotate(13deg);
+     transform: rotate(13deg);
+
+   }
+
+
+   .cirkel_2{
+     grid-row: 6;
+     margin-left: -15px;
+   }
+
+   #medlem{
+     grid-row: 7;
+     margin-left: -8px;
+   }
+
+
+   .hr_to{
+     grid-row: 8;
+     width: 270px;
+     margin-left: -33px;
+     -ms-transform: rotate(170deg);
+     -webkit-transform: rotate(170deg);
+     transform: rotate(170deg);
+   }
+
+
+   .cirkel_3{
+     grid-row: 8;
+   }
+
+   #partner{
+     grid-row: 8/span 2;
+     margin-top: 40px;
+     margin-left: 8px;
+   }
+
+
+    .hr_tre{
+      grid-row: 10;
+      width: 200px;
+      margin-top: 15px;
+      margin-left: -50px;
+      -ms-transform: rotate(30deg);
+      -webkit-transform: rotate(30deg);
+      transform: rotate(30deg);
+
+    }
+
+
+   .cirkel_4{
+     grid-row: 10;
+   }
+
+
+   #aktivitet{
+     grid-row: 11;
+     margin-right: 25px;
+     margin-top: 10px;
+   }
+
+
+   .hr_fire{
+     grid-column: 2/span 3;
+     grid-row: 12;
+     width: 270px;
+     margin-top: 10px;
+     -ms-transform: rotate(170deg);
+     -webkit-transform: rotate(170deg);
+     transform: rotate(170deg);
+
+   }
+
+
+   .cirkel_5, #b_bobble{
+     grid-row: 12;
+   }
+
+
+  #bestyrrelse{
+    margin-left: -5px;
+    margin-top: 18px;
+  }
+
+  #projektelement{
+    grid-row: 15/span 8;
+    #projekttext{
+      grid-column: 2/span 4;
+      width: 100%;
+    }
+  }                                       
+                                          
+                                          
+  //-------------------------------------- medlemselement iphone plus ---------------------------------------------
+  #medlemselement {
+    grid-row: 24/span 8;
+    #medlemstext{
+      grid-column: 2/span 4;
+      width: 100%;          
+    }                       
+  }                                       
+
+                                          
+  //-------------------------------------- Partnerelement iphone plus ---------------------------------------------
+  #partnerelement {
+    grid-row: 34/span 8;
+    #partnertext{
+      grid-column: 2/span 4;
+      width: 100%;          
+    }                       
+  }                                       
+                                          
+                                          
+  //-------------------------------------- Aktivitetselement iphone plus ------------------------------------------
+  #aktivitetelement {
+    grid-row: 43/span 8;
+    #aktivitettext{
+      grid-column: 2/span 4;
+      width: 100%;          
+    }                       
+  }                                       
+                                          
+                                          
+  //-------------------------------------- Bestyrelseselement iphone plus -----------------------------------------
+  #bestyrelseselement {
+    grid-row: 52/span 8;
+    #bestyrelsestext{
+      grid-column: 2/span 4;
+      width: 100%;          
+    }                       
+  }                                                                             
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 550px) {
+  #mobilAlt{
+     grid-template-rows: repeat(50, 50px);
+   }
+  
+  #projektelement{
+    grid-row: 15/span 7;
+  }
+
+  #medlemselement {          
+    grid-row: 22/span 7;   
+    .knap{
+      grid-row: 7;
+    }
+  }                          
+
+  #partnerelement {           
+    grid-row: 31/span 7;
+  }
+
+  #aktivitetelement {
+    grid-row: 38/span 7;
+  }
+
+  #bestyrelseselement {     
+    grid-row: 45/span 7;
+    #bestyrelsestext{       
+      grid-column: 2/span 4;
+      width: 100%;          
+    }                       
+  }                         
+}
+
+
+@media screen and (min-width: 650px) {
+  #medlemselement {     
+    .knap{              
+      grid-row: 6;
+    }                   
+  }                     
+}
+
+
+
+
+
+
+
+
+//--------------- stående tablet -------------------- stående tablet ------------------ stående tablet -----------------
 @media screen and (min-width: 768px) {
-  // Alt der ændres i tablet stående fra mobil
+  @mixin board_tablet{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: 3px solid $orange;
+  }
+
+  #menuMobil{
+    height: 100px;
+    i{
+      font-size: 40pt;
+      margin-top: 15px;
+    }
+  }
+
+  #mobilAlt{
+     grid-template-rows: repeat(52, 50px);
+   }
+
+   h1{
+     font-size: 30pt;
+   }
+
+  .cirkel_1{
+    grid-column: 1/span 2;
+    grid-row: 4;
+    margin-left: 50px;
+    img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+
+  #projekt{
+    font-size: 24pt;
+    grid-column: 1/span 2;
+    grid-row: 6;
+    margin-top: -5px;
+    margin-left: 105px;
+  }                          
+                             
+                             
+  .hr_et{                    
+    grid-row: 7;
+    width: 360px;
+    margin-left: -30px;
+    -ms-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+
+                             
+  .cirkel_2{
+    grid-row: 7;
+    margin-left: 0;
+    margin-top: -10px;
+    img{
+      width: 200px;  
+      height: 200px; 
+    }
+  }                          
+                             
+  #medlem{
+    font-size: 18pt;
+    grid-column: 5/span 2;
+    grid-row: 8;
+    margin-left: 13px;
+    margin-right: 0;
+    margin-top: 25px;
+  }                          
+                             
+                             
+  .hr_to{                    
+    grid-row: 11;
+    width: 360px;
+    margin-left: -20px;
+    margin-top: -20px;
+    -ms-transform: rotate(160deg);
+    -webkit-transform: rotate(160deg);
+    transform: rotate(160deg);
+  }                          
+                             
+                             
+  .cirkel_3{
+    margin-top: -10px;
+    grid-column: 2/span 2;
+    grid-row: 11;
+    img{
+      width: 175px;
+      height: 175px;
+    }
+  }                          
+                             
+  #partner{
+    grid-row: 12;
+    font-size: 18pt;
+    margin-top: 10px;
+    margin-left: 30px;
+  }                          
+                             
+                             
+   .hr_tre{                  
+     grid-row: 13;
+     width: 250px;
+     margin-top: 25px;
+     margin-left: 0;
+     -ms-transform: rotate(15deg);
+     -webkit-transform: rotate(15deg);
+     transform: rotate(15deg);
+
+   }                         
+                             
+                             
+  .cirkel_4{
+    grid-row: 13;
+    margin-left: 40px;
+    img{
+      width: 225px; 
+      height: 225px;
+    }
+  }                          
+                             
+                             
+  #aktivitet{
+    font-size: 24pt;
+    grid-row: 15;
+    margin-left: 55px;
+    margin-top: -5px;
+  }                          
+                             
+                             
+  .hr_fire{
+    grid-column: 2/span 3;
+    grid-row: 17;
+    width: 350px;
+    margin-left: 35px;
+    margin-top: 10px;
+  }                          
+                             
+                             
+  .cirkel_5{
+    grid-column: 1/span 2;
+    grid-row: 17;
+    margin-left: 60px;
+    img{
+      width: 150px; 
+      height: 150px;
+    }
+  }
+
+  #b_bobble{
+    grid-column: 1/span 2;
+    grid-row: 17;
+    width: 150px;
+    height: 150px;
+    margin-left: 60px;
+    margin-top: 15px;
+  }
+
+  #bestyrrelse{
+    font-size: 15pt;
+  }                                                                                                                                                                           
+
+
+  //-------------------------------------- projektelement stående tablet ---------------------------------------------
+  #projektelement{                                                   
+    grid-row: 22/span 5;
+    grid-template-rows: repeat(5, 50px);
+    #projektoverskrift{                         
+      grid-column: 2/span 3;
+      grid-row: 1;
+      margin-left: 0;
+    }                                           
+    #projekttext{                               
+      grid-column: 2/span 4;
+      grid-row: 2;
+      width: auto;
+      margin-left: 0;
+    }                                           
+  }
+
+
+  //-------------------------------------- medlemselement stående tablet ---------------------------------------------
+  #medlemselement{
+    grid-row: 28/span 7;
+    grid-template-rows: repeat(7, 50px);
+    #medlemsoverskrift{           
+      margin-left: 0;
+    }                          
+    #medlemstext{              
+      grid-column: 2/span 4;
+      grid-row: 2;
+      width: auto;
+      margin-left: 0;
+    }                          
+    .knap{                            
+      grid-column: 2/span 2;
+      grid-row: 6;
+      margin-left: 0;
+    }                          
+  }
+
+                                                                                                         
+  //-------------------------------------- Partnerelement stående tablet ---------------------------------------------
+  #partnerelement {                                                                                      
+    grid-row: 36/span 5;
+    grid-template-rows: repeat(5, 50px);
+    #partneroverskrift {
+      margin-left: 0;
+    }                         
+    #partnertext {            
+      grid-column: 2/span 4;
+      grid-row: 2;
+      width: auto;
+      margin-left: 0;
+    }                         
+  }                                                                                                      
+                                                                                                         
+                                                                                                         
+  //-------------------------------------- Aktivitetselement stående tablet ------------------------------------------
+  #aktivitetelement {                                                                                    
+    grid-row: 42/span 5;
+    grid-template-rows: repeat(5, 50px);
+    #aktivitetoverskrift {
+      grid-column: 2/span 3;
+      grid-row: 1;
+      margin-left: 0;
+    }
+    #aktivitettext {
+      grid-column: 2/span 4;
+      grid-row: 2;          
+      width: auto;          
+      margin-left: 0;
+    }
+  }                                                                                                      
+                                                                                                         
+                                                                                                         
+  //-------------------------------------- Bestyrelseselement stående tablet -----------------------------------------
+  #bestyrelseselement {                                                                                  
+    grid-row: 48/span 4;
+    grid-template-rows: repeat(4, 50px);
+    #bestyrelseoverskrift {
+      width: 260px;
+      margin-left: 0;
+    }                          
+    #bestyrelsestext {         
+     grid-column: 2/span 4;
+     grid-row: 2;          
+     width: auto;          
+     margin-left: 0;         
+    }
+    #down {
+      grid-row: 4;
+    }
+  }                                                                                                                     
+                                                    
+  .bestyrelsesmedlem{
+    #caroline, #lasse, #mie, #kamilla, #anna{       
+      @include board_tablet;
+      width: 125px;
+      height: 125px;
+      }                                                                                                                                                   
+    h4{
+      font-size: 14pt;
+      margin-top: 5px;                              
+    }                                               
+    .bestyrelsesmedlemtext{                         
+      font-size: 12pt;
+      margin-bottom: 40px;
+      margin-top: 5px;
+      line-height: 18pt;
+    }                                               
+  }
+
+  footer{
+    justify-content: center;
+    p, #some{
+      margin: 0 10%;
+    }
+    p{
+      margin-top: 2%;
+    }
+  }
+
 }
 
+
+
+
+
+
+
+//--------------- liggende tablet ------------------ liggende tablet ----------------- liggende tablet -----------------
 @media screen and (min-width: 992px) {
-  // Alt der ændres i tablet liggende fra mobil og tablet stående
+   @mixin board_tablet{           
+     width: 125px;                
+     height: 125px;               
+     border-radius: 50%;          
+     border: 3px solid $orange;   
+   }
+
+  body{
+    background-image: url("../images/baggrund_liggende_tablet.png");
+  }
+
+  #mobilAlt {
+    grid-template-rows: repeat(42, 50px);
+  }
+
+  .cirkel_1 {
+    grid-column: 2/span 2;
+    grid-row: 2;
+    margin-top: 10px;
+    margin-left: -90px;
+    img{
+      width: 240px; 
+      height: 240px;
+    }
+  }
+
+  #projekt {
+    grid-column: 1/span 2;
+    grid-row: 4;
+    margin-top: 5px;
+    margin-left: 115px;
+  }
+
+  .hr_et {
+    grid-column: 3/span 4;
+    grid-row: 5;
+    width: 400px;
+    margin-left: -8%;
+    margin-top: 0;
+    -ms-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+
+  .cirkel_2 {
+    grid-row: 4;
+    margin-left: 0;
+    margin-top: -5px;
+  }
+
+  #medlem {
+    grid-column: 5/span 1;
+    grid-row: 5;
+    margin-right: 10px;
+    margin-top: 25px;
+  }
+
+  .hr_to {
+    grid-column: 3/span 2;
+    grid-row: 8;
+    width: 250px;
+    margin-top: -10%;
+    margin-left: 50%;
+    -ms-transform: rotate(150deg);
+    -webkit-transform: rotate(160deg);
+    transform: rotate(160deg);
+  }
+
+  .cirkel_3 {
+    margin-top: -20%;
+    grid-column: 3/span 2;
+    grid-row: 8;
+  }
+
+  #partner {
+    grid-column: 3/span 2;
+    grid-row: 8;
+    margin-top: 15px;
+    margin-right: 0;
+    margin-left: 30px;
+  }
+
+  .hr_tre {
+    grid-column: 3/span 2;
+    grid-row: 10;
+    width: 250px;
+    margin-top: 20px;
+    margin-left: 48%;
+    -ms-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+
+  .cirkel_4 {
+    grid-column: 5/span 2;
+    grid-row: 9;
+    margin-left: 10%;
+  }
+
+  #aktivitet {
+    grid-column: 5/span 2;
+    grid-row: 11;
+    margin-right: 25px;
+    margin-top: -10px;
+  }
+
+  .hr_fire {
+    grid-column: 2/span 3;
+    grid-row: 11;
+    width: 500px;
+    margin-left: 10%;
+    margin-top: 15%;
+    -ms-transform: rotate(170deg);
+    -webkit-transform: rotate(170deg);
+    transform: rotate(170deg);
+  }
+
+  .cirkel_5 {
+    grid-column: 2/span 2;
+    grid-row: 11;
+    margin-left: 0;
+    margin-top: 10%;
+  }
+
+  #b_bobble{
+    grid-column: 2/span 2;
+    grid-row: 12;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  //-------------------------------------- projektelement liggende tablet ---------------------------------------------
+  #projektelement {
+    grid-row: 17/span 5;
+  }
+
+  //-------------------------------------- medlemselement liggende tablet ---------------------------------------------
+  #medlemselement {
+    grid-row: 22/span 7;
+    grid-template-rows: repeat(5, 50px);
+    .knap {
+      grid-column: 2/span 2;
+      grid-row: 5;
+      margin-left: 0;
+    }
+  }
+
+  //-------------------------------------- Partnerelement liggende tablet ---------------------------------------------
+  #partnerelement {
+    grid-row: 28/span 5;
+    grid-template-rows: repeat(5, 50px);
+    #partneroverskrift {
+      margin-left: 0;
+    }
+    #partnertext {
+      grid-column: 2/span 4;
+      grid-row: 2;
+      width: auto;
+      margin-left: 0;
+    }
+  }
+
+  //-------------------------------------- Aktivitetselement liggende tablet ------------------------------------------
+  #aktivitetelement {
+    grid-row: 33/span 5;
+    grid-template-rows: repeat(5, 50px);
+    #aktivitetoverskrift {
+      grid-column: 2/span 3;
+      grid-row: 1;
+      margin-left: 0;
+    }
+    #aktivitettext {
+      grid-column: 2/span 4;
+      grid-row: 2;
+      width: auto;
+      margin-left: 0;
+    }
+  }
+
+  //-------------------------------------- Bestyrelseselement liggende tablet -----------------------------------------
+  #bestyrelseselement {
+    grid-row: 38/span 4;
+    grid-template-rows: repeat(4, 50px);
+    #bestyrelseoverskrift {
+      width: 260px;
+      margin-left: 0;
+    }
+    #bestyrelsestext {
+      grid-column: 2/span 4;
+      grid-row: 2;
+      width: auto;
+      margin-left: 0;
+    }
+    #down {
+      grid-row: 4;
+    }
+  }
+
+  .bestyrelsesmedlem {
+    #caroline, #lasse, #mie, #kamilla, #anna {
+      @include board_tablet;
+    }
+    h4 {
+      font-size: 14pt;
+      margin-top: 5px;
+    }
+    .bestyrelsesmedlemtext {
+      font-size: 12pt;
+      margin-bottom: 40px;
+      margin-top: 5px;
+      line-height: 18pt;
+    }
+  }
 }
 
+
+
+
+
+//--------------------- Ipad pro ------------------------- Ipad pro ------------------------ Ipad pro ------------------
+@media screen and (min-width: 1024px) {
+  @mixin board_tablet {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: 3px solid $orange;
+  }
+
+  body{
+    background-image: url("../images/network_tablet_top.png");
+    background-size: cover;
+  }
+
+  
+  #mobilAlt {
+    grid-template-rows: repeat(54, 50px);
+  }
+
+  .cirkel_1 {
+    grid-column: 2/span 2;
+    grid-row: 5;
+    margin-top: 5px;
+    margin-left: -75px;
+    img{
+      width: 250px; 
+      height: 250px;
+    }
+  }
+
+  #projekt {
+    grid-column: 1/span 2;
+    grid-row: 7;
+    margin-top: 10px;
+    margin-left: 170px;
+  }
+
+  .hr_et {
+    grid-column: 3/span 4;
+    grid-row: 9;
+    width: 425px;
+    margin-left: -40px;
+    margin-top: 0;
+    -ms-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+
+  .cirkel_2 {
+    grid-row: 9;
+    margin-left: -20px;
+    margin-top: -10px;
+  }
+
+  #medlem {
+    grid-column: 5/span 2;
+    grid-row: 10;
+    margin-left: -10px;
+    margin-top: 20px;
+  }
+
+  .hr_to {
+    grid-column: 3/span 2;
+    grid-row: 14;
+    width: 300px;
+    margin-top: -30px;
+    margin-left: 125px;
+    -ms-transform: rotate(150deg);
+    -webkit-transform: rotate(150deg);
+    transform: rotate(150deg);
+  }
+
+  .cirkel_3 {
+    margin-top: -40px;
+    grid-column: 3/span 2;
+    grid-row: 15;
+  }
+
+  #partner {
+    grid-column: 3/span 2;
+    grid-row: 15;
+    margin-top: 30px;
+    margin-left: 25px;
+  }
+
+  .hr_tre {
+    grid-column: 4/span 2;
+    grid-row: 18;
+    width: 350px;
+    margin-top: 10px;
+    margin-left: -45px;
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+
+  .cirkel_4 {
+    grid-column: 5/span 2;
+    grid-row: 19;
+    margin-left: 35px;
+  }
+
+  #aktivitet {
+    font-size: 24pt;
+    grid-column: 5/span 2;
+    grid-row: 21;
+    margin-right: 15px;
+    margin-top: -5px;
+  }
+
+  .hr_fire {
+    grid-column: 2/span 3;
+    grid-row: 22;
+    width: 500px;
+    margin-left: 125px;
+    margin-top: 40px;
+    -ms-transform: rotate(165deg);
+    -webkit-transform: rotate(165deg);
+    transform: rotate(165deg);
+  }
+
+  .cirkel_5 {
+    grid-column: 2/span 2;
+    grid-row: 23;
+    margin-top: 0;
+  }
+
+  #b_bobble{              
+    grid-column: 2/span 1;
+    grid-row: 23;
+    margin-top: 25px;
+  }
+
+                                                                                                                        
+  //-------------------------------------- projektelement ipad pro ---------------------------------------------
+  #projektelement {                                                                                                     
+    grid-row: 28/span 5;
+  }                                                                                                                     
+                                                                                                                        
+  //-------------------------------------- medlemselement ipad pro ---------------------------------------------
+  #medlemselement {                                                                                                     
+    grid-row: 33/span 7;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+  }                                                                                                                     
+                                                                                                                        
+  //-------------------------------------- Partnerelement ipad pro ---------------------------------------------
+  #partnerelement {                                                                                                     
+    grid-row: 40/span 5;
+  }                                                                                                                     
+                                                                                                                        
+  //-------------------------------------- Aktivitetselement ipad pro ------------------------------------------
+  #aktivitetelement {                                                                                                   
+    grid-row: 45/span 5;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+  }                                                                                                                     
+                                                                                                                        
+  //-------------------------------------- Bestyrelseselement ipad pro -----------------------------------------
+  #bestyrelsesmedlemmer_mobil{
+    background-image: url("../images/network_tablet_bestyrrelse.png");
+    background-size: cover;
+  }
+
+  #bestyrelseselement {
+    grid-row: 50/span 4;
+  }                                                                                                                     
+                                                                                                                        
+  
+}
+
+
+
+
+
+//--------------------- WEB 13"----------------------------- WEB 13" ---------------------------- WEB 13"-------------------
 @media screen and (min-width: 1200px) {
-  // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+  //--------------------------------------------------- Header web -----------------------------------------------
+  @mixin board_web{
+    width: 114px;
+    height: 114px;
+    border-radius: 50%;
+    border: 4px solid $orange;
+  }
+
+  @mixin undertitle{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 24pt;
+    font-weight: bold;
+  }
+
+  @mixin undertext{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 15pt;
+  }
+
+  @mixin menutext{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15pt;
+  }
+
+  body{
+    background-image: url("../images/baggrund_web.png");
+    background-size: cover;
+  }
+  
+  .web{
+    display: inline;
+  }
+
+  .mobil, #menuMobil, footer{
+    display: none;
+  }
+
+  #projekt, #medlem, #partner, #aktivitet, #bestyrrelse, #bestyrelsesmedlemmer_mobil, #down, .hr_fire{
+    display: none;
+  }
+
+  #mobilAlt{
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(50, 50px);
+    width: 75%;
+  }
+
+  #flex_alt{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+  }
+
+
+  #left_menu{
+    width: 25%;
+    #menuIndhold{
+      width: inherit;
+      background-color: $blue;
+      height: 100vh;
+      padding: 50px 25px;
+      position: fixed;
+      letter-spacing: 1px;
+
+      #logo{
+        width: 60%;
+        margin: auto;
+        margin-bottom: 10%;
+      }
+      nav a{
+        @include flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: white;
+        font-size: 15pt;
+        margin-bottom: 10px;
+        font-family: 'Libre Baskerville', serif;
+      }
+      .flexMenu{
+        @include flex;
+        justify-content: left;
+      }
+      #hvemKlik, #hvemKlik2, #medKlik, #medKlik2{
+        color: white;
+        margin-right: 2%;
+        cursor: pointer;
+      }
+      #hvemKlik, #medKlik2{
+        display: none;
+      }
+      #undermenu1{
+        margin-left: 10%;
+      }
+
+      #undermenu2{
+        margin-left: 10%;
+        display: none;
+      }
+      nav button{
+        @include ca_button;
+        width: 170px;
+        height: 40px;
+        font-size: 18pt;
+        font-family: 'Merriweather Sans', sans-serif;
+        margin: 8% 0;
+      }
+      .kontakt{
+        margin: 5% 0;
+        font-family: 'Libre Baskerville', serif;
+        color: white;
+        font-size: 15pt;
+      }
+      .soMeCirkler{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: solid $orange 3px;
+        padding: 2% 3%;
+        margin: 5%;
+        i{
+          color: white;
+        }
+      }
+      #flexSoMe{
+        @include flex;
+        justify-content: center;
+      }
+
+      #soMeCirkel3{
+        margin: auto;
+      }
+      .fa-facebook-f {
+        margin: 7% 0 0 15%;
+      }
+      .fa-linkedin{
+        margin-left: 3%;
+      }
+      #active{
+        border-bottom: solid $orange 3px;
+        margin-top: 5px;
+        width: 167px;
+      }
+    }
+  }
+
+
+  //------------------------------------------------ Indhold web --------------------------------------------------
+
+  #grid{
+    padding: 70px 50px 50px 0;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-column-gap: 20px;
+    height: 600px;
+    width: 100%;
+  }
+
+  h1{
+    grid-column: 4/span 4;
+  }
+
+  h3{
+    display: inline;
+    grid-column: 3/span 6;
+    grid-row: 4;           
+    font-size: 16pt;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: normal;
+  }
+
+  .mobil_baggrund{
+    display: none;
+  }
+
+  .web_baggrund{
+    display: inline;
+    width: auto;
+  }
+
+
+
+  //-------------------------------------- projektelement web ---------------------------------------------
+  .cirkel_1{
+    grid-column: 2/span 3;
+    grid-row: 12;
+    margin-left: -10%;
+    img{
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+  #projektelement {           
+    grid-column: 5/span 6;
+    grid-row: 12/span 5;      
+    margin-top: 5%;           
+  }                           
+  
+                                          
+  .hr_et {                                
+    grid-column: 4/span 4;
+    grid-row: 20;
+    width: 650px;
+    margin-left: -70px;
+    margin-top: 0;                        
+    -ms-transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+    transform: rotate(35deg);
+  }                                       
+
+
+  
+  //-------------------------------------- medlemselement web ---------------------------------------------
+  .cirkel_2 {
+    grid-column: 8/span 2;
+    grid-row: 22;
+    margin-left: 0;
+    margin-top: 0;
+    img{
+      width: 235px;
+      height: 235px;
+    }
+  }
+
+  #medlemselement {
+    grid-column: 2/span 6;
+    grid-row: 21/span 7;
+    grid-template-rows: repeat(7, 50px);
+    .knap {                              
+      grid-column: 2/span 2;             
+      grid-row: 7;
+    }                                    
+  }                                       
+                                          
+  .hr_to {                                
+    grid-column: 3/span 2;
+    grid-row: 28;
+    width: 650px;
+    margin-top: 35%;
+    margin-left: 10%;
+    -ms-transform: rotate(140deg);        
+    -webkit-transform: rotate(140deg);    
+    transform: rotate(140deg);            
+  }                                       
+
+
+
+  
+  //-------------------------------------- Partnerelement web ---------------------------------------------                                                                                                                                                                       
+  .cirkel_3 {                                                  
+    grid-column: 2/span 2;
+    grid-row: 32;
+    margin-top: -10%;
+    img{            
+      width: 300px;
+      height: 300px;
+    }               
+  }
+
+  #partnerelement {
+    grid-column: 6/span 6;
+    grid-row:   32/span 5;
+    grid-template-rows: repeat(7, 50px);
+    margin-top: -4%;
+  }                                                                              
+                                          
+  .hr_tre {                               
+    grid-column: 3/span 2;
+    grid-row: 41;
+    width: 650px;
+    margin-top: 0;                        
+    margin-left: -15%;                    
+    -ms-transform: rotate(50deg);
+    -webkit-transform: rotate(50deg);
+    transform: rotate(50deg);
+  }                                       
+
+
+  
+  //-------------------------------------- Aktivitetselement web ------------------------------------------                                                                                                                                                                                                                                                             
+  .cirkel_4 {                             
+    grid-column: 7/span 2;
+    grid-row: 43;
+    margin-left: 0;
+    img{            
+      width: 235px; 
+      height: 235px;
+    }               
+  }
+
+  #aktivitetelement {   
+    grid-row: 43/span 5;
+  }                     
+                                                                                                  
+
+
+
+  //-------------------------------------- Bestyrelseselement web -----------------------------------------
+  #bestyrelseselement{
+    grid-column: 3/span 6;
+    grid-row: 50/span 4;
+    #bestyrelseoverskrift{
+      grid-column: 3/span 2;
+    }
+    #bestyrelsestext{
+      margin-left: 10%;
+    }
+  }
+
+  #caroline_2, #lasse_2, #mie_2, #kamilla_2, #anna_2{
+    @include board_web;
+  }
+
+  #bestyrelsesmedlemmer_web{
+    display: inline;
+    img{
+      display: inline;
+    }
+    .flex_1{
+      margin-left: 300px;
+    }
+    .flex_2{
+      justify-content: space-around;
+      margin-left: 300px;
+      .b_kamilla{
+        margin-left: 13%;
+      }
+      .b_anna{
+        margin-right: 13%;
+      }
+    }
+
+  }
 }
 
-@media print {
-  // Alt der gælder for print specifikt
+
+
+//---------------- WEB < 15" + > 15" ------------------ WEB < 15" + > 15"------------------ WEB < 15" + > 15"--------------
+@media screen and (min-width: 1443px) {
+  body{
+    background-image: url("../images/Background_Website_2.png");
+    background-size: cover;
+  }
+
+  #mobilAlt{
+    width: 80%;
+  }
+                                                                  
+  #left_menu{
+    width: 20%;
+  }
+
+  .hr_et {
+    grid-column: 3/span 4;
+    grid-row: 20;
+    width: 800px;
+    margin-left: 15px;
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+  
+  .hr_to {
+    grid-column: 3/span 2;
+    grid-row: 28;
+    width: 800px;
+    margin-top: 60px;
+    margin-left: 30px;
+    -ms-transform: rotate(145deg);
+    -webkit-transform: rotate(145deg);
+    transform: rotate(145deg);
+  }
+
+
+  .hr_tre {
+    grid-column: 3/span 2;
+    grid-row: 40;
+    width: 700px;
+    margin-left: 0;
+    margin-top: 5px;
+    -ms-transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+  }
+
+
+  .flex_2{
+    margin-bottom: 5%;
+  }
 }
+
+
+//---------------- WEB < 17" + > 17" ------------------ WEB < 17" + > 17"------------------ WEB < 17" + > 17"--------------
