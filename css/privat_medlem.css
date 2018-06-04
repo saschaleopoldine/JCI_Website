@@ -1133,7 +1133,7 @@ footer {
     margin-top: -8%; }
 
   #fordelafsnit {
-    margin-top: 18%; }
+    margin-top: 15%; }
 
   #Fordeltekst {
     grid-row-start: 2; }
@@ -1164,7 +1164,7 @@ footer {
     margin-left: 5%; }
 
   #fordelafsnit {
-    margin-top: 3%; } }
+    margin-top: 15%; } }
 @media screen and (min-width: 1480px) {
   body {
     background-image: url("../images/netveark_1480.png");
@@ -1177,6 +1177,9 @@ footer {
 
   #Fordeltekst {
     grid-row-start: 3; }
+
+  #fordelafsnit {
+    margin-top: 12%; }
 
   #studierabattekst {
     grid-row-start: 23; }
@@ -1200,9 +1203,6 @@ footer {
 @media screen and (min-width: 1500px) {
   #Fordeltekst {
     grid-row-start: 4; }
-
-  #fordelafsnit {
-    margin-top: 2%; }
 
   .line {
     height: 950px;
