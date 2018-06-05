@@ -702,6 +702,7 @@ footer{
     height: 330px;
     width: 330px;
     margin-left: -10%;
+    cursor: pointer;
   }
   .bold1tekst{
     grid-column: 2 / span 2;
@@ -710,6 +711,7 @@ footer{
     margin-top: 4%;
     display: inline;
     margin-left: 35%;
+    cursor: pointer;
   }
   .bold1fuldtekst{
     grid-column: 1 / span 5;
@@ -729,12 +731,14 @@ footer{
     grid-row-start: 15;
     height: 330px;
     width: 330px;
+    cursor: pointer;
   }
   .bold2tekst{
     grid-column: 5 / span 5;
     grid-row-start: 18;
     font-size: 24pt;
-    margin-left: 42%
+    margin-left: 42%;
+    cursor: pointer;
 
   }
   .bold2fuldtekst{
