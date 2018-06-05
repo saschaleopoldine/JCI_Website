@@ -38,6 +38,10 @@ img {
   max-width: 100%;
   height: auto; }
 
+.active {
+  border-bottom: solid #ee7125 3px;
+  width: 165px; }
+
 #menuMobil {
   height: 60px;
   width: 100%;
@@ -60,12 +64,76 @@ img {
 #left_menu {
   display: none; }
 
+#burgerFold {
+  padding: 8% 0 5% 15%;
+  display: none;
+  width: 110vw;
+  margin: auto;
+  background-color: #0097d7;
+  height: 100vh;
+  position: absolute;
+  z-index: 10;
+  padding-left: 20%; }
+  #burgerFold a {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    text-align: left;
+    font-size: 15pt;
+    margin-bottom: 20px;
+    font-family: 'Libre Baskerville', serif; }
+    #burgerFold a:hover {
+      color: #fccc28; }
+  #burgerFold .flexMenu {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: left; }
+  #burgerFold .hvemKlik, #burgerFold .hvemKlik2, #burgerFold .medKlik, #burgerFold .medKlik2 {
+    color: white;
+    margin-right: 2%;
+    cursor: pointer; }
+  #burgerFold .hvemKlik2, #burgerFold .medKlik {
+    display: none; }
+  #burgerFold .undermenu1 {
+    margin-left: 10%;
+    display: none; }
+  #burgerFold .undermenu2 {
+    margin-left: 10%; }
+  #burgerFold button {
+    height: 30px;
+    background-color: #ee7125;
+    border: none;
+    text-decoration: none;
+    color: white;
+    font-size: 18pt;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    font-size: 18pt;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin: 8% 0; }
+    #burgerFold button a {
+      text-decoration: none;
+      font-family: 'Merriweather Sans', sans-serif;
+      color: white;
+      font-size: 18pt; }
+    #burgerFold button:hover {
+      background-color: #fccc28; }
+  #burgerFold .kontakt {
+    margin: 5% 0;
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    font-size: 15pt; }
+
 #mobilAlt {
   padding: 0 20px 0 20px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 10px;
-  grid-template-rows: repeat(17, 50px); }
+  grid-template-rows: repeat(17, 50px);
+  margin-bottom: 50px; }
 
 .indledning {
   text-align: center;
@@ -194,6 +262,10 @@ footer {
   #left_menu {
     display: none; }
 
+  #burgerFold {
+    padding-left: 25%;
+    height: 80vh; }
+
   .bold1tekst {
     grid-column: 2 / span 2;
     grid-row-start: 7;
@@ -210,6 +282,10 @@ footer {
 
   #left_menu {
     display: none; }
+
+  #burgerFold {
+    padding-left: 35%;
+    height: 68vh; }
 
   #menuMobil {
     height: 100px; }
@@ -278,6 +354,10 @@ footer {
 
   #left_menu {
     display: none; }
+
+  #burgerFold {
+    padding-left: 37%;
+    height: 55vh; }
 
   .bold1 {
     grid-column: 1 / span 3;
@@ -395,7 +475,7 @@ footer {
     grid-template-columns: repeat(10, 1fr);
     grid-column-gap: 20px;
     width: 75%;
-    grid-template-rows: repeat(28, 50px); }
+    grid-template-rows: repeat(21, 50px); }
 
   #flex_alt {
     display: flex;
@@ -427,15 +507,17 @@ footer {
         display: flex;
         display: -webkit-flex;
         justify-content: left; }
-      #left_menu #menuIndhold #hvemKlik, #left_menu #menuIndhold #hvemKlik2, #left_menu #menuIndhold #medKlik, #left_menu #menuIndhold #medKlik2 {
+      #left_menu #menuIndhold .hvemKlik, #left_menu #menuIndhold .hvemKlik2, #left_menu #menuIndhold .medKlik, #left_menu #menuIndhold .medKlik2 {
         color: white;
         margin-right: 2%;
         cursor: pointer; }
-      #left_menu #menuIndhold #hvemKlik2, #left_menu #menuIndhold #medKlik2 {
+      #left_menu #menuIndhold .hvemKlik2, #left_menu #menuIndhold .medKlik {
         display: none; }
-      #left_menu #menuIndhold #undermenu1, #left_menu #menuIndhold #undermenu2 {
+      #left_menu #menuIndhold .undermenu1 {
         margin-left: 10%;
         display: none; }
+      #left_menu #menuIndhold .undermenu2 {
+        margin-left: 10%; }
       #left_menu #menuIndhold nav button {
         height: 30px;
         background-color: #ee7125;
@@ -443,15 +525,20 @@ footer {
         text-decoration: none;
         color: white;
         font-size: 18pt;
+        cursor: pointer;
         width: 170px;
         height: 40px;
         font-size: 18pt;
         font-family: 'Merriweather Sans', sans-serif;
-        margin: 8% 0; }
+        margin: 8% 0;
+        padding: 2% 0; }
         #left_menu #menuIndhold nav button a {
           text-decoration: none;
+          font-family: 'Merriweather Sans', sans-serif;
           color: white;
           font-size: 18pt; }
+        #left_menu #menuIndhold nav button:hover {
+          background-color: #fccc28; }
       #left_menu #menuIndhold .kontakt {
         margin: 5% 0;
         font-family: 'Libre Baskerville', serif;
@@ -476,9 +563,6 @@ footer {
         margin: 7% 0 0 15%; }
       #left_menu #menuIndhold .fa-linkedin {
         margin-left: 3%; }
-      #left_menu #menuIndhold #active {
-        border-bottom: solid #ee7125 3px;
-        width: 102px; }
 
   .indledning {
     grid-column: 3 / span 6;

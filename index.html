@@ -55,20 +55,20 @@
             <a href="index.html"><img src="images/logo.png" id="logo"></a>
 
             <nav class="web">
-                <a href="index.html" id="active">FORSIDE</a>
-                <div class="flexMenu"><i class="fa fa-angle-right hvemKlik"></i><i class="fa fa-angle-down hvemKlik2"></i><a href="#">HVEM ER JCI?</a></div>
+                <a href="index.html" class="active">FORSIDE</a>
+                <div class="flexMenu"><i class="fa fa-angle-right hvemKlik"></i><i class="fa fa-angle-down hvemKlik2"></i><a href="hvem_er_jci.html">HVEM ER JCI?</a></div>
                 <div class="undermenu1">
-                    <a href="#">JCI SLAGELSE</a>
+                    <a href="JCI_Slagelse.html">JCI SLAGELSE</a>
                     <a href="#">JCI GLOBAL</a>
                 </div>
-                <div class="flexMenu"><i class="fa fa-angle-right leftArrow medKlik"></i><i class="fa fa-angle-down medKlik2"></i><a href="#">MEDLEMSKAB</a></div>
+                <div class="flexMenu"><i class="fa fa-angle-right leftArrow medKlik"></i><i class="fa fa-angle-down medKlik2"></i><a href="medlemskab.html">MEDLEMSKAB</a></div>
                 <div class="undermenu2">
-                    <a href="#">PRIVATMEDLEM</a>
+                    <a href="privat_medlem.html">PRIVATMEDLEM</a>
                     <a href="#">ERHVERVSMEDLEM</a>
                 </div>
                 <a href="#">AKTIVITETER</a>
                 <a href="#">PARTNERE</a>
-                <button>Meld dig ind</button>
+                <button><a href="#">Meld dig ind</a></button>
             </nav>
             <p class="kontakt"><strong>KONTAKT OS</strong></p>
             <p class="kontakt">MAIL:<br>slagelse@jci.dk</p>
@@ -84,19 +84,19 @@
     </div>
 
     <div id="menuMobil" class="mobil">
-        <img src="images/logo.png">
+        <a href="index.html"><img src="images/logo.png"></a>
         <i class="fa fas fa-bars fa-2x" id="burgerKlik"></i>
     </div>
     <nav id="burgerFold">
         <a href="index.html" class="active">FORSIDE</a>
-        <div class="flexMenu"><i class="fa fa-angle-right hvemKlik"></i><i class="fa fa-angle-down hvemKlik2"></i><a href="#">HVEM ER JCI?</a></div>
+        <div class="flexMenu"><i class="fa fa-angle-right hvemKlik"></i><i class="fa fa-angle-down hvemKlik2"></i><a href="hvem_er_jci.html">HVEM ER JCI?</a></div>
         <div class="undermenu1">
-            <a href="#">JCI SLAGELSE</a>
+            <a href="JCI_Slagelse.html">JCI SLAGELSE</a>
             <a href="#">JCI GLOBAL</a>
         </div>
-        <div class="flexMenu"><i class="fa fa-angle-right leftArrow medKlik"></i><i class="fa fa-angle-down medKlik2"></i><a href="#">MEDLEMSKAB</a></div>
+        <div class="flexMenu"><i class="fa fa-angle-right leftArrow medKlik"></i><i class="fa fa-angle-down medKlik2"></i><a href="medlemskab.html">MEDLEMSKAB</a></div>
         <div class="undermenu2">
-            <a href="#">PRIVATMEDLEM</a>
+            <a href="privat_medlem.html">PRIVATMEDLEM</a>
             <a href="#">ERHVERVSMEDLEM</a>
         </div>
         <a href="#">AKTIVITETER</a>
@@ -146,7 +146,7 @@
         </p>
 
         <button id="firstBobleButton">
-            <a href="#">Læs mere om JCI</a>
+            <a href="hvem_er_jci.html">Læs mere om JCI</a>
         </button>
 
         <div id="ca_cirkel_2" class="ca_cirkler">
@@ -253,6 +253,10 @@
             $(".medKlik").show(0);
         });
 
+        $("#burgerKlik").click(function (e) {
+            $("#burgerFold").slideToggle(700);
+        });
+
         $(window).scroll(function (e) {
             if ($(this).scrollTop() >= 100){
                 $('.fa-chevron-circle-up').fadeIn(300);
@@ -265,11 +269,6 @@
         $('#bttBtn').click(function (e) {
             $('html, body').animate({scrollTop:0}, '300');
             return false;
-        });
-
-
-        $("#burgerKlik").click(function (e) {
-            $("#burgerFold").slideToggle(700);
         });
 
     });

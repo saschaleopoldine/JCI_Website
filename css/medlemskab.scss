@@ -51,7 +51,7 @@ img {
 // Variabler - med størrelser
 $blue:#0097d7;
 $orange:#ee7125;
-$yellow:#fccc28;
+$hoverYellow:#fccc28;
 $white:#f9f7f4;
 
 @mixin undertitle{
@@ -67,10 +67,16 @@ $white:#f9f7f4;
   text-decoration: none;
   color: white;
   font-size: 18pt;
+  cursor: pointer;
   a{
     text-decoration: none;
+
+    font-family: 'Merriweather Sans', sans-serif;
     color: white;
     font-size: 18pt;
+  }
+  &:hover{
+    background-color: $hoverYellow;
   }
 }
 
@@ -94,6 +100,11 @@ $white:#f9f7f4;
 @mixin flex{
   display: flex;
   display: -webkit-flex;
+}
+
+.active{
+  border-bottom: solid $orange 3px;
+  width: 165px;
 }
 
 #menuMobil{
@@ -120,12 +131,71 @@ $white:#f9f7f4;
   display: none;
 }
 
+#burgerFold{
+  padding: 8% 0 5% 15%;
+  display: none;
+  width: 110vw;
+  margin: auto;
+  background-color: $blue;
+  height: 100vh;
+  position: absolute;
+  z-index: 10;
+  padding-left: 20%;
+  a{
+    @include flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    text-align: left;
+    font-size: 15pt;
+    margin-bottom: 20px;
+    font-family: 'Libre Baskerville', serif;
+    &:hover{
+      color: $hoverYellow;
+    }
+  }
+  .flexMenu{
+    @include flex;
+    justify-content: left;
+  }
+  .hvemKlik, .hvemKlik2, .medKlik, .medKlik2{
+    color: white;
+    margin-right: 2%;
+    cursor: pointer;
+  }
+  .hvemKlik2, .medKlik{
+    display: none;
+  }
+  .undermenu1{
+    margin-left: 10%;
+    display: none;
+  }
+  .undermenu2{
+    margin-left: 10%;
+  }
+  button{
+    @include ca_button;
+    width: 200px;
+    height: 40px;
+    font-size: 18pt;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin: 8% 0;
+  }
+  .kontakt{
+    margin: 5% 0;
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    font-size: 15pt;
+  }
+}
+
 #mobilAlt{
   padding: 0 20px 0 20px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 10px;
   grid-template-rows: repeat(17, 50px);
+  margin-bottom: 50px;
 }
 
 .indledning{
@@ -266,6 +336,10 @@ footer{
   #left_menu{
     display: none;
   }
+  #burgerFold{
+    padding-left: 25%;
+    height: 80vh;
+  }
 .bold1tekst {
   grid-column: 2 / span 2;
   grid-row-start: 7;
@@ -292,6 +366,10 @@ footer{
   }
   #left_menu{
     display: none;
+  }
+  #burgerFold{
+    padding-left: 35%;
+    height: 68vh;
   }
   #menuMobil{
     height: 100px;
@@ -369,6 +447,10 @@ footer{
   }
   #left_menu{
     display: none;
+  }
+  #burgerFold{
+    padding-left: 37%;
+    height: 55vh;
   }
   .bold1{
     grid-column: 1 / span 3;
@@ -498,7 +580,7 @@ footer{
     grid-template-columns: repeat(10, 1fr);
     grid-column-gap: 20px;
     width: 75%;
-    grid-template-rows: repeat(28, 50px);
+    grid-template-rows: repeat(21, 50px);
   }
 
   #flex_alt{
@@ -534,17 +616,20 @@ footer{
         @include flex;
         justify-content: left;
       }
-      #hvemKlik, #hvemKlik2, #medKlik, #medKlik2{
+      .hvemKlik, .hvemKlik2, .medKlik, .medKlik2{
         color: white;
         margin-right: 2%;
         cursor: pointer;
       }
-      #hvemKlik2, #medKlik2{
+      .hvemKlik2, .medKlik{
         display: none;
       }
-      #undermenu1, #undermenu2{
+      .undermenu1{
         margin-left: 10%;
         display: none;
+      }
+      .undermenu2{
+        margin-left: 10%;
       }
       nav button{
         @include ca_button;
@@ -553,6 +638,7 @@ footer{
         font-size: 18pt;
         font-family: 'Merriweather Sans', sans-serif;
         margin: 8% 0;
+        padding: 2% 0;
       }
       .kontakt{
         margin: 5% 0;
@@ -585,10 +671,7 @@ footer{
       .fa-linkedin{
         margin-left: 3%;
       }
-      #active{
-        border-bottom: solid $orange 3px;
-        width: 102px;
-      }
+
     }
   }
   .indledning{

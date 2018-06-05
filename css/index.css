@@ -36,6 +36,10 @@ body {
 .web {
   display: none; }
 
+.active {
+  border-bottom: solid #f37121 3px;
+  width: 110px; }
+
 #burgerFold {
   padding: 8% 0 5% 15%;
   display: none;
@@ -55,6 +59,8 @@ body {
     font-size: 15pt;
     margin-bottom: 20px;
     font-family: 'Libre Baskerville', serif; }
+    #burgerFold a:hover {
+      color: #fccc28; }
   #burgerFold .flexMenu {
     display: flex;
     display: -webkit-flex;
@@ -75,6 +81,7 @@ body {
     text-decoration: none;
     color: white;
     font-size: 18pt;
+    cursor: pointer;
     width: 200px;
     height: 40px;
     font-size: 18pt;
@@ -82,8 +89,11 @@ body {
     margin: 8% 0; }
     #burgerFold button a {
       text-decoration: none;
+      font-family: 'Merriweather Sans', sans-serif;
       color: white;
       font-size: 18pt; }
+    #burgerFold button:hover {
+      background-color: #fccc28; }
   #burgerFold .kontakt {
     margin: 5% 0;
     font-family: 'Libre Baskerville', serif;
@@ -207,16 +217,20 @@ body {
     text-decoration: none;
     color: white;
     font-size: 18pt;
+    cursor: pointer;
     grid-row: 13/span 1;
     grid-column: 1/span 6;
-    width: 220px;
+    width: 215px;
     margin-left: 28px;
     margin-top: 22px;
     z-index: 2; }
     #mobilAlt #firstBobleButton a {
       text-decoration: none;
+      font-family: 'Merriweather Sans', sans-serif;
       color: white;
       font-size: 18pt; }
+    #mobilAlt #firstBobleButton:hover {
+      background-color: #fccc28; }
   #mobilAlt #ca_cirkel_2 {
     background-image: url("../images/caroline_aktiviteter.png");
     grid-row: 17/span 5;
@@ -250,16 +264,20 @@ body {
     text-decoration: none;
     color: white;
     font-size: 18pt;
+    cursor: pointer;
     grid-row: 20/span 1;
     margin-top: 0;
     grid-column: 1/span 4;
-    width: 175px;
-    margin-left: 27px;
+    width: 185px;
+    margin-left: 22px;
     z-index: 2; }
     #mobilAlt #secondBobleButton a {
       text-decoration: none;
+      font-family: 'Merriweather Sans', sans-serif;
       color: white;
       font-size: 18pt; }
+    #mobilAlt #secondBobleButton:hover {
+      background-color: #fccc28; }
   #mobilAlt #ca_cirkel_3 {
     background-image: url("../images/caroline_partner.png");
     grid-row: 23/span 5;
@@ -292,6 +310,7 @@ body {
     text-decoration: none;
     color: white;
     font-size: 18pt;
+    cursor: pointer;
     grid-row: 26/span 1;
     margin-top: 13px;
     grid-column: 2/span 3;
@@ -300,8 +319,11 @@ body {
     z-index: 2; }
     #mobilAlt #thirdBobleButton a {
       text-decoration: none;
+      font-family: 'Merriweather Sans', sans-serif;
       color: white;
       font-size: 18pt; }
+    #mobilAlt #thirdBobleButton:hover {
+      background-color: #fccc28; }
   #mobilAlt #ca_cirkel_4 {
     background-image: url("../images/caroline_medlemskab.png");
     grid-row: 29/span 7;
@@ -335,17 +357,21 @@ body {
     text-decoration: none;
     color: white;
     font-size: 18pt;
+    cursor: pointer;
     grid-row: 32/span 1;
     margin-top: 32px;
     grid-column: 2/span 4;
     margin-left: 4px;
-    width: 175px;
+    width: 180px;
     height: 60px;
     z-index: 2; }
     #mobilAlt #fourthBobleButton a {
       text-decoration: none;
+      font-family: 'Merriweather Sans', sans-serif;
       color: white;
       font-size: 18pt; }
+    #mobilAlt #fourthBobleButton:hover {
+      background-color: #fccc28; }
 
 footer {
   background-color: #0097d7;
@@ -439,7 +465,7 @@ footer {
     #mobilAlt #secondBobleButton {
       grid-row-start: 21;
       margin-top: 10px;
-      margin-left: 32px; }
+      margin-left: 28px; }
     #mobilAlt #ca_cirkel_3 {
       background-size: cover;
       grid-column: 2/span 4;
@@ -469,18 +495,19 @@ footer {
     #mobilAlt #fourthBobleTitle {
       grid-row-start: 32;
       margin-left: 26px;
-      margin-top: 8px; }
+      margin-top: 0; }
     #mobilAlt #fourthBobleText {
       grid-row-start: 32;
-      margin-top: 43px;
+      margin-top: 35px;
       margin-left: 26px;
       width: 300px; }
     #mobilAlt #fourthBobleButton {
       grid-row-start: 34;
       grid-column: 1/span 6;
-      width: 275px;
+      width: 285px;
       height: 30px;
-      margin-left: 26px; } }
+      margin-left: 26px;
+      margin-top: 24px; } }
 @media screen and (min-width: 410px) {
   #burgerFold {
     padding-left: 25%;
@@ -1001,15 +1028,20 @@ footer {
         text-decoration: none;
         color: white;
         font-size: 18pt;
+        cursor: pointer;
         width: 170px;
         height: 40px;
+        padding: 2% 0;
         font-size: 18pt;
         font-family: 'Merriweather Sans', sans-serif;
         margin: 8% 0; }
         #left_menu #menuIndhold nav button a {
           text-decoration: none;
+          font-family: 'Merriweather Sans', sans-serif;
           color: white;
           font-size: 18pt; }
+        #left_menu #menuIndhold nav button:hover {
+          background-color: #fccc28; }
       #left_menu #menuIndhold .kontakt {
         margin: 5% 0;
         font-family: 'Libre Baskerville', serif;
@@ -1034,9 +1066,6 @@ footer {
         margin: 7% 0 0 15%; }
       #left_menu #menuIndhold .fa-linkedin {
         margin-left: 3%; }
-      #left_menu #menuIndhold #active {
-        border-bottom: solid #f37121 3px;
-        width: 110px; }
 
   #mobilAlt {
     width: 75%;
@@ -1103,7 +1132,6 @@ footer {
       grid-row-start: 13;
       margin-top: 27px;
       grid-column: 2/span 3;
-      width: 175px;
       margin-left: 68px; }
     #mobilAlt #ca_cirkel_3 {
       grid-column: 6/span 4;
@@ -1149,8 +1177,7 @@ footer {
       grid-row-start: 28;
       margin-top: 31px;
       grid-column: 2/span 5;
-      width: 275px;
-      margin-left: 65px; } }
+      margin-left: 60px; } }
 @media screen and (min-width: 1500px) {
   body {
     background-image: url("../images/Forside_web_mockup_baggrund_2.png"); }
@@ -1276,7 +1303,7 @@ footer {
       grid-row-start: 35;
       margin-top: 40px;
       grid-column: 2/span 5;
-      margin-left: 135px; } }
+      margin-left: 130px; } }
 @media screen and (min-width: 1800px) {
   body {
     background-image: url("../images/Forside_web_mockup_baggrund_3.png"); } }

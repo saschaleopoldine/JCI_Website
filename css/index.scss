@@ -39,10 +39,12 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
+
 $baggrund: #f9f7f4;
 $bluePrimary: #0097d7;
 $orangePrimary: #f37121;
 $overlay: rgba(93, 144, 183, 0.5);
+$hoverYellow: #fccc28;
 
 @mixin flex{
   display: flex;
@@ -56,10 +58,16 @@ $overlay: rgba(93, 144, 183, 0.5);
   text-decoration: none;
   color: white;
   font-size: 18pt;
+  cursor: pointer;
   a{
     text-decoration: none;
+
+    font-family: 'Merriweather Sans', sans-serif;
     color: white;
     font-size: 18pt;
+  }
+  &:hover{
+    background-color: $hoverYellow;
   }
 }
 
@@ -70,6 +78,11 @@ body{
 
 .web{
   display: none;
+}
+
+.active{
+  border-bottom: solid $orangePrimary 3px;
+  width: 110px;
 }
 
 #burgerFold{
@@ -91,6 +104,9 @@ body{
     font-size: 15pt;
     margin-bottom: 20px;
     font-family: 'Libre Baskerville', serif;
+    &:hover{
+      color: $hoverYellow;
+    }
   }
   .flexMenu{
     @include flex;
@@ -258,7 +274,7 @@ body{
     @include ca_button;
     grid-row: 13/span 1;
     grid-column: 1/span 6;
-    width: 220px;
+    width: 215px;
     margin-left: 28px;
     margin-top: 22px;
     z-index: 2;
@@ -297,8 +313,8 @@ body{
     grid-row: 20/span 1;
     margin-top: 0;
     grid-column: 1/span 4;
-    width: 175px;
-    margin-left: 27px;
+    width: 185px;
+    margin-left: 22px;
     z-index: 2;
   }
   #ca_cirkel_3{
@@ -373,7 +389,7 @@ body{
     margin-top: 32px;
     grid-column: 2/span 4;
     margin-left: 4px;
-    width: 175px;
+    width: 180px;
     height: 60px;
     z-index: 2;
   }
@@ -498,7 +514,7 @@ footer{
     #secondBobleButton{
       grid-row-start: 21;
       margin-top: 10px;
-      margin-left: 32px;
+      margin-left: 28px;
     }
 
     #ca_cirkel_3{
@@ -536,20 +552,21 @@ footer{
     #fourthBobleTitle{
       grid-row-start: 32;
       margin-left: 26px;
-      margin-top: 8px;
+      margin-top: 0;
     }
     #fourthBobleText{
       grid-row-start: 32;
-      margin-top: 43px;
+      margin-top: 35px;
       margin-left: 26px;
       width: 300px;
     }
     #fourthBobleButton{
       grid-row-start: 34;
       grid-column: 1/span 6;
-      width: 275px;
+      width: 285px;
       height: 30px;
       margin-left: 26px;
+      margin-top: 24px;
     }
 
 
@@ -1238,6 +1255,7 @@ footer{
         @include ca_button;
         width: 170px;
         height: 40px;
+        padding: 2% 0;
         font-size: 18pt;
         font-family: 'Merriweather Sans', sans-serif;
         margin: 8% 0;
@@ -1272,10 +1290,6 @@ footer{
       }
       .fa-linkedin{
         margin-left: 3%;
-      }
-      #active{
-        border-bottom: solid $orangePrimary 3px;
-        width: 110px;
       }
     }
   }
@@ -1361,7 +1375,6 @@ footer{
       grid-row-start: 13;
       margin-top: 27px;
       grid-column: 2/span 3;
-      width: 175px;
       margin-left: 68px;
     }
 
@@ -1417,8 +1430,7 @@ footer{
       grid-row-start: 28;
       margin-top: 31px;
       grid-column: 2/span 5;
-      width: 275px;
-      margin-left: 65px;
+      margin-left: 60px;
     }
   }
 
@@ -1578,7 +1590,7 @@ footer{
       grid-row-start: 35;
       margin-top: 40px;
       grid-column: 2/span 5;
-      margin-left: 135px;
+      margin-left: 130px;
     }
   }
 
