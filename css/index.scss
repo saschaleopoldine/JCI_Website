@@ -61,7 +61,6 @@ $hoverYellow: #fccc28;
   cursor: pointer;
   a{
     text-decoration: none;
-
     font-family: 'Merriweather Sans', sans-serif;
     color: white;
     font-size: 18pt;
@@ -82,7 +81,7 @@ body{
 
 .active{
   border-bottom: solid $orangePrimary 3px;
-  width: 110px;
+  width: 102px;
 }
 
 #burgerFold{
@@ -423,6 +422,9 @@ footer{
   cursor: pointer;
   z-index: 2;
   display: none;
+  &:hover{
+    color: $hoverYellow;
+  }
 }
 
 // Variabler - med størrelser
@@ -1205,6 +1207,10 @@ footer{
     display: none;
   }
 
+  .active{
+    width: 110px;
+  }
+
   #flex_alt{
     display: flex;
     display: -webkit-flex;
@@ -1234,6 +1240,9 @@ footer{
         font-size: 15pt;
         margin-bottom: 10px;
         font-family: 'Libre Baskerville', serif;
+        &:hover{
+          color: $hoverYellow;
+        }
       }
       .flexMenu{
         @include flex;
@@ -1273,8 +1282,12 @@ footer{
         border: solid $orangePrimary 3px;
         padding: 2% 3%;
         margin: 5%;
+        cursor: pointer;
         i{
           color: white;
+          &:hover{
+            color: $hoverYellow;
+          }
         }
       }
       #flexSoMe{
