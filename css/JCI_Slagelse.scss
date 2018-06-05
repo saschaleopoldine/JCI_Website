@@ -59,10 +59,13 @@ $hoverYellow: #fccc28;
 @mixin buttoms{
   height: 30px;
   background-color: $orange;
-  color: $white;
-  font-size: 18pt;
-  font-family: 'Merriweather Sans', sans-serif;
-  text-align: center;
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 18pt;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+  }
   &:hover{
     background-color: $hoverYellow;
   }
@@ -491,6 +494,7 @@ h2{
     grid-column: 2/span 3;
     grid-row: 9;
     margin-left: -10px;
+    padding: 0 5%;
   }                       
 }
 
@@ -671,6 +675,11 @@ footer{
      margin-left: -8px;
    }
 
+  #medlemselement {
+    .knap {
+      padding: 0 10%;
+    }
+  }
 
    .hr_to{
      grid-row: 8;
@@ -807,6 +816,7 @@ footer{
     grid-row: 22/span 7;   
     .knap{
       grid-row: 7;
+      padding: 0 20%;
     }
   }                          
 
@@ -832,6 +842,7 @@ footer{
   #medlemselement {     
     .knap{              
       grid-row: 6;
+      padding: 0 25%;
     }                   
   }                     
 }
@@ -1047,6 +1058,7 @@ footer{
       grid-column: 2/span 2;
       grid-row: 6;
       margin-left: 0;
+      padding: 0 17%;
     }                          
   }
 
@@ -1291,6 +1303,7 @@ footer{
       grid-column: 2/span 2;
       grid-row: 5;
       margin-left: 0;
+      padding: 0 25%;
     }
   }
 
@@ -1781,6 +1794,7 @@ footer{
     .knap {                              
       grid-column: 2/span 2;             
       grid-row: 7;
+      padding: 0 5%;
     }                                    
   }                                       
                                           
@@ -1939,6 +1953,13 @@ footer{
   .flex_2{
     margin-bottom: 5%;
   }
+
+  #medlemselement{
+    .knap{
+      padding: 0 16%;
+    }
+  }
+
 }
 
 
