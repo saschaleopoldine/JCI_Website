@@ -31,6 +31,73 @@ img {
 .web, #bestyrelsesmedlemmer_web {
   display: none; }
 
+.active {
+  border-bottom: solid #ee7125 3px;
+  width: 155px; }
+
+#burgerFold {
+  padding: 8% 0 5% 15%;
+  display: none;
+  width: 110vw;
+  margin: auto;
+  background-color: #0097d7;
+  height: 100vh;
+  position: absolute;
+  z-index: 5;
+  padding-left: 20%; }
+  #burgerFold a {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    text-align: left;
+    font-size: 15pt;
+    margin-bottom: 20px;
+    font-family: 'Libre Baskerville', serif; }
+    #burgerFold a:hover {
+      color: #fccc28; }
+  #burgerFold .flexMenu {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: left; }
+  #burgerFold .hvemKlik, #burgerFold .hvemKlik2, #burgerFold .medKlik, #burgerFold .medKlik2 {
+    color: white;
+    margin-right: 2%;
+    cursor: pointer; }
+  #burgerFold .hvemKlik, #burgerFold .medKlik2 {
+    display: none; }
+  #burgerFold .undermenu2 {
+    margin-left: 10%;
+    display: none; }
+  #burgerFold .undermenu1 {
+    margin-left: 10%; }
+  #burgerFold button {
+    height: 30px;
+    background-color: #ee7125;
+    border: none;
+    text-decoration: none;
+    color: white;
+    font-size: 18pt;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    font-size: 18pt;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin: 8% 0; }
+    #burgerFold button a {
+      text-decoration: none;
+      font-family: 'Merriweather Sans', sans-serif;
+      color: white;
+      font-size: 18pt; }
+    #burgerFold button:hover {
+      background-color: #fccc28; }
+  #burgerFold .kontakt {
+    margin: 5% 0;
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    font-size: 15pt; }
+
 #menuMobil {
   height: 60px;
   width: 100%;
@@ -55,6 +122,8 @@ img {
   cursor: pointer;
   z-index: 2;
   display: none; }
+  .fa-chevron-circle-up:hover {
+    color: #fccc28; }
 
 #mobilAlt {
   padding: 0 20px 0 20px;
@@ -300,6 +369,8 @@ h2 {
     grid-column: 2/span 3;
     grid-row: 9;
     margin-left: -10px; }
+    #medlemselement .knap:hover {
+      background-color: #fccc28; }
 
 #partnerelement {
   grid-column: 1/span 6;
@@ -397,8 +468,14 @@ footer {
     flex-direction: column; }
     footer #some i {
       margin: 3px 0; }
+      footer #some i:hover {
+        color: #fccc28; }
 
 @media screen and (min-width: 414px) {
+  #burgerFold {
+    padding-left: 25%;
+    height: 80vh; }
+
   .cirkel_1 {
     grid-row: 4;
     margin-top: -10px; }
@@ -529,6 +606,10 @@ footer {
   #medlemselement .knap {
     grid-row: 6; } }
 @media screen and (min-width: 768px) {
+  #burgerFold {
+    padding-left: 35%;
+    height: 68vh; }
+
   #menuMobil {
     height: 100px; }
     #menuMobil i {
@@ -742,6 +823,10 @@ footer {
 @media screen and (min-width: 992px) {
   body {
     background-image: url("../images/baggrund_liggende_tablet.png"); }
+
+  #burgerFold {
+    padding-left: 37%;
+    height: 55vh; }
 
   #mobilAlt {
     grid-template-rows: repeat(42, 50px); }
@@ -1039,6 +1124,13 @@ footer {
     background-image: url("../images/baggrund_web.png");
     background-size: cover; }
 
+  .fa-chevron-circle-up {
+    bottom: 50px;
+    right: 50px; }
+
+  .active {
+    width: 167px; }
+
   .web {
     display: inline; }
 
@@ -1061,12 +1153,12 @@ footer {
   #left_menu {
     width: 25%; }
     #left_menu #menuIndhold {
+      letter-spacing: 1px;
       width: inherit;
       background-color: #0097d7;
       height: 100vh;
       padding: 50px 25px;
-      position: fixed;
-      letter-spacing: 1px; }
+      position: fixed; }
       #left_menu #menuIndhold #logo {
         width: 60%;
         margin: auto;
@@ -1080,21 +1172,23 @@ footer {
         font-size: 15pt;
         margin-bottom: 10px;
         font-family: 'Libre Baskerville', serif; }
+        #left_menu #menuIndhold nav a:hover {
+          color: #fccc28; }
       #left_menu #menuIndhold .flexMenu {
         display: flex;
         display: -webkit-flex;
         justify-content: left; }
-      #left_menu #menuIndhold #hvemKlik, #left_menu #menuIndhold #hvemKlik2, #left_menu #menuIndhold #medKlik, #left_menu #menuIndhold #medKlik2 {
+      #left_menu #menuIndhold .hvemKlik, #left_menu #menuIndhold .hvemKlik2, #left_menu #menuIndhold .medKlik, #left_menu #menuIndhold .medKlik2 {
         color: white;
         margin-right: 2%;
         cursor: pointer; }
-      #left_menu #menuIndhold #hvemKlik, #left_menu #menuIndhold #medKlik2 {
+      #left_menu #menuIndhold .hvemKlik, #left_menu #menuIndhold .medKlik2 {
         display: none; }
-      #left_menu #menuIndhold #undermenu1 {
-        margin-left: 10%; }
-      #left_menu #menuIndhold #undermenu2 {
+      #left_menu #menuIndhold .undermenu2 {
         margin-left: 10%;
         display: none; }
+      #left_menu #menuIndhold .undermenu1 {
+        margin-left: 10%; }
       #left_menu #menuIndhold nav button {
         height: 30px;
         background-color: #ee7125;
@@ -1102,15 +1196,20 @@ footer {
         text-decoration: none;
         color: white;
         font-size: 18pt;
+        cursor: pointer;
         width: 170px;
         height: 40px;
+        padding: 2% 0;
         font-size: 18pt;
         font-family: 'Merriweather Sans', sans-serif;
         margin: 8% 0; }
         #left_menu #menuIndhold nav button a {
           text-decoration: none;
+          font-family: 'Merriweather Sans', sans-serif;
           color: white;
           font-size: 18pt; }
+        #left_menu #menuIndhold nav button:hover {
+          background-color: #fccc28; }
       #left_menu #menuIndhold .kontakt {
         margin: 5% 0;
         font-family: 'Libre Baskerville', serif;
@@ -1122,9 +1221,12 @@ footer {
         border-radius: 50%;
         border: solid #ee7125 3px;
         padding: 2% 3%;
-        margin: 5%; }
+        margin: 5%;
+        cursor: pointer; }
         #left_menu #menuIndhold .soMeCirkler i {
           color: white; }
+          #left_menu #menuIndhold .soMeCirkler i:hover {
+            color: #fccc28; }
       #left_menu #menuIndhold #flexSoMe {
         display: flex;
         display: -webkit-flex;
@@ -1135,10 +1237,6 @@ footer {
         margin: 7% 0 0 15%; }
       #left_menu #menuIndhold .fa-linkedin {
         margin-left: 3%; }
-      #left_menu #menuIndhold #active {
-        border-bottom: solid #ee7125 3px;
-        margin-top: 5px;
-        width: 167px; }
 
   #grid {
     padding: 70px 50px 50px 0;

@@ -389,6 +389,8 @@ footer {
     flex-direction: column; }
     footer #some i {
       margin: 3px 0; }
+      footer #some i:hover {
+        color: #fccc28; }
 
 #bttBtn {
   color: #0097d7;

@@ -66,6 +66,10 @@ p {
   display: none;
 }
 
+.active{
+  border-bottom: solid $orangePrimary 3px;
+  width: 153px;
+}
 #burgerFold{
   padding: 8% 0 5% 15%;
   display: none;
@@ -98,12 +102,15 @@ p {
     margin-right: 2%;
     cursor: pointer;
   }
-  .hvemKlik2, .medKlik2{
+  .hvemKlik, .medKlik2{
     display: none;
   }
-  .undermenu1, .undermenu2{
+  .undermenu2{
     margin-left: 10%;
     display: none;
+  }
+  .undermenu1{
+    margin-left: 10%;
   }
   button{
     @include ca_button;
@@ -285,6 +292,9 @@ footer{
       flex-direction: column;
       i{
         margin: 3px 0;
+        &:hover{
+          color: $hoverYellow;
+        }
       }
     }
 }
@@ -605,6 +615,9 @@ footer{
   .mobil, #menuMobil, footer{
     display: none;
   }
+  .active{
+    width: 165px;
+  }
   #flex_alt{
     display: flex;
     display: -webkit-flex;
@@ -646,12 +659,15 @@ footer{
         margin-right: 2%;
         cursor: pointer;
       }
-      .hvemKlik2, .medKlik2{
+      .hvemKlik, .medKlik2{
         display: none;
       }
-      .undermenu1, .undermenu2{
+      .undermenu2{
         margin-left: 10%;
         display: none;
+      }
+      .undermenu1{
+        margin-left: 10%;
       }
       nav button{
         @include ca_button;
@@ -834,7 +850,7 @@ footer{
 
 @media screen and (min-width: 1500px) {
   body{
-    background-image: url("../images/network1500.png");
+    background-image: url("../images/network15002.png");
     background-repeat: no-repeat;
   }
   #left_menu{

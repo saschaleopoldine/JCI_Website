@@ -26,6 +26,10 @@ p {
 .web {
   display: none; }
 
+.active {
+  border-bottom: solid #f37121 3px;
+  width: 153px; }
+
 #burgerFold {
   padding: 8% 0 5% 15%;
   display: none;
@@ -56,11 +60,13 @@ p {
     color: white;
     margin-right: 2%;
     cursor: pointer; }
-  #burgerFold .hvemKlik2, #burgerFold .medKlik2 {
+  #burgerFold .hvemKlik, #burgerFold .medKlik2 {
     display: none; }
-  #burgerFold .undermenu1, #burgerFold .undermenu2 {
+  #burgerFold .undermenu2 {
     margin-left: 10%;
     display: none; }
+  #burgerFold .undermenu1 {
+    margin-left: 10%; }
   #burgerFold button {
     height: 30px;
     background-color: #f37121;
@@ -230,6 +236,8 @@ footer {
     flex-direction: column; }
     footer #some i {
       margin: 3px 0; }
+      footer #some i:hover {
+        color: #fccc28; }
 
 @media screen and (min-width: 410px) {
   #burgerFold {
@@ -498,6 +506,9 @@ footer {
   .mobil, #menuMobil, footer {
     display: none; }
 
+  .active {
+    width: 165px; }
+
   #flex_alt {
     display: flex;
     display: -webkit-flex;
@@ -535,11 +546,13 @@ footer {
         color: white;
         margin-right: 2%;
         cursor: pointer; }
-      #left_menu #menuIndhold .hvemKlik2, #left_menu #menuIndhold .medKlik2 {
+      #left_menu #menuIndhold .hvemKlik, #left_menu #menuIndhold .medKlik2 {
         display: none; }
-      #left_menu #menuIndhold .undermenu1, #left_menu #menuIndhold .undermenu2 {
+      #left_menu #menuIndhold .undermenu2 {
         margin-left: 10%;
         display: none; }
+      #left_menu #menuIndhold .undermenu1 {
+        margin-left: 10%; }
       #left_menu #menuIndhold nav button {
         height: 30px;
         background-color: #f37121;
@@ -701,7 +714,7 @@ footer {
       display: none; } }
 @media screen and (min-width: 1500px) {
   body {
-    background-image: url("../images/network1500.png");
+    background-image: url("../images/network15002.png");
     background-repeat: no-repeat; }
 
   #left_menu {

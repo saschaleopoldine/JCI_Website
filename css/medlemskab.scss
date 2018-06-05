@@ -162,12 +162,15 @@ $white:#f9f7f4;
     margin-right: 2%;
     cursor: pointer;
   }
-  .hvemKlik2, .medKlik2{
+  .hvemKlik2, .medKlik{
     display: none;
   }
-  .undermenu1, .undermenu2{
+  .undermenu1{
     margin-left: 10%;
     display: none;
+  }
+  .undermenu2{
+    margin-left: 10%;
   }
   button{
     @include ca_button;
@@ -330,6 +333,9 @@ footer{
     flex-direction: column;
     i{
       margin: 3px 0;
+      &:hover{
+        color: $hoverYellow;
+      }
     }
   }
 }
@@ -630,12 +636,15 @@ footer{
         margin-right: 2%;
         cursor: pointer;
       }
-      .hvemKlik2, .medKlik2{
+      .hvemKlik2, .medKlik{
         display: none;
       }
-      .undermenu1, .undermenu2{
+      .undermenu1{
         margin-left: 10%;
         display: none;
+      }
+      .undermenu2{
+        margin-left: 10%;
       }
       nav button{
         @include ca_button;

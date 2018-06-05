@@ -43,6 +43,7 @@ $orange:#ee7125;
 $yellow:#fccc28;
 $white:#f9f7f4;
 $overlay: rgba(93, 144, 183, 0.5);
+$hoverYellow: #fccc28;
 
 @mixin undertitle{
   font-family: 'Libre Baskerville', serif;
@@ -62,6 +63,9 @@ $overlay: rgba(93, 144, 183, 0.5);
   font-size: 18pt;
   font-family: 'Merriweather Sans', sans-serif;
   text-align: center;
+  &:hover{
+    background-color: $hoverYellow;
+  }
 }
 
 @mixin board_mobil{
@@ -90,10 +94,15 @@ $overlay: rgba(93, 144, 183, 0.5);
   text-decoration: none;
   color: white;
   font-size: 18pt;
+  cursor: pointer;
   a{
     text-decoration: none;
+    font-family: 'Merriweather Sans', sans-serif;
     color: white;
     font-size: 18pt;
+  }
+  &:hover{
+    background-color: $hoverYellow;
   }
 }
 
@@ -106,7 +115,68 @@ $overlay: rgba(93, 144, 183, 0.5);
 .web, #bestyrelsesmedlemmer_web{
   display: none;
 }
+.active{
+  border-bottom: solid $orange 3px;
+  width: 155px;
+}
 
+#burgerFold{
+  padding: 8% 0 5% 15%;
+  display: none;
+  width: 110vw;
+  margin: auto;
+  background-color: $blue;
+  height: 100vh;
+  position: absolute;
+  z-index: 5;
+  padding-left: 20%;
+  a{
+    @include flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    text-align: left;
+    font-size: 15pt;
+    margin-bottom: 20px;
+    font-family: 'Libre Baskerville', serif;
+    &:hover{
+      color: $hoverYellow;
+    }
+  }
+  .flexMenu{
+    @include flex;
+    justify-content: left;
+  }
+  .hvemKlik, .hvemKlik2, .medKlik, .medKlik2{
+    color: white;
+    margin-right: 2%;
+    cursor: pointer;
+  }
+  .hvemKlik, .medKlik2{
+    display: none;
+  }
+  .undermenu2{
+    margin-left: 10%;
+    display: none;
+  }
+  .undermenu1{
+    margin-left: 10%;
+  }
+  button{
+    @include ca_button;
+    width: 200px;
+    height: 40px;
+    font-size: 18pt;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin: 8% 0;
+  }
+  .kontakt{
+    margin: 5% 0;
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    font-size: 15pt;
+  }
+}
 #menuMobil{
   height: 60px;
   width: 100%;
@@ -133,6 +203,9 @@ $overlay: rgba(93, 144, 183, 0.5);
   cursor:pointer;
   z-index: 2;
   display: none;
+  &:hover{
+    color: $hoverYellow;
+  }
 }
 
 
@@ -547,6 +620,9 @@ footer{
     flex-direction: column;
     i{
       margin: 3px 0;
+      &:hover{
+        color: $hoverYellow;
+      }
     }
   }
 }
@@ -555,7 +631,14 @@ footer{
 
 //-------------- Iphone Plus ---------------------- Iphone Plus ------------------- Iphone Plus --------------------------
 @media screen and (min-width: 414px) {
-   .cirkel_1{
+
+  #burgerFold{
+    padding-left: 25%;
+    height: 80vh;
+  }
+
+
+  .cirkel_1{
      grid-row: 4;
      margin-top: -10px;
    }
@@ -768,7 +851,10 @@ footer{
     border-radius: 50%;
     border: 3px solid $orange;
   }
-
+  #burgerFold{
+    padding-left: 35%;
+    height: 68vh;
+  }
   #menuMobil{
     height: 100px;
     i{
@@ -1065,6 +1151,11 @@ footer{
 
   body{
     background-image: url("../images/baggrund_liggende_tablet.png");
+  }
+
+  #burgerFold{
+    padding-left: 37%;
+    height: 55vh;
   }
 
   #mobilAlt {
@@ -1476,7 +1567,16 @@ footer{
     background-image: url("../images/baggrund_web.png");
     background-size: cover;
   }
-  
+
+  .fa-chevron-circle-up{
+    bottom: 50px;
+    right: 50px;
+  }
+
+  .active{
+    width: 167px;
+  }
+
   .web{
     display: inline;
   }
@@ -1505,12 +1605,12 @@ footer{
   #left_menu{
     width: 25%;
     #menuIndhold{
+      letter-spacing: 1px;
       width: inherit;
       background-color: $blue;
       height: 100vh;
       padding: 50px 25px;
       position: fixed;
-      letter-spacing: 1px;
 
       #logo{
         width: 60%;
@@ -1525,31 +1625,34 @@ footer{
         font-size: 15pt;
         margin-bottom: 10px;
         font-family: 'Libre Baskerville', serif;
+        &:hover{
+          color: $hoverYellow;
+        }
       }
       .flexMenu{
         @include flex;
         justify-content: left;
       }
-      #hvemKlik, #hvemKlik2, #medKlik, #medKlik2{
+      .hvemKlik, .hvemKlik2, .medKlik, .medKlik2{
         color: white;
         margin-right: 2%;
         cursor: pointer;
       }
-      #hvemKlik, #medKlik2{
+      .hvemKlik, .medKlik2{
         display: none;
       }
-      #undermenu1{
-        margin-left: 10%;
-      }
-
-      #undermenu2{
+      .undermenu2{
         margin-left: 10%;
         display: none;
+      }
+      .undermenu1{
+        margin-left: 10%;
       }
       nav button{
         @include ca_button;
         width: 170px;
         height: 40px;
+        padding: 2% 0;
         font-size: 18pt;
         font-family: 'Merriweather Sans', sans-serif;
         margin: 8% 0;
@@ -1567,8 +1670,12 @@ footer{
         border: solid $orange 3px;
         padding: 2% 3%;
         margin: 5%;
+        cursor: pointer;
         i{
           color: white;
+          &:hover{
+            color: $hoverYellow;
+          }
         }
       }
       #flexSoMe{
@@ -1579,16 +1686,11 @@ footer{
       #soMeCirkel3{
         margin: auto;
       }
-      .fa-facebook-f {
+      .fa-facebook-f{
         margin: 7% 0 0 15%;
       }
       .fa-linkedin{
         margin-left: 3%;
-      }
-      #active{
-        border-bottom: solid $orange 3px;
-        margin-top: 5px;
-        width: 167px;
       }
     }
   }

@@ -93,11 +93,13 @@ img {
     color: white;
     margin-right: 2%;
     cursor: pointer; }
-  #burgerFold .hvemKlik2, #burgerFold .medKlik2 {
+  #burgerFold .hvemKlik2, #burgerFold .medKlik {
     display: none; }
-  #burgerFold .undermenu1, #burgerFold .undermenu2 {
+  #burgerFold .undermenu1 {
     margin-left: 10%;
     display: none; }
+  #burgerFold .undermenu2 {
+    margin-left: 10%; }
   #burgerFold button {
     height: 30px;
     background-color: #ee7125;
@@ -258,6 +260,8 @@ footer {
     flex-direction: column; }
     footer #some i {
       margin: 3px 0; }
+      footer #some i:hover {
+        color: #fccc28; }
 
 @media screen and (min-width: 414px) {
   #left_menu {
@@ -517,11 +521,13 @@ footer {
         color: white;
         margin-right: 2%;
         cursor: pointer; }
-      #left_menu #menuIndhold .hvemKlik2, #left_menu #menuIndhold .medKlik2 {
+      #left_menu #menuIndhold .hvemKlik2, #left_menu #menuIndhold .medKlik {
         display: none; }
-      #left_menu #menuIndhold .undermenu1, #left_menu #menuIndhold .undermenu2 {
+      #left_menu #menuIndhold .undermenu1 {
         margin-left: 10%;
         display: none; }
+      #left_menu #menuIndhold .undermenu2 {
+        margin-left: 10%; }
       #left_menu #menuIndhold nav button {
         height: 30px;
         background-color: #ee7125;

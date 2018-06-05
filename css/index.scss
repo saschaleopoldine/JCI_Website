@@ -410,6 +410,9 @@ footer{
     flex-direction: column;
     i{
       margin: 3px 0;
+      &:hover{
+        color: $hoverYellow;
+      }
     }
   }
 }
