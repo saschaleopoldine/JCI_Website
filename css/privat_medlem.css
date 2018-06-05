@@ -41,7 +41,7 @@ img {
 #burgerFold {
   padding: 8% 0 5% 15%;
   display: none;
-  width: 110vw;
+  width: 100vw;
   margin: auto;
   background-color: #0097d7;
   height: 100vh;
@@ -424,13 +424,13 @@ h2 {
   grid-column: 2/span 4;
   grid-row-start: 23; }
 
-#fådincheftekst {
+#f├Ñdincheftekst {
   grid-column: 1/span 6;
   grid-row: 38/span 8;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(9, 50px); }
-  #fådincheftekst .fådinchefafsnitoverskrift {
+  #f├Ñdincheftekst .f├Ñdinchefafsnitoverskrift {
     grid-column: 2/span 3;
     grid-row: 8;
     margin-left: -0.5%;
@@ -449,7 +449,7 @@ h2 {
     text-decoration: none;
     color: black; }
 
-#fådinchefafsnit {
+#f├Ñdinchefafsnit {
   font-size: 12pt;
   color: black;
   text-align: left;
@@ -493,7 +493,7 @@ footer {
   #studierabattekst {
     grid-row: 30/span 8; }
 
-  #fådincheftekst {
+  #f├Ñdincheftekst {
     grid-row: 39/span 8; } }
 @media screen and (min-width: 414px) {
   #burgerFold {
@@ -670,13 +670,13 @@ footer {
       margin-left: -0.5%;
       margin-top: -1px; }
 
-  #fådincheftekst {
+  #f├Ñdincheftekst {
     grid-column: 1/span 6;
     grid-row: 31/span 8;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(9, 50px); }
-    #fådincheftekst .fådinchefafsnitoverskrift {
+    #f├Ñdincheftekst .f├Ñdinchefafsnitoverskrift {
       grid-column: 2/span 6;
       grid-row: 9;
       margin-left: -0.5%;
@@ -811,13 +811,13 @@ footer {
       margin-left: -0.5%;
       margin-top: -1px; }
 
-  #fådincheftekst {
+  #f├Ñdincheftekst {
     grid-column: 1/span 6;
     grid-row: 29/span 8;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(9, 50px); }
-    #fådincheftekst .fådinchefafsnitoverskrift {
+    #f├Ñdincheftekst .f├Ñdinchefafsnitoverskrift {
       grid-column: 2/span 6;
       grid-row: 9;
       margin-left: -0.5%;
@@ -919,7 +919,7 @@ footer {
     grid-row: 23/span 8;
     margin-left: 20px; }
 
-  #fådincheftekst {
+  #f├Ñdincheftekst {
     grid-column: 1/span 6;
     grid-row: 27/span 8;
     margin-left: 20px; } }
@@ -947,7 +947,7 @@ footer {
     grid-row: 26/span 8;
     margin-left: 110px; }
 
-  #fådincheftekst {
+  #f├Ñdincheftekst {
     grid-column: 1/span 5;
     grid-row: 31/span 8;
     margin-left: 110px; }
@@ -1201,13 +1201,13 @@ footer {
     grid-column: 3/span 6;
     margin-top: 14%; }
 
-  #fådincheftekst {
+  #f├Ñdincheftekst {
     grid-column: 1/span 5;
     grid-row-start: 30;
     margin-left: -50px;
     margin-top: -10%; }
 
-  #fådinchefafsnit {
+  #f├Ñdinchefafsnit {
     font-size: 15pt;
     margin-top: 13%; }
 
@@ -1227,7 +1227,7 @@ footer {
     .meld_dig_indweb:hover {
       background-color: #fccc28; }
 
-  .fådinchefafsnitoverskrift {
+  .f├Ñdinchefafsnitoverskrift {
     font-size: 24pt; } }
 @media screen and (min-width: 1300px) {
   .line {
@@ -1327,7 +1327,7 @@ footer {
     transform: rotate(130deg);
     margin-top: 10%; }
 
-  #fådincheftekst {
+  #f├Ñdincheftekst {
     grid-row-start: 31; }
 
   #mobilAlt {
