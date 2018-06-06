@@ -7,6 +7,8 @@
 
 body {
   margin: 0; // Ingen kanter i siden af browser
+  background-color: #f9f7f4;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -36,18 +38,37 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
-// Variabler - med størrelser
+body{
+  background-image: url("../images/fejlside_baggrund-mobil.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
+  body{
+    background-image: url("../images/fejlside_baggrund_ipad.png");
+  }
+
+
+
+
 }
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
+  body{
+    background-image: url("../images/fejlside_baggrund_liggendeiPad.png");
+  }
 }
 
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+  body{
+    background-image: url("../images/fejlside_baggrund_web.png");
+  }
+
+
 }
 
 @media print {

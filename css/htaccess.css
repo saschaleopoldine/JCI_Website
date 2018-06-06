@@ -3,7 +3,8 @@
   box-sizing: border-box; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  background-color: #f9f7f4; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -25,5 +26,20 @@ img {
   display: block;
   max-width: 100%;
   height: auto; }
+
+body {
+  background-image: url("../images/fejlside_baggrund-mobil.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url("../images/fejlside_baggrund_ipad.png"); } }
+@media screen and (min-width: 992px) {
+  body {
+    background-image: url("../images/fejlside_baggrund_liggendeiPad.png"); } }
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url("../images/fejlside_baggrund_web.png"); } }
 
 /*# sourceMappingURL=htaccess.css.map */
