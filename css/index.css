@@ -250,8 +250,8 @@ body {
     grid-column: 1/span 3;
     width: 110px;
     margin-left: 24px;
-    grid-row-start: 17;
-    margin-top: 34px;
+    grid-row-start: 18;
+    margin-top: 0;
     font-weight: bold;
     z-index: 2; }
   #mobilAlt #secondBobleText {
@@ -259,7 +259,7 @@ body {
     color: white;
     grid-column: 1/span 5;
     grid-row-start: 18;
-    margin-top: 11px;
+    margin-top: 33px;
     width: 210px;
     margin-left: 24px;
     z-index: 2; }
@@ -297,7 +297,8 @@ body {
     grid-column: 2/span 3;
     width: 110px;
     margin-left: 27px;
-    grid-row-start: 24;
+    grid-row-start: 23;
+    margin-top: 40px;
     font-weight: bold;
     z-index: 2; }
   #mobilAlt #thirdBobleText {
@@ -305,9 +306,9 @@ body {
     color: white;
     grid-column: 2/span 5;
     grid-row-start: 24;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: 27px;
-    width: 160px;
+    width: 165px;
     z-index: 2; }
   #mobilAlt #thirdBobleButton {
     height: 30px;
@@ -317,8 +318,9 @@ body {
     color: white;
     font-size: 18pt;
     cursor: pointer;
-    grid-row: 26/span 1;
-    margin-top: 13px;
+    height: 66px;
+    grid-row-start: 25;
+    margin-top: 30px;
     grid-column: 2/span 3;
     width: 150px;
     margin-left: 40px;
@@ -463,13 +465,13 @@ footer {
       height: 240px;
       width: 240px; }
     #mobilAlt #secondBobleTitle {
-      grid-row-start: 18;
+      grid-row-start: 19;
       margin-left: 28px;
-      margin-top: 38px; }
+      margin-top: 5px; }
     #mobilAlt #secondBobleText {
       grid-row-start: 19;
       grid-column: 1/span 4;
-      margin-top: 21px;
+      margin-top: 40px;
       margin-left: 28px; }
     #mobilAlt #secondBobleButton {
       grid-row-start: 21;
@@ -492,8 +494,8 @@ footer {
       margin-left: -20px;
       margin-top: 24px; }
     #mobilAlt #thirdBobleButton {
-      grid-row-start: 27;
-      margin-top: 15px;
+      grid-row-start: 26;
+      margin-top: 40px;
       grid-column: 3/span 3;
       margin-left: -15px; }
     #mobilAlt #ca_cirkel_4 {
@@ -504,19 +506,19 @@ footer {
     #mobilAlt #fourthBobleTitle {
       grid-row-start: 32;
       margin-left: 26px;
-      margin-top: 0; }
+      margin-top: 45px; }
     #mobilAlt #fourthBobleText {
-      grid-row-start: 32;
-      margin-top: 35px;
+      grid-row-start: 33;
+      margin-top: 30px;
       margin-left: 26px;
       width: 300px; }
     #mobilAlt #fourthBobleButton {
-      grid-row-start: 34;
+      grid-row-start: 35;
       grid-column: 1/span 6;
-      width: 285px;
+      width: 220px;
       height: 30px;
-      margin-left: 26px;
-      margin-top: 24px; } }
+      margin-left: 55px;
+      margin-top: 0; } }
 @media screen and (min-width: 410px) {
   #burgerFold {
     padding-left: 25%; }
@@ -557,12 +559,12 @@ footer {
       height: 250px;
       width: 250px; }
     #mobilAlt #secondBobleTitle {
-      grid-row-start: 19;
-      margin-top: 45px; }
-    #mobilAlt #secondBobleText {
       grid-row-start: 20;
+      margin-top: 20px; }
+    #mobilAlt #secondBobleText {
+      grid-row-start: 21;
       grid-column: 1/span 4;
-      margin-top: 27px; }
+      margin-top: 0; }
     #mobilAlt #secondBobleButton {
       grid-row-start: 22;
       margin-left: 36px;
@@ -575,17 +577,17 @@ footer {
     #mobilAlt #thirdBobleTitle {
       grid-column: 3/span 3;
       margin-left: 30px;
-      margin-top: 25px;
+      margin-top: 0;
       grid-row-start: 26; }
     #mobilAlt #thirdBobleText {
-      grid-row-start: 27;
+      grid-row-start: 26;
       grid-column: 3/span 4;
       margin-left: 30px;
-      margin-top: 7px;
+      margin-top: 30px;
       width: 195px; }
     #mobilAlt #thirdBobleButton {
       grid-row-start: 28;
-      margin-top: 27px;
+      margin-top: 0;
       grid-column: 3/span 3;
       margin-left: 50px; }
     #mobilAlt #ca_cirkel_4 {
@@ -593,20 +595,20 @@ footer {
       height: 375px;
       width: 375px; }
     #mobilAlt #fourthBobleTitle {
-      grid-row-start: 33;
-      margin-left: 26px;
-      margin-top: 45px; }
-    #mobilAlt #fourthBobleText {
       grid-row-start: 34;
+      margin-left: 45px;
+      margin-top: 40px; }
+    #mobilAlt #fourthBobleText {
+      grid-row-start: 35;
       margin-top: 25px;
-      margin-left: 26px;
+      margin-left: 45px;
       width: 300px; }
     #mobilAlt #fourthBobleButton {
       grid-row-start: 36;
       grid-column: 1/span 6;
       height: 30px;
-      margin-left: 48px;
-      margin-top: 15px; } }
+      margin-left: 75px;
+      margin-top: 45px; } }
 @media screen and (min-width: 540px) {
   body {
     background-image: url("../images/Forside_mobil_mockup_baggrund_2.png"); } }
@@ -697,7 +699,7 @@ footer {
       width: 250px; }
     #mobilAlt #thirdBobleButton {
       grid-row-start: 30;
-      margin-top: 40px;
+      margin-top: 15px;
       grid-column: 4/span 3;
       margin-left: 82px; }
     #mobilAlt #ca_cirkel_4 {
@@ -709,19 +711,19 @@ footer {
       grid-row-start: 37;
       grid-column: 2/span 4;
       margin-left: 28px;
-      margin-top: 5px; }
+      margin-top: 35px; }
     #mobilAlt #fourthBobleText {
-      grid-row-start: 37;
+      grid-row-start: 38;
       grid-column: 2/span 4;
-      margin-top: 40px;
+      margin-top: 20px;
       margin-left: 28px;
       width: 80%; }
     #mobilAlt #fourthBobleButton {
       grid-row-start: 39;
       grid-column: 2/span 4;
       height: 30px;
-      margin-left: 50px;
-      margin-top: 10px; } }
+      margin-left: 70px;
+      margin-top: 40px; } }
 @media screen and (min-width: 768px) {
   body {
     background-image: url("../images/Forside_mobil_mockup_baggrund_3.png"); }
@@ -798,7 +800,7 @@ footer {
       width: 360px;
       height: 360px; }
     #mobilAlt #thirdBobleTitle {
-      margin-top: 32px;
+      margin-top: 37px;
       grid-row-start: 29;
       margin-left: 60px; }
     #mobilAlt #thirdBobleText {
@@ -815,16 +817,16 @@ footer {
     #mobilAlt #fourthBobleTitle {
       grid-row-start: 40;
       margin-left: 82px;
-      margin-top: 30px; }
+      margin-top: 45px; }
     #mobilAlt #fourthBobleText {
       grid-row-start: 41;
-      margin-top: 20px;
+      margin-top: 30px;
       margin-left: 82px;
       width: 340px; }
     #mobilAlt #fourthBobleButton {
-      margin-top: 39px;
-      grid-row-start: 42;
-      margin-left: 100px; }
+      grid-row-start: 43;
+      margin-top: 0;
+      margin-left: 130px; }
 
   footer {
     justify-content: center; }
@@ -924,22 +926,24 @@ footer {
       height: 380px;
       grid-row-start: 15; }
     #mobilAlt #thirdBobleTitle {
-      grid-row-start: 19;
-      margin-top: 0;
+      grid-row-start: 18;
+      margin-top: 15px;
       grid-column: 6/span 2;
       width: 165px;
       margin-left: 52px; }
     #mobilAlt #thirdBobleText {
       grid-row-start: 19;
-      margin-top: 34px;
+      margin-top: 0;
       grid-column: 6/span 4;
       width: 275px;
       margin-left: 52px; }
     #mobilAlt #thirdBobleButton {
-      grid-row-start: 21;
+      width: 300px;
+      height: 30px;
+      grid-row-start: 20;
       margin-top: 0;
       grid-column: 6/span 4;
-      margin-left: 115px; }
+      margin-left: 40px; }
     #mobilAlt #ca_cirkel_4 {
       grid-column: 2/span 5;
       width: 435px;
@@ -947,21 +951,21 @@ footer {
       grid-row-start: 22; }
     #mobilAlt #fourthBobleTitle {
       grid-row-start: 26;
-      margin-top: 20px;
+      margin-top: 45px;
       grid-column: 2/span 3;
       width: 100%;
-      margin-left: 44px; }
+      margin-left: 80px; }
     #mobilAlt #fourthBobleText {
       grid-row-start: 27;
-      margin-top: 5px;
+      margin-top: 30px;
       grid-column: 2/span 5;
-      width: 350px;
-      margin-left: 44px; }
+      width: 300px;
+      margin-left: 80px; }
     #mobilAlt #fourthBobleButton {
-      grid-row-start: 28;
-      margin-top: 25px;
+      grid-row-start: 29;
+      margin-top: 0;
       grid-column: 2/span 3;
-      margin-left: 77px; } }
+      margin-left: 105px; } }
 @media screen and (min-width: 1200px) {
   body {
     background-image: url("../images/Forside_web_mockup_baggrund.png"); }
@@ -1160,44 +1164,45 @@ footer {
       grid-row-start: 16; }
     #mobilAlt #thirdBobleTitle {
       grid-row-start: 17;
-      margin-top: 40px;
+      margin-top: 25px;
       grid-column: 6/span 2;
       width: 150px;
       margin-left: 46px; }
     #mobilAlt #thirdBobleText {
       grid-row-start: 18;
-      margin-top: 25px;
+      margin-top: 10px;
       grid-column: 6/span 4;
       width: 220px;
       margin-left: 46px; }
     #mobilAlt #thirdBobleButton {
       grid-row-start: 20;
-      margin-top: 37px;
+      margin-top: 0;
       grid-column: 6/span 4;
-      width: 150px;
-      margin-left: 75px; }
+      width: 170px;
+      height: 66px;
+      margin-left: 73px; }
     #mobilAlt #ca_cirkel_4 {
       grid-column: 2/span 5;
       width: 400px;
       height: 400px;
       grid-row-start: 23; }
     #mobilAlt #fourthBobleTitle {
-      grid-row-start: 25;
-      margin-top: 5px;
+      grid-row-start: 26;
+      margin-top: 0;
       grid-column: 2/span 3;
       width: 230px;
       margin-left: 39px; }
     #mobilAlt #fourthBobleText {
-      grid-row-start: 25;
-      margin-top: 42px;
+      grid-row-start: 26;
+      margin-top: 45px;
       grid-column: 2/span 5;
       width: 300px;
       margin-left: 39px; }
     #mobilAlt #fourthBobleButton {
-      grid-row-start: 28;
-      margin-top: 31px;
+      grid-row-start: 29;
+      margin-top: 10px;
       grid-column: 2/span 5;
-      margin-left: 60px; } }
+      margin-left: 90px; } }
 @media screen and (min-width: 1500px) {
   body {
     background-image: url("../images/Forside_web_mockup_baggrund_2.png"); }
@@ -1287,43 +1292,45 @@ footer {
       grid-row-start: 19; }
     #mobilAlt #thirdBobleTitle {
       grid-row-start: 23;
-      margin-top: 25px;
+      margin-top: 0;
       grid-column: 6/span 2;
       width: 205px;
       margin-left: 70px; }
     #mobilAlt #thirdBobleText {
-      grid-row-start: 24;
-      margin-top: 15px;
+      grid-row-start: 23;
+      margin-top: 40px;
       grid-column: 6/span 4;
       width: 300px;
       margin-left: 70px; }
     #mobilAlt #thirdBobleButton {
-      grid-row-start: 26;
+      width: 300px;
+      height: 30px;
+      grid-row-start: 25;
       margin-top: 0;
       grid-column: 6/span 4;
-      margin-left: 135px; }
+      margin-left: 65px; }
     #mobilAlt #ca_cirkel_4 {
       grid-column: 2/span 5;
       width: 540px;
       height: 540px;
       grid-row-start: 27; }
     #mobilAlt #fourthBobleTitle {
-      grid-row-start: 32;
-      margin-top: 40px;
+      grid-row-start: 33;
+      margin-top: 32px;
       grid-column: 2/span 3;
       width: 320px;
       margin-left: 92px; }
     #mobilAlt #fourthBobleText {
-      grid-row-start: 33;
-      margin-top: 30px;
+      grid-row-start: 34;
+      margin-top: 25px;
       grid-column: 2/span 5;
       width: 380px;
       margin-left: 92px; }
     #mobilAlt #fourthBobleButton {
-      grid-row-start: 35;
-      margin-top: 40px;
+      grid-row-start: 36;
+      margin-top: 10px;
       grid-column: 2/span 5;
-      margin-left: 130px; } }
+      margin-left: 160px; } }
 @media screen and (min-width: 1800px) {
   body {
     background-image: url("../images/Forside_web_mockup_baggrund_3.png"); } }
