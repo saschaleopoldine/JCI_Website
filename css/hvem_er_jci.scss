@@ -125,6 +125,14 @@ p {
     font-family: 'Libre Baskerville', serif;
     color: white;
     font-size: 15pt;
+    a{
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+      &:hover{
+        color: $hoverYellow;
+      }
+    }
   }
 }
 
@@ -304,7 +312,6 @@ footer{
 @media screen and (min-width: 410px) {
   #burgerFold{
     padding-left: 25%;
-    height: 80vh;
   }
 }
 
@@ -334,7 +341,6 @@ footer{
   }
   #burgerFold{
     padding-left: 35%;
-    height: 68vh;
   }
   #menuMobil{
     height: 100px;
@@ -450,7 +456,6 @@ footer{
   }
   #burgerFold{
     padding-left: 37%;
-    height: 55vh;
   }
   #mobilAlt {
     .slagelse {
@@ -682,6 +687,14 @@ footer{
         font-family: 'Libre Baskerville', serif;
         color: white;
         font-size: 15pt;
+        a{
+          text-decoration: none;
+          color: white;
+          cursor: pointer;
+          &:hover{
+            color: $hoverYellow;
+          }
+        }
       }
       .soMeCirkler{
         width: 50px;

@@ -97,6 +97,12 @@ img {
     font-family: 'Libre Baskerville', serif;
     color: white;
     font-size: 15pt; }
+    #burgerFold .kontakt a {
+      text-decoration: none;
+      color: white;
+      cursor: pointer; }
+      #burgerFold .kontakt a:hover {
+        color: #fccc28; }
 
 #menuMobil {
   height: 60px;
@@ -476,8 +482,7 @@ footer {
 
 @media screen and (min-width: 414px) {
   #burgerFold {
-    padding-left: 25%;
-    height: 80vh; }
+    padding-left: 25%; }
 
   .cirkel_1 {
     grid-row: 4;
@@ -615,8 +620,7 @@ footer {
     padding: 0 25%; } }
 @media screen and (min-width: 768px) {
   #burgerFold {
-    padding-left: 35%;
-    height: 68vh; }
+    padding-left: 35%; }
 
   #menuMobil {
     height: 100px; }
@@ -834,8 +838,7 @@ footer {
     background-image: url("../images/baggrund_liggende_tablet.png"); }
 
   #burgerFold {
-    padding-left: 37%;
-    height: 55vh; }
+    padding-left: 37%; }
 
   #mobilAlt {
     grid-template-rows: repeat(42, 50px); }
@@ -1225,6 +1228,12 @@ footer {
         font-family: 'Libre Baskerville', serif;
         color: white;
         font-size: 15pt; }
+        #left_menu #menuIndhold .kontakt a {
+          text-decoration: none;
+          color: white;
+          cursor: pointer; }
+          #left_menu #menuIndhold .kontakt a:hover {
+            color: #fccc28; }
       #left_menu #menuIndhold .soMeCirkler {
         width: 50px;
         height: 50px;

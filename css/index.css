@@ -99,6 +99,12 @@ body {
     font-family: 'Libre Baskerville', serif;
     color: white;
     font-size: 15pt; }
+    #burgerFold .kontakt a {
+      text-decoration: none;
+      color: white;
+      cursor: pointer; }
+      #burgerFold .kontakt a:hover {
+        color: #fccc28; }
 
 .ca_streger {
   height: 3px;
@@ -405,8 +411,7 @@ footer {
 
 @media screen and (min-width: 360px) {
   #burgerFold {
-    padding-left: 20%;
-    height: 100vh; }
+    padding-left: 20%; }
 
   #ca_streg1 {
     -ms-transform: rotate(-80deg);
@@ -514,8 +519,7 @@ footer {
       margin-top: 24px; } }
 @media screen and (min-width: 410px) {
   #burgerFold {
-    padding-left: 25%;
-    height: 80vh; }
+    padding-left: 25%; }
 
   #ca_streg1 {
     -ms-transform: rotate(-75deg);
@@ -723,8 +727,7 @@ footer {
     background-image: url("../images/Forside_mobil_mockup_baggrund_3.png"); }
 
   #burgerFold {
-    padding-left: 35%;
-    height: 75vh; }
+    padding-left: 35%; }
 
   #menuMobil {
     height: 100px; }
@@ -834,8 +837,7 @@ footer {
     background-image: url("../images/Forside_mobil_mockup_baggrund_4.png"); }
 
   #burgerFold {
-    padding-left: 37%;
-    height: 65vh; }
+    padding-left: 37%; }
 
   #ca_streg1 {
     -ms-transform: rotate(-45deg);
@@ -1056,6 +1058,12 @@ footer {
         font-family: 'Libre Baskerville', serif;
         color: white;
         font-size: 15pt; }
+        #left_menu #menuIndhold .kontakt a {
+          text-decoration: none;
+          color: white;
+          cursor: pointer; }
+          #left_menu #menuIndhold .kontakt a:hover {
+            color: #fccc28; }
       #left_menu #menuIndhold .soMeCirkler {
         width: 50px;
         height: 50px;

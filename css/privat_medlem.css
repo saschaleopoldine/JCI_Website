@@ -100,6 +100,12 @@ img {
     font-family: 'Libre Baskerville', serif;
     color: white;
     font-size: 15pt; }
+    #burgerFold .kontakt a {
+      text-decoration: none;
+      color: white;
+      cursor: pointer; }
+      #burgerFold .kontakt a:hover {
+        color: #fccc28; }
 
 #menuMobil {
   height: 60px;
@@ -424,13 +430,13 @@ h2 {
   grid-column: 2/span 4;
   grid-row-start: 23; }
 
-#fådincheftekst {
+#f├Ñdincheftekst {
   grid-column: 1/span 6;
   grid-row: 38/span 8;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(9, 50px); }
-  #fådincheftekst .fådinchefafsnitoverskrift {
+  #f├Ñdincheftekst .f├Ñdinchefafsnitoverskrift {
     grid-column: 2/span 3;
     grid-row: 8;
     margin-left: -0.5%;
@@ -449,7 +455,7 @@ h2 {
     text-decoration: none;
     color: black; }
 
-#fådinchefafsnit {
+#f├Ñdinchefafsnit {
   font-size: 12pt;
   color: black;
   text-align: left;
@@ -493,12 +499,11 @@ footer {
   #studierabattekst {
     grid-row: 30/span 8; }
 
-  #fådincheftekst {
+  #f├Ñdincheftekst {
     grid-row: 39/span 8; } }
 @media screen and (min-width: 414px) {
   #burgerFold {
-    padding-left: 25%;
-    height: 80vh; }
+    padding-left: 25%; }
 
   #circle {
     width: 50%;
@@ -672,18 +677,18 @@ footer {
       margin-left: -0.5%;
       margin-top: -1px; }
 
-  #fådincheftekst {
+  #f├Ñdincheftekst {
     grid-column: 1/span 6;
     grid-row: 31/span 8;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(9, 50px); }
-    #fådincheftekst .fådinchefafsnitoverskrift {
+    #f├Ñdincheftekst .f├Ñdinchefafsnitoverskrift {
       grid-column: 2/span 6;
       grid-row: 9;
       margin-left: -0.5%;
       margin-top: -1px; }
-    #fådincheftekst #fådinchefafsnit {
+    #f├Ñdincheftekst #f├Ñdinchefafsnit {
       margin-top: 7%; } }
 @media screen and (min-width: 768px) {
   body {
@@ -692,8 +697,7 @@ footer {
     background-position: top; }
 
   #burgerFold {
-    padding-left: 35%;
-    height: 68vh; }
+    padding-left: 35%; }
 
   #menuMobil {
     height: 100px; }
@@ -815,13 +819,13 @@ footer {
       margin-left: -0.5%;
       margin-top: -1px; }
 
-  #fådincheftekst {
+  #f├Ñdincheftekst {
     grid-column: 1/span 6;
     grid-row: 29/span 8;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(9, 50px); }
-    #fådincheftekst .fådinchefafsnitoverskrift {
+    #f├Ñdincheftekst .f├Ñdinchefafsnitoverskrift {
       grid-column: 2/span 6;
       grid-row: 9;
       margin-left: -0.5%;
@@ -835,8 +839,7 @@ footer {
       margin-top: 2%; } }
 @media screen and (min-width: 992px) {
   #burgerFold {
-    padding-left: 37%;
-    height: 55vh; }
+    padding-left: 37%; }
 
   #circle {
     width: 320px;
@@ -923,7 +926,7 @@ footer {
     grid-row: 23/span 8;
     margin-left: 20px; }
 
-  #fådincheftekst {
+  #f├Ñdincheftekst {
     grid-column: 1/span 6;
     grid-row: 27/span 8;
     margin-left: 20px; } }
@@ -951,7 +954,7 @@ footer {
     grid-row: 26/span 8;
     margin-left: 110px; }
 
-  #fådincheftekst {
+  #f├Ñdincheftekst {
     grid-column: 1/span 5;
     grid-row: 31/span 8;
     margin-left: 110px; }
@@ -1056,6 +1059,12 @@ footer {
         font-family: 'Libre Baskerville', serif;
         color: white;
         font-size: 15pt; }
+        #left_menu #menuIndhold .kontakt a {
+          text-decoration: none;
+          color: white;
+          cursor: pointer; }
+          #left_menu #menuIndhold .kontakt a:hover {
+            color: #fccc28; }
       #left_menu #menuIndhold .soMeCirkler {
         width: 50px;
         height: 50px;
@@ -1203,12 +1212,12 @@ footer {
     grid-column: 3/span 6;
     margin-top: 14%; }
 
-  #fådincheftekst {
+  #f├Ñdincheftekst {
     grid-column: 1/span 5;
     grid-row-start: 30;
     margin-left: -50px;
     margin-top: -10%; }
-    #fådincheftekst #fådinchefafsnit {
+    #f├Ñdincheftekst #f├Ñdinchefafsnit {
       font-size: 15pt;
       margin-top: 13%; }
 
@@ -1228,7 +1237,7 @@ footer {
     .meld_dig_indweb:hover {
       background-color: #fccc28; }
 
-  .fådinchefafsnitoverskrift {
+  .f├Ñdinchefafsnitoverskrift {
     font-size: 24pt; } }
 @media screen and (min-width: 1300px) {
   .line {
@@ -1328,7 +1337,7 @@ footer {
     transform: rotate(130deg);
     margin-top: 10%; }
 
-  #fådincheftekst {
+  #f├Ñdincheftekst {
     grid-row-start: 31; }
 
   #mobilAlt {
