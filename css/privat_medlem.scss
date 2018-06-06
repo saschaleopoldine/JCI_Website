@@ -40,7 +40,10 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
-
+$bluePrimary: #0097d7;
+$orangePrimary: #f37121;
+$overlay: rgba(93, 144, 183, 0.5);
+$hoverYellow: #fccc28;
 
 
 @mixin afsnit{
@@ -69,11 +72,6 @@ img {
 }
 
 
-
-
-
-
-
 @mixin button{
   background-color: #f37121;
   color: white;
@@ -83,11 +81,10 @@ img {
   border: none;
   cursor: pointer;
   margin: 10px;
+  &:hover{
+    background-color: $hoverYellow;
+  }
 }
-
-$bluePrimary: #0097d7;
-$orangePrimary: #f37121;
-$overlay: rgba(93, 144, 183, 0.5);
 
 @mixin ca_button{
   height: 30px;
@@ -96,10 +93,15 @@ $overlay: rgba(93, 144, 183, 0.5);
   text-decoration: none;
   color: white;
   font-size: 18pt;
+  cursor: pointer;
   a{
     text-decoration: none;
+    font-family: 'Merriweather Sans', sans-serif;
     color: white;
     font-size: 18pt;
+  }
+  &:hover{
+    background-color: $hoverYellow;
   }
 }
 
@@ -111,6 +113,69 @@ $overlay: rgba(93, 144, 183, 0.5);
 .web{
   display: none;
 
+}
+
+.active{
+  border-bottom: solid $orangePrimary 3px;
+  width: 187px;
+}
+
+#burgerFold{
+  padding: 8% 0 5% 15%;
+  display: none;
+  width: 100vw;
+  margin: auto;
+  background-color: $bluePrimary;
+  height: 100vh;
+  position: absolute;
+  z-index: 5;
+  padding-left: 20%;
+  a{
+    @include flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    text-align: left;
+    font-size: 15pt;
+    margin-bottom: 20px;
+    font-family: 'Libre Baskerville', serif;
+    &:hover{
+      color: $hoverYellow;
+    }
+  }
+  .flexMenu{
+    @include flex;
+    justify-content: left;
+  }
+  .hvemKlik, .hvemKlik2, .medKlik, .medKlik2{
+    color: white;
+    margin-right: 2%;
+    cursor: pointer;
+  }
+  .hvemKlik2, .medKlik{
+    display: none;
+  }
+  .undermenu1{
+    margin-left: 10%;
+    display: none;
+  }
+  .undermenu2{
+    margin-left: 10%;
+  }
+  button{
+    @include ca_button;
+    width: 200px;
+    height: 40px;
+    font-size: 18pt;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin: 8% 0;
+  }
+  .kontakt{
+    margin: 5% 0;
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    font-size: 15pt;
+  }
 }
 
 #menuMobil{
@@ -131,10 +196,6 @@ $overlay: rgba(93, 144, 183, 0.5);
   }
 }
 
-footer{
-
-}
-
 #mobilAlt{
   padding: 0 20px 0 20px;
   display: grid;
@@ -149,13 +210,17 @@ footer{
 //---------------------------- Back  to top---------------------->
 
 
-.fa-chevron-circle-up{
+#btt{
+  color: $bluePrimary;
   position: fixed;
-  bottom: 20px;
+  bottom: 160px;
   right: 20px;
-  color: #0097d7;
-  cursor:pointer;
+  cursor: pointer;
   z-index: 2;
+  display: none;
+  &:hover{
+    color: $hoverYellow;
+  }
 }
 
 //---------------------------- Back  to top---------------------->
@@ -685,6 +750,10 @@ footer{
 @media screen and (min-width: 414px) {
 
 
+  #burgerFold{
+    padding-left: 25%;
+    height: 80vh;
+  }
 
 //---------------------------- Circkle Fordel_Iphone_Plus---------------------->
 
@@ -1060,6 +1129,10 @@ footer{
     background-position: top;
   }
 
+  #burgerFold{
+    padding-left: 35%;
+    height: 68vh;
+  }
 
   #menuMobil{
     height: 100px;
@@ -1072,7 +1145,8 @@ footer{
 
 
 
-#mobilAlt{
+
+  #mobilAlt{
   grid-template-rows: repeat(44, 50px);
 }
 
@@ -1332,6 +1406,10 @@ footer{
 
 @media screen and (min-width: 992px) {
 
+  #burgerFold{
+    padding-left: 37%;
+    height: 55vh;
+  }
 
 
 //----------------------------  Cirkel_Fordel_liggende_Ipad---------------------->
@@ -1596,13 +1674,14 @@ footer{
     background-repeat: no-repeat;
   }
 
+  .active{
+    width: 197px;
+  }
 
-
-
-
-
-
-
+  #btt{
+    bottom: 50px;
+    right: 50px;
+  }
 
   .web{
     display: inline;
@@ -1641,7 +1720,7 @@ footer{
       position: fixed;
 
       #logo{
-        width: 60%;
+        width: 55%;
         margin: auto;
         margin-bottom: 10%;
       }
@@ -1653,27 +1732,34 @@ footer{
         font-size: 15pt;
         margin-bottom: 10px;
         font-family: 'Libre Baskerville', serif;
+        &:hover{
+          color: $hoverYellow;
+        }
       }
       .flexMenu{
         @include flex;
         justify-content: left;
       }
-      #hvemKlik, #hvemKlik2, #medKlik, #medKlik2{
+      .hvemKlik, .hvemKlik2, .medKlik, .medKlik2{
         color: white;
         margin-right: 2%;
         cursor: pointer;
       }
-      #hvemKlik2, #medKlik2{
+      .hvemKlik2, .medKlik{
         display: none;
       }
-      #undermenu1, #undermenu2{
+      .undermenu1{
         margin-left: 10%;
         display: none;
+      }
+      .undermenu2{
+        margin-left: 10%;
       }
       nav button{
         @include ca_button;
         width: 170px;
         height: 40px;
+        padding: 2% 0;
         font-size: 18pt;
         font-family: 'Merriweather Sans', sans-serif;
         margin: 8% 0;
@@ -1691,8 +1777,12 @@ footer{
         border: solid $orangePrimary 3px;
         padding: 2% 3%;
         margin: 5%;
+        cursor: pointer;
         i{
           color: white;
+          &:hover{
+            color: $hoverYellow;
+          }
         }
       }
       #flexSoMe{
@@ -1703,15 +1793,11 @@ footer{
       #soMeCirkel3{
         margin: auto;
       }
-      .fa-facebook-f {
+      .fa-facebook-f{
         margin: 7% 0 0 15%;
       }
       .fa-linkedin{
-      margin-left: 3%;
-      }
-      #active{
-        border-bottom: solid $orangePrimary 3px;
-        width: 200px;
+        margin-left: 3%;
       }
     }
   }

@@ -8,7 +8,7 @@
 
     <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
     <meta charset="utf-8">
-
+    <link rel="icon" href="images/logoLille.png">
     <!-- Titel som ses oppe i browserens tab mv. -->
     <title>Hvem er JCI?</title>
 
@@ -17,7 +17,7 @@
     <meta name="keywords" content="indsæt keywords her">
 
     <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="noindex, follow">
     <meta name="author" content="Udgiver">
     <meta name="copyright" content="Information om copyright">
 
@@ -54,15 +54,15 @@
             <a href="index.html"><img src="images/logo.png" id="logo"></a>
 
             <nav class="web">
-                <a href="index.html" >FORSIDE</a>
-                <div class="flexMenu"><i class="fa fa-angle-right" id="hvemKlik"></i><i class="fa fa-angle-down" id="hvemKlik2"></i><a href="#"id="active">HVEM ER JCI?</a></div>
-                <div id="undermenu1">
-                    <a href="#">JCI SLAGELSE</a>
+                <a href="index.html">FORSIDE</a>
+                <div class="flexMenu"><i class="fa fa-angle-right hvemKlik"></i><i class="fa fa-angle-down hvemKlik2"></i><a class="active" href="hvem_er_jci.html">HVEM ER JCI?</a></div>
+                <div class="undermenu1">
+                    <a href="JCI_Slagelse.html">JCI SLAGELSE</a>
                     <a href="#">JCI GLOBAL</a>
                 </div>
-                <div class="flexMenu"><i class="fa fa-angle-right leftArrow" id="medKlik"></i><i class="fa fa-angle-down" id="medKlik2"></i><a href="#">MEDLEMSKAB</a></div>
-                <div id="undermenu2">
-                    <a href="#">PRIVATMEDLEM</a>
+                <div class="flexMenu"><i class="fa fa-angle-right leftArrow medKlik"></i><i class="fa fa-angle-down medKlik2"></i><a href="medlemskab.html">MEDLEMSKAB</a></div>
+                <div class="undermenu2">
+                    <a href="privat_medlem.html">PRIVATMEDLEM</a>
                     <a href="#">ERHVERVSMEDLEM</a>
                 </div>
                 <a href="#">AKTIVITETER</a>
@@ -83,9 +83,29 @@
     </div>
 
     <div id="menuMobil" class="mobil">
-        <img src="images/logo.png" alt="JCI logo">
-        <i class="fa fas fa-bars fa-2x"></i>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <i class="fa fas fa-bars fa-2x" id="burgerKlik"></i>
     </div>
+    <nav id="burgerFold">
+        <a href="index.html">FORSIDE</a>
+        <div class="flexMenu"><i class="fa fa-angle-right hvemKlik"></i><i class="fa fa-angle-down hvemKlik2"></i><a class="active" href="hvem_er_jci.html">HVEM ER JCI?</a></div>
+        <div class="undermenu1">
+            <a href="JCI_Slagelse.html">JCI SLAGELSE</a>
+            <a href="#">JCI GLOBAL</a>
+        </div>
+        <div class="flexMenu"><i class="fa fa-angle-right leftArrow medKlik"></i><i class="fa fa-angle-down medKlik2"></i><a href="medlemskab.html">MEDLEMSKAB</a></div>
+        <div class="undermenu2">
+            <a href="privat_medlem.html">PRIVATMEDLEM</a>
+            <a href="#">ERHVERVSMEDLEM</a>
+        </div>
+        <a href="#">AKTIVITETER</a>
+        <a href="#">PARTNERE</a>
+
+        <button>Meld dig ind</button>
+
+        <p class="kontakt"><strong>KONTAKT OS</strong></p>
+        <p class="kontakt">MAIL:<br>slagelse@jci.dk</p>
+    </nav>
 
     <div id="mobilAlt" class="mobil">
 
@@ -105,7 +125,7 @@
 
         <div class="slagelsetekst"><p>ebfærbværiubv<br>urbvvbirbvilbr<br>gjtbnjktbkjtkjjktbnkj<br>rvnirnvotnbotnbol</p></div>
 
-        <h4 class="button1"><a href="#">Se mere</a></h4>
+        <h4 class="button1"><a href="JCI_Slagelse.html">Se mere</a></h4>
 
         <div id="circle2">
 
@@ -147,7 +167,6 @@
     //MOBIL//
     $(document).ready(function(){
         if ($(window).width() <= 767) {
-            alert ("1");
             // NÅR MAN TRYKKER PÅ BOLDEN FORSVINDER TEKSTEN//
             $("#circle1").click(function(){
                 $(".dk").hide(1000);
@@ -204,7 +223,6 @@
         }
         //LIGGENDE IPAD//
         else if ($(window).width() <= 991 && $(window).width() > 767){
-            alert("2");
             //BOLD 1
             $(".dk").click(function(){
                 $(".dk").show();
@@ -288,7 +306,6 @@
 
         }
         else if ($(window).width() >= 1023  && $(window).width() > 767  && $(window).width() < 1199){
-            alert ("3");
 
             //BOLD 1//
             //gør at billedet bliver vist//
@@ -387,8 +404,6 @@
         // WEB (1200)///
         else if ($(window).width() >= 1199 && $(window).width() < 1499){
 
-
-            alert ("4")
             //gør at billedet bliver vist//
             $(".dk").click(function(){
                 $(".dk").show();
@@ -468,7 +483,6 @@
 
         /// WEB(1500)///
         else {
-            alert ("5")
             //gør at billedet bliver vist//
             $(".dk").click(function(){
                 $(".dk").show();
@@ -544,37 +558,42 @@
             })
 
         }
-        $("#hvemKlik").click(function (e) {
-            $("#undermenu1").slideDown(1000);
-            $("#undermenu2").slideUp(1000);
-            $("#hvemKlik").hide(0);
-            $("#hvemKlik2").show(0);
-            $("#medKlik2").hide(0);
-            $("#medKlik").show(0);
+        $(".hvemKlik").click(function (e) {
+            $(".undermenu1").slideDown(1000);
+            $(".undermenu2").slideUp(1000);
+            $(".hvemKlik").hide(0);
+            $(".hvemKlik2").show(0);
+            $(".medKlik2").hide(0);
+            $(".medKlik").show(0);
         });
 
-        $("#hvemKlik2").click(function (e) {
-            $("#undermenu1").slideUp(1000);
-            $("#hvemKlik2").hide(0);
-            $("#hvemKlik").show(0);
+        $(".hvemKlik2").click(function (e) {
+            $(".undermenu1").slideUp(1000);
+            $(".hvemKlik2").hide(0);
+            $(".hvemKlik").show(0);
 
         });
 
-        $("#medKlik").click(function (e) {
-            $("#undermenu2").slideDown(1000);
-            $("#undermenu1").slideUp(1000);
-            $("#medKlik").hide(0);
-            $("#medKlik2").show(0);
-            $("#hvemKlik2").hide(0);
-            $("#hvemKlik").show(0);
+        $(".medKlik").click(function (e) {
+            $(".undermenu2").slideDown(1000);
+            $(".undermenu1").slideUp(1000);
+            $(".medKlik").hide(0);
+            $(".medKlik2").show(0);
+            $(".hvemKlik2").hide(0);
+            $(".hvemKlik").show(0);
         });
 
-        $("#medKlik2").click(function (e) {
-            $("#undermenu2").slideUp(1000);
-            $("#medKlik2").hide(0);
-            $("#medKlik").show(0);
+        $(".medKlik2").click(function (e) {
+            $(".undermenu2").slideUp(1000);
+            $(".medKlik2").hide(0);
+            $(".medKlik").show(0);
         });
-    })
+
+        $("#burgerKlik").click(function (e) {
+            $("#burgerFold").slideToggle(700);
+        });
+
+    });
 
 </script>
 

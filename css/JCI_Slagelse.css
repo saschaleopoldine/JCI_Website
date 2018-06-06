@@ -3,7 +3,10 @@
   box-sizing: border-box; }
 
 body {
-  margin: 0; }
+  background-color: #f9f7f4;
+  margin: 0;
+  background-image: url("../images/baggrund_mobil.png");
+  background-size: cover; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -23,7 +26,1411 @@ p {
 
 img {
   display: block;
-  max-width: 100%;
   height: auto; }
+
+.web, #bestyrelsesmedlemmer_web {
+  display: none; }
+
+.active {
+  border-bottom: solid #ee7125 3px;
+  width: 155px; }
+
+#burgerFold {
+  padding: 8% 0 5% 15%;
+  display: none;
+  width: 100vw;
+  margin: auto;
+  background-color: #0097d7;
+  height: 100vh;
+  position: absolute;
+  z-index: 5;
+  padding-left: 20%; }
+  #burgerFold a {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    text-align: left;
+    font-size: 15pt;
+    margin-bottom: 20px;
+    font-family: 'Libre Baskerville', serif; }
+    #burgerFold a:hover {
+      color: #fccc28; }
+  #burgerFold .flexMenu {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: left; }
+  #burgerFold .hvemKlik, #burgerFold .hvemKlik2, #burgerFold .medKlik, #burgerFold .medKlik2 {
+    color: white;
+    margin-right: 2%;
+    cursor: pointer; }
+  #burgerFold .hvemKlik, #burgerFold .medKlik2 {
+    display: none; }
+  #burgerFold .undermenu2 {
+    margin-left: 10%;
+    display: none; }
+  #burgerFold .undermenu1 {
+    margin-left: 10%; }
+  #burgerFold button {
+    height: 30px;
+    background-color: #ee7125;
+    border: none;
+    text-decoration: none;
+    color: white;
+    font-size: 18pt;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    font-size: 18pt;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin: 8% 0; }
+    #burgerFold button a {
+      text-decoration: none;
+      font-family: 'Merriweather Sans', sans-serif;
+      color: white;
+      font-size: 18pt; }
+    #burgerFold button:hover {
+      background-color: #fccc28; }
+  #burgerFold .kontakt {
+    margin: 5% 0;
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    font-size: 15pt; }
+
+#menuMobil {
+  height: 60px;
+  width: 100%;
+  background-color: #0097d7;
+  padding: 7px;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between; }
+  #menuMobil img {
+    margin-left: 20px;
+    height: 100%;
+    width: auto; }
+  #menuMobil i {
+    color: white;
+    margin: 5px 20px; }
+
+.fa-chevron-circle-up {
+  position: fixed;
+  bottom: 160px;
+  right: 20px;
+  color: #0097d7;
+  cursor: pointer;
+  z-index: 2;
+  display: none; }
+  .fa-chevron-circle-up:hover {
+    color: #fccc28; }
+
+#mobilAlt {
+  padding: 0 20px 0 20px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 10px;
+  grid-template-rows: repeat(54, 50px); }
+
+h1 {
+  font-family: "Libre Baskerville", Serif;
+  font-size: 25pt;
+  grid-column: 1/span 6;
+  grid-row: 2;
+  text-align: center; }
+
+h3 {
+  display: none; }
+
+.web_baggrund {
+  display: none; }
+
+.cirkel_1 {
+  grid-column: 1/span 3;
+  grid-row: 3;
+  margin-top: 7px;
+  z-index: 1; }
+  .cirkel_1 img {
+    width: 155px;
+    height: 155px;
+    border-radius: 50%; }
+
+#projekt {
+  color: white;
+  font-family: "Libre Baskerville", Serif;
+  font-size: 18pt;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  grid-column: 1/span 3;
+  grid-row: 4;
+  margin-top: 20px;
+  margin-left: 25px;
+  z-index: 2; }
+  #projekt a {
+    grid-column: 1/span 3;
+    grid-row: 4;
+    margin-left: -10px;
+    text-decoration: none;
+    color: white; }
+
+.hr_et {
+  background-color: #0097d7;
+  height: 3px;
+  width: 100px;
+  z-index: -1;
+  grid-column: 3/span 2;
+  grid-row: 5;
+  -ms-transform: rotate(25deg);
+  -webkit-transform: rotate(25deg);
+  transform: rotate(25deg);
+  margin-left: 17px;
+  margin-top: 20px; }
+
+.cirkel_2 {
+  grid-column: 5/span 2;
+  grid-row: 5;
+  margin-left: -26px;
+  z-index: 1; }
+  .cirkel_2 img {
+    border-radius: 50%;
+    width: 135px;
+    height: 135px; }
+
+#medlem {
+  color: white;
+  font-family: "Libre Baskerville", Serif;
+  font-size: 12pt;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  grid-column: 5/span 2;
+  grid-row: 6;
+  margin-left: -18px;
+  margin-top: 5px;
+  z-index: 2; }
+  #medlem a {
+    text-decoration: none;
+    color: white; }
+
+.hr_to {
+  background-color: #0097d7;
+  height: 3px;
+  width: 100px;
+  z-index: -1;
+  grid-column: 3/span 2;
+  grid-row: 7;
+  -ms-transform: rotate(150deg);
+  -webkit-transform: rotate(150deg);
+  transform: rotate(150deg);
+  margin-left: 20px;
+  margin-top: 5px; }
+
+.cirkel_3 {
+  grid-column: 2/span 2;
+  grid-row: 7; }
+  .cirkel_3 img {
+    border-radius: 50%;
+    width: 95px;
+    height: 95px; }
+
+#partner {
+  color: white;
+  font-family: "Libre Baskerville", Serif;
+  font-size: 12pt;
+  font-weight: bold;
+  letter-spacing: 1px;
+  grid-column: 2/span 2;
+  grid-row: 7/span 2;
+  margin-top: 35px;
+  margin-left: 10px;
+  z-index: 2; }
+  #partner a {
+    text-decoration: none;
+    color: white; }
+
+.hr_tre {
+  background-color: #0097d7;
+  height: 3px;
+  width: 100px;
+  z-index: -1;
+  grid-column: 3/span 2;
+  grid-row: 9;
+  -ms-transform: rotate(40deg);
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg); }
+
+.cirkel_4 {
+  grid-column: 4/span 3;
+  grid-row: 9; }
+  .cirkel_4 img {
+    border-radius: 50%;
+    width: 155px;
+    height: 155px; }
+
+#aktivitet {
+  color: white;
+  font-family: "Libre Baskerville", Serif;
+  font-size: 18pt;
+  font-weight: bold;
+  letter-spacing: 1px;
+  grid-column: 4/span 3;
+  grid-row: 10;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-left: 8px;
+  z-index: 2; }
+  #aktivitet a {
+    text-decoration: none;
+    color: white; }
+
+.hr_fire {
+  background-color: #0097d7;
+  height: 3px;
+  width: 100px;
+  z-index: -1;
+  grid-column: 3/span 2;
+  grid-row: 11;
+  -ms-transform: rotate(155deg);
+  -webkit-transform: rotate(155deg);
+  transform: rotate(155deg);
+  margin-left: -20px;
+  margin-top: 5px; }
+
+.cirkel_5 {
+  grid-column: 1/span 2;
+  grid-row: 11;
+  margin-top: -12px; }
+  .cirkel_5 img {
+    border-radius: 50%;
+    width: 115px;
+    height: 115px; }
+
+#b_bobble {
+  grid-column: 1/span 2;
+  grid-row: 12;
+  width: 115px; }
+
+#bestyrrelse {
+  color: white;
+  font-family: "Libre Baskerville", Serif;
+  font-size: 12pt;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 7px;
+  margin-top: -30px;
+  z-index: 2; }
+  #bestyrrelse a {
+    text-decoration: none;
+    color: white; }
+
+h2 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 20pt;
+  font-weight: bold;
+  margin-left: -10px; }
+
+#projekttext, #medlemstext, #partnertext, #aktivitettext, #bestyrelsestext {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 12pt;
+  width: 250px;
+  margin-left: -10px; }
+
+#projektelement {
+  grid-column: 1/span 6;
+  grid-row: 15/span 8;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 50px); }
+  #projektelement #projektoverskrift {
+    grid-column: 2/span 3;
+    grid-row: 1; }
+  #projektelement #projekttext {
+    grid-column: 2/span 3;
+    grid-row: 2/span 7; }
+
+#medlemselement {
+  grid-column: 1/span 6;
+  grid-row: 24/span 8;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(9, 50px); }
+  #medlemselement #medlemsoverskrift {
+    grid-column: 2/span 3;
+    grid-row: 1; }
+  #medlemselement #medlemstext {
+    grid-column: 2/span 3;
+    grid-row: 2/span 7; }
+  #medlemselement .knap {
+    height: 30px;
+    background-color: #ee7125;
+    grid-column: 2/span 3;
+    grid-row: 9;
+    margin-left: -10px;
+    padding: 0 5%; }
+    #medlemselement .knap a {
+      text-decoration: none;
+      color: white;
+      font-size: 18pt;
+      font-family: 'Merriweather Sans', sans-serif;
+      text-align: center; }
+    #medlemselement .knap:hover {
+      background-color: #fccc28; }
+
+#partnerelement {
+  grid-column: 1/span 6;
+  grid-row: 34/span 8;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 50px); }
+  #partnerelement #partneroverskrift {
+    grid-column: 2/span 3;
+    grid-row: 1; }
+  #partnerelement #partnertext {
+    grid-column: 2/span 3;
+    grid-row: 2/span 7; }
+
+#aktivitetelement {
+  grid-column: 1/span 6;
+  grid-row: 43/span 8;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 50px); }
+  #aktivitetelement #aktivitetoverskrift {
+    grid-column: 2/span 3;
+    grid-row: 1; }
+  #aktivitetelement #aktivitettext {
+    grid-column: 2/span 3;
+    grid-row: 2/span 7; }
+
+#bestyrelseselement {
+  grid-column: 1/span 6;
+  grid-row: 52/span 8;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 50px); }
+  #bestyrelseselement #bestyrelseoverskrift {
+    grid-column: 2/span 3;
+    grid-row: 1;
+    width: 260px; }
+  #bestyrelseselement #bestyrelsestext {
+    grid-column: 2/span 3;
+    grid-row: 2/span 2; }
+  #bestyrelseselement #down {
+    grid-column: 4/span 1;
+    grid-row: 5;
+    margin-left: -15px;
+    margin-top: -10px; }
+
+#bestyrelsesmedlemmer_mobil {
+  display: none;
+  background-image: url("../images/network_mobil_bestyrrelse.png");
+  background-size: cover;
+  padding: 5% 0; }
+  #bestyrelsesmedlemmer_mobil img {
+    display: inline; }
+
+.flex {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around; }
+
+.bestyrelsesmedlem {
+  text-align: center;
+  font-family: 'Merriweather Sans', sans-serif; }
+  .bestyrelsesmedlem img {
+    display: inline;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: 3px solid #ee7125; }
+  .bestyrelsesmedlem #caroline, .bestyrelsesmedlem #lasse, .bestyrelsesmedlem #mie, .bestyrelsesmedlem #kamilla, .bestyrelsesmedlem #anna {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: 3px solid #ee7125; }
+  .bestyrelsesmedlem h4 {
+    font-size: 11pt;
+    margin-top: 5px; }
+  .bestyrelsesmedlem .bestyrelsesmedlemtext {
+    font-size: 9pt;
+    margin-bottom: 25px;
+    margin-top: 3px; }
+
+footer {
+  background-color: #0097d7;
+  color: white;
+  height: 150px;
+  padding: 22px 50px;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between; }
+  footer p {
+    margin-top: 15px; }
+  footer #some {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column; }
+    footer #some i {
+      margin: 3px 0; }
+      footer #some i:hover {
+        color: #fccc28; }
+
+@media screen and (min-width: 414px) {
+  #burgerFold {
+    padding-left: 25%;
+    height: 80vh; }
+
+  .cirkel_1 {
+    grid-row: 4;
+    margin-top: -10px; }
+
+  #projekt {
+    grid-row: 5;
+    margin-top: 5px;
+    margin-left: 25px; }
+
+  .hr_et {
+    grid-row: 6;
+    width: 330px;
+    margin-left: -95px;
+    -ms-transform: rotate(13deg);
+    -webkit-transform: rotate(13deg);
+    transform: rotate(13deg); }
+
+  .cirkel_2 {
+    grid-row: 6;
+    margin-left: -15px; }
+
+  #medlem {
+    grid-row: 7;
+    margin-left: -8px; }
+
+  #medlemselement .knap {
+    padding: 0 10%; }
+
+  .hr_to {
+    grid-row: 8;
+    width: 270px;
+    margin-left: -33px;
+    -ms-transform: rotate(170deg);
+    -webkit-transform: rotate(170deg);
+    transform: rotate(170deg); }
+
+  .cirkel_3 {
+    grid-row: 8; }
+
+  #partner {
+    grid-row: 8/span 2;
+    margin-top: 40px;
+    margin-left: 8px; }
+
+  .hr_tre {
+    grid-row: 10;
+    width: 200px;
+    margin-top: 15px;
+    margin-left: -50px;
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg); }
+
+  .cirkel_4 {
+    grid-row: 10; }
+
+  #aktivitet {
+    grid-row: 11;
+    margin-right: 25px;
+    margin-top: 10px; }
+
+  .hr_fire {
+    grid-column: 2/span 3;
+    grid-row: 12;
+    width: 270px;
+    margin-top: 10px;
+    -ms-transform: rotate(170deg);
+    -webkit-transform: rotate(170deg);
+    transform: rotate(170deg); }
+
+  .cirkel_5, #b_bobble {
+    grid-row: 12; }
+
+  #bestyrrelse {
+    margin-left: -5px;
+    margin-top: 18px; }
+
+  #projektelement {
+    grid-row: 15/span 8; }
+    #projektelement #projekttext {
+      grid-column: 2/span 4;
+      width: 100%; }
+
+  #medlemselement {
+    grid-row: 24/span 8; }
+    #medlemselement #medlemstext {
+      grid-column: 2/span 4;
+      width: 100%; }
+
+  #partnerelement {
+    grid-row: 34/span 8; }
+    #partnerelement #partnertext {
+      grid-column: 2/span 4;
+      width: 100%; }
+
+  #aktivitetelement {
+    grid-row: 43/span 8; }
+    #aktivitetelement #aktivitettext {
+      grid-column: 2/span 4;
+      width: 100%; }
+
+  #bestyrelseselement {
+    grid-row: 52/span 8; }
+    #bestyrelseselement #bestyrelsestext {
+      grid-column: 2/span 4;
+      width: 100%; } }
+@media screen and (min-width: 550px) {
+  #mobilAlt {
+    grid-template-rows: repeat(50, 50px); }
+
+  #projektelement {
+    grid-row: 15/span 7; }
+
+  #medlemselement {
+    grid-row: 22/span 7; }
+    #medlemselement .knap {
+      grid-row: 7;
+      padding: 0 20%; }
+
+  #partnerelement {
+    grid-row: 31/span 7; }
+
+  #aktivitetelement {
+    grid-row: 38/span 7; }
+
+  #bestyrelseselement {
+    grid-row: 45/span 7; }
+    #bestyrelseselement #bestyrelsestext {
+      grid-column: 2/span 4;
+      width: 100%; } }
+@media screen and (min-width: 650px) {
+  #medlemselement .knap {
+    grid-row: 6;
+    padding: 0 25%; } }
+@media screen and (min-width: 768px) {
+  #burgerFold {
+    padding-left: 35%;
+    height: 68vh; }
+
+  #menuMobil {
+    height: 100px; }
+    #menuMobil i {
+      font-size: 40pt;
+      margin-top: 15px; }
+
+  #mobilAlt {
+    grid-template-rows: repeat(52, 50px); }
+
+  h1 {
+    font-size: 30pt; }
+
+  .cirkel_1 {
+    grid-column: 1/span 2;
+    grid-row: 4;
+    margin-left: 50px; }
+    .cirkel_1 img {
+      width: 250px;
+      height: 250px; }
+
+  #projekt {
+    font-size: 24pt;
+    grid-column: 1/span 2;
+    grid-row: 6;
+    margin-top: -5px;
+    margin-left: 105px; }
+
+  .hr_et {
+    grid-row: 7;
+    width: 360px;
+    margin-left: -30px;
+    -ms-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg); }
+
+  .cirkel_2 {
+    grid-row: 7;
+    margin-left: 0;
+    margin-top: -10px; }
+    .cirkel_2 img {
+      width: 200px;
+      height: 200px; }
+
+  #medlem {
+    font-size: 18pt;
+    grid-column: 5/span 2;
+    grid-row: 8;
+    margin-left: 13px;
+    margin-right: 0;
+    margin-top: 25px; }
+
+  .hr_to {
+    grid-row: 11;
+    width: 360px;
+    margin-left: -20px;
+    margin-top: -20px;
+    -ms-transform: rotate(160deg);
+    -webkit-transform: rotate(160deg);
+    transform: rotate(160deg); }
+
+  .cirkel_3 {
+    margin-top: -10px;
+    grid-column: 2/span 2;
+    grid-row: 11; }
+    .cirkel_3 img {
+      width: 175px;
+      height: 175px; }
+
+  #partner {
+    grid-row: 12;
+    font-size: 18pt;
+    margin-top: 10px;
+    margin-left: 30px; }
+
+  .hr_tre {
+    grid-row: 13;
+    width: 250px;
+    margin-top: 25px;
+    margin-left: 0;
+    -ms-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg); }
+
+  .cirkel_4 {
+    grid-row: 13;
+    margin-left: 40px; }
+    .cirkel_4 img {
+      width: 225px;
+      height: 225px; }
+
+  #aktivitet {
+    font-size: 24pt;
+    grid-row: 15;
+    margin-left: 55px;
+    margin-top: -5px; }
+
+  .hr_fire {
+    grid-column: 2/span 3;
+    grid-row: 17;
+    width: 350px;
+    margin-left: 35px;
+    margin-top: 10px; }
+
+  .cirkel_5 {
+    grid-column: 1/span 2;
+    grid-row: 17;
+    margin-left: 60px; }
+    .cirkel_5 img {
+      width: 150px;
+      height: 150px; }
+
+  #b_bobble {
+    grid-column: 1/span 2;
+    grid-row: 17;
+    width: 150px;
+    height: 150px;
+    margin-left: 60px;
+    margin-top: 15px; }
+
+  #bestyrrelse {
+    font-size: 15pt; }
+
+  #projektelement {
+    grid-row: 22/span 5;
+    grid-template-rows: repeat(5, 50px); }
+    #projektelement #projektoverskrift {
+      grid-column: 2/span 3;
+      grid-row: 1;
+      margin-left: 0; }
+    #projektelement #projekttext {
+      grid-column: 2/span 4;
+      grid-row: 2;
+      width: auto;
+      margin-left: 0; }
+
+  #medlemselement {
+    grid-row: 28/span 7;
+    grid-template-rows: repeat(7, 50px); }
+    #medlemselement #medlemsoverskrift {
+      margin-left: 0; }
+    #medlemselement #medlemstext {
+      grid-column: 2/span 4;
+      grid-row: 2;
+      width: auto;
+      margin-left: 0; }
+    #medlemselement .knap {
+      grid-column: 2/span 2;
+      grid-row: 6;
+      margin-left: 0;
+      padding: 0 17%; }
+
+  #partnerelement {
+    grid-row: 36/span 5;
+    grid-template-rows: repeat(5, 50px); }
+    #partnerelement #partneroverskrift {
+      margin-left: 0; }
+    #partnerelement #partnertext {
+      grid-column: 2/span 4;
+      grid-row: 2;
+      width: auto;
+      margin-left: 0; }
+
+  #aktivitetelement {
+    grid-row: 42/span 5;
+    grid-template-rows: repeat(5, 50px); }
+    #aktivitetelement #aktivitetoverskrift {
+      grid-column: 2/span 3;
+      grid-row: 1;
+      margin-left: 0; }
+    #aktivitetelement #aktivitettext {
+      grid-column: 2/span 4;
+      grid-row: 2;
+      width: auto;
+      margin-left: 0; }
+
+  #bestyrelseselement {
+    grid-row: 48/span 4;
+    grid-template-rows: repeat(4, 50px); }
+    #bestyrelseselement #bestyrelseoverskrift {
+      width: 260px;
+      margin-left: 0; }
+    #bestyrelseselement #bestyrelsestext {
+      grid-column: 2/span 4;
+      grid-row: 2;
+      width: auto;
+      margin-left: 0; }
+    #bestyrelseselement #down {
+      grid-row: 4; }
+
+  .bestyrelsesmedlem #caroline, .bestyrelsesmedlem #lasse, .bestyrelsesmedlem #mie, .bestyrelsesmedlem #kamilla, .bestyrelsesmedlem #anna {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: 3px solid #ee7125;
+    width: 125px;
+    height: 125px; }
+  .bestyrelsesmedlem h4 {
+    font-size: 14pt;
+    margin-top: 5px; }
+  .bestyrelsesmedlem .bestyrelsesmedlemtext {
+    font-size: 12pt;
+    margin-bottom: 40px;
+    margin-top: 5px;
+    line-height: 18pt; }
+
+  footer {
+    justify-content: center; }
+    footer p, footer #some {
+      margin: 0 10%; }
+    footer p {
+      margin-top: 2%; } }
+@media screen and (min-width: 992px) {
+  body {
+    background-image: url("../images/baggrund_liggende_tablet.png"); }
+
+  #burgerFold {
+    padding-left: 37%;
+    height: 55vh; }
+
+  #mobilAlt {
+    grid-template-rows: repeat(42, 50px); }
+
+  .cirkel_1 {
+    grid-column: 2/span 2;
+    grid-row: 2;
+    margin-top: 10px;
+    margin-left: -90px; }
+    .cirkel_1 img {
+      width: 240px;
+      height: 240px; }
+
+  #projekt {
+    grid-column: 1/span 2;
+    grid-row: 4;
+    margin-top: 5px;
+    margin-left: 115px; }
+
+  .hr_et {
+    grid-column: 3/span 4;
+    grid-row: 5;
+    width: 400px;
+    margin-left: -8%;
+    margin-top: 0;
+    -ms-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg); }
+
+  .cirkel_2 {
+    grid-row: 4;
+    margin-left: 0;
+    margin-top: -5px; }
+
+  #medlem {
+    grid-column: 5/span 1;
+    grid-row: 5;
+    margin-right: 10px;
+    margin-top: 25px; }
+
+  .hr_to {
+    grid-column: 3/span 2;
+    grid-row: 8;
+    width: 250px;
+    margin-top: -10%;
+    margin-left: 50%;
+    -ms-transform: rotate(150deg);
+    -webkit-transform: rotate(160deg);
+    transform: rotate(160deg); }
+
+  .cirkel_3 {
+    margin-top: -20%;
+    grid-column: 3/span 2;
+    grid-row: 8; }
+
+  #partner {
+    grid-column: 3/span 2;
+    grid-row: 8;
+    margin-top: 15px;
+    margin-right: 0;
+    margin-left: 30px; }
+
+  .hr_tre {
+    grid-column: 3/span 2;
+    grid-row: 10;
+    width: 250px;
+    margin-top: 20px;
+    margin-left: 48%;
+    -ms-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg); }
+
+  .cirkel_4 {
+    grid-column: 5/span 2;
+    grid-row: 9;
+    margin-left: 10%; }
+
+  #aktivitet {
+    grid-column: 5/span 2;
+    grid-row: 11;
+    margin-right: 25px;
+    margin-top: -10px; }
+
+  .hr_fire {
+    grid-column: 2/span 3;
+    grid-row: 11;
+    width: 500px;
+    margin-left: 10%;
+    margin-top: 15%;
+    -ms-transform: rotate(170deg);
+    -webkit-transform: rotate(170deg);
+    transform: rotate(170deg); }
+
+  .cirkel_5 {
+    grid-column: 2/span 2;
+    grid-row: 11;
+    margin-left: 0;
+    margin-top: 10%; }
+
+  #b_bobble {
+    grid-column: 2/span 2;
+    grid-row: 12;
+    margin-left: 0;
+    margin-top: 15px; }
+
+  #projektelement {
+    grid-row: 17/span 5; }
+
+  #medlemselement {
+    grid-row: 22/span 7;
+    grid-template-rows: repeat(5, 50px); }
+    #medlemselement .knap {
+      grid-column: 2/span 2;
+      grid-row: 5;
+      margin-left: 0;
+      padding: 0 25%; }
+
+  #partnerelement {
+    grid-row: 28/span 5;
+    grid-template-rows: repeat(5, 50px); }
+    #partnerelement #partneroverskrift {
+      margin-left: 0; }
+    #partnerelement #partnertext {
+      grid-column: 2/span 4;
+      grid-row: 2;
+      width: auto;
+      margin-left: 0; }
+
+  #aktivitetelement {
+    grid-row: 33/span 5;
+    grid-template-rows: repeat(5, 50px); }
+    #aktivitetelement #aktivitetoverskrift {
+      grid-column: 2/span 3;
+      grid-row: 1;
+      margin-left: 0; }
+    #aktivitetelement #aktivitettext {
+      grid-column: 2/span 4;
+      grid-row: 2;
+      width: auto;
+      margin-left: 0; }
+
+  #bestyrelseselement {
+    grid-row: 38/span 4;
+    grid-template-rows: repeat(4, 50px); }
+    #bestyrelseselement #bestyrelseoverskrift {
+      width: 260px;
+      margin-left: 0; }
+    #bestyrelseselement #bestyrelsestext {
+      grid-column: 2/span 4;
+      grid-row: 2;
+      width: auto;
+      margin-left: 0; }
+    #bestyrelseselement #down {
+      grid-row: 4; }
+
+  .bestyrelsesmedlem #caroline, .bestyrelsesmedlem #lasse, .bestyrelsesmedlem #mie, .bestyrelsesmedlem #kamilla, .bestyrelsesmedlem #anna {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: 3px solid #ee7125; }
+  .bestyrelsesmedlem h4 {
+    font-size: 14pt;
+    margin-top: 5px; }
+  .bestyrelsesmedlem .bestyrelsesmedlemtext {
+    font-size: 12pt;
+    margin-bottom: 40px;
+    margin-top: 5px;
+    line-height: 18pt; } }
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url("../images/network_tablet_top.png");
+    background-size: cover; }
+
+  #mobilAlt {
+    grid-template-rows: repeat(54, 50px); }
+
+  .cirkel_1 {
+    grid-column: 2/span 2;
+    grid-row: 5;
+    margin-top: 5px;
+    margin-left: -75px; }
+    .cirkel_1 img {
+      width: 250px;
+      height: 250px; }
+
+  #projekt {
+    grid-column: 1/span 2;
+    grid-row: 7;
+    margin-top: 10px;
+    margin-left: 170px; }
+
+  .hr_et {
+    grid-column: 3/span 4;
+    grid-row: 9;
+    width: 425px;
+    margin-left: -40px;
+    margin-top: 0;
+    -ms-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg); }
+
+  .cirkel_2 {
+    grid-row: 9;
+    margin-left: -20px;
+    margin-top: -10px; }
+
+  #medlem {
+    grid-column: 5/span 2;
+    grid-row: 10;
+    margin-left: -10px;
+    margin-top: 20px; }
+
+  .hr_to {
+    grid-column: 3/span 2;
+    grid-row: 14;
+    width: 300px;
+    margin-top: -30px;
+    margin-left: 125px;
+    -ms-transform: rotate(150deg);
+    -webkit-transform: rotate(150deg);
+    transform: rotate(150deg); }
+
+  .cirkel_3 {
+    margin-top: -40px;
+    grid-column: 3/span 2;
+    grid-row: 15; }
+
+  #partner {
+    grid-column: 3/span 2;
+    grid-row: 15;
+    margin-top: 30px;
+    margin-left: 25px; }
+
+  .hr_tre {
+    grid-column: 4/span 2;
+    grid-row: 18;
+    width: 350px;
+    margin-top: 10px;
+    margin-left: -45px;
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg); }
+
+  .cirkel_4 {
+    grid-column: 5/span 2;
+    grid-row: 19;
+    margin-left: 35px; }
+
+  #aktivitet {
+    font-size: 24pt;
+    grid-column: 5/span 2;
+    grid-row: 21;
+    margin-right: 15px;
+    margin-top: -5px; }
+
+  .hr_fire {
+    grid-column: 2/span 3;
+    grid-row: 22;
+    width: 500px;
+    margin-left: 125px;
+    margin-top: 40px;
+    -ms-transform: rotate(165deg);
+    -webkit-transform: rotate(165deg);
+    transform: rotate(165deg); }
+
+  .cirkel_5 {
+    grid-column: 2/span 2;
+    grid-row: 23;
+    margin-top: 0; }
+
+  #b_bobble {
+    grid-column: 2/span 1;
+    grid-row: 23;
+    margin-top: 25px; }
+
+  #projektelement {
+    grid-row: 28/span 5; }
+
+  #medlemselement {
+    grid-row: 33/span 7; }
+
+  #partnerelement {
+    grid-row: 40/span 5; }
+
+  #aktivitetelement {
+    grid-row: 45/span 5; }
+
+  #bestyrelsesmedlemmer_mobil {
+    background-image: url("../images/network_tablet_bestyrrelse.png");
+    background-size: cover; }
+
+  #bestyrelseselement {
+    grid-row: 50/span 4; } }
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url("../images/baggrund_web.png");
+    background-size: cover; }
+
+  .fa-chevron-circle-up {
+    bottom: 50px;
+    right: 50px; }
+
+  .active {
+    width: 167px; }
+
+  .web {
+    display: inline; }
+
+  .mobil, #menuMobil, footer {
+    display: none; }
+
+  #projekt, #medlem, #partner, #aktivitet, #bestyrrelse, #bestyrelsesmedlemmer_mobil, #down, .hr_fire {
+    display: none; }
+
+  #mobilAlt {
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(50, 50px);
+    width: 75%; }
+
+  #flex_alt {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between; }
+
+  #left_menu {
+    width: 25%; }
+    #left_menu #menuIndhold {
+      letter-spacing: 1px;
+      width: inherit;
+      background-color: #0097d7;
+      height: 100vh;
+      padding: 50px 25px;
+      position: fixed; }
+      #left_menu #menuIndhold #logo {
+        width: 55%;
+        margin: auto;
+        margin-bottom: 10%; }
+      #left_menu #menuIndhold nav a {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: white;
+        font-size: 15pt;
+        margin-bottom: 10px;
+        font-family: 'Libre Baskerville', serif; }
+        #left_menu #menuIndhold nav a:hover {
+          color: #fccc28; }
+      #left_menu #menuIndhold .flexMenu {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: left; }
+      #left_menu #menuIndhold .hvemKlik, #left_menu #menuIndhold .hvemKlik2, #left_menu #menuIndhold .medKlik, #left_menu #menuIndhold .medKlik2 {
+        color: white;
+        margin-right: 2%;
+        cursor: pointer; }
+      #left_menu #menuIndhold .hvemKlik, #left_menu #menuIndhold .medKlik2 {
+        display: none; }
+      #left_menu #menuIndhold .undermenu2 {
+        margin-left: 10%;
+        display: none; }
+      #left_menu #menuIndhold .undermenu1 {
+        margin-left: 10%; }
+      #left_menu #menuIndhold nav button {
+        height: 30px;
+        background-color: #ee7125;
+        border: none;
+        text-decoration: none;
+        color: white;
+        font-size: 18pt;
+        cursor: pointer;
+        width: 170px;
+        height: 40px;
+        padding: 2% 0;
+        font-size: 18pt;
+        font-family: 'Merriweather Sans', sans-serif;
+        margin: 8% 0; }
+        #left_menu #menuIndhold nav button a {
+          text-decoration: none;
+          font-family: 'Merriweather Sans', sans-serif;
+          color: white;
+          font-size: 18pt; }
+        #left_menu #menuIndhold nav button:hover {
+          background-color: #fccc28; }
+      #left_menu #menuIndhold .kontakt {
+        margin: 5% 0;
+        font-family: 'Libre Baskerville', serif;
+        color: white;
+        font-size: 15pt; }
+      #left_menu #menuIndhold .soMeCirkler {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: solid #ee7125 3px;
+        padding: 2% 3%;
+        margin: 5%;
+        cursor: pointer; }
+        #left_menu #menuIndhold .soMeCirkler i {
+          color: white; }
+          #left_menu #menuIndhold .soMeCirkler i:hover {
+            color: #fccc28; }
+      #left_menu #menuIndhold #flexSoMe {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center; }
+      #left_menu #menuIndhold #soMeCirkel3 {
+        margin: auto; }
+      #left_menu #menuIndhold .fa-facebook-f {
+        margin: 7% 0 0 15%; }
+      #left_menu #menuIndhold .fa-linkedin {
+        margin-left: 3%; }
+
+  #grid {
+    padding: 70px 50px 50px 0;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-column-gap: 20px;
+    height: 600px;
+    width: 100%; }
+
+  h1 {
+    grid-column: 4/span 4; }
+
+  h3 {
+    display: inline;
+    grid-column: 3/span 6;
+    grid-row: 4;
+    font-size: 16pt;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: normal; }
+
+  .mobil_baggrund {
+    display: none; }
+
+  .web_baggrund {
+    display: inline;
+    width: auto; }
+
+  .cirkel_1 {
+    grid-column: 2/span 3;
+    grid-row: 12;
+    margin-left: -10%; }
+    .cirkel_1 img {
+      width: 300px;
+      height: 300px; }
+
+  #projektelement {
+    grid-column: 5/span 6;
+    grid-row: 12/span 5;
+    margin-top: 5%; }
+
+  .hr_et {
+    grid-column: 4/span 4;
+    grid-row: 20;
+    width: 650px;
+    margin-left: -70px;
+    margin-top: 0;
+    -ms-transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+    transform: rotate(35deg); }
+
+  .cirkel_2 {
+    grid-column: 8/span 2;
+    grid-row: 22;
+    margin-left: 0;
+    margin-top: 0; }
+    .cirkel_2 img {
+      width: 235px;
+      height: 235px; }
+
+  #medlemselement {
+    grid-column: 2/span 6;
+    grid-row: 21/span 7;
+    grid-template-rows: repeat(7, 50px); }
+    #medlemselement .knap {
+      grid-column: 2/span 2;
+      grid-row: 7;
+      padding: 0 5%; }
+
+  .hr_to {
+    grid-column: 3/span 2;
+    grid-row: 28;
+    width: 650px;
+    margin-top: 35%;
+    margin-left: 10%;
+    -ms-transform: rotate(140deg);
+    -webkit-transform: rotate(140deg);
+    transform: rotate(140deg); }
+
+  .cirkel_3 {
+    grid-column: 2/span 2;
+    grid-row: 32;
+    margin-top: -10%; }
+    .cirkel_3 img {
+      width: 300px;
+      height: 300px; }
+
+  #partnerelement {
+    grid-column: 6/span 6;
+    grid-row: 32/span 5;
+    grid-template-rows: repeat(7, 50px);
+    margin-top: -4%; }
+
+  .hr_tre {
+    grid-column: 3/span 2;
+    grid-row: 41;
+    width: 650px;
+    margin-top: 0;
+    margin-left: -15%;
+    -ms-transform: rotate(50deg);
+    -webkit-transform: rotate(50deg);
+    transform: rotate(50deg); }
+
+  .cirkel_4 {
+    grid-column: 7/span 2;
+    grid-row: 43;
+    margin-left: 0; }
+    .cirkel_4 img {
+      width: 235px;
+      height: 235px; }
+
+  #aktivitetelement {
+    grid-row: 43/span 5; }
+
+  #bestyrelseselement {
+    grid-column: 3/span 6;
+    grid-row: 50/span 4; }
+    #bestyrelseselement #bestyrelseoverskrift {
+      grid-column: 3/span 2; }
+    #bestyrelseselement #bestyrelsestext {
+      margin-left: 10%; }
+
+  #caroline_2, #lasse_2, #mie_2, #kamilla_2, #anna_2 {
+    width: 114px;
+    height: 114px;
+    border-radius: 50%;
+    border: 4px solid #ee7125; }
+
+  #bestyrelsesmedlemmer_web {
+    display: inline; }
+    #bestyrelsesmedlemmer_web img {
+      display: inline; }
+    #bestyrelsesmedlemmer_web .flex_1 {
+      margin-left: 300px; }
+    #bestyrelsesmedlemmer_web .flex_2 {
+      justify-content: space-around;
+      margin-left: 300px; }
+      #bestyrelsesmedlemmer_web .flex_2 .b_kamilla {
+        margin-left: 13%; }
+      #bestyrelsesmedlemmer_web .flex_2 .b_anna {
+        margin-right: 13%; } }
+@media screen and (min-width: 1443px) {
+  body {
+    background-image: url("../images/Background_Website_2.png");
+    background-size: cover; }
+
+  #mobilAlt {
+    width: 80%; }
+
+  #left_menu {
+    width: 20%; }
+
+  .hr_et {
+    grid-column: 3/span 4;
+    grid-row: 20;
+    width: 800px;
+    margin-left: 15px;
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg); }
+
+  .hr_to {
+    grid-column: 3/span 2;
+    grid-row: 28;
+    width: 800px;
+    margin-top: 60px;
+    margin-left: 30px;
+    -ms-transform: rotate(145deg);
+    -webkit-transform: rotate(145deg);
+    transform: rotate(145deg); }
+
+  .hr_tre {
+    grid-column: 3/span 2;
+    grid-row: 40;
+    width: 700px;
+    margin-left: 0;
+    margin-top: 5px;
+    -ms-transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg); }
+
+  .flex_2 {
+    margin-bottom: 5%; }
+
+  #medlemselement .knap {
+    padding: 0 16%; } }
 
 /*# sourceMappingURL=JCI_Slagelse.css.map */

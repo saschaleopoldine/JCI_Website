@@ -8,9 +8,10 @@
 
     <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
     <meta charset="utf-8">
+    <link rel="icon" href="images/logoLille.png">
 
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Sigende titel</title>
+    <title>JCI Slagelse</title>
 
     <!-- En kort beskrivelser af indholdet på siden -->
     <meta name="description" content="Max ca. 170-200 karakterer - 600px">
@@ -38,11 +39,14 @@
 
 
     <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
-    <meta name="robots" content="All">
+    <meta name="robots" content="index, follow">
 
 
     <meta name="author" content="Udgiver">
     <meta name="copyright" content="Information om copyright">
+
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Merriweather+Sans" rel="stylesheet">
+    <script src="https://use.fontawesome.com/4574f88dc3.js"></script>
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/JCI_Slagelse.css" rel="stylesheet" type="text/css">
@@ -57,11 +61,446 @@
 <body>
 
 
+
+<!------------------------------------------------ Header mobil -------------------------------------------------->
+
+<div id="flex_alt">
+
+    <div id="left_menu">
+
+        <div id="menuIndhold" class="web">
+
+            <a href="index.html"><img alt="JCI Slagelses logo" src="images/logo.png" id="logo"></a>
+
+            <nav class="web">
+                <a href="index.html">FORSIDE</a>
+                <div class="flexMenu"><i class="fa fa-angle-right hvemKlik"></i><i class="fa fa-angle-down hvemKlik2"></i><a href="hvem_er_jci.html">HVEM ER JCI?</a></div>
+                <div class="undermenu1">
+                    <a href="JCI_Slagelse.html" class="active">JCI SLAGELSE</a>
+                    <a href="#">JCI GLOBAL</a>
+                </div>
+                <div class="flexMenu"><i class="fa fa-angle-right leftArrow medKlik"></i><i class="fa fa-angle-down medKlik2"></i><a href="medlemskab.html">MEDLEMSKAB</a></div>
+                <div class="undermenu2">
+                    <a href="privat_medlem.html">PRIVATMEDLEM</a>
+                    <a href="#">ERHVERVSMEDLEM</a>
+                </div>
+                <a href="#">AKTIVITETER</a>
+                <a href="#">PARTNERE</a>
+                <button>Meld dig ind</button>
+            </nav>
+            <p class="kontakt"><strong>KONTAKT OS</strong></p>
+            <p class="kontakt">MAIL:<br>slagelse@jci.dk</p>
+            <div id="flexSoMe">
+                <div class="soMeCirkler" id="soMeCirkel1"><i class="fa fa-facebook-f fa-2x"></i></div>
+                <div class="soMeCirkler" id="soMeCirkel2"><i class="fa fa-twitter fa-2x"></i></div>
+            </div>
+            <div class="soMeCirkler" id="soMeCirkel3"><i class="fa fa-linkedin fa-2x"></i></div>
+
+        </div>
+
+
+    </div>
+
+    <div id="menuMobil" class="mobil">
+        <a href="index.html"><img alt="JCI Slagelses logo" src="images/logo.png"></a>
+        <i class="fa fas fa-bars fa-2x" id="burgerKlik"></i>
+    </div>
+    <nav id="burgerFold">
+        <a href="index.html">FORSIDE</a>
+        <div class="flexMenu"><i class="fa fa-angle-right hvemKlik"></i><i class="fa fa-angle-down hvemKlik2"></i><a href="hvem_er_jci.html">HVEM ER JCI?</a></div>
+        <div class="undermenu1">
+            <a href="JCI_Slagelse.html" class="active">JCI SLAGELSE</a>
+            <a href="#">JCI GLOBAL</a>
+        </div>
+        <div class="flexMenu"><i class="fa fa-angle-right leftArrow medKlik"></i><i class="fa fa-angle-down medKlik2"></i><a href="medlemskab.html">MEDLEMSKAB</a></div>
+        <div class="undermenu2">
+            <a href="privat_medlem.html">PRIVATMEDLEM</a>
+            <a href="#">ERHVERVSMEDLEM</a>
+        </div>
+        <a href="#">AKTIVITETER</a>
+        <a href="#">PARTNERE</a>
+
+        <button>Meld dig ind</button>
+
+        <p class="kontakt"><strong>KONTAKT OS</strong></p>
+        <p class="kontakt">MAIL:<br>slagelse@jci.dk</p>
+    </nav>
+
+
+
+<!------------------------------------------------ Indhold mobil -------------------------------------------------->
+<div id="mobilAlt" class="mobil">
+
+<h1>
+    JCI Slagelse
+</h1>
+
+
+<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+    in reprehenderit in voluptate velit esse cillum dolore eu
+    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id
+    est laborum. Sed ut perspiciatis unde omnis iste natus error
+    sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</h3>
+
+<div class="cirkel_1"><a href="#projektelement">
+    <img alt="orange baggrundsfarve" class="mobil_baggrund" src="images/baggrundsfarve.png" height="300" width="300"/>
+    <img alt="projekt planlægningsbillede" class="web_baggrund" src="images/project.png" height="300" width="452"/></a></div>
+<p id="projekt"><a href="#projektelement">Projekter</a></p>
+
+
+<div class="hr_et"></div>
+
+
+<div class="cirkel_2"><a href="#medlemselement">
+    <img alt="orange baggrundsfarve" class="mobil_baggrund" src="images/baggrundsfarve.png" height="300" width="300"/>
+    <img alt="person der sidder til et JCI møde" class="web_baggrund" src="images/medlemskab.png" height="235" width="355"/>
+</a></div>
+<p id="medlem"><a href="#medlemselement">Medlemskab</a></p>
+
+
+<div class="hr_to"></div>
+
+
+<div class="cirkel_3"><a href="#partnerelement">
+    <img alt="orange baggrundsfarve" class="mobil_baggrund" src="images/baggrundsfarve.png" height="300" width="300"/>
+    <img alt="to personer der giver hinanden hånden" class="web_baggrund" src="images/partnere.png" height="300" width="452"/>
+</a></div>
+<p id="partner"><a href="#partnerelement">Partnere</a></p>
+
+
+
+<div class="hr_tre"></div>
+
+
+<div class="cirkel_4"><a href="#aktivitetelement">
+    <img alt="orange baggrundsfarve" class="mobil_baggrund" src="images/baggrundsfarve.png" height="300" width="300"/>
+    <img alt="JCI medlemmer som er til et foredrag" class="web_baggrund" src="images/aktivitet.png" height="235" width="235"/>
+</a></div>
+<p id="aktivitet"><a href="#aktivitetelement">Aktiviteter</a></p>
+
+
+<div class="hr_fire"></div>
+
+
+<div class="cirkel_5 mobil_baggrund"><a href="#bestyrelseselement"><img alt="orange baggrundsfarve" src="images/baggrundsfarve.png" height="300" width="300"/></a></div>
+<div id="b_bobble"><p id="bestyrrelse"><a href="#bestyrelseselement">Mød <br> bestyrrelsen</a></p></div>
+
+
+<section id="projektelement">
+    <h2 id="projektoverskrift">Projekter</h2>
+    <p id="projekttext">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum.
+     </p>
+</section>
+
+<section id="medlemselement">
+    <h2 id="medlemsoverskrift">Medlemskab</h2>
+    <p id="medlemstext">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+    <div class="knap"><a href="medlemskab.html">Læs mere her</a></div>
+</section>
+
+<section id="partnerelement">
+    <h2 id="partneroverskrift">Partnere</h2>
+    <p id="partnertext">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+</section>
+
+<section id="aktivitetelement">
+    <h2 id="aktivitetoverskrift">Aktiviteter</h2>
+    <p id="aktivitettext">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+</section>
+
+
+<section id="bestyrelseselement">
+    <h2 id="bestyrelseoverskrift">Mød bestyrrelsen</h2>
+    <p id="bestyrelsestext">
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur. non sint occaecat non cupidatat non proident,
+    </p>
+
+    <i class="fa fas fa-angle-down fa-2x" id="down"></i>
+</section>
+
+</div>
+</div>
+
+
+
+
+<!------------------------------------------ bestyrrelsesmedlem mobil -------------------------------------------------->
+
+
+<div id="bestyrelsesmedlemmer_mobil">
+    <div class="flex">
+        <div class="bestyrelsesmedlem">
+            <img alt="Caroline fra JCI bestyrrelsen" id="caroline" src="images/caroline.png" height="85" width="85"/>
+            <h4>Caroline Sørensen</h4>
+            <p class="bestyrelsesmedlemtext">
+                Local president/formand
+                <br>
+                Kommunikationsansvarlig
+                <br>
+                Mail: ip@jci-slagelse.dk
+                <br>
+                Tlf: 21 26 93 25
+            </p>
+        </div>
+
+
+        <div class="bestyrelsesmedlem">
+            <img alt="Lasse fra JCI bestyrrelsen" id="lasse" src="images/lasse.png" height="85" width="84"/>
+            <h4>Lasse Staurby Andersen</h4>
+            <p class="bestyrelsesmedlemtext">
+                Ansvarlig for erhverskontakt
+                <br>
+                Mail: bus@jci-slagelse.dk
+                <br>
+                Tlf: 29 46 64 17
+            </p>
+        </div>
+    </div>
+
+
+    <div class="flex">
+        <div class="bestyrelsesmedlem">
+            <img alt="Mie fra JCI bestyrrelsen" id="mie" src="images/mie.png" height="85" width="85"/>
+            <h4>Mie Lyngstrøm</h4>
+            <p class="bestyrelsesmedlemtext">
+                Medlemsansvarlig
+                <br>
+                Mail: mec@jci-slagelse.dk
+                <br>
+                Tlf: 21 49 08 49
+            </p>
+        </div>
+
+
+        <div class="bestyrelsesmedlem">
+            <img alt="Kamilla fra JCI bestyrrelsen" id="kamilla" src="images/kamilla.png" height="84" width="85"/>
+            <h4>Kamilla Jongejan</h4>
+            <p class="bestyrelsesmedlemtext">
+                Mødeansvarlig
+                <br>
+                Mail: moek@jci-slagelse.dk
+                <br>
+                Tlf: 51 35 90 49
+            </p>
+        </div>
+    </div>
+
+
+    <div class="bestyrelsesmedlem">
+        <img alt="Anna fra JCI bestyrrelsen" id="anna" src="images/anna.png" height="84" width="85"/>
+        <h4>Anna Strøbæk</h4>
+        <p class="bestyrelsesmedlemtext">
+            Projektansvarlig
+            <br>
+            Mail: pro@jci-slagelse.dk
+            <br>
+            Tlf: 27 50 97 55
+        </p>
+    </div>
+</div>
+
+
+
+
+
+<!------------------------------------------ bestyrrelsesmedlem web -------------------------------------------------->
+
+<div id="bestyrelsesmedlemmer_web">
+    <div class="flex flex_1">
+        <div class="bestyrelsesmedlem">
+            <img alt="Caroline fra JCI bestyrrelsen" id="caroline_2" src="images/caroline.png" height="85" width="85"/>
+            <h4>Caroline Sørensen</h4>
+            <p class="bestyrelsesmedlemtext">
+                Local president/formand
+                <br>
+                Kommunikationsansvarlig
+                <br>
+                Mail: ip@jci-slagelse.dk
+                <br>
+                Tlf: 21 26 93 25
+            </p>
+        </div>
+
+
+        <div class="bestyrelsesmedlem">
+            <img alt="Lasse fra JCI bestyrrelsen" id="lasse_2" src="images/lasse.png" height="85" width="84"/>
+            <h4>Lasse Staurby Andersen</h4>
+            <p class="bestyrelsesmedlemtext">
+                Ansvarlig for erhverskontakt
+                <br>
+                Mail: bus@jci-slagelse.dk
+                <br>
+                Tlf: 29 46 64 17
+            </p>
+        </div>
+
+        <div class="bestyrelsesmedlem">
+            <img alt="Mie fra JCI bestyrrelsen" id="mie_2" src="images/mie.png" height="85" width="85"/>
+            <h4>Mie Lyngstrøm</h4>
+            <p class="bestyrelsesmedlemtext">
+                Medlemsansvarlig
+                <br>
+                Mail: mec@jci-slagelse.dk
+                <br>
+                Tlf: 21 49 08 49
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="flex flex_2">
+        <div class="bestyrelsesmedlem b_kamilla">
+            <img alt="Kamilla fra JCI bestyrrelsen" id="kamilla_2" src="images/kamilla.png" height="84" width="85"/>
+            <h4>Kamilla Jongejan</h4>
+            <p class="bestyrelsesmedlemtext">
+                Mødeansvarlig
+                <br>
+                Mail: moek@jci-slagelse.dk
+                <br>
+                Tlf: 51 35 90 49
+            </p>
+        </div>
+
+        <div class="bestyrelsesmedlem b_anna">
+            <img alt="Anna fra JCI bestyrrelsen" id="anna_2" src="images/anna.png" height="84" width="85"/>
+            <h4>Anna Strøbæk</h4>
+            <p class="bestyrelsesmedlemtext">
+                Projektansvarlig
+                <br>
+                Mail: pro@jci-slagelse.dk
+                <br>
+                Tlf: 27 50 97 55
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<!------------------------------------------------ Footer mobil -------------------------------------------------->
+<footer>
+    <p>
+        KONTAKT OS:
+        <br><br>
+        MAIL:
+        <br>
+        kontakt@slagelsejci.dk
+    </p>
+
+    <div id="some">
+        <i class="fa fas fa-facebook-square fa-2x"></i>
+        <i class="fa fab fa-twitter fa-2x"></i>
+        <i class="fa fab fa-linkedin fa-2x"></i>
+    </div>
+</footer>
+
+
+<!------------------------------------------------ back-to-top -------------------------------------------------->
+<i class="fa fas fa-chevron-circle-up fa-3x"></i>
+
+
+<!------------------------------------------- JQuary -------------------------------------------------->
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 <script>
     $(document).ready(function (e) {
-        // Din kode her
+        $("#down").click(function (e) {
+            $("#bestyrelsesmedlemmer_mobil").slideToggle(1000);
+        });
+
+        $(window).scroll(function (e) {
+            if ($(this).scrollTop() >= 100){
+                $('.fa-chevron-circle-up').fadeIn(300);
+            }
+            else {
+                $('.fa-chevron-circle-up').fadeOut(300);
+            }
+        });
+
+        $('.fa-chevron-circle-up').click(function (e) {
+            $('html, body').animate({scrollTop:0}, '300');
+            return false;
+        });
+
+
+
+        $(".hvemKlik").click(function (e) {
+            $(".undermenu1").slideDown(1000);
+            $(".undermenu2").slideUp(1000);
+            $(".hvemKlik").hide(0);
+            $(".hvemKlik2").show(0);
+            $(".medKlik2").hide(0);
+            $(".medKlik").show(0);
+        });
+
+        $(".hvemKlik2").click(function (e) {
+            $(".undermenu1").slideUp(1000);
+            $(".hvemKlik2").hide(0);
+            $(".hvemKlik").show(0);
+
+        });
+
+        $(".medKlik").click(function (e) {
+            $(".undermenu2").slideDown(1000);
+            $(".undermenu1").slideUp(1000);
+            $(".medKlik").hide(0);
+            $(".medKlik2").show(0);
+            $(".hvemKlik2").hide(0);
+            $(".hvemKlik").show(0);
+        });
+
+        $(".medKlik2").click(function (e) {
+            $(".undermenu2").slideUp(1000);
+            $(".medKlik2").hide(0);
+            $(".medKlik").show(0);
+        });
+
+        $("#burgerKlik").click(function (e) {
+            $("#burgerFold").slideToggle(700);
+        });
+
     });
 </script>
 

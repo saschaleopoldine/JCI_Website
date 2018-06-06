@@ -36,6 +36,70 @@ body {
 .web {
   display: none; }
 
+.active {
+  border-bottom: solid #f37121 3px;
+  width: 102px; }
+
+#burgerFold {
+  padding: 8% 0 5% 15%;
+  display: none;
+  width: 100vw;
+  margin: auto;
+  background-color: #0097d7;
+  height: 100vh;
+  position: absolute;
+  z-index: 5; }
+  #burgerFold a {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    text-align: left;
+    font-size: 15pt;
+    margin-bottom: 20px;
+    font-family: 'Libre Baskerville', serif; }
+    #burgerFold a:hover {
+      color: #fccc28; }
+  #burgerFold .flexMenu {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: left; }
+  #burgerFold .hvemKlik, #burgerFold .hvemKlik2, #burgerFold .medKlik, #burgerFold .medKlik2 {
+    color: white;
+    margin-right: 2%;
+    cursor: pointer; }
+  #burgerFold .hvemKlik2, #burgerFold .medKlik2 {
+    display: none; }
+  #burgerFold .undermenu1, #burgerFold .undermenu2 {
+    margin-left: 10%;
+    display: none; }
+  #burgerFold button {
+    height: 30px;
+    background-color: #f37121;
+    border: none;
+    text-decoration: none;
+    color: white;
+    font-size: 18pt;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    font-size: 18pt;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin: 8% 0; }
+    #burgerFold button a {
+      text-decoration: none;
+      font-family: 'Merriweather Sans', sans-serif;
+      color: white;
+      font-size: 18pt; }
+    #burgerFold button:hover {
+      background-color: #fccc28; }
+  #burgerFold .kontakt {
+    margin: 5% 0;
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    font-size: 15pt; }
+
 .ca_streger {
   height: 3px;
   background-color: #0097d7; }
@@ -153,16 +217,20 @@ body {
     text-decoration: none;
     color: white;
     font-size: 18pt;
+    cursor: pointer;
     grid-row: 13/span 1;
     grid-column: 1/span 6;
-    width: 220px;
+    width: 215px;
     margin-left: 28px;
     margin-top: 22px;
     z-index: 2; }
     #mobilAlt #firstBobleButton a {
       text-decoration: none;
+      font-family: 'Merriweather Sans', sans-serif;
       color: white;
       font-size: 18pt; }
+    #mobilAlt #firstBobleButton:hover {
+      background-color: #fccc28; }
   #mobilAlt #ca_cirkel_2 {
     background-image: url("../images/caroline_aktiviteter.png");
     grid-row: 17/span 5;
@@ -196,16 +264,20 @@ body {
     text-decoration: none;
     color: white;
     font-size: 18pt;
+    cursor: pointer;
     grid-row: 20/span 1;
     margin-top: 0;
     grid-column: 1/span 4;
-    width: 175px;
-    margin-left: 27px;
+    width: 185px;
+    margin-left: 22px;
     z-index: 2; }
     #mobilAlt #secondBobleButton a {
       text-decoration: none;
+      font-family: 'Merriweather Sans', sans-serif;
       color: white;
       font-size: 18pt; }
+    #mobilAlt #secondBobleButton:hover {
+      background-color: #fccc28; }
   #mobilAlt #ca_cirkel_3 {
     background-image: url("../images/caroline_partner.png");
     grid-row: 23/span 5;
@@ -238,6 +310,7 @@ body {
     text-decoration: none;
     color: white;
     font-size: 18pt;
+    cursor: pointer;
     grid-row: 26/span 1;
     margin-top: 13px;
     grid-column: 2/span 3;
@@ -246,8 +319,11 @@ body {
     z-index: 2; }
     #mobilAlt #thirdBobleButton a {
       text-decoration: none;
+      font-family: 'Merriweather Sans', sans-serif;
       color: white;
       font-size: 18pt; }
+    #mobilAlt #thirdBobleButton:hover {
+      background-color: #fccc28; }
   #mobilAlt #ca_cirkel_4 {
     background-image: url("../images/caroline_medlemskab.png");
     grid-row: 29/span 7;
@@ -281,17 +357,21 @@ body {
     text-decoration: none;
     color: white;
     font-size: 18pt;
+    cursor: pointer;
     grid-row: 32/span 1;
     margin-top: 32px;
     grid-column: 2/span 4;
     margin-left: 4px;
-    width: 175px;
+    width: 180px;
     height: 60px;
     z-index: 2; }
     #mobilAlt #fourthBobleButton a {
       text-decoration: none;
+      font-family: 'Merriweather Sans', sans-serif;
       color: white;
       font-size: 18pt; }
+    #mobilAlt #fourthBobleButton:hover {
+      background-color: #fccc28; }
 
 footer {
   background-color: #0097d7;
@@ -309,8 +389,25 @@ footer {
     flex-direction: column; }
     footer #some i {
       margin: 3px 0; }
+      footer #some i:hover {
+        color: #fccc28; }
+
+#bttBtn {
+  color: #0097d7;
+  position: fixed;
+  bottom: 160px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 2;
+  display: none; }
+  #bttBtn:hover {
+    color: #fccc28; }
 
 @media screen and (min-width: 360px) {
+  #burgerFold {
+    padding-left: 20%;
+    height: 100vh; }
+
   #ca_streg1 {
     -ms-transform: rotate(-80deg);
     -webkit-transform: rotate(-80deg);
@@ -372,7 +469,7 @@ footer {
     #mobilAlt #secondBobleButton {
       grid-row-start: 21;
       margin-top: 10px;
-      margin-left: 32px; }
+      margin-left: 28px; }
     #mobilAlt #ca_cirkel_3 {
       background-size: cover;
       grid-column: 2/span 4;
@@ -402,19 +499,24 @@ footer {
     #mobilAlt #fourthBobleTitle {
       grid-row-start: 32;
       margin-left: 26px;
-      margin-top: 8px; }
+      margin-top: 0; }
     #mobilAlt #fourthBobleText {
       grid-row-start: 32;
-      margin-top: 43px;
+      margin-top: 35px;
       margin-left: 26px;
       width: 300px; }
     #mobilAlt #fourthBobleButton {
       grid-row-start: 34;
       grid-column: 1/span 6;
-      width: 275px;
+      width: 285px;
       height: 30px;
-      margin-left: 26px; } }
+      margin-left: 26px;
+      margin-top: 24px; } }
 @media screen and (min-width: 410px) {
+  #burgerFold {
+    padding-left: 25%;
+    height: 80vh; }
+
   #ca_streg1 {
     -ms-transform: rotate(-75deg);
     -webkit-transform: rotate(-75deg);
@@ -620,6 +722,10 @@ footer {
   body {
     background-image: url("../images/Forside_mobil_mockup_baggrund_3.png"); }
 
+  #burgerFold {
+    padding-left: 35%;
+    height: 75vh; }
+
   #menuMobil {
     height: 100px; }
     #menuMobil i {
@@ -726,6 +832,10 @@ footer {
 @media screen and (min-width: 992px) {
   body {
     background-image: url("../images/Forside_mobil_mockup_baggrund_4.png"); }
+
+  #burgerFold {
+    padding-left: 37%;
+    height: 65vh; }
 
   #ca_streg1 {
     -ms-transform: rotate(-45deg);
@@ -854,6 +964,10 @@ footer {
   body {
     background-image: url("../images/Forside_web_mockup_baggrund.png"); }
 
+  #bttBtn {
+    bottom: 50px;
+    right: 50px; }
+
   #ca_streg1 {
     grid-column: 3/span 8;
     margin-left: 20%; }
@@ -871,6 +985,9 @@ footer {
   .mobil, #menuMobil, footer {
     display: none; }
 
+  .active {
+    width: 110px; }
+
   #flex_alt {
     display: flex;
     display: -webkit-flex;
@@ -879,13 +996,14 @@ footer {
   #left_menu {
     width: 25%; }
     #left_menu #menuIndhold {
+      letter-spacing: 1px;
       width: inherit;
       background-color: #0097d7;
       height: 100vh;
       padding: 50px 25px;
       position: fixed; }
       #left_menu #menuIndhold #logo {
-        width: 60%;
+        width: 55%;
         margin: auto;
         margin-bottom: 10%; }
       #left_menu #menuIndhold nav a {
@@ -897,17 +1015,19 @@ footer {
         font-size: 15pt;
         margin-bottom: 10px;
         font-family: 'Libre Baskerville', serif; }
+        #left_menu #menuIndhold nav a:hover {
+          color: #fccc28; }
       #left_menu #menuIndhold .flexMenu {
         display: flex;
         display: -webkit-flex;
         justify-content: left; }
-      #left_menu #menuIndhold #hvemKlik, #left_menu #menuIndhold #hvemKlik2, #left_menu #menuIndhold #medKlik, #left_menu #menuIndhold #medKlik2 {
+      #left_menu #menuIndhold .hvemKlik, #left_menu #menuIndhold .hvemKlik2, #left_menu #menuIndhold .medKlik, #left_menu #menuIndhold .medKlik2 {
         color: white;
         margin-right: 2%;
         cursor: pointer; }
-      #left_menu #menuIndhold #hvemKlik2, #left_menu #menuIndhold #medKlik2 {
+      #left_menu #menuIndhold .hvemKlik2, #left_menu #menuIndhold .medKlik2 {
         display: none; }
-      #left_menu #menuIndhold #undermenu1, #left_menu #menuIndhold #undermenu2 {
+      #left_menu #menuIndhold .undermenu1, #left_menu #menuIndhold .undermenu2 {
         margin-left: 10%;
         display: none; }
       #left_menu #menuIndhold nav button {
@@ -917,15 +1037,20 @@ footer {
         text-decoration: none;
         color: white;
         font-size: 18pt;
+        cursor: pointer;
         width: 170px;
         height: 40px;
+        padding: 2% 0;
         font-size: 18pt;
         font-family: 'Merriweather Sans', sans-serif;
         margin: 8% 0; }
         #left_menu #menuIndhold nav button a {
           text-decoration: none;
+          font-family: 'Merriweather Sans', sans-serif;
           color: white;
           font-size: 18pt; }
+        #left_menu #menuIndhold nav button:hover {
+          background-color: #fccc28; }
       #left_menu #menuIndhold .kontakt {
         margin: 5% 0;
         font-family: 'Libre Baskerville', serif;
@@ -937,9 +1062,12 @@ footer {
         border-radius: 50%;
         border: solid #f37121 3px;
         padding: 2% 3%;
-        margin: 5%; }
+        margin: 5%;
+        cursor: pointer; }
         #left_menu #menuIndhold .soMeCirkler i {
           color: white; }
+          #left_menu #menuIndhold .soMeCirkler i:hover {
+            color: #fccc28; }
       #left_menu #menuIndhold #flexSoMe {
         display: flex;
         display: -webkit-flex;
@@ -950,9 +1078,6 @@ footer {
         margin: 7% 0 0 15%; }
       #left_menu #menuIndhold .fa-linkedin {
         margin-left: 3%; }
-      #left_menu #menuIndhold #active {
-        border-bottom: solid #f37121 3px;
-        width: 102px; }
 
   #mobilAlt {
     width: 75%;
@@ -1019,7 +1144,6 @@ footer {
       grid-row-start: 13;
       margin-top: 27px;
       grid-column: 2/span 3;
-      width: 175px;
       margin-left: 68px; }
     #mobilAlt #ca_cirkel_3 {
       grid-column: 6/span 4;
@@ -1065,8 +1189,7 @@ footer {
       grid-row-start: 28;
       margin-top: 31px;
       grid-column: 2/span 5;
-      width: 275px;
-      margin-left: 65px; } }
+      margin-left: 60px; } }
 @media screen and (min-width: 1500px) {
   body {
     background-image: url("../images/Forside_web_mockup_baggrund_2.png"); }
@@ -1192,7 +1315,7 @@ footer {
       grid-row-start: 35;
       margin-top: 40px;
       grid-column: 2/span 5;
-      margin-left: 135px; } }
+      margin-left: 130px; } }
 @media screen and (min-width: 1800px) {
   body {
     background-image: url("../images/Forside_web_mockup_baggrund_3.png"); } }
