@@ -1031,7 +1031,11 @@ footer{
       grid-column: 2/span 6;
       grid-row: 9;
       margin-left: -0.5%;
-      margin-top: -1px;
+      margin-top: -5px;
+    }
+
+    #fordelafsnit{
+      margin-top: 7%;
     }
   }
 
@@ -1107,6 +1111,10 @@ footer{
       grid-row: 9;
       margin-left: -0.5%;
       margin-top: -1px;
+    }
+
+    #fådinchefafsnit{
+      margin-top: 7%;
     }
 
   }
@@ -1693,11 +1701,10 @@ footer{
 
   #mobilAlt{
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(50, 50px);
+  grid-template-rows: repeat(48, 50px);
   padding: 70px 50px 50px 0;
   display: grid;
   grid-column-gap: 20px;
-  height: 600px;
   width: 75%;
 
   }
@@ -1706,6 +1713,7 @@ footer{
     display: flex;
     display: -webkit-flex;
     justify-content: space-between;
+
   }
 
 
@@ -1853,7 +1861,11 @@ footer{
     grid-row-start:1;
     grid-column: 5/span 7;
     margin-top: -26%;
+    #fordelafsnit{
+      font-size: 15pt;
+      margin-top: 15%;
 
+    }
   }
 
 
@@ -1864,14 +1876,8 @@ footer{
 
   .fordelafsnitoverskrift{
     font-size: 24pt;
-    grid-column: 4/span 6;
+    grid-column: 4/span 4;
 
-  }
-
-
-  #fordelafsnit{
-    font-size: 15pt;
-    margin-top: 15%;
   }
 
  .line{
@@ -2035,20 +2041,21 @@ margin-left: 4%;
   grid-row-start:30;
   margin-left: -50px;
   margin-top: -10%;
+   #fådinchefafsnit{
+     font-size: 15pt;
+     margin-top: 13%;
+
+   }
 
  }
 
-  #fådinchefafsnit{
-   font-size: 15pt;
-    margin-top: 13%;
 
-  }
 
 
   .meld_dig_indweb{
      @include button;
      grid-column: 5/span 6;
-     grid-row-start: 44;
+     grid-row-start: 47;
      width: 175px;
     height: 45px;
 
@@ -2067,7 +2074,7 @@ margin-left: 4%;
 
 
 
-  }
+}
 
 
 

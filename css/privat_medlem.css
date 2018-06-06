@@ -644,7 +644,9 @@ footer {
       grid-column: 2/span 6;
       grid-row: 9;
       margin-left: -0.5%;
-      margin-top: -1px; }
+      margin-top: -5px; }
+    #Fordeltekst #fordelafsnit {
+      margin-top: 7%; }
 
   #Pristekst {
     grid-column: 1/span 6;
@@ -680,7 +682,9 @@ footer {
       grid-column: 2/span 6;
       grid-row: 9;
       margin-left: -0.5%;
-      margin-top: -1px; } }
+      margin-top: -1px; }
+    #fådincheftekst #fådinchefafsnit {
+      margin-top: 7%; } }
 @media screen and (min-width: 768px) {
   body {
     background-image: url("../images/netvearkIpad_768.png");
@@ -976,11 +980,10 @@ footer {
 
   #mobilAlt {
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(50, 50px);
+    grid-template-rows: repeat(48, 50px);
     padding: 70px 50px 50px 0;
     display: grid;
     grid-column-gap: 20px;
-    height: 600px;
     width: 75%; }
 
   #flex_alt {
@@ -1105,17 +1108,16 @@ footer {
     grid-row-start: 1;
     grid-column: 5/span 7;
     margin-top: -26%; }
+    #Fordeltekst #fordelafsnit {
+      font-size: 15pt;
+      margin-top: 15%; }
 
   .Fordele {
     display: none; }
 
   .fordelafsnitoverskrift {
     font-size: 24pt;
-    grid-column: 4/span 6; }
-
-  #fordelafsnit {
-    font-size: 15pt;
-    margin-top: 15%; }
+    grid-column: 4/span 4; }
 
   .line {
     grid-row-start: 9;
@@ -1206,10 +1208,9 @@ footer {
     grid-row-start: 30;
     margin-left: -50px;
     margin-top: -10%; }
-
-  #fådinchefafsnit {
-    font-size: 15pt;
-    margin-top: 13%; }
+    #fådincheftekst #fådinchefafsnit {
+      font-size: 15pt;
+      margin-top: 13%; }
 
   .meld_dig_indweb {
     background-color: #f37121;
@@ -1221,7 +1222,7 @@ footer {
     cursor: pointer;
     margin: 10px;
     grid-column: 5/span 6;
-    grid-row-start: 44;
+    grid-row-start: 47;
     width: 175px;
     height: 45px; }
     .meld_dig_indweb:hover {
