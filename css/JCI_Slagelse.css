@@ -352,6 +352,9 @@ h2 {
   #projektelement #projekttext {
     grid-column: 2/span 3;
     grid-row: 2/span 7; }
+    #projektelement #projekttext a {
+      text-decoration: none;
+      color: #fccc28; }
 
 #medlemselement {
   grid-column: 1/span 6;
@@ -583,12 +586,18 @@ footer {
     #partnerelement #partnertext {
       grid-column: 2/span 4;
       width: 100%; }
+      #partnerelement #partnertext a {
+        text-decoration: none;
+        color: #fccc28; }
 
   #aktivitetelement {
     grid-row: 43/span 8; }
     #aktivitetelement #aktivitettext {
       grid-column: 2/span 4;
       width: 100%; }
+      #aktivitetelement #aktivitettext a {
+        text-decoration: none;
+        color: #fccc28; }
 
   #bestyrelseselement {
     grid-row: 52/span 8; }
@@ -1280,6 +1289,9 @@ footer {
     font-size: 16pt;
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: normal; }
+    h3 a {
+      text-decoration: none;
+      color: #fccc28; }
 
   .mobil_baggrund {
     display: none; }

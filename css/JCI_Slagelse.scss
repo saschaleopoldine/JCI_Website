@@ -476,6 +476,10 @@ h2{
   #projekttext{                       
     grid-column: 2/span 3;            
     grid-row: 2/span 7;
+    a{
+      text-decoration: none;
+      color: $hoverYellow;
+    }
   }                                                                       
 }
 
@@ -776,7 +780,7 @@ footer{
     grid-row: 24/span 8;
     #medlemstext{
       grid-column: 2/span 4;
-      width: 100%;          
+      width: 100%;
     }                       
   }                                       
 
@@ -786,7 +790,11 @@ footer{
     grid-row: 34/span 8;
     #partnertext{
       grid-column: 2/span 4;
-      width: 100%;          
+      width: 100%;
+      a{
+        text-decoration: none;
+        color: $hoverYellow;
+      }
     }                       
   }                                       
                                           
@@ -796,7 +804,11 @@ footer{
     grid-row: 43/span 8;
     #aktivitettext{
       grid-column: 2/span 4;
-      width: 100%;          
+      width: 100%;
+      a{
+        text-decoration: none;
+        color: $hoverYellow;
+      }
     }                       
   }                                       
                                           
@@ -1751,6 +1763,10 @@ footer{
     font-size: 16pt;
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: normal;
+    a{
+      text-decoration: none;
+      color: $hoverYellow;
+    }
   }
 
   .mobil_baggrund{

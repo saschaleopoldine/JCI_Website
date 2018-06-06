@@ -555,7 +555,10 @@ h2{
   @include afsnit;
   grid-column: 2/span 4;
   grid-row-start: 23;
-
+  a{
+    text-decoration: none;
+    color: $hoverYellow;
+  }
 }
 
 //---------------------------- Fordel_afsnit_mobil---------------------->
@@ -592,6 +595,10 @@ h2{
   @include afsnit;
   grid-column: 2/span 4;
   grid-row-start: 23;
+  a{
+    text-decoration: none;
+    color: $hoverYellow;
+  }
 }
 
 //---------------------------- Priser_afsnit_mobil---------------------->
@@ -676,6 +683,10 @@ h2{
   @include afsnit;
   grid-column: 2/span 4;
   grid-row-start: 23;
+  a{
+    text-decoration: none;
+    color: $hoverYellow;
+  }
 }
 
 //---------------------------- Få din chef_afsnit_mobil---------------------->
@@ -1877,7 +1888,6 @@ footer{
     #fordelafsnit{
       font-size: 15pt;
       margin-top: 15%;
-
     }
   }
 
