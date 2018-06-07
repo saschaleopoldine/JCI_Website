@@ -202,10 +202,10 @@ h1 {
   font-family: 'Libre Baskerville', serif;
   font-style: normal;
   font-weight: bold;
-  grid-column: 2/span 5;
-  grid-row-start: 8;
-  margin-left: 75%;
-  margin-top: 10px; }
+  grid-column: 4/span 6;
+  grid-row-start: 7;
+  margin-top: 18%;
+  margin-left: 25%; }
   .priser a {
     text-decoration: none;
     color: black;
@@ -397,7 +397,8 @@ h2 {
   font-style: normal;
   font-weight: lighter;
   grid-column: 2/span 4;
-  grid-row-start: 23; }
+  grid-row-start: 23;
+  margin-top: 16%; }
   #priserafsnit a {
     text-decoration: none;
     color: #f37121; }
@@ -436,13 +437,13 @@ h2 {
   grid-column: 2/span 4;
   grid-row-start: 23; }
 
-#f├Ñdincheftekst {
+#fådincheftekst {
   grid-column: 1/span 6;
-  grid-row: 38/span 8;
+  grid-row: 37/span 8;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(9, 50px); }
-  #f├Ñdincheftekst .f├Ñdinchefafsnitoverskrift {
+  #fådincheftekst .fådinchefafsnitoverskrift {
     grid-column: 2/span 3;
     grid-row: 8;
     margin-left: -0.5%;
@@ -461,7 +462,7 @@ h2 {
     text-decoration: none;
     color: black; }
 
-#f├Ñdinchefafsnit {
+#fådinchefafsnit {
   font-size: 12pt;
   color: black;
   text-align: left;
@@ -470,7 +471,7 @@ h2 {
   font-weight: lighter;
   grid-column: 2/span 4;
   grid-row-start: 23; }
-  #f├Ñdinchefafsnit a {
+  #fådinchefafsnit a {
     text-decoration: none;
     color: #f37121; }
 
@@ -508,9 +509,12 @@ footer {
   #studierabattekst {
     grid-row: 30/span 8; }
 
-  #f├Ñdincheftekst {
+  #fådincheftekst {
     grid-row: 39/span 8; } }
 @media screen and (min-width: 414px) {
+  .priserafsnitoverskrift {
+    margin-top: 15%; }
+
   #burgerFold {
     padding-left: 25%; }
 
@@ -572,7 +576,7 @@ footer {
     grid-column: 2/span 5;
     grid-row-start: 8;
     margin-left: 76%;
-    margin-top: 10px; }
+    margin-top: -15px; }
 
   #circlepriser {
     width: 170px;
@@ -657,22 +661,20 @@ footer {
     #Fordeltekst .fordelafsnitoverskrift {
       grid-column: 2/span 6;
       grid-row: 9;
-      margin-left: -0.5%;
-      margin-top: -5px; }
+      margin-left: -0.5%; }
     #Fordeltekst #fordelafsnit {
       margin-top: 7%; }
 
   #Pristekst {
     grid-column: 1/span 6;
-    grid-row: 19/span 8;
+    grid-row: 18/span 8;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(9, 50px); }
     #Pristekst .priserafsnitoverskrift {
       grid-column: 2/span 6;
       grid-row: 9;
-      margin-left: -0.5%;
-      margin-top: -1px; }
+      margin-left: -0.5%; }
 
   #studierabattekst {
     grid-column: 1/span 6;
@@ -683,22 +685,21 @@ footer {
     #studierabattekst .studierabatafsnitoverskrift {
       grid-column: 2/span 6;
       grid-row: 9;
-      margin-left: -0.5%;
-      margin-top: -1px; }
+      margin-left: -0.5%; }
 
-  #f├Ñdincheftekst {
+  #fådincheftekst {
     grid-column: 1/span 6;
     grid-row: 31/span 8;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(9, 50px); }
-    #f├Ñdincheftekst .f├Ñdinchefafsnitoverskrift {
+    #fådincheftekst .fådinchefafsnitoverskrift {
       grid-column: 2/span 6;
       grid-row: 9;
       margin-left: -0.5%;
-      margin-top: -1px; }
-    #f├Ñdincheftekst #f├Ñdinchefafsnit {
-      margin-top: 7%; } }
+      margin-top: 2px; }
+    #fådincheftekst #fådinchefafsnit {
+      margin-top: -2%; } }
 @media screen and (min-width: 768px) {
   body {
     background-image: url("../images/netvearkIpad_768.png");
@@ -727,10 +728,10 @@ footer {
     margin-left: -25px; }
 
   .Fordele {
-    grid-column: 1/span 2;
+    grid-column: 1/span 3;
     grid-row-start: 5;
-    margin-top: -30%;
-    margin-left: 42%; }
+    margin-top: -20%;
+    margin-left: 35%; }
 
   .line {
     height: 700%;
@@ -801,20 +802,18 @@ footer {
     #Fordeltekst .fordelafsnitoverskrift {
       grid-column: 2/span 6;
       grid-row: 9;
-      margin-left: -0.5%;
-      margin-top: -1px; }
+      margin-left: -0.5%; }
 
   #Pristekst {
     grid-column: 1/span 6;
-    grid-row: 19/span 8;
+    grid-row: 18/span 8;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(9, 50px); }
     #Pristekst .priserafsnitoverskrift {
       grid-column: 2/span 6;
       grid-row: 9;
-      margin-left: -0.5%;
-      margin-top: -1px; }
+      margin-left: -0.5%; }
 
   #studierabattekst {
     grid-column: 1/span 6;
@@ -825,20 +824,18 @@ footer {
     #studierabattekst .studierabatafsnitoverskrift {
       grid-column: 2/span 6;
       grid-row: 9;
-      margin-left: -0.5%;
-      margin-top: -1px; }
+      margin-left: -0.5%; }
 
-  #f├Ñdincheftekst {
+  #fådincheftekst {
     grid-column: 1/span 6;
     grid-row: 29/span 8;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(9, 50px); }
-    #f├Ñdincheftekst .f├Ñdinchefafsnitoverskrift {
+    #fådincheftekst .fådinchefafsnitoverskrift {
       grid-column: 2/span 6;
       grid-row: 9;
-      margin-left: -0.5%;
-      margin-top: -1px; }
+      margin-left: -0.5%; }
 
   footer {
     justify-content: center; }
@@ -922,22 +919,22 @@ footer {
 
   #Fordeltekst {
     grid-column: 1/span 6;
-    grid-row: 15/span 8;
+    grid-row: 17/span 8;
     margin-left: 20px; }
 
   #Pristekst {
     grid-column: 1/span 6;
-    grid-row: 19/span 8;
+    grid-row: 21/span 8;
     margin-left: 20px; }
 
   #studierabattekst {
     grid-column: 1/span 6;
-    grid-row: 23/span 8;
+    grid-row: 27/span 8;
     margin-left: 20px; }
 
-  #f├Ñdincheftekst {
+  #fådincheftekst {
     grid-column: 1/span 6;
-    grid-row: 27/span 8;
+    grid-row: 31/span 8;
     margin-left: 20px; } }
 @media screen and (min-width: 1024px) {
   body {
@@ -955,7 +952,7 @@ footer {
 
   #Pristekst {
     grid-column: 1/span 5;
-    grid-row: 21/span 8;
+    grid-row: 20/span 8;
     margin-left: 110px; }
 
   #studierabattekst {
@@ -963,7 +960,7 @@ footer {
     grid-row: 26/span 8;
     margin-left: 110px; }
 
-  #f├Ñdincheftekst {
+  #fådincheftekst {
     grid-column: 1/span 5;
     grid-row: 31/span 8;
     margin-left: 110px; }
@@ -1128,14 +1125,14 @@ footer {
     margin-top: -26%; }
     #Fordeltekst #fordelafsnit {
       font-size: 15pt;
-      margin-top: 15%; }
+      margin-top: 12%; }
+    #Fordeltekst .fordelafsnitoverskrift {
+      font-size: 24pt;
+      grid-column: 2/span 5;
+      margin-top: -2px; }
 
   .Fordele {
     display: none; }
-
-  .fordelafsnitoverskrift {
-    font-size: 24pt;
-    grid-column: 4/span 4; }
 
   .line {
     grid-row-start: 9;
@@ -1221,14 +1218,14 @@ footer {
     grid-column: 3/span 6;
     margin-top: 14%; }
 
-  #f├Ñdincheftekst {
+  #fådincheftekst {
     grid-column: 1/span 5;
     grid-row-start: 30;
     margin-left: -50px;
     margin-top: -10%; }
-    #f├Ñdincheftekst #f├Ñdinchefafsnit {
+    #fådincheftekst #fådinchefafsnit {
       font-size: 15pt;
-      margin-top: 13%; }
+      margin-top: -1%; }
 
   .meld_dig_indweb {
     background-color: #f37121;
@@ -1246,7 +1243,7 @@ footer {
     .meld_dig_indweb:hover {
       background-color: #fccc28; }
 
-  .f├Ñdinchefafsnitoverskrift {
+  .fådinchefafsnitoverskrift {
     font-size: 24pt; } }
 @media screen and (min-width: 1300px) {
   .line {
@@ -1258,9 +1255,8 @@ footer {
 
   #Fordeltekst {
     grid-row-start: 2; }
-
-  .fordelafsnitoverskrift {
-    margin-top: -2%; } }
+    #Fordeltekst .fordelafsnitoverskrift {
+      margin-top: 5px; } }
 @media screen and (min-width: 1380px) {
   body {
     background-image: url("../images/netvearkWeb_1380.png");
@@ -1324,6 +1320,8 @@ footer {
 @media screen and (min-width: 1500px) {
   #Fordeltekst {
     grid-row-start: 4; }
+    #Fordeltekst #fordelafsnit {
+      margin-top: -1%; }
 
   .line {
     height: 950px;
@@ -1346,7 +1344,7 @@ footer {
     transform: rotate(130deg);
     margin-top: 10%; }
 
-  #f├Ñdincheftekst {
+  #fådincheftekst {
     grid-row-start: 31; }
 
   #mobilAlt {

@@ -338,10 +338,10 @@ margin-left: -20px;
   font-family: 'Libre Baskerville', serif;
   font-style: normal;
   font-weight: bold;
-  grid-column: 2/span 5;
-  grid-row-start:8;
-  margin-left: 75%;
-  margin-top: 10px;
+  grid-column: 4/span 6;
+  grid-row-start:7;
+  margin-top: 18%;
+  margin-left: 25%;
   a{
     text-decoration: none;
     color: black;
@@ -595,6 +595,7 @@ h2{
   @include afsnit;
   grid-column: 2/span 4;
   grid-row-start: 23;
+  margin-top: 16%;
   a{
     text-decoration: none;
     color: $orangePrimary;
@@ -658,7 +659,7 @@ h2{
 
 #fådincheftekst{
   grid-column: 1/span 6;
-  grid-row: 38/span 8;
+  grid-row: 37/span 8;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(9, 50px);
@@ -767,6 +768,11 @@ footer{
 
 
 @media screen and (min-width: 414px) {
+
+
+  .priserafsnitoverskrift{
+    margin-top: 15%;
+  }
 
 
   #burgerFold{
@@ -901,7 +907,7 @@ footer{
     grid-column: 2/span 5;
     grid-row-start:8;
     margin-left: 76%;
-    margin-top: 10px;
+    margin-top: -15px;
 
 
   }
@@ -1049,7 +1055,6 @@ footer{
       grid-column: 2/span 6;
       grid-row: 9;
       margin-left: -0.5%;
-      margin-top: -5px;
     }
 
     #fordelafsnit{
@@ -1074,7 +1079,7 @@ footer{
 
   #Pristekst{
     grid-column: 1/span 6;
-    grid-row: 19/span 8;
+    grid-row: 18/span 8;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(9, 50px);
@@ -1082,7 +1087,7 @@ footer{
       grid-column: 2/span 6;
       grid-row: 9;
       margin-left: -0.5%;
-      margin-top: -1px;
+
     }
   }
 
@@ -1104,7 +1109,6 @@ footer{
       grid-column: 2/span 6;
       grid-row: 9;
       margin-left: -0.5%;
-      margin-top: -1px;
     }
   }
 
@@ -1128,11 +1132,11 @@ footer{
       grid-column: 2/span 6;
       grid-row: 9;
       margin-left: -0.5%;
-      margin-top: -1px;
+      margin-top: 2px;
     }
 
     #fådinchefafsnit{
-      margin-top: 7%;
+      margin-top: -2%;
     }
 
   }
@@ -1194,10 +1198,10 @@ footer{
 
 
   .Fordele{
-    grid-column: 1/span 2;
+    grid-column: 1/span 3;
     grid-row-start:5;
-    margin-top: -30%;
-    margin-left: 42%;
+    margin-top: -20%;
+    margin-left: 35%;
   }
 
 
@@ -1355,7 +1359,6 @@ footer{
       grid-column: 2/span 6;
       grid-row: 9;
       margin-left: -0.5%;
-      margin-top: -1px;
     }
   }
 
@@ -1369,7 +1372,7 @@ footer{
 
   #Pristekst{
     grid-column: 1/span 6;
-    grid-row: 19/span 8;
+    grid-row: 18/span 8;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(9, 50px);
@@ -1377,7 +1380,6 @@ footer{
       grid-column: 2/span 6;
       grid-row: 9;
       margin-left: -0.5%;
-      margin-top: -1px;
     }
   }
 
@@ -1396,7 +1398,6 @@ footer{
       grid-column: 2/span 6;
       grid-row: 9;
       margin-left: -0.5%;
-      margin-top: -1px;
     }
   }
 
@@ -1411,7 +1412,6 @@ footer{
       grid-column: 2/span 6;
       grid-row: 9;
       margin-left: -0.5%;
-      margin-top: -1px;
     }
   }
 
@@ -1587,7 +1587,7 @@ footer{
 
   #Fordeltekst{
     grid-column: 1/span 6;
-    grid-row: 15/span 8;
+    grid-row: 17/span 8;
     margin-left: 20px;
 
   }
@@ -1595,21 +1595,21 @@ footer{
 
   #Pristekst{
       grid-column: 1/span 6;
-      grid-row: 19/span 8;
+      grid-row: 21/span 8;
       margin-left: 20px;
   }
 
 
   #studierabattekst{
     grid-column: 1/span 6;
-    grid-row: 23/span 8;
+    grid-row: 27/span 8;
     margin-left: 20px;
   }
 
 
   #fådincheftekst{
     grid-column: 1/span 6;
-    grid-row: 27/span 8;
+    grid-row: 31/span 8;
     margin-left: 20px;
   }
 
@@ -1648,7 +1648,7 @@ footer{
 
   #Pristekst{
     grid-column: 1/span 5;
-    grid-row: 21/span 8;
+    grid-row: 20/span 8;
     margin-left: 110px;
 
   }
@@ -1887,7 +1887,14 @@ footer{
     margin-top: -26%;
     #fordelafsnit{
       font-size: 15pt;
-      margin-top: 15%;
+      margin-top: 12%;
+    }
+
+    .fordelafsnitoverskrift{
+      font-size: 24pt;
+      grid-column: 2/span 5;
+      margin-top: -2px;
+
     }
   }
 
@@ -1897,11 +1904,7 @@ footer{
 }
 
 
-  .fordelafsnitoverskrift{
-    font-size: 24pt;
-    grid-column: 4/span 4;
 
-  }
 
  .line{
    grid-row-start:9;
@@ -2066,7 +2069,7 @@ margin-left: 4%;
   margin-top: -10%;
    #fådinchefafsnit{
      font-size: 15pt;
-     margin-top: 13%;
+     margin-top: -1%;
 
    }
 
@@ -2120,12 +2123,13 @@ margin-left: 4%;
 
   #Fordeltekst{
     grid-row-start: 2;
+    .fordelafsnitoverskrift{
+      margin-top: 5px;
+    }
 
   }
 
-.fordelafsnitoverskrift{
-  margin-top: -2%;
-}
+
 
 
 }
@@ -2280,6 +2284,9 @@ margin-left: 4%;
 
 #Fordeltekst{
    grid-row-start:4;
+  #fordelafsnit{
+    margin-top: -1%;
+  }
  }
 
 
