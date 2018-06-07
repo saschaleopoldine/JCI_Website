@@ -172,24 +172,22 @@ img {
   grid-column: 2 / span 5;
   grid-row-start: 5;
   text-align: center;
-  color: #0097d7;
+  color: black;
   margin-right: 50px;
   font-size: 15pt;
   display: none;
   z-index: 99; }
 
 .CTAbold1 {
-  grid-column: 2 / span 5;
+  grid-column: 1 / span 6;
   grid-row-start: 10;
   font-size: 18pt;
   font-family: 'Merriweather Sans', sans-serif;
-  width: 190px;
+  width: 330px;
   height: 40px;
   background-color: #ee7125;
-  text-align: center;
   padding: 5px;
   color: white;
-  margin-left: 20px;
   margin-top: 7px; }
   .CTAbold1 a {
     color: white;
@@ -224,25 +222,23 @@ img {
 
 .bold2fuldtekst {
   grid-column: 2 / span 5;
-  grid-row-start: 13;
+  grid-row-start: 12;
   text-align: center;
-  color: #0097d7;
+  color: black;
   margin-right: 50px;
   margin-top: -25px;
   display: none; }
 
 .CTAbold2 {
-  grid-column: 2 / span 5;
+  grid-column: 1 / span 6;
   grid-row-start: 17;
-  font-size: 18pt;
+  font-size: 17pt;
   font-family: 'Merriweather Sans', sans-serif;
-  width: 190px;
+  width: 345px;
   height: 40px;
   background-color: #ee7125;
-  text-align: center;
   padding: 5px;
   color: white;
-  margin-left: 20px;
   margin-top: -15px; }
   .CTAbold2 a {
     color: white;
@@ -285,7 +281,15 @@ footer {
     grid-column: 2 / span 2;
     grid-row-start: 13;
     margin-top: 25px;
-    margin-left: -4%; } }
+    margin-left: -4%; }
+
+  .CTAbold1 {
+    margin-left: 5%;
+    margin-right: 10%; }
+
+  .CTAbold2 {
+    margin-left: 5%;
+    margin-right: 10%; } }
 @media screen and (min-width: 768px) {
   body {
     background-image: url("../images/network.png"); }
@@ -318,12 +322,15 @@ footer {
     grid-column: 1 / span 4;
     grid-row-start: 5;
     margin-left: 30px;
-    margin-top: 10px;
-    display: none; }
+    display: none;
+    padding: 3%;
+    text-align: left; }
 
   .CTAbold1 {
-    grid-column: 2 / span 3;
-    grid-row-start: 8;
+    grid-column: 1 / span 3;
+    grid-row-start: 9;
+    margin-top: -5%;
+    margin-left: 12%;
     display: none; }
 
   .bold2 {
@@ -340,15 +347,16 @@ footer {
     margin-top: 27px; }
 
   .bold2fuldtekst {
-    grid-column: 3 / span 4;
+    grid-column: 4 / span 5;
     grid-row-start: 12;
-    display: none;
-    margin-left: 40px; }
+    text-align: left;
+    display: none; }
 
   .CTAbold2 {
-    grid-column: 4 / span 2;
+    grid-column: 4 / span 3;
     grid-row-start: 15;
     margin-top: 20px;
+    margin-left: 1%;
     display: none; }
 
   footer {
@@ -384,8 +392,9 @@ footer {
     display: none; }
 
   .CTAbold1 {
-    grid-column: 4 / span 3;
-    grid-row-start: 8;
+    grid-column: 1 / span 3;
+    grid-row-start: 9;
+    margin-left: 10%;
     display: none; }
 
   .bold2 {
@@ -399,13 +408,14 @@ footer {
   .bold2tekst {
     grid-column: 4 / span 3;
     grid-row-start: 13;
-    margin-left: 120px; }
+    margin-left: 80px; }
 
   .bold2fuldtekst {
     display: none; }
 
   .CTAbold2 {
-    display: none; } }
+    display: none;
+    margin-top: 1%; } }
 @media screen and (min-width: 1024px) {
   #mobilAlt {
     grid-template-rows: repeat(25, 50px); }
@@ -423,7 +433,9 @@ footer {
   .bold1tekst {
     grid-column: 1 / span 3;
     grid-row-start: 10;
-    margin-top: -10px; }
+    margin-top: -6%; }
+    .bold1tekst h2 {
+      font-size: 30pt; }
 
   .bold1fuldtekst {
     grid-column: 1 / span 3;
@@ -431,8 +443,9 @@ footer {
     display: none; }
 
   .CTAbold1 {
-    grid-column: 2 / span 4;
-    grid-row-start: 11;
+    grid-column: 1 / span 3;
+    grid-row-start: 12;
+    margin-top: 1%;
     display: none; }
 
   .bold2 {
@@ -444,8 +457,11 @@ footer {
 
   .bold2tekst {
     grid-column: 4 / span 2;
-    grid-row-start: 21;
-    margin-left: 45%; }
+    grid-row-start: 20;
+    margin-left: 25%;
+    margin-top: 20%; }
+    .bold2tekst h2 {
+      font-size: 30pt; }
 
   .bold2fuldtekst {
     display: none;
@@ -453,10 +469,10 @@ footer {
     grid-row-start: 20; }
 
   .CTAbold2 {
-    grid-column: 5 / span 2;
+    grid-column: 4 / span 2;
     grid-row-start: 23;
     display: none;
-    margin-left: -5%; } }
+    margin-top: -2%; } }
 @media screen and (min-width: 1200px) {
   body {
     background-image: url("../images/networkWeb2.png");
@@ -601,11 +617,11 @@ footer {
   .bold1tekst {
     grid-column: 2 / span 2;
     grid-row-start: 9;
-    font-size: 24pt;
-    margin-top: 4%;
+    margin-left: 15%;
     display: inline;
-    margin-left: 35%;
     cursor: pointer; }
+    .bold1tekst h2 {
+      font-size: 25pt; }
 
   .bold1fuldtekst {
     grid-column: 1 / span 5;
@@ -613,10 +629,10 @@ footer {
     display: none; }
 
   .CTAbold1 {
-    grid-column: 3 / span 2;
-    grid-row-start: 10;
+    grid-column: 2 / span 2;
+    grid-row-start: 11;
     display: none;
-    margin-left: -10%; }
+    margin-left: -30%; }
 
   .bold2 {
     grid-column: 7 / span 2;
@@ -627,21 +643,23 @@ footer {
 
   .bold2tekst {
     grid-column: 5 / span 5;
-    grid-row-start: 18;
-    font-size: 24pt;
-    margin-left: 42%;
+    grid-row-start: 17;
+    margin-left: 34%;
+    margin-top: 17%;
     cursor: pointer; }
+    .bold2tekst h2 {
+      font-size: 25pt; }
 
   .bold2fuldtekst {
     grid-column: 5 / span 6;
-    grid-row-start: 16;
+    grid-row-start: 17;
     display: none;
     margin-left: 100px; }
 
   .CTAbold2 {
-    grid-column: 7 / span 2;
+    grid-column: 6 / span 2;
     grid-row-start: 20;
-    margin-left: 10px;
+    margin-left: 10%;
     display: none; } }
 @media screen and (min-width: 1500px) {
   #left_menu {
@@ -660,15 +678,16 @@ footer {
   .bold1tekst {
     grid-column: 2 / span 2;
     grid-row-start: 7;
-    margin-left: 38px; }
+    margin-top: 5%;
+    margin-left: 8%; }
 
   .bold1fuldtekst {
     grid-column: 2 / span 4;
     grid-row-start: 6; }
 
   .CTAbold1 {
-    grid-column: 3 / span 2;
-    grid-row-start: 9;
+    grid-column: 2 / span 2;
+    grid-row-start: 10;
     display: none;
     margin-left: 18%; }
 
@@ -680,21 +699,23 @@ footer {
     width: 350px; }
 
   .bold2tekst {
-    grid-column: 7 / span 2;
+    grid-column: 6 / span 3;
     grid-row-start: 16;
-    margin-left: 45px; }
+    margin-left: 40%;
+    margin-top: 9%; }
 
   .bold2fuldtekst {
     grid-column: 5 / span 5;
     grid-row-start: 15;
     margin-left: 45px;
-    margin-top: 3%; }
+    margin-top: 3%;
+    padding: 1%; }
 
   .CTAbold2 {
-    grid-column: 7 / span 2;
-    grid-row-start: 18;
+    grid-column: 6 / span 2;
+    grid-row-start: 19;
     display: none;
-    margin-left: -18%; }
+    margin-left: -30%; }
 
   #mobilAlt {
     grid-template-rows: repeat(19, 50px); } }
