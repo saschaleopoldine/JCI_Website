@@ -749,9 +749,9 @@ footer {
     -ms-transform: rotate(40deg);
     -webkit-transform: rotate(40deg);
     transform: rotate(40deg);
-    width: 250px;
+    width: 275px;
     grid-row-start: 26;
-    margin-left: 35%; }
+    margin-left: 25%; }
 
   #ca_streg3 {
     -ms-transform: rotate(-65deg);
