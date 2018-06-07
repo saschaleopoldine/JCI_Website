@@ -110,9 +110,9 @@
 
     <div id="mobilAlt" class="mobil">
 
-        <h1>Hvem er JCI?</h1>
+        <h1 class="sideoverskrift">Hvem er JCI?</h1>
 
-        <h3>JCI er en organisation som kan give dig muligheden for at skabe et større netværk både lokalt, nationalt og
+        <h3 class="sideindledning">JCI er en organisation som kan give dig muligheden for at skabe et større netværk både lokalt, nationalt og
             globalt, ved at tilbyde dig aktiviteter på tværs af vores afdelinger.</h3>
 
         <div id="circle1">
@@ -208,13 +208,13 @@
                 $(".world").hide(1000);
             })
             $("#circle2").click(function(){
-                $(".world").show(500);
-            })
-            $("#circle2").click(function(){
                 $("#circle2").hide(500);
             })
             $("#circle2").click(function(){
                 $(".world").hide(1000);
+            })
+            $("#circle2").click(function(){
+                $(".globaltekst").show(1000);
             })
 
             $(".world").click(function(){
@@ -227,6 +227,12 @@
                 $("#circle2").hide(500);
             })
         }
+
+
+
+
+
+
         //LIGGENDE IPAD//
         else if ($(window).width() <= 991 && $(window).width() > 767){
             //BOLD 1
@@ -271,12 +277,6 @@
 
 
             //BOLD 2
-            $(".world").click(function(){
-                $(".world").show();
-            })
-            $("#circle2").click(function(){
-                $(".world").show();
-            })
 
             //gør at fordelsteksten kommer frem//
             $(".world").click(function(){
@@ -311,7 +311,85 @@
             })
 
         }
-        else if ($(window).width() >= 1023  && $(window).width() > 767  && $(window).width() < 1199){
+        else if ($(window).width() >= 991 && $(window).width() < 1024){
+            alert("992");
+            //gør at billedet bliver vist//
+            $(".dk").click(function(){
+                $(".dk").show();
+            })
+            $("#circle1").click(function(){
+                $(".dk").show();
+            })
+
+            //gør at fordelsteksten kommer frem//
+            $(".dk").click(function(){
+                $(".slagelsetekst").fadeIn(2000);
+            })
+            $("#circle1").click(function(){
+                $(".slagelsetekst").fadeIn(2000);
+            })
+
+            //gør at billedet flytter sig til højre//
+            $(".dk").click(function(){
+                $(".dk").animate({"margin-left": '220%'});
+            })
+            $("#circle1").click(function(){
+                $(".dk").animate({"margin-left": '220%'});
+            })
+
+            //gør at bolden også flytter sig til højre//
+            $(".dk").click(function(){
+                $("#circle1").animate({"margin-left": '200%'});
+            })
+            $("#circle1").click(function(){
+                $("#circle1").animate({"margin-left": '200%'});
+            })
+
+            //CTA kommer frem under teksten//
+            $(".dk").click(function(){
+                $(".button1").show(500);
+            })
+            $("#circle1").click(function(){
+                $(".button1").show(500);
+            })
+
+            // bold 2 rykker sig til venstre//
+            $(".world").click(function(){
+                $("#circle2").animate({"margin-left": '-180%'});
+            })
+            $("#circle2").click(function(){
+                $("#circle2").animate({"margin-left": '-180%'});
+            })
+
+            $(".world").click(function(){
+                $(".globaltekst").fadeIn(2000);
+            })
+            $("#circle2").click(function(){
+
+                $(".globaltekst").fadeIn(2000);
+            })
+            $(".world").click(function(){
+
+                $(".world").animate({"margin-left": "-170%"});
+            })
+            $("#circle2").click(function(){
+
+                $(".world").animate({"margin-left": "-170%"});
+            })
+
+            $(".world").click(function(){
+
+                $(".button2").show(200);
+            })
+            $("#circle2").click(function(){
+
+                $(".button2").show(200);
+            })
+
+        }
+
+
+        else if ($(window).width() >= 1023  && $(window).width() > 992  && $(window).width() < 1199){
 
             //BOLD 1//
             //gør at billedet bliver vist//
@@ -321,19 +399,13 @@
             $("#circle1").click(function(){
                 $(".dk").show();
             })
-            $(".dk").click(function(){
-                $(".dk").css({"margin-left":"30px"});
-            })
-            $("#circle1").click(function(){
-                $(".dk").css({"margin-left":"30px"});
-            })
 
             //gør at fordelsteksten kommer frem//
             $(".dk").click(function(){
                 $(".slagelsetekst").fadeIn(2000);
             })
             $("#circle1").click(function(){
-                $(".slagelsetekstt").fadeIn(2000);
+                $(".slagelsetekst").fadeIn(2000);
             })
 
             //gør at billedet flytter sig til højre//
@@ -428,10 +500,10 @@
 
             //gør at billedet flytter sig til højre//
             $(".dk").click(function(){
-                $(".dk").animate({"margin-left": '300%'});
+                $(".dk").animate({"margin-left": '310%'});
             })
             $("#circle1").click(function(){
-                $(".dk").animate({"margin-left": '300%'});
+                $(".dk").animate({"margin-left": '310%'});
             })
 
             //gør at bolden også flytter sig til højre//
@@ -452,10 +524,10 @@
 
             // bold 2 rykker sig til venstre//
             $(".world").click(function(){
-                $("#circle2").animate({"margin-left": '-120%'});
+                $("#circle2").animate({"margin-left": '-200%'});
             })
             $("#circle2").click(function(){
-                $("#circle2").animate({"margin-left": '-120%'});
+                $("#circle2").animate({"margin-left": '-200%'});
             })
 
             $(".world").click(function(){
@@ -531,10 +603,10 @@
 
             // bold 2 rykker sig til venstre//
             $(".world").click(function(){
-                $("#circle2").animate({"margin-left": '-125%'});
+                $("#circle2").animate({"margin-left": '-200%'});
             })
             $("#circle2").click(function(){
-                $("#circle2").animate({"margin-left": '-125%'});
+                $("#circle2").animate({"margin-left": '-200%'});
             })
 
             $(".world").click(function(){
@@ -547,11 +619,11 @@
             })
             $(".world").click(function(){
 
-                $(".world").animate({"margin-left": "-122%"});
+                $(".world").animate({"margin-left": "-80%"});
             })
             $("#circle2").click(function(){
 
-                $(".world").animate({"margin-left": "-122%"});
+                $(".world").animate({"margin-left": "-80%"});
             })
 
             $(".world").click(function(){
