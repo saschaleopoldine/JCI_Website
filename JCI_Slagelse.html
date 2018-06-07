@@ -191,11 +191,38 @@
     <p id="projekttext">Som medlem i JCI Slagelse, bliver du en del af forskellige typer projektarbejde som ønsker at
         skabe en positiv virkning i lokalsamfundet. I projekterne får du lov til at udvikle dig personligt, lige fra
         dine evner indenfor kommunikation til dine projektleder kompetencer. Du kan også vælge at blive en del af én af
-        <a href="#">vores komiteer</a>, som har hvert deres fokuspunkt.
+        <a id="komite">vores komiteer</a>, som har hvert deres fokuspunkt.
     </p>
 </section>
 
-<section id="medlemselement">
+    <div id="opacity">
+        <div id="komiteboks">
+            <p id="luk">Luk <i class="fa fas fa-times"></i></p>
+            <h5>Mødekomiteen(MØK)</h5>
+            <p class="komitetekst">Her får du ansvaret for at planlægge vores møder, hvor de skal holdes, hvad der skal laves m.m.
+            </p>
+
+            <br><br>
+
+            <h5>Kommunikationskomiteen(KOM)</h5>
+            <p class="komitetekst">I denne komite bliver dit ansvar at lave opslag på vores sociale medier, opdatere vores hjemmeside og kontakte lokale medier for at skabe opmærksomhed omkring os.
+            </p>
+
+            <br><br>
+
+            <h5>Businesskomiteen(BUS)</h5>
+            <p class="komitetekst">Her har komiteen ansvaret for at styrke og udvikle relationerne mellem erhvervslivet og de lokale virksomheder.
+            </p>
+
+            <br><br>
+
+            <h5>Medlemskomiteen(MEC)</h5>
+            <p class="komitetekst">I medlemskomiteen er ansvaret at få nye medlemmer til, og at sørge for at de føler sig velkommen og tilpas.</p>
+        </div>
+    </div>
+
+
+    <section id="medlemselement">
     <h2 id="medlemsoverskrift">Medlemskab</h2>
     <p id="medlemstext">Hos os tilbyder vi to former for medlemskab, privatmedlem og erhvervsmedlem.
         Begge typer af medlemskab giver dig mulighed for at udvikle kompetencer indenfor lederskab og projektstyring,
@@ -399,11 +426,6 @@
 </div>
 
 
-
-
-
-
-
 <!------------------------------------------------ Footer mobil -------------------------------------------------->
 <footer itemscope itemtype="http://schema.org/Person">
     <p itemprop="email">
@@ -487,6 +509,18 @@
         $("#burgerKlik").click(function (e) {
             $("#burgerFold").slideToggle(700);
         });
+
+
+
+        $("#komite").click(function (e) {
+            $("#opacity").show(0);
+        });
+
+        $("#luk, .fa-times").click(function (e) {
+            $("#opacity").hide(0);
+        });
+
+
 
     });
 </script>
