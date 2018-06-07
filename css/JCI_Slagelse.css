@@ -1568,6 +1568,7 @@ footer {
     margin-bottom: 5%; }
 
   #medlemselement .knap {
-    padding: 0 16%; } }
+    margin-top: -10px;
+    padding: 0 15px; } }
 
 /*# sourceMappingURL=JCI_Slagelse.css.map */
