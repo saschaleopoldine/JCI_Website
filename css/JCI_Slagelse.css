@@ -41,7 +41,7 @@ img {
   width: 100vw;
   margin: auto;
   background-color: #0097d7;
-  height: 100vh;
+  height: auto;
   position: absolute;
   z-index: 5;
   padding-left: 20%; }
