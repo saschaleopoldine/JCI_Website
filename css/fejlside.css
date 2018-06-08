@@ -99,7 +99,23 @@ body {
       margin-top: -15%; } }
 @media screen and (min-width: 1200px) {
   body {
-    background-image: url("../images/fejlside_baggrund_web.png"); } }
+    background-image: url("../images/fejlside_baggrund_web.png"); }
+    body h1 {
+      font-size: 28pt;
+      width: 230px;
+      text-align: center;
+      margin-top: -15px;
+      margin-left: -25px; }
+    body h2, body #cta {
+      font-size: 18pt;
+      width: 350px;
+      margin-left: -75px; }
+    body h2 {
+      margin-top: 20px; }
+    body #cta {
+      width: 260px;
+      height: 35px;
+      margin-top: 10px; } }
 @media screen and (min-width: 1443px) {
   body h1 {
     font-size: 30pt;
@@ -114,7 +130,7 @@ body {
   body h2 {
     margin-top: 20px; }
   body #cta {
-    width: 280px;
+    width: 290px;
     height: 35px;
     margin-top: 10px; } }
 
