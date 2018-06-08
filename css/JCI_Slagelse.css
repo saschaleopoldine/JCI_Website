@@ -355,7 +355,8 @@ h2 {
     width: 260px; }
     #projektelement #projekttext a {
       text-decoration: none;
-      color: #ee7125; }
+      color: #ee7125;
+      cursor: pointer; }
 
 #opacity {
   grid-column: 1/span 6;
