@@ -1758,7 +1758,7 @@ footer{
       letter-spacing: 1px;
       width: inherit;
       background-color: $bluePrimary;
-      height: 100vh;
+      height: 120vh;
       padding: 50px 25px;
       position: fixed;
 
@@ -1902,9 +1902,10 @@ footer{
 
 
   #Fordeltekst{
-    grid-row-start:2;
-    grid-column: 5/span 9;
+    grid-row-start:1;
+    grid-column: 5/span 3;
     margin-top: -26%;
+    width: 600px;
     #fordelafsnit{
       font-size: 15pt;
       margin-top: 12%;
@@ -1968,7 +1969,7 @@ grid-column: 5/span 6;
 
 
  #Pristekst{
-  grid-column: 2/span 5;
+  grid-column: 2/span 4;
   grid-row-start:10;
   margin-left: -50px;
   margin-top: -10%;
@@ -2012,8 +2013,10 @@ margin-left: 4%;
 
   #studierabattekst{
     grid-row-start:23;
-    grid-column: 5/span 6;
+    grid-column: 5/span 3;
     margin-top: -28%;
+    width: 600px;
+
 
   }
 
@@ -2304,7 +2307,7 @@ margin-left: 4%;
 
 
 #Fordeltekst{
-   grid-row-start:4;
+   grid-row-start:1;
   #fordelafsnit{
     margin-top: 9%;
   }
