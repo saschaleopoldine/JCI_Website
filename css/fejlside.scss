@@ -167,7 +167,7 @@ body{
     h2, #cta {
       font-size: 14pt;
       width: 300px;
-      margin-left: -60px;
+      margin-left: -40px;
     }
 
     h2 {
@@ -181,38 +181,11 @@ body{
     }
   }
 
-
-
-
-
-
-
 }
 
 
 @media screen and (min-width: 1443px) {
-  body {
-    h1 {
-      font-size: 30pt;
-      width: 230px;
-      text-align: center;
-      margin-top: -15px;
-      margin-left: -25px;
-    }
 
-    h2, #cta {
-      font-size: 20pt;
-      width: 400px;
-      margin-left: -100px;
-    }
-
-    #cta {
-      width: 290px;
-      height: 35px;
-      margin-top: 10px;
-    }
-
-  }
 }
 
 
