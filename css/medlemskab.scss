@@ -156,7 +156,6 @@ $white:#f9f7f4;
   }
   .flexMenu{
     @include flex;
-    justify-content: left;
   }
   .hvemKlik, .hvemKlik2, .medKlik, .medKlik2{
     color: white;
@@ -656,7 +655,6 @@ footer{
       }
       .flexMenu{
         @include flex;
-        justify-content: left;
       }
       .hvemKlik, .hvemKlik2, .medKlik, .medKlik2{
         color: white;
