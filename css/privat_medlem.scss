@@ -659,13 +659,13 @@ h2{
 
 
 
-#fådincheftekst{
+#faadincheftekst{
   grid-column: 1/span 6;
   grid-row: 37/span 8;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(9, 50px);
-  .fådinchefafsnitoverskrift{
+  .faadinchefafsnitoverskrift{
     grid-column: 2/span 3;
     grid-row: 8;
     margin-left: -0.5%;
@@ -682,7 +682,7 @@ h2{
 
 
 
-#fådinchefafsnit {
+#faadinchefafsnit {
   @include afsnit;
   grid-column: 2/span 4;
   grid-row-start: 23;
@@ -756,7 +756,7 @@ footer{
   }
 
 
-  #fådincheftekst{
+  #faadincheftekst{
     grid-row: 39/span 8;
   }
 
@@ -1124,20 +1124,20 @@ footer{
 //---------------------------- Få din chef_afsnit_lille_Ipad---------------------->
 
 
-  #fådincheftekst{
+  #faadincheftekst{
     grid-column: 1/span 6;
     grid-row: 31/span 8;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(9, 50px);
-    .fådinchefafsnitoverskrift{
+    .faadinchefafsnitoverskrift{
       grid-column: 2/span 6;
       grid-row: 9;
       margin-left: -0.5%;
       margin-top: 2px;
     }
 
-    #fådinchefafsnit{
+    #faadinchefafsnit{
       margin-top: -2%;
     }
 
@@ -1404,13 +1404,13 @@ footer{
   }
 
 
-  #fådincheftekst{
+  #faadincheftekst{
     grid-column: 1/span 6;
     grid-row: 29/span 8;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(9, 50px);
-    .fådinchefafsnitoverskrift{
+    .faadinchefafsnitoverskrift{
       grid-column: 2/span 6;
       grid-row: 9;
       margin-left: -0.5%;
@@ -1609,7 +1609,7 @@ footer{
   }
 
 
-  #fådincheftekst{
+  #faadincheftekst{
     grid-column: 1/span 6;
     grid-row: 31/span 8;
     margin-left: 20px;
@@ -1664,7 +1664,7 @@ footer{
   }
 
 
-  #fådincheftekst{
+  #faadincheftekst{
     grid-column: 1/span 5;
     grid-row: 31/span 8;
     margin-left: 110px;
@@ -2067,12 +2067,12 @@ margin-left: 4%;
  }
 
 
- #fådincheftekst{
+ #faadincheftekst{
   grid-column: 1/span 5;
   grid-row-start:30;
   margin-left: -50px;
   margin-top: -10%;
-   #fådinchefafsnit{
+   #faadinchefafsnit{
      font-size: 15pt;
      margin-top: -1%;
 
@@ -2093,7 +2093,7 @@ margin-left: 4%;
   }
 
 
-  .fådinchefafsnitoverskrift{
+  .faadinchefafsnitoverskrift{
     font-size: 24pt;
 
 
@@ -2331,7 +2331,7 @@ margin-left: 4%;
 
 
 
-   #fådincheftekst{
+   #faadincheftekst{
      grid-row-start:31;
    }
 
