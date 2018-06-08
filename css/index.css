@@ -229,7 +229,10 @@ body {
     width: 215px;
     margin-left: 28px;
     margin-top: 22px;
-    z-index: 2; }
+    z-index: 2;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 18pt;
+    text-align: center; }
     #mobilAlt #firstBobleButton a {
       text-decoration: none;
       font-family: 'Merriweather Sans', sans-serif;
@@ -276,7 +279,10 @@ body {
     grid-column: 1/span 4;
     width: 185px;
     margin-left: 22px;
-    z-index: 2; }
+    z-index: 2;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 18pt;
+    text-align: center; }
     #mobilAlt #secondBobleButton a {
       text-decoration: none;
       font-family: 'Merriweather Sans', sans-serif;
@@ -324,7 +330,10 @@ body {
     grid-column: 2/span 3;
     width: 150px;
     margin-left: 40px;
-    z-index: 2; }
+    z-index: 2;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 18pt;
+    text-align: center; }
     #mobilAlt #thirdBobleButton a {
       text-decoration: none;
       font-family: 'Merriweather Sans', sans-serif;
@@ -372,7 +381,10 @@ body {
     margin-left: 4px;
     width: 180px;
     height: 60px;
-    z-index: 2; }
+    z-index: 2;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 18pt;
+    text-align: center; }
     #mobilAlt #fourthBobleButton a {
       text-decoration: none;
       font-family: 'Merriweather Sans', sans-serif;
