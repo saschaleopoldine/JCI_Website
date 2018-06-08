@@ -156,7 +156,37 @@ body{
 @media screen and (min-width: 1200px) {
   body{
     background-image: url("../images/fejlside_baggrund_web.png");
+    h1 {
+      font-size: 28pt;
+      width: 230px;
+      text-align: center;
+      margin-top: -15px;
+      margin-left: -25px;
+    }
+
+    h2, #cta {
+      font-size: 18pt;
+      width: 350px;
+      margin-left: -75px;
+    }
+
+    h2 {
+      margin-top: 20px;
+    }
+
+    #cta {
+      width: 260px;
+      height: 35px;
+      margin-top: 10px;
+    }
   }
+
+
+
+
+
+
+
 }
 
 
@@ -181,7 +211,7 @@ body{
     }
 
     #cta {
-      width: 280px;
+      width: 290px;
       height: 35px;
       margin-top: 10px;
     }
