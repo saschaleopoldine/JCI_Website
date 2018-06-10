@@ -690,6 +690,14 @@ footer{
   justify-content: space-between;
   p{
     margin-top: 15px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 12pt;
+  }
+  #footerEmail{
+    cursor: pointer;
+    &:hover{
+      color: $hoverYellow;
+    }
   }
   #some{
     @include flex;

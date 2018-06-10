@@ -295,19 +295,25 @@ footer{
   padding: 22px 50px;
   @include flex;
   justify-content: space-between;
-    p{
-      margin-top: 12px;
+  p{
+    margin-top: 12px;
+  }
+  #footerEmail{
+    cursor: pointer;
+    &:hover{
+      color: $hoverYellow;
     }
-    #some{
-      @include flex;
-      flex-direction: column;
-      i{
-        margin: 3px 0;
-        &:hover{
-          color: $hoverYellow;
-        }
+  }
+  #some{
+    @include flex;
+    flex-direction: column;
+    i{
+      margin: 3px 0;
+      &:hover{
+        color: $hoverYellow;
       }
     }
+  }
 }
 
 // Variabler - med størrelser

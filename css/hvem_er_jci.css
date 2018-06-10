@@ -233,6 +233,10 @@ footer {
   justify-content: space-between; }
   footer p {
     margin-top: 12px; }
+  footer #footerEmail {
+    cursor: pointer; }
+    footer #footerEmail:hover {
+      color: #fccc28; }
   footer #some {
     display: flex;
     display: -webkit-flex;

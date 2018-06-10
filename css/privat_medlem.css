@@ -489,7 +489,13 @@ footer {
   display: -webkit-flex;
   justify-content: space-between; }
   footer p {
-    margin-top: 15px; }
+    margin-top: 15px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 12pt; }
+  footer #footerEmail {
+    cursor: pointer; }
+    footer #footerEmail:hover {
+      color: #fccc28; }
   footer #some {
     display: flex;
     display: -webkit-flex;
