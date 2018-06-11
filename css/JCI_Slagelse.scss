@@ -580,6 +580,10 @@ h2{
     grid-column: 2/span 3;
     grid-row: 2/span 7;
     width: 260px;
+    a{
+      text-decoration: none;
+      color: $orange;
+    }
   }
 }
 
@@ -601,6 +605,10 @@ h2{
     grid-column: 2/span 3;
     grid-row: 2/span 7;
     width: 260px;
+    a{
+      text-decoration: none;
+      color: $orange;
+    }
   }
 }
 
@@ -856,10 +864,6 @@ footer{
     #partnertext{
       grid-column: 2/span 7;
       width: 270px;
-      a{
-        text-decoration: none;
-        color: $orange;
-      }
     }                       
   }
 
@@ -874,10 +878,6 @@ footer{
     #aktivitettext{
       grid-column: 2/span 7;
       width: 270px;
-      a{
-        text-decoration: none;
-        color: $orange;
-      }
     }                       
   }                                       
                                           
