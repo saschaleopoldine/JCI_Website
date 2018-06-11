@@ -39,7 +39,7 @@ p {
   margin: 0; // Ingen ydre margen fra paragraffer
   padding: 0; // Ingen indre margen fra paragraffer
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 15pt;
+  font-size: 12pt;
 }
 
 // Sikrer billeder er responsive
@@ -139,7 +139,7 @@ $white:#f9f7f4;
   background-color: $blue;
   height: auto;
   position: absolute;
-  z-index: 5;
+  z-index: 50;
 
   a{
     @include flex;
