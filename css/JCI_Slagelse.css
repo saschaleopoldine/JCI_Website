@@ -87,6 +87,7 @@ img {
     #burgerFold button a {
       text-decoration: none;
       font-family: 'Merriweather Sans', sans-serif;
+      font-weight: bold;
       color: white;
       font-size: 18pt; }
     #burgerFold button:hover {
@@ -164,7 +165,7 @@ h3 {
   color: white;
   font-family: "Libre Baskerville", Serif;
   font-size: 18pt;
-  font-weight: 600;
+  font-weight: bold;
   letter-spacing: 1.5px;
   grid-column: 1/span 3;
   grid-row: 4;
@@ -366,8 +367,7 @@ h2 {
   z-index: 10;
   position: fixed;
   display: none;
-  margin-top: -60px;
-  padding-top: 90px; }
+  margin-top: -60px; }
   #opacity #komiteboks {
     grid-column: 2/span 5;
     grid-row: 2;
@@ -460,7 +460,7 @@ h2 {
   #bestyrelseselement #bestyrelseoverskrift {
     grid-column: 2/span 3;
     grid-row: 1;
-    width: 260px; }
+    width: 270px; }
   #bestyrelseselement #bestyrelsestext {
     grid-column: 2/span 3;
     grid-row: 2/span 6;
@@ -1063,9 +1063,9 @@ footer {
   #partner {
     grid-column: 3/span 2;
     grid-row: 8;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-right: 0;
-    margin-left: 30px; }
+    margin-left: 80px; }
 
   .hr_tre {
     grid-column: 3/span 2;
@@ -1215,8 +1215,8 @@ footer {
   #medlem {
     grid-column: 5/span 2;
     grid-row: 10;
-    margin-left: -10px;
-    margin-top: 20px; }
+    margin-left: -8px;
+    margin-top: 25px; }
 
   .hr_to {
     grid-column: 3/span 2;
@@ -1237,7 +1237,7 @@ footer {
     grid-column: 3/span 2;
     grid-row: 15;
     margin-top: 30px;
-    margin-left: 25px; }
+    margin-left: 80px; }
 
   .hr_tre {
     grid-column: 4/span 2;
@@ -1388,6 +1388,7 @@ footer {
         #left_menu #menuIndhold nav button a {
           text-decoration: none;
           font-family: 'Merriweather Sans', sans-serif;
+          font-weight: bold;
           color: white;
           font-size: 18pt; }
         #left_menu #menuIndhold nav button:hover {
@@ -1483,7 +1484,7 @@ footer {
     grid-row: 1/span 21;
     margin-top: 0; }
     #opacity #komiteboks {
-      margin: 150px 30px;
+      margin: 100px 30px;
       width: 70%; }
 
   .cirkel_2 {
@@ -1630,7 +1631,7 @@ footer {
     grid-row: 1/span 21;
     margin-top: 0; }
     #opacity #komiteboks {
-      margin: 250px 30px auto 150px;
+      margin: 100px 30px auto 150px;
       width: 60%; } }
 
 /*# sourceMappingURL=JCI_Slagelse.css.map */
