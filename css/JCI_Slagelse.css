@@ -379,7 +379,8 @@ h2 {
     #opacity #komiteboks #luk {
       margin-left: 90%;
       width: 50px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      cursor: pointer; }
     #opacity #komiteboks h5, #opacity #komiteboks .komitetekst, #opacity #komiteboks #luk {
       font-family: 'Merriweather Sans', sans-serif;
       color: black; }
