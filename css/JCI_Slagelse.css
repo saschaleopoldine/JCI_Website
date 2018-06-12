@@ -314,7 +314,7 @@ h3 {
   grid-row: 12;
   width: 115px; }
 
-#bestyrrelse {
+#bestyrelse {
   color: white;
   font-family: "Libre Baskerville", Serif;
   font-size: 12pt;
@@ -323,7 +323,7 @@ h3 {
   margin-left: 7px;
   margin-top: -30px;
   z-index: 2; }
-  #bestyrrelse a {
+  #bestyrelse a {
     text-decoration: none;
     color: white; }
 
@@ -619,7 +619,7 @@ footer {
   .cirkel_5, #b_bobble {
     grid-row: 12; }
 
-  #bestyrrelse {
+  #bestyrelse {
     margin-left: -5px;
     margin-top: 18px; }
 
@@ -905,7 +905,7 @@ footer {
     margin-left: 60px;
     margin-top: 15px; }
 
-  #bestyrrelse {
+  #bestyrelse {
     font-size: 15pt; }
 
   #projektelement {
@@ -1326,7 +1326,7 @@ footer {
   .mobil, #menuMobil, footer {
     display: none; }
 
-  #projekt, #medlem, #partner, #aktivitet, #bestyrrelse, #bestyrelsesmedlemmer_mobil, #down, .hr_fire {
+  #projekt, #medlem, #partner, #aktivitet, #bestyrelse, #bestyrelsesmedlemmer_mobil, #down, .hr_fire {
     display: none; }
 
   #mobilAlt {
